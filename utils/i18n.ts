@@ -60,7 +60,7 @@ const strings = {
 
   en: {
     // Home screen
-    appName: 'Nihongo Quiz King',
+    appName: 'Nihongo\nQuiz King',
     appTagline: 'Battle & Learn Japanese · JLPT N4',
     level: 'Level',
     score: 'Score',

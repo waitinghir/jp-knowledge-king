@@ -146,6 +146,7 @@ const styles = StyleSheet.create({
     fontWeight: '900',
     color: '#fff',
     letterSpacing: 2,
+    textAlign: 'center',
   },
   tagline: { fontSize: 14, color: '#95A5A6' },
 
