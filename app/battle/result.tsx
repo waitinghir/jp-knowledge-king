@@ -11,16 +11,21 @@ import {
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { addBattleResult } from '../../utils/storage';
 import { playSound } from '../../utils/sound';
+import { getLang, useStrings } from '../../utils/i18n';
 import type { BattleResult, PlayerData } from '../../types';
 
-const OUTCOME_CONFIG = {
-  win: { emoji: '🏆', label: '勝利！', color: '#F1C40F', sub: '太厲害了！繼續保持！' },
-  lose: { emoji: '😤', label: '惜敗！', color: '#E74C3C', sub: '再來一場，這次一定贏！' },
-  draw: { emoji: '🤝', label: '平手！', color: '#3498DB', sub: '勢均力敵，再分勝負！' },
-};
+function getOutcomeConfig(s: ReturnType<typeof useStrings>) {
+  return {
+    win:  { emoji: '🏆', label: s.winTitle,  color: '#F1C40F', sub: s.winSub  },
+    lose: { emoji: '😤', label: s.loseTitle, color: '#E74C3C', sub: s.loseSub },
+    draw: { emoji: '🤝', label: s.drawTitle, color: '#3498DB', sub: s.drawSub },
+  };
+}
 
 export default function ResultScreen() {
   const router = useRouter();
+  const s = useStrings();
+  const lang = getLang();
   const params = useLocalSearchParams<{ result: string }>();
   const [updatedPlayer, setUpdatedPlayer] = useState<PlayerData | null>(null);
 
@@ -36,7 +41,7 @@ export default function ResultScreen() {
         opponent: { name: '對手', level: 1, avatarColor: '#3498DB' },
       };
 
-  const config = OUTCOME_CONFIG[result.outcome];
+  const config = getOutcomeConfig(s)[result.outcome];
 
   // Entrance animation
   const headerScale = useRef(new Animated.Value(0.5)).current;
@@ -85,7 +90,7 @@ export default function ResultScreen() {
           {/* Score comparison */}
           <View style={styles.scoreRow}>
             <View style={styles.scoreBlock}>
-              <Text style={styles.scoreName}>你</Text>
+              <Text style={styles.scoreName}>{s.you}</Text>
               <Text style={[styles.scoreNum, { color: '#C41E3A' }]}>{result.playerTotalScore}</Text>
             </View>
             <Text style={styles.scoreVs}>VS</Text>
@@ -100,24 +105,24 @@ export default function ResultScreen() {
           {/* Cumulative score update */}
           {updatedPlayer && (
             <View style={styles.cumulativeCard}>
-              <Text style={styles.cumulativeLabel}>本場 +{result.playerTotalScore} 分</Text>
+              <Text style={styles.cumulativeLabel}>{s.thisRound(result.playerTotalScore)}</Text>
               <Text style={styles.cumulativeTotal}>
-                累計 {updatedPlayer.totalScore} 分 · Lv.{updatedPlayer.level}
+                {s.cumulative(updatedPlayer.totalScore, updatedPlayer.level)}
               </Text>
             </View>
           )}
 
           {/* Per-question breakdown */}
-          <Text style={styles.sectionTitle}>各題詳情</Text>
+          <Text style={styles.sectionTitle}>{s.questionDetails}</Text>
           {result.questions.map((q, i) => {
             const pa = result.playerAnswers[i];
             const aa = result.aiAnswers[i];
             const playerSelected = pa?.selectedIndex !== null && pa?.selectedIndex !== undefined
               ? q.options[pa.selectedIndex]
-              : '超時';
+              : s.timeout;
             const aiSelected = aa?.selectedIndex !== null && aa?.selectedIndex !== undefined
               ? q.options[aa.selectedIndex]
-              : '超時';
+              : s.timeout;
 
             return (
               <View key={q.word.id} style={styles.questionRow}>
@@ -125,13 +130,13 @@ export default function ResultScreen() {
                 <View style={styles.qHeader}>
                   <Text style={styles.qNum}>Q{i + 1}</Text>
                   <Text style={styles.qWord}>{q.word.kanji}</Text>
-                  <Text style={styles.qAnswer}>→ {q.word.meaning_zh}</Text>
+                  <Text style={styles.qAnswer}>→ {lang === 'en' ? q.word.meaning_en : q.word.meaning_zh}</Text>
                 </View>
 
                 {/* Player vs AI */}
                 <View style={styles.qComparison}>
                   <View style={styles.qSide}>
-                    <Text style={styles.qSideLabel}>你</Text>
+                    <Text style={styles.qSideLabel}>{s.you}</Text>
                     <Text
                       style={[
                         styles.qChoice,
@@ -141,7 +146,7 @@ export default function ResultScreen() {
                       {pa?.isCorrect ? '✓' : '✗'} {playerSelected}
                     </Text>
                     <Text style={styles.qTime}>
-                      {pa?.timeUsed === 10 ? '超時' : `${pa?.timeUsed.toFixed(1)}s`}
+                      {pa?.timeUsed === 10 ? s.timeout : `${pa?.timeUsed.toFixed(1)}s`}
                       {pa && pa.score > 0 ? ` · +${pa.score}` : ''}
                     </Text>
                   </View>
@@ -159,7 +164,7 @@ export default function ResultScreen() {
                       {aa?.isCorrect ? '✓' : '✗'} {aiSelected}
                     </Text>
                     <Text style={styles.qTime}>
-                      {aa?.timeUsed === 10 ? '超時' : `${aa?.timeUsed.toFixed(1)}s`}
+                      {aa?.timeUsed === 10 ? s.timeout : `${aa?.timeUsed.toFixed(1)}s`}
                       {aa && aa.score > 0 ? ` · +${aa.score}` : ''}
                     </Text>
                   </View>
@@ -174,14 +179,14 @@ export default function ResultScreen() {
               style={({ pressed }) => [styles.btnPrimary, pressed && styles.btnPressed]}
               onPress={() => router.replace('/battle/matching')}
             >
-              <Text style={styles.btnPrimaryText}>⚔️ 再戰一場</Text>
+              <Text style={styles.btnPrimaryText}>{s.playAgain}</Text>
             </Pressable>
 
             <Pressable
               style={({ pressed }) => [styles.btnSecondary, pressed && styles.btnPressed]}
               onPress={() => router.replace('/')}
             >
-              <Text style={styles.btnSecondaryText}>🏠 回首頁</Text>
+              <Text style={styles.btnSecondaryText}>{s.goHome}</Text>
             </Pressable>
           </View>
         </Animated.View>

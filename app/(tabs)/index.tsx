@@ -13,9 +13,11 @@ import { loadPlayerData } from '../../utils/storage';
 import { INITIAL_PLAYER_DATA, SCORE_PER_LEVEL } from '../../types';
 import { useState } from 'react';
 import type { PlayerData } from '../../types';
+import { useStrings } from '../../utils/i18n';
 
 export default function HomeScreen() {
   const router = useRouter();
+  const s = useStrings();
   const [player, setPlayer] = useState<PlayerData>(INITIAL_PLAYER_DATA);
 
   // Reload player data every time the screen comes into focus (e.g. after battle)
@@ -60,24 +62,24 @@ export default function HomeScreen() {
         <View style={styles.header}>
           <Text style={styles.flag}>🇯🇵</Text>
           <Text style={styles.appName}>日文知識王</Text>
-          <Text style={styles.tagline}>對戰學日文 · JLPT N4</Text>
+          <Text style={styles.tagline}>{s.appTagline}</Text>
         </View>
 
         {/* Player stats card */}
         <View style={styles.card}>
           <View style={styles.statRow}>
             <View style={styles.stat}>
-              <Text style={styles.statLabel}>等級</Text>
+              <Text style={styles.statLabel}>{s.level}</Text>
               <Text style={styles.statValue}>Lv.{player.level}</Text>
             </View>
             <View style={styles.statDivider} />
             <View style={styles.stat}>
-              <Text style={styles.statLabel}>總分</Text>
+              <Text style={styles.statLabel}>{s.score}</Text>
               <Text style={styles.statValue}>{player.totalScore}</Text>
             </View>
             <View style={styles.statDivider} />
             <View style={styles.stat}>
-              <Text style={styles.statLabel}>勝場</Text>
+              <Text style={styles.statLabel}>{s.wins}</Text>
               <Text style={styles.statValue}>{player.wins}</Text>
             </View>
           </View>
@@ -92,7 +94,7 @@ export default function HomeScreen() {
             />
           </View>
           <Text style={styles.progressLabel}>
-            升級還差 {SCORE_PER_LEVEL - scoreInLevel} 分
+            {s.toNextLevel(SCORE_PER_LEVEL - scoreInLevel)}
           </Text>
         </View>
 
@@ -105,15 +107,17 @@ export default function HomeScreen() {
             ]}
             onPress={() => router.push('/battle/matching')}
           >
-            <Text style={styles.startButtonText}>⚔️ 開始對戰</Text>
+            <Text style={styles.startButtonText}>{s.startBattle}</Text>
           </Pressable>
         </Animated.View>
 
         {/* Stats footer */}
         {player.gamesPlayed > 0 && (
           <Text style={styles.footer}>
-            已對戰 {player.gamesPlayed} 場 · 勝率{' '}
-            {Math.round((player.wins / player.gamesPlayed) * 100)}%
+            {s.battleStats(
+              player.gamesPlayed,
+              Math.round((player.wins / player.gamesPlayed) * 100)
+            )}
           </Text>
         )}
       </View>

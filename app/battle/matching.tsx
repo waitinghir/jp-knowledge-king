@@ -10,6 +10,7 @@ import {
 import { useRouter } from 'expo-router';
 import { generateOpponent, randomDifficulty } from '../../utils/ai-opponent';
 import { loadPlayerData } from '../../utils/storage';
+import { useStrings } from '../../utils/i18n';
 import type { AIOpponent } from '../../types';
 
 // Phases: searching → found → (navigate)
@@ -19,6 +20,7 @@ const DOTS = ['', '.', '..', '...'];
 
 export default function MatchingScreen() {
   const router = useRouter();
+  const s = useStrings();
   const [phase, setPhase] = useState<Phase>('searching');
   const [opponent, setOpponent] = useState<AIOpponent | null>(null);
   const [dotIdx, setDotIdx] = useState(0);
@@ -105,8 +107,8 @@ export default function MatchingScreen() {
             <Animated.Text style={[styles.searchIcon, { transform: [{ rotate: spinInterp }] }]}>
               ⚔️
             </Animated.Text>
-            <Text style={styles.title}>尋找對手中{DOTS[dotIdx]}</Text>
-            <Text style={styles.sub}>正在配對中，請稍候</Text>
+            <Text style={styles.title}>{s.searching(DOTS[dotIdx])}</Text>
+            <Text style={styles.sub}>{s.matchingWait}</Text>
           </>
         )}
 
@@ -117,7 +119,7 @@ export default function MatchingScreen() {
               { opacity: fadeAnim, transform: [{ scale: scaleAnim }] },
             ]}
           >
-            <Text style={styles.foundLabel}>找到對手！</Text>
+            <Text style={styles.foundLabel}>{s.foundLabel}</Text>
 
             <View style={[styles.avatar, { backgroundColor: opponent.avatarColor }]}>
               <Text style={styles.avatarText}>{opponent.name[0]}</Text>
@@ -127,7 +129,7 @@ export default function MatchingScreen() {
             <Text style={styles.opponentLevel}>Lv.{opponent.level}</Text>
 
             <View style={styles.vsRow}>
-              <Text style={styles.vsText}>準備開戰！</Text>
+              <Text style={styles.vsText}>{s.readyLabel}</Text>
             </View>
           </Animated.View>
         )}

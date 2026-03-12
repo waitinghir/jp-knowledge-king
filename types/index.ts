@@ -6,9 +6,12 @@ export interface Word {
   kanji: string;
   kana: string;
   meaning_zh: string;
+  meaning_en: string;
   category: string;
+  category_en: string;
   level: 'N5' | 'N4' | 'N3' | 'N2' | 'N1';
-  distractors: string[]; // 3 distractor Chinese meanings
+  distractors: string[];    // 3 distractor Chinese meanings
+  distractors_en: string[]; // 3 distractor English meanings
 }
 
 // ────────────────────────────────────────────────

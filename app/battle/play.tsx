@@ -17,6 +17,7 @@ import { simulateAIAnswer } from '../../utils/ai-opponent';
 import { calculateScore, determineBattleOutcome } from '../../utils/scoring';
 import { loadPlayerData } from '../../utils/storage';
 import { initSounds, playSound } from '../../utils/sound';
+import { getLang, useStrings } from '../../utils/i18n';
 import wordsRaw from '../../data/n4-words.json';
 
 import type { Word, Question, Answer, AIOpponent, BattleResult } from '../../types';
@@ -31,6 +32,7 @@ type QuestionPhase = 'answering' | 'feedback';
 
 export default function PlayScreen() {
   const router = useRouter();
+  const s = useStrings();
   const params = useLocalSearchParams<{
     opponentName: string;
     opponentLevel: string;
@@ -73,7 +75,7 @@ export default function PlayScreen() {
   // ── Init ──────────────────────────────────────────────────────────────────
   useEffect(() => {
     loadPlayerData().then((d) => setPlayerLevel(d.level));
-    setQuestions(generateQuestions(WORDS, TOTAL_QUESTIONS));
+    setQuestions(generateQuestions(WORDS, TOTAL_QUESTIONS, getLang()));
     initSounds();
   }, []);
 
@@ -222,7 +224,7 @@ export default function PlayScreen() {
     return (
       <SafeAreaView style={styles.safe}>
         <View style={styles.loading}>
-          <Text style={styles.loadingText}>載入中...</Text>
+          <Text style={styles.loadingText}>{s.loading}</Text>
         </View>
       </SafeAreaView>
     );
@@ -247,7 +249,11 @@ export default function PlayScreen() {
           style={[styles.wordCard, { opacity: wordFade, transform: [{ translateY: wordSlide }] }]}
         >
           <Text style={styles.kana}>{currentQuestion.word.kana}</Text>
-          <Text style={styles.category}>{currentQuestion.word.category}</Text>
+          <Text style={styles.category}>
+            {getLang() === 'en'
+              ? currentQuestion.word.category_en
+              : currentQuestion.word.category}
+          </Text>
         </Animated.View>
 
         {/* Timer */}
@@ -261,9 +267,11 @@ export default function PlayScreen() {
         {aiChoiceIndex !== null && (
           <View style={styles.aiIndicator}>
             <Text style={styles.aiIndicatorText}>
-              {opponent.name}：
-              {aiAnswers[aiAnswers.length - 1]?.isCorrect ? '✓ 答對' : '✗ 答錯'}{' '}
-              ({aiAnswers[aiAnswers.length - 1]?.timeUsed.toFixed(1)}s)
+              {s.aiIndicator(
+                opponent.name,
+                !!aiAnswers[aiAnswers.length - 1]?.isCorrect,
+                aiAnswers[aiAnswers.length - 1]?.timeUsed.toFixed(1) ?? '0'
+              )}
             </Text>
           </View>
         )}
@@ -299,7 +307,9 @@ export default function PlayScreen() {
         {/* AI choice overlay on options (shown in feedback) */}
         {aiChoiceIndex !== null && (
           <Text style={styles.aiChoice}>
-            {opponent.name} 選了「{currentQuestion.options[aiChoiceIndex]}」
+            {getLang() === 'en'
+              ? `${opponent.name} chose "${currentQuestion.options[aiChoiceIndex]}"`
+              : `${opponent.name} 選了「${currentQuestion.options[aiChoiceIndex]}」`}
           </Text>
         )}
       </ScrollView>
