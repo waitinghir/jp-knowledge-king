@@ -1,0 +1,86 @@
+// ────────────────────────────────────────────────
+// 題庫單字（符合規格書 1-6 的 JSON 格式）
+// ────────────────────────────────────────────────
+export interface Word {
+  id: string;
+  kanji: string;
+  kana: string;
+  meaning_zh: string;
+  category: string;
+  level: 'N5' | 'N4' | 'N3' | 'N2' | 'N1';
+  distractors: string[]; // 3 distractor Chinese meanings
+}
+
+// ────────────────────────────────────────────────
+// 一道出題（含已打亂的 4 個選項）
+// ────────────────────────────────────────────────
+export interface Question {
+  word: Word;
+  options: string[];      // 4 shuffled choices (Chinese meanings)
+  correctIndex: number;   // index of the correct answer in options[]
+}
+
+// ────────────────────────────────────────────────
+// 單題答題記錄
+// ────────────────────────────────────────────────
+export interface Answer {
+  questionId: string;
+  selectedIndex: number | null; // null = timed out
+  isCorrect: boolean;
+  timeUsed: number;  // seconds (0–10)
+  score: number;
+}
+
+// ────────────────────────────────────────────────
+// AI 對手
+// ────────────────────────────────────────────────
+export interface AIOpponent {
+  name: string;
+  level: number;
+  avatarColor: string; // hex color for avatar background
+}
+
+// ────────────────────────────────────────────────
+// 一場對戰的完整狀態
+// ────────────────────────────────────────────────
+export interface BattleState {
+  questions: Question[];
+  playerAnswers: Answer[];
+  aiAnswers: Answer[];
+  opponent: AIOpponent;
+  startedAt: number; // Date.now() timestamp
+}
+
+// ────────────────────────────────────────────────
+// 結算結果
+// ────────────────────────────────────────────────
+export type BattleOutcome = 'win' | 'lose' | 'draw';
+
+export interface BattleResult {
+  outcome: BattleOutcome;
+  playerTotalScore: number;
+  aiTotalScore: number;
+  questions: Question[];
+  playerAnswers: Answer[];
+  aiAnswers: Answer[];
+  opponent: AIOpponent;
+}
+
+// ────────────────────────────────────────────────
+// 玩家持久化資料（存在 AsyncStorage）
+// ────────────────────────────────────────────────
+export interface PlayerData {
+  totalScore: number;
+  level: number;       // totalScore / 500, minimum 1
+  gamesPlayed: number;
+  wins: number;
+}
+
+export const INITIAL_PLAYER_DATA: PlayerData = {
+  totalScore: 0,
+  level: 1,
+  gamesPlayed: 0,
+  wins: 0,
+};
+
+export const SCORE_PER_LEVEL = 500;

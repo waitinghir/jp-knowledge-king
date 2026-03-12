@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "jp-knowledge-king",
+    "name": "日文知識王",
     "slug": "jp-knowledge-king",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -13,7 +13,11 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.waitinghir.nihongoquiz",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -24,7 +28,19 @@
       "predictiveBackGestureEnabled": false
     },
     "web": {
+      "bundler": "metro",
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "scheme": "jpknowledgeking",
+    "plugins": [
+      "expo-router"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "f474bca9-2408-4414-be1a-9488d195b6c4"
+      }
+    },
+    "owner": "waitinghir"
   }
 }
