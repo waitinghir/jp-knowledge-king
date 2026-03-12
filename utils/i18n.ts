@@ -20,6 +20,7 @@ export function getLang(): Lang {
 const strings = {
   zh: {
     // Home screen
+    appName: '日文知識王',
     appTagline: '對戰學日文 · JLPT N4',
     level: '等級',
     score: '總分',
@@ -59,6 +60,7 @@ const strings = {
 
   en: {
     // Home screen
+    appName: 'Nihongo Quiz King',
     appTagline: 'Battle & Learn Japanese · JLPT N4',
     level: 'Level',
     score: 'Score',

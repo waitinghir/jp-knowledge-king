@@ -61,7 +61,7 @@ export default function HomeScreen() {
         {/* Header */}
         <View style={styles.header}>
           <Text style={styles.flag}>🇯🇵</Text>
-          <Text style={styles.appName}>日文知識王</Text>
+          <Text style={styles.appName}>{s.appName}</Text>
           <Text style={styles.tagline}>{s.appTagline}</Text>
         </View>
 
