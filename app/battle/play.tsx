@@ -18,12 +18,11 @@ import { calculateScore, determineBattleOutcome } from '../../utils/scoring';
 import { loadPlayerData } from '../../utils/storage';
 import { initSounds, playSound } from '../../utils/sound';
 import { getLang, useStrings } from '../../utils/i18n';
-import wordsRaw from '../../data/n4-words.json';
+import { loadWords } from '../../utils/wordBank';
 
 import type { Word, Question, Answer, AIOpponent, BattleResult } from '../../types';
 import type { OptionState } from '../../components/OptionButton';
 
-const WORDS = wordsRaw as Word[];
 const TOTAL_QUESTIONS = 5;
 const QUESTION_DURATION = 10; // seconds
 const FEEDBACK_DURATION = 1800; // ms to show feedback before next question
@@ -75,7 +74,9 @@ export default function PlayScreen() {
   // ── Init ──────────────────────────────────────────────────────────────────
   useEffect(() => {
     loadPlayerData().then((d) => setPlayerLevel(d.level));
-    setQuestions(generateQuestions(WORDS, TOTAL_QUESTIONS, getLang()));
+    loadWords().then((words) =>
+      setQuestions(generateQuestions(words, TOTAL_QUESTIONS, getLang()))
+    );
     initSounds();
   }, []);
 
