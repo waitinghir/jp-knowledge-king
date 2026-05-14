@@ -87,3 +87,8 @@ export const INITIAL_PLAYER_DATA: PlayerData = {
 };
 
 export const SCORE_PER_LEVEL = 500;
+
+// ────────────────────────────────────────────────
+// 難度選擇
+// ────────────────────────────────────────────────
+export type WordLevel = 'N4' | 'N3' | 'all';

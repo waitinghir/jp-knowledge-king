@@ -7,11 +7,11 @@ import {
   Text,
   View,
 } from 'react-native';
-import { useRouter } from 'expo-router';
+import { useLocalSearchParams, useRouter } from 'expo-router';
 import { generateOpponent, randomDifficulty } from '../../utils/ai-opponent';
 import { loadPlayerData } from '../../utils/storage';
 import { useStrings } from '../../utils/i18n';
-import type { AIOpponent } from '../../types';
+import type { AIOpponent, WordLevel } from '../../types';
 
 // Phases: searching → found → (navigate)
 type Phase = 'searching' | 'found';
@@ -21,6 +21,7 @@ const DOTS = ['', '.', '..', '...'];
 export default function MatchingScreen() {
   const router = useRouter();
   const s = useStrings();
+  const { wordLevel = 'all' } = useLocalSearchParams<{ wordLevel: WordLevel }>();
   const [phase, setPhase] = useState<Phase>('searching');
   const [opponent, setOpponent] = useState<AIOpponent | null>(null);
   const [dotIdx, setDotIdx] = useState(0);
@@ -90,6 +91,7 @@ export default function MatchingScreen() {
           opponentLevel: String(opp.level),
           opponentColor: opp.avatarColor,
           difficulty: String(difficulty),
+          wordLevel,
         },
       });
     }

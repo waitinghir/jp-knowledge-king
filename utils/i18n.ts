@@ -29,6 +29,11 @@ const strings = {
     startBattle: '⚔️ 開始對戰',
     battleStats: (games: number, rate: number) => `已對戰 ${games} 場 · 勝率 ${rate}%`,
 
+    // Word level selector
+    levelN4: 'N4',
+    levelN3: 'N3',
+    levelAll: '全部',
+
     // Matching screen
     searching: (dots: string) => `尋找對手中${dots}`,
     matchingWait: '正在配對中，請稍候',
@@ -68,6 +73,11 @@ const strings = {
     toNextLevel: (n: number) => `${n} pts to level up`,
     startBattle: '⚔️ Start Battle',
     battleStats: (games: number, rate: number) => `${games} battles · Win rate ${rate}%`,
+
+    // Word level selector
+    levelN4: 'N4',
+    levelN3: 'N3',
+    levelAll: 'All',
 
     // Matching screen
     searching: (dots: string) => `Finding opponent${dots}`,

@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import {
   Animated,
   Easing,
@@ -11,14 +11,14 @@ import {
 import { useFocusEffect, useRouter } from 'expo-router';
 import { loadPlayerData } from '../../utils/storage';
 import { INITIAL_PLAYER_DATA, SCORE_PER_LEVEL } from '../../types';
-import { useState } from 'react';
-import type { PlayerData } from '../../types';
+import type { PlayerData, WordLevel } from '../../types';
 import { useStrings } from '../../utils/i18n';
 
 export default function HomeScreen() {
   const router = useRouter();
   const s = useStrings();
   const [player, setPlayer] = useState<PlayerData>(INITIAL_PLAYER_DATA);
+  const [wordLevel, setWordLevel] = useState<WordLevel>('all');
 
   // Reload player data every time the screen comes into focus (e.g. after battle)
   useFocusEffect(
@@ -98,6 +98,21 @@ export default function HomeScreen() {
           </Text>
         </View>
 
+        {/* Word level selector */}
+        <View style={styles.levelSelector}>
+          {(['N4', 'N3', 'all'] as WordLevel[]).map((lv) => (
+            <Pressable
+              key={lv}
+              style={[styles.levelBtn, wordLevel === lv && styles.levelBtnActive]}
+              onPress={() => setWordLevel(lv)}
+            >
+              <Text style={[styles.levelBtnText, wordLevel === lv && styles.levelBtnTextActive]}>
+                {lv === 'N4' ? s.levelN4 : lv === 'N3' ? s.levelN3 : s.levelAll}
+              </Text>
+            </Pressable>
+          ))}
+        </View>
+
         {/* Start button */}
         <Animated.View style={{ transform: [{ scale: pulse }] }}>
           <Pressable
@@ -105,7 +120,7 @@ export default function HomeScreen() {
               styles.startButton,
               pressed && styles.startButtonPressed,
             ]}
-            onPress={() => router.push('/battle/matching')}
+            onPress={() => router.push({ pathname: '/battle/matching', params: { wordLevel } })}
           >
             <Text style={styles.startButtonText}>{s.startBattle}</Text>
           </Pressable>
@@ -181,6 +196,32 @@ const styles = StyleSheet.create({
     borderRadius: 4,
   },
   progressLabel: { fontSize: 11, color: '#7F8C8D', textAlign: 'center' },
+
+  // Level selector
+  levelSelector: {
+    flexDirection: 'row',
+    backgroundColor: '#34495E',
+    borderRadius: 12,
+    padding: 4,
+    gap: 4,
+  },
+  levelBtn: {
+    flex: 1,
+    paddingVertical: 10,
+    borderRadius: 9,
+    alignItems: 'center',
+  },
+  levelBtnActive: {
+    backgroundColor: '#C41E3A',
+  },
+  levelBtnText: {
+    fontSize: 15,
+    fontWeight: '600',
+    color: '#95A5A6',
+  },
+  levelBtnTextActive: {
+    color: '#fff',
+  },
 
   // Start button
   startButton: {

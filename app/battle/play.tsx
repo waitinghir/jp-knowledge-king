@@ -20,7 +20,7 @@ import { initSounds, playSound } from '../../utils/sound';
 import { getLang, useStrings } from '../../utils/i18n';
 import { loadWords } from '../../utils/wordBank';
 
-import type { Word, Question, Answer, AIOpponent, BattleResult } from '../../types';
+import type { Word, Question, Answer, AIOpponent, BattleResult, WordLevel } from '../../types';
 import type { OptionState } from '../../components/OptionButton';
 
 const TOTAL_QUESTIONS = 5;
@@ -37,6 +37,7 @@ export default function PlayScreen() {
     opponentLevel: string;
     opponentColor: string;
     difficulty: string;
+    wordLevel: WordLevel;
   }>();
 
   const opponent: AIOpponent = {
@@ -45,6 +46,7 @@ export default function PlayScreen() {
     avatarColor: params.opponentColor ?? '#3498DB',
   };
   const difficulty = parseFloat(params.difficulty ?? '0.8');
+  const wordLevel: WordLevel = params.wordLevel ?? 'all';
 
   // ── State ─────────────────────────────────────────────────────────────────
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -74,9 +76,10 @@ export default function PlayScreen() {
   // ── Init ──────────────────────────────────────────────────────────────────
   useEffect(() => {
     loadPlayerData().then((d) => setPlayerLevel(d.level));
-    loadWords().then((words) =>
-      setQuestions(generateQuestions(words, TOTAL_QUESTIONS, getLang()))
-    );
+    loadWords().then((words) => {
+      const filtered = wordLevel === 'all' ? words : words.filter((w) => w.level === wordLevel);
+      setQuestions(generateQuestions(filtered, TOTAL_QUESTIONS, getLang()));
+    });
     initSounds();
   }, []);
 

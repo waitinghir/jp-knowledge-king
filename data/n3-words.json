@@ -1,0 +1,802 @@
+[
+  {
+    "id": "gemini_201",
+    "kanji": "味玉",
+    "kana": "あじたま",
+    "meaning_zh": "溏心蛋（拉麵配料）",
+    "meaning_en": "seasoned soft-boiled egg",
+    "category": "餐廳/點餐",
+    "category_en": "Restaurant",
+    "level": "N3",
+    "distractors": [
+      "售票機",
+      "理解",
+      "成長空間"
+    ],
+    "distractors_en": [
+      "inconvenient",
+      "introverted",
+      "to clean"
+    ]
+  },
+  {
+    "id": "gemini_202",
+    "kanji": "追加",
+    "kana": "ついか",
+    "meaning_zh": "追加、加點",
+    "meaning_en": "addition/extra",
+    "category": "餐廳/點餐",
+    "category_en": "Restaurant",
+    "level": "N3",
+    "distractors": [
+      "介紹",
+      "到達",
+      "燒開"
+    ],
+    "distractors_en": [
+      "cancellation",
+      "reservation",
+      "refrigeration"
+    ]
+  },
+  {
+    "id": "gemini_203",
+    "kanji": "突風",
+    "kana": "とっぷう",
+    "meaning_zh": "突然的強風",
+    "meaning_en": "sudden gust of wind",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "追加、加點",
+      "比較",
+      "藉口"
+    ],
+    "distractors_en": [
+      "precious/valuable",
+      "to confirm",
+      "that helps/thank you"
+    ]
+  },
+  {
+    "id": "gemini_204",
+    "kanji": "手入れ",
+    "kana": "ていれ",
+    "meaning_zh": "整理、保養",
+    "meaning_en": "maintenance/grooming",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "稀有的、少見的",
+      "複習",
+      "打折"
+    ],
+    "distractors_en": [
+      "sudden gust of wind",
+      "to boil",
+      "apology"
+    ]
+  },
+  {
+    "id": "gemini_205",
+    "kanji": "前髪",
+    "kana": "まえがみ",
+    "meaning_zh": "瀏海",
+    "meaning_en": "bangs/fringe",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "追星活動",
+      "找到",
+      "整理、保養"
+    ],
+    "distractors_en": [
+      "to understand",
+      "to boil",
+      "to compare"
+    ]
+  },
+  {
+    "id": "gemini_206",
+    "kanji": "連携",
+    "kana": "れんけい",
+    "meaning_zh": "連動、綁定",
+    "meaning_en": "linking/integration",
+    "category": "購物/藥妝",
+    "category_en": "Shopping",
+    "level": "N3",
+    "distractors": [
+      "申請",
+      "拒絕",
+      "散步"
+    ],
+    "distractors_en": [
+      "to wipe the table",
+      "ticket vending machine",
+      "precious/valuable"
+    ]
+  },
+  {
+    "id": "gemini_207",
+    "kanji": "読み取り",
+    "kana": "よみとり",
+    "meaning_zh": "掃描、讀取",
+    "meaning_en": "scanning/reading",
+    "category": "購物/藥妝",
+    "category_en": "Shopping",
+    "level": "N3",
+    "distractors": [
+      "費用、帳單",
+      "整理、保養",
+      "找到"
+    ],
+    "distractors_en": [
+      "tax-free",
+      "moving",
+      "refusal"
+    ]
+  },
+  {
+    "id": "gemini_208",
+    "kanji": "免税",
+    "kana": "めんぜい",
+    "meaning_zh": "免稅",
+    "meaning_en": "tax-free",
+    "category": "購物/藥妝",
+    "category_en": "Shopping",
+    "level": "N3",
+    "distractors": [
+      "搬家",
+      "瀏海",
+      "藉口"
+    ],
+    "distractors_en": [
+      "fitting/trying on",
+      "explanation",
+      "to apply"
+    ]
+  },
+  {
+    "id": "gemini_209",
+    "kanji": "煮沸",
+    "kana": "しゃふつ",
+    "meaning_zh": "煮沸",
+    "meaning_en": "boiling",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "收拾",
+      "六樓",
+      "稀有的、少見的"
+    ],
+    "distractors_en": [
+      "drain",
+      "addition/extra",
+      "arrival"
+    ]
+  },
+  {
+    "id": "gemini_210",
+    "kanji": "沸かす",
+    "kana": "わかす",
+    "meaning_zh": "燒開（水）",
+    "meaning_en": "to boil (water)",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "掃描、讀取",
+      "畢業",
+      "打折"
+    ],
+    "distractors_en": [
+      "review",
+      "introduction",
+      "to get wet"
+    ]
+  },
+  {
+    "id": "gemini_211",
+    "kanji": "排水口",
+    "kana": "はいすいこう",
+    "meaning_zh": "排水口",
+    "meaning_en": "drain",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "裡面、深處",
+      "追星活動",
+      "壞掉"
+    ],
+    "distractors_en": [
+      "introverted",
+      "consolidation",
+      "introduction"
+    ]
+  },
+  {
+    "id": "gemini_212",
+    "kanji": "観光地",
+    "kana": "かんこうち",
+    "meaning_zh": "觀光地、旅遊景點",
+    "meaning_en": "tourist spot",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "整合、統合",
+      "費用、帳單",
+      "介紹"
+    ],
+    "distractors_en": [
+      "discount",
+      "drain",
+      "bangs/fringe"
+    ]
+  },
+  {
+    "id": "gemini_213",
+    "kanji": "看護師",
+    "kana": "かんごし",
+    "meaning_zh": "護理師",
+    "meaning_en": "nurse",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "內向的",
+      "打折",
+      "整理、保養"
+    ],
+    "distractors_en": [
+      "bill/charge",
+      "apology",
+      "explanation"
+    ]
+  },
+  {
+    "id": "gemini_214",
+    "kanji": "六階",
+    "kana": "ろっかい",
+    "meaning_zh": "六樓",
+    "meaning_en": "sixth floor",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "報名",
+      "練習",
+      "護理師"
+    ],
+    "distractors_en": [
+      "introverted",
+      "cancellation",
+      "to boil"
+    ]
+  },
+  {
+    "id": "gemini_215",
+    "kanji": "整合",
+    "kana": "とうごう",
+    "meaning_zh": "整合、統合",
+    "meaning_en": "integration",
+    "category": "職場",
+    "category_en": "Workplace",
+    "level": "N3",
+    "distractors": [
+      "觀光地、旅遊景點",
+      "暫停營運",
+      "退貨"
+    ],
+    "distractors_en": [
+      "to transfer",
+      "walk/stroll",
+      "cancellation"
+    ]
+  },
+  {
+    "id": "gemini_216",
+    "kanji": "集約",
+    "kana": "しゅうやく",
+    "meaning_zh": "集約、彙整",
+    "meaning_en": "consolidation",
+    "category": "職場",
+    "category_en": "Workplace",
+    "level": "N3",
+    "distractors": [
+      "護理師",
+      "成長空間",
+      "找到"
+    ],
+    "distractors_en": [
+      "bill/charge",
+      "precious/valuable",
+      "to heat up"
+    ]
+  },
+  {
+    "id": "gemini_217",
+    "kanji": "比べる",
+    "kana": "くらべる",
+    "meaning_zh": "比較",
+    "meaning_en": "to compare",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "稀有的、少見的",
+      "介紹",
+      "記住"
+    ],
+    "distractors_en": [
+      "fan activities",
+      "translation",
+      "graduation"
+    ]
+  },
+  {
+    "id": "gemini_218",
+    "kanji": "奥",
+    "kana": "おく",
+    "meaning_zh": "裡面、深處",
+    "meaning_en": "interior/back",
+    "category": "餐廳/點餐",
+    "category_en": "Restaurant",
+    "level": "N3",
+    "distractors": [
+      "拒絕",
+      "打折",
+      "燒開"
+    ],
+    "distractors_en": [
+      "to clean",
+      "maintenance/grooming",
+      "wrapping"
+    ]
+  },
+  {
+    "id": "gemini_219",
+    "kanji": "静音",
+    "kana": "せいおん",
+    "meaning_zh": "靜音",
+    "meaning_en": "silent mode",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "遲到",
+      "被找到",
+      "打折"
+    ],
+    "distractors_en": [
+      "delivery",
+      "progress",
+      "that helps/thank you"
+    ]
+  },
+  {
+    "id": "gemini_220",
+    "kanji": "助かります",
+    "kana": "たすかります",
+    "meaning_zh": "幫了大忙、感謝",
+    "meaning_en": "that helps/thank you",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "壞掉",
+      "取消",
+      "複習"
+    ],
+    "distractors_en": [
+      "walk/stroll",
+      "delivery",
+      "preparation"
+    ]
+  },
+  {
+    "id": "gemini_221",
+    "kanji": "空き巣",
+    "kana": "あきす",
+    "meaning_zh": "空門竊盜",
+    "meaning_en": "burglary (empty house)",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "被找到",
+      "六樓",
+      "推薦"
+    ],
+    "distractors_en": [
+      "to memorize",
+      "graduation",
+      "precious/valuable"
+    ]
+  },
+  {
+    "id": "gemini_222",
+    "kanji": "保健食品",
+    "kana": "ほけんしょくひん",
+    "meaning_zh": "保健食品",
+    "meaning_en": "health supplement",
+    "category": "購物/藥妝",
+    "category_en": "Shopping",
+    "level": "N3",
+    "distractors": [
+      "申請",
+      "整理、保養",
+      "解釋"
+    ],
+    "distractors_en": [
+      "silent mode",
+      "to decide",
+      "to boil (water)"
+    ]
+  },
+  {
+    "id": "gemini_223",
+    "kanji": "口実",
+    "kana": "こうじつ",
+    "meaning_zh": "藉口",
+    "meaning_en": "excuse/pretext",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "青春痘、痘痘",
+      "暫停營運",
+      "追星活動"
+    ],
+    "distractors_en": [
+      "to do laundry",
+      "composure/margin",
+      "to be late"
+    ]
+  },
+  {
+    "id": "gemini_224",
+    "kanji": "内向的",
+    "kana": "ないこうてき",
+    "meaning_zh": "內向的",
+    "meaning_en": "introverted",
+    "category": "社交",
+    "category_en": "Social",
+    "level": "N3",
+    "distractors": [
+      "退貨",
+      "推薦",
+      "燒開（水）"
+    ],
+    "distractors_en": [
+      "sudden gust of wind",
+      "to decide",
+      "precious/valuable"
+    ]
+  },
+  {
+    "id": "gemini_225",
+    "kanji": "運転見合わせ",
+    "kana": "うんてんみあわせ",
+    "meaning_zh": "暫停營運",
+    "meaning_en": "service suspension",
+    "category": "交通",
+    "category_en": "Transportation",
+    "level": "N3",
+    "distractors": [
+      "報名",
+      "六樓",
+      "不方便"
+    ],
+    "distractors_en": [
+      "review",
+      "rare/unusual",
+      "introverted"
+    ]
+  },
+  {
+    "id": "gemini_226",
+    "kanji": "珍しい",
+    "kana": "めずらしい",
+    "meaning_zh": "稀有的、少見的",
+    "meaning_en": "rare/unusual",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "燒開（水）",
+      "洗衣",
+      "退貨"
+    ],
+    "distractors_en": [
+      "bangs/fringe",
+      "moving",
+      "precious/valuable"
+    ]
+  },
+  {
+    "id": "gemini_227",
+    "kanji": "貴重",
+    "kana": "きちょう",
+    "meaning_zh": "珍貴的",
+    "meaning_en": "precious/valuable",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "收拾",
+      "退貨",
+      "介紹"
+    ],
+    "distractors_en": [
+      "to clean",
+      "practice",
+      "delivery"
+    ]
+  },
+  {
+    "id": "gemini_228",
+    "kanji": "伸びしろ",
+    "kana": "のびしろ",
+    "meaning_zh": "成長空間",
+    "meaning_en": "room for growth",
+    "category": "職場",
+    "category_en": "Workplace",
+    "level": "N3",
+    "distractors": [
+      "珍貴的",
+      "比較",
+      "突然的強風"
+    ],
+    "distractors_en": [
+      "graduation",
+      "introverted",
+      "to decide"
+    ]
+  },
+  {
+    "id": "gemini_229",
+    "kanji": "余裕",
+    "kana": "よゆう",
+    "meaning_zh": "餘裕、從容",
+    "meaning_en": "composure/margin",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "瀏海",
+      "溏心蛋（拉麵配料）",
+      "拒絕"
+    ],
+    "distractors_en": [
+      "fan activities",
+      "preparation",
+      "departure"
+    ]
+  },
+  {
+    "id": "gemini_230",
+    "kanji": "青春痘",
+    "kana": "にきび",
+    "meaning_zh": "青春痘、痘痘",
+    "meaning_en": "acne/pimple",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "申請",
+      "進步",
+      "記住"
+    ],
+    "distractors_en": [
+      "ticket vending machine",
+      "boiling",
+      "burglary (empty house)"
+    ]
+  },
+  {
+    "id": "gemini_231",
+    "kanji": "口罩",
+    "kana": "マスク",
+    "meaning_zh": "口罩",
+    "meaning_en": "mask",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "出發",
+      "換車",
+      "燒開"
+    ],
+    "distractors_en": [
+      "sixth floor",
+      "apology",
+      "to understand"
+    ]
+  },
+  {
+    "id": "gemini_232",
+    "kanji": "泡麵",
+    "kana": "カップめん",
+    "meaning_zh": "泡麵",
+    "meaning_en": "cup noodles",
+    "category": "餐廳/點餐",
+    "category_en": "Restaurant",
+    "level": "N3",
+    "distractors": [
+      "煮沸",
+      "練習",
+      "試穿"
+    ],
+    "distractors_en": [
+      "to dry",
+      "tourist spot",
+      "to be in time"
+    ]
+  },
+  {
+    "id": "gemini_233",
+    "kanji": "推し活",
+    "kana": "おしかつ",
+    "meaning_zh": "追星活動",
+    "meaning_en": "fan activities",
+    "category": "社交",
+    "category_en": "Social",
+    "level": "N3",
+    "distractors": [
+      "比較",
+      "忘記",
+      "進步"
+    ],
+    "distractors_en": [
+      "precious/valuable",
+      "walk/stroll",
+      "to forget"
+    ]
+  },
+  {
+    "id": "gemini_234",
+    "kanji": "擦桌子",
+    "kana": "テーブルをふく",
+    "meaning_zh": "擦桌子",
+    "meaning_en": "to wipe the table",
+    "category": "餐廳/點餐",
+    "category_en": "Restaurant",
+    "level": "N3",
+    "distractors": [
+      "成長空間",
+      "破關、通關",
+      "乾燥"
+    ],
+    "distractors_en": [
+      "that helps/thank you",
+      "to memorize",
+      "room for growth"
+    ]
+  },
+  {
+    "id": "gemini_235",
+    "kanji": "券売機",
+    "kana": "けんばいき",
+    "meaning_zh": "售票機",
+    "meaning_en": "ticket vending machine",
+    "category": "交通",
+    "category_en": "Transportation",
+    "level": "N3",
+    "distractors": [
+      "淋濕",
+      "掃描、讀取",
+      "到達"
+    ],
+    "distractors_en": [
+      "review",
+      "boiling",
+      "nurse"
+    ]
+  },
+  {
+    "id": "gemini_236",
+    "kanji": "情報",
+    "kana": "じょうほう",
+    "meaning_zh": "資訊、情報",
+    "meaning_en": "information",
+    "category": "職場",
+    "category_en": "Workplace",
+    "level": "N3",
+    "distractors": [
+      "申請",
+      "護理師",
+      "出發"
+    ],
+    "distractors_en": [
+      "graduation",
+      "bill/charge",
+      "nurse"
+    ]
+  },
+  {
+    "id": "gemini_237",
+    "kanji": "不便",
+    "kana": "ふべん",
+    "meaning_zh": "不方便",
+    "meaning_en": "inconvenient",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "記住",
+      "找到",
+      "來得及"
+    ],
+    "distractors_en": [
+      "sixth floor",
+      "ticket vending machine",
+      "moving"
+    ]
+  },
+  {
+    "id": "gemini_238",
+    "kanji": "散歩",
+    "kana": "さんぽ",
+    "meaning_zh": "散步",
+    "meaning_en": "walk/stroll",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "比較",
+      "口罩",
+      "保健食品"
+    ],
+    "distractors_en": [
+      "discount",
+      "to be in time",
+      "service suspension"
+    ]
+  },
+  {
+    "id": "gemini_239",
+    "kanji": "破關",
+    "kana": "クリア",
+    "meaning_zh": "破關、通關",
+    "meaning_en": "to clear (a game)",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "來得及",
+      "售票機",
+      "出發"
+    ],
+    "distractors_en": [
+      "service suspension",
+      "boiling",
+      "sixth floor"
+    ]
+  },
+  {
+    "id": "gemini_240",
+    "kanji": "帳單",
+    "kana": "りょうきん",
+    "meaning_zh": "費用、帳單",
+    "meaning_en": "bill/charge",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "送達",
+      "練習",
+      "包裝"
+    ],
+    "distractors_en": [
+      "cancellation",
+      "to forget",
+      "drain"
+    ]
+  }
+]

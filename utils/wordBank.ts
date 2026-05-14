@@ -1,43 +1,38 @@
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import type { Word } from '../types';
-import localWords from '../data/n4-words.json';
+import localN4 from '../data/n4-words.json';
+import localN3 from '../data/n3-words.json';
 
-const REMOTE_URL =
-  'https://raw.githubusercontent.com/waitinghir/jp-knowledge-king/main/data/n4-words.json';
-const CACHE_KEY = 'jp_king_words_cache';
+const SOURCES: Array<{ url: string; local: Word[] }> = [
+  {
+    url: 'https://raw.githubusercontent.com/waitinghir/jp-knowledge-king/main/data/n4-words.json',
+    local: localN4 as Word[],
+  },
+  {
+    url: 'https://raw.githubusercontent.com/waitinghir/jp-knowledge-king/main/data/n3-words.json',
+    local: localN3 as Word[],
+  },
+];
 
-/**
- * Load word bank with three-layer fallback:
- * 1. Fetch from remote (GitHub raw) — always latest
- * 2. AsyncStorage cache — last successful fetch
- * 3. Bundled local JSON — guaranteed fallback
- */
-export async function loadWords(): Promise<Word[]> {
-  // Layer 1: remote
+// Per-source fallback: remote if available, bundled local otherwise.
+async function fetchOrLocal(url: string, local: Word[]): Promise<Word[]> {
   try {
-    const res = await fetch(REMOTE_URL, { cache: 'no-store' });
+    const res = await fetch(url, { cache: 'no-store' });
     if (res.ok) {
       const data = await res.json() as Word[];
-      if (Array.isArray(data) && data.length > 0) {
-        await AsyncStorage.setItem(CACHE_KEY, JSON.stringify(data));
-        return data;
-      }
+      if (Array.isArray(data) && data.length > 0) return data;
     }
   } catch {
     // network error — fall through
   }
+  return local;
+}
 
-  // Layer 2: cached
-  try {
-    const raw = await AsyncStorage.getItem(CACHE_KEY);
-    if (raw) {
-      const data = JSON.parse(raw) as Word[];
-      if (Array.isArray(data) && data.length > 0) return data;
-    }
-  } catch {
-    // corrupt cache — fall through
-  }
-
-  // Layer 3: bundled local
-  return localWords as Word[];
+/**
+ * Load all word sources. Each source independently falls back to its
+ * bundled local JSON, so N3 words are always available even before
+ * n3-words.json is pushed to GitHub.
+ */
+export async function loadWords(): Promise<Word[]> {
+  const results = await Promise.all(SOURCES.map((s) => fetchOrLocal(s.url, s.local)));
+  return results.flat();
 }
