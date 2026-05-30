@@ -34,6 +34,14 @@ const strings = {
     levelN3: 'N3',
     levelAll: '全部',
 
+    // Leaderboard
+    leaderboardTab: '排行榜',
+    leaderboardTitle: '本週排行榜',
+    leaderboardSubtitle: '每週一重置',
+    leaderboardCalculating: '排名計算中',
+    leaderboardCalculatingHint: '本週打一場對戰即可上榜',
+    homeTab: '首頁',
+
     // Matching screen
     searching: (dots: string) => `尋找對手中${dots}`,
     matchingWait: '正在配對中，請稍候',
@@ -78,6 +86,14 @@ const strings = {
     levelN4: 'N4',
     levelN3: 'N3',
     levelAll: 'All',
+
+    // Leaderboard
+    leaderboardTab: 'Ranking',
+    leaderboardTitle: 'Weekly Ranking',
+    leaderboardSubtitle: 'Resets every Monday',
+    leaderboardCalculating: 'Calculating...',
+    leaderboardCalculatingHint: 'Play one battle to join this week\'s ranking',
+    homeTab: 'Home',
 
     // Matching screen
     searching: (dots: string) => `Finding opponent${dots}`,

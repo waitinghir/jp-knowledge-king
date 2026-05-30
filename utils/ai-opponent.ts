@@ -17,7 +17,7 @@ const NAME_POOL = [
 
 const AVATAR_COLORS = [
   '#E74C3C', '#3498DB', '#2ECC71', '#9B59B6',
-  '#F39C12', '#1ABC9C', '#E67E22', '#34495E',
+  '#F39C12', '#1ABC9C', '#E67E22', '#8E44AD',
 ];
 
 /**
