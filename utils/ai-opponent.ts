@@ -1,6 +1,6 @@
-import { AIOpponent, Question } from '../types';
+import { AIOpponent, BattleOutcome, Question } from '../types';
 
-// 30+ 台灣真人暱稱池
+// 55 暱稱池（台灣 + 英文）
 const NAME_POOL = [
   '小明', '阿華', '小美', '志明', '淑芬',
   '大雄', '靜香', '小夫', '胖虎', '小新',
@@ -9,6 +9,10 @@ const NAME_POOL = [
   '阿龍', '小琪', '建國', '玉蘭', '阿明',
   '小婷', '志偉', '秀芬', '阿雄', '小鳳',
   '建志', '淑華', '阿文', '小翠', '志強',
+  'Alex', 'Amy', 'Brian', 'Cindy', 'Daniel',
+  'Emily', 'Frank', 'Grace', 'Henry', 'Iris',
+  'Jason', 'Kelly', 'Leo', 'Maggie', 'Nathan',
+  'Olivia', 'Peter', 'Rachel', 'Sam', 'Tina',
 ];
 
 const AVATAR_COLORS = [
@@ -57,4 +61,22 @@ export function simulateAIAnswer(
  */
 export function randomDifficulty(): number {
   return 0.7 + Math.random() * 0.2;
+}
+
+/**
+ * Rubber-band difficulty: adjust AI strength based on recent outcomes.
+ * - 2+ consecutive losses → easy mode (0.50–0.65)
+ * - 2+ consecutive wins  → hard mode (0.85–0.95)
+ * - otherwise            → normal (0.70–0.85)
+ */
+export function adaptiveDifficulty(recentOutcomes: BattleOutcome[]): number {
+  const last = recentOutcomes.slice(-3);
+  const consecutiveLosses = [...last].reverse().findIndex((o) => o !== 'lose');
+  const consecutiveWins  = [...last].reverse().findIndex((o) => o !== 'win');
+  const loseStreak = consecutiveLosses === -1 ? last.length : consecutiveLosses;
+  const winStreak  = consecutiveWins  === -1 ? last.length : consecutiveWins;
+
+  if (loseStreak >= 2) return 0.50 + Math.random() * 0.15; // 0.50–0.65
+  if (winStreak  >= 2) return 0.85 + Math.random() * 0.10; // 0.85–0.95
+  return 0.70 + Math.random() * 0.15;                       // 0.70–0.85
 }

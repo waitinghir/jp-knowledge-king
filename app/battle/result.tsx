@@ -50,7 +50,7 @@ export default function ResultScreen() {
 
   useEffect(() => {
     // Save result to AsyncStorage
-    addBattleResult(result.playerTotalScore, result.outcome === 'win').then(setUpdatedPlayer);
+    addBattleResult(result.playerTotalScore, result.outcome).then(setUpdatedPlayer);
 
     // Play outcome sound (slight delay to let animation start)
     const delay = result.outcome === 'win' ? 300 : 200;

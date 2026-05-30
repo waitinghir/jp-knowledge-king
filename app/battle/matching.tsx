@@ -8,7 +8,7 @@ import {
   View,
 } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
-import { generateOpponent, randomDifficulty } from '../../utils/ai-opponent';
+import { generateOpponent, adaptiveDifficulty } from '../../utils/ai-opponent';
 import { loadPlayerData } from '../../utils/storage';
 import { useStrings } from '../../utils/i18n';
 import type { AIOpponent, WordLevel } from '../../types';
@@ -65,7 +65,7 @@ export default function MatchingScreen() {
     async function runMatch() {
       const playerData = await loadPlayerData();
       const opp = generateOpponent(playerData.level);
-      const difficulty = randomDifficulty();
+      const difficulty = adaptiveDifficulty(playerData.recentOutcomes ?? []);
 
       // Wait 1.2s to simulate "searching"
       await new Promise((r) => setTimeout(r, 1200));

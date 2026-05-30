@@ -77,6 +77,9 @@ export interface PlayerData {
   level: number;       // totalScore / 500, minimum 1
   gamesPlayed: number;
   wins: number;
+  recentOutcomes: BattleOutcome[]; // last 5 results, for adaptive difficulty
+  weeklyScore: number;             // score earned this week, resets every Monday
+  currentWeekId: string;           // Monday date of current week, e.g. "2026-05-11"
 }
 
 export const INITIAL_PLAYER_DATA: PlayerData = {
@@ -84,7 +87,33 @@ export const INITIAL_PLAYER_DATA: PlayerData = {
   level: 1,
   gamesPlayed: 0,
   wins: 0,
+  recentOutcomes: [],
+  weeklyScore: 0,
+  currentWeekId: '',
 };
+
+// ────────────────────────────────────────────────
+// 排行榜
+// ────────────────────────────────────────────────
+export interface StoredFakePlayer {
+  id: string;
+  name: string;
+  avatarColor: string;
+  baseScore: number; // score at time of first leaderboard view this week
+}
+
+export interface WeeklyLeaderboardState {
+  weekId: string;
+  fakePlayers: StoredFakePlayer[];
+}
+
+export interface LeaderboardEntry {
+  id: string;
+  name: string;
+  avatarColor: string;
+  score: number;
+  isPlayer: boolean;
+}
 
 export const SCORE_PER_LEVEL = 500;
 
