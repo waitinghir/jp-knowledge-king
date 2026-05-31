@@ -24,6 +24,8 @@ const NAME_POOL = [
   'Emily', 'Frank', 'Grace', 'Henry', 'Iris',
   'Jason', 'Kelly', 'Leo', 'Maggie', 'Nathan',
   'Olivia', 'Peter', 'Rachel', 'Sam', 'Tina',
+  'QuizKing', 'ProGamer', 'NinjaMode', 'DragonFist', 'ShadowFox',
+  '日文王', '天才', '影武者', '強', '龍二',
 ];
 
 const AVATAR_COLORS = [

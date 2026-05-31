@@ -1,6 +1,6 @@
 import { AIOpponent, BattleOutcome, Question } from '../types';
 
-// 55 暱稱池（台灣 + 英文）
+// 65 暱稱池（台灣 + 英文 + 遊戲感）
 const NAME_POOL = [
   '小明', '阿華', '小美', '志明', '淑芬',
   '大雄', '靜香', '小夫', '胖虎', '小新',
@@ -13,6 +13,8 @@ const NAME_POOL = [
   'Emily', 'Frank', 'Grace', 'Henry', 'Iris',
   'Jason', 'Kelly', 'Leo', 'Maggie', 'Nathan',
   'Olivia', 'Peter', 'Rachel', 'Sam', 'Tina',
+  'QuizKing', 'ProGamer', 'NinjaMode', 'DragonFist', 'ShadowFox',
+  '日文王', '天才', '影武者', '強', '龍二',
 ];
 
 const AVATAR_COLORS = [
