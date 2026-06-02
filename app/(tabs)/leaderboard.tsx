@@ -40,7 +40,7 @@ export default function LeaderboardScreen() {
         }
 
         const state = await getOrCreateLeaderboardState(weekId, weeklyScore);
-        const ranked = buildLeaderboard(state, weeklyScore);
+        const ranked = buildLeaderboard(state, weeklyScore, s.leaderboardMe);
         if (!cancelled) {
           setEntries(ranked);
           setHasPlayed(true);

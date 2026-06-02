@@ -174,7 +174,8 @@ export async function getOrCreateLeaderboardState(
 // ─────────────────────────────────────────────────────────────
 export function buildLeaderboard(
   state: WeeklyLeaderboardState,
-  weeklyScore: number
+  weeklyScore: number,
+  playerName: string = '你'
 ): LeaderboardEntry[] {
   const slotsPassed = getSlotsPassed();
 
@@ -188,7 +189,7 @@ export function buildLeaderboard(
 
   entries.push({
     id: 'player',
-    name: '你',
+    name: playerName,
     avatarColor: '#C41E3A',
     score: weeklyScore,
     isPlayer: true,

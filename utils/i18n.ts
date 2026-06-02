@@ -40,6 +40,7 @@ const strings = {
     leaderboardSubtitle: '每週一重置',
     leaderboardCalculating: '排名計算中',
     leaderboardCalculatingHint: '本週打一場對戰即可上榜',
+    leaderboardMe: '你',
     homeTab: '首頁',
 
     // Matching screen
@@ -93,6 +94,7 @@ const strings = {
     leaderboardSubtitle: 'Resets every Monday',
     leaderboardCalculating: 'Calculating...',
     leaderboardCalculatingHint: 'Play one battle to join this week\'s ranking',
+    leaderboardMe: 'Me',
     homeTab: 'Home',
 
     // Matching screen
