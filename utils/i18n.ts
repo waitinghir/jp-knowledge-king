@@ -32,6 +32,7 @@ const strings = {
     // Word level selector
     levelN4: 'N4',
     levelN3: 'N3',
+    levelLife: '生活',
     levelAll: '全部',
 
     // Leaderboard
@@ -86,6 +87,7 @@ const strings = {
     // Word level selector
     levelN4: 'N4',
     levelN3: 'N3',
+    levelLife: 'Life',
     levelAll: 'All',
 
     // Leaderboard

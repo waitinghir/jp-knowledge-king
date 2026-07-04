@@ -120,4 +120,4 @@ export const SCORE_PER_LEVEL = 500;
 // ────────────────────────────────────────────────
 // 難度選擇
 // ────────────────────────────────────────────────
-export type WordLevel = 'N4' | 'N3' | 'all';
+export type WordLevel = 'N4' | 'N3' | '生活' | 'all';

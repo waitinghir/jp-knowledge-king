@@ -7,7 +7,7 @@
     "meaning_en": "seasoned soft-boiled egg",
     "category": "餐廳/點餐",
     "category_en": "Restaurant",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "售票機",
       "理解",
@@ -27,7 +27,7 @@
     "meaning_en": "addition/extra",
     "category": "餐廳/點餐",
     "category_en": "Restaurant",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "介紹",
       "到達",
@@ -47,7 +47,7 @@
     "meaning_en": "sudden gust of wind",
     "category": "日常生活",
     "category_en": "Daily Life",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "追加、加點",
       "比較",
@@ -67,7 +67,7 @@
     "meaning_en": "maintenance/grooming",
     "category": "日常生活",
     "category_en": "Daily Life",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "稀有的、少見的",
       "複習",
@@ -87,7 +87,7 @@
     "meaning_en": "bangs/fringe",
     "category": "日常生活",
     "category_en": "Daily Life",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "追星活動",
       "找到",
@@ -107,7 +107,7 @@
     "meaning_en": "linking/integration",
     "category": "購物/藥妝",
     "category_en": "Shopping",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "申請",
       "拒絕",
@@ -127,7 +127,7 @@
     "meaning_en": "scanning/reading",
     "category": "購物/藥妝",
     "category_en": "Shopping",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "費用、帳單",
       "整理、保養",
@@ -147,7 +147,7 @@
     "meaning_en": "tax-free",
     "category": "購物/藥妝",
     "category_en": "Shopping",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "搬家",
       "瀏海",
@@ -167,7 +167,7 @@
     "meaning_en": "boiling",
     "category": "日常生活",
     "category_en": "Daily Life",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "收拾",
       "六樓",
@@ -187,7 +187,7 @@
     "meaning_en": "to boil (water)",
     "category": "日常生活",
     "category_en": "Daily Life",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "掃描、讀取",
       "畢業",
@@ -207,7 +207,7 @@
     "meaning_en": "drain",
     "category": "日常生活",
     "category_en": "Daily Life",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "裡面、深處",
       "追星活動",
@@ -227,7 +227,7 @@
     "meaning_en": "tourist spot",
     "category": "日常生活",
     "category_en": "Daily Life",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "整合、統合",
       "費用、帳單",
@@ -247,7 +247,7 @@
     "meaning_en": "nurse",
     "category": "日常生活",
     "category_en": "Daily Life",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "內向的",
       "打折",
@@ -267,7 +267,7 @@
     "meaning_en": "sixth floor",
     "category": "日常生活",
     "category_en": "Daily Life",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "報名",
       "練習",
@@ -287,7 +287,7 @@
     "meaning_en": "integration",
     "category": "職場",
     "category_en": "Workplace",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "觀光地、旅遊景點",
       "暫停營運",
@@ -307,7 +307,7 @@
     "meaning_en": "consolidation",
     "category": "職場",
     "category_en": "Workplace",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "護理師",
       "成長空間",
@@ -327,7 +327,7 @@
     "meaning_en": "to compare",
     "category": "日常生活",
     "category_en": "Daily Life",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "稀有的、少見的",
       "介紹",
@@ -347,7 +347,7 @@
     "meaning_en": "interior/back",
     "category": "餐廳/點餐",
     "category_en": "Restaurant",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "拒絕",
       "打折",
@@ -367,7 +367,7 @@
     "meaning_en": "silent mode",
     "category": "日常生活",
     "category_en": "Daily Life",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "遲到",
       "被找到",
@@ -387,7 +387,7 @@
     "meaning_en": "that helps/thank you",
     "category": "日常生活",
     "category_en": "Daily Life",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "壞掉",
       "取消",
@@ -407,7 +407,7 @@
     "meaning_en": "burglary (empty house)",
     "category": "日常生活",
     "category_en": "Daily Life",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "被找到",
       "六樓",
@@ -427,7 +427,7 @@
     "meaning_en": "health supplement",
     "category": "購物/藥妝",
     "category_en": "Shopping",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "申請",
       "整理、保養",
@@ -447,7 +447,7 @@
     "meaning_en": "excuse/pretext",
     "category": "日常生活",
     "category_en": "Daily Life",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "青春痘、痘痘",
       "暫停營運",
@@ -467,7 +467,7 @@
     "meaning_en": "introverted",
     "category": "社交",
     "category_en": "Social",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "退貨",
       "推薦",
@@ -487,7 +487,7 @@
     "meaning_en": "service suspension",
     "category": "交通",
     "category_en": "Transportation",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "報名",
       "六樓",
@@ -507,7 +507,7 @@
     "meaning_en": "rare/unusual",
     "category": "日常生活",
     "category_en": "Daily Life",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "燒開（水）",
       "洗衣",
@@ -527,7 +527,7 @@
     "meaning_en": "precious/valuable",
     "category": "日常生活",
     "category_en": "Daily Life",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "收拾",
       "退貨",
@@ -547,7 +547,7 @@
     "meaning_en": "room for growth",
     "category": "職場",
     "category_en": "Workplace",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "珍貴的",
       "比較",
@@ -567,7 +567,7 @@
     "meaning_en": "composure/margin",
     "category": "日常生活",
     "category_en": "Daily Life",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "瀏海",
       "溏心蛋（拉麵配料）",
@@ -587,7 +587,7 @@
     "meaning_en": "acne/pimple",
     "category": "日常生活",
     "category_en": "Daily Life",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "申請",
       "進步",
@@ -607,7 +607,7 @@
     "meaning_en": "mask",
     "category": "日常生活",
     "category_en": "Daily Life",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "出發",
       "換車",
@@ -627,7 +627,7 @@
     "meaning_en": "cup noodles",
     "category": "餐廳/點餐",
     "category_en": "Restaurant",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "煮沸",
       "練習",
@@ -647,7 +647,7 @@
     "meaning_en": "fan activities",
     "category": "社交",
     "category_en": "Social",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "比較",
       "忘記",
@@ -667,7 +667,7 @@
     "meaning_en": "to wipe the table",
     "category": "餐廳/點餐",
     "category_en": "Restaurant",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "成長空間",
       "破關、通關",
@@ -687,7 +687,7 @@
     "meaning_en": "ticket vending machine",
     "category": "交通",
     "category_en": "Transportation",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "淋濕",
       "掃描、讀取",
@@ -707,7 +707,7 @@
     "meaning_en": "information",
     "category": "職場",
     "category_en": "Workplace",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "申請",
       "護理師",
@@ -727,7 +727,7 @@
     "meaning_en": "inconvenient",
     "category": "日常生活",
     "category_en": "Daily Life",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "記住",
       "找到",
@@ -747,7 +747,7 @@
     "meaning_en": "walk/stroll",
     "category": "日常生活",
     "category_en": "Daily Life",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "比較",
       "口罩",
@@ -767,7 +767,7 @@
     "meaning_en": "to clear (a game)",
     "category": "日常生活",
     "category_en": "Daily Life",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "來得及",
       "售票機",
@@ -787,7 +787,7 @@
     "meaning_en": "bill/charge",
     "category": "日常生活",
     "category_en": "Daily Life",
-    "level": "N3",
+    "level": "生活",
     "distractors": [
       "送達",
       "練習",
@@ -797,6 +797,4006 @@
       "cancellation",
       "to forget",
       "drain"
+    ]
+  },
+  {
+    "id": "n3_001",
+    "kanji": "必要",
+    "kana": "ひつよう",
+    "meaning_zh": "必要、必需",
+    "meaning_en": "necessary",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "不要",
+      "要求",
+      "必死"
+    ],
+    "distractors_en": [
+      "unnecessary",
+      "demand",
+      "desperate"
+    ]
+  },
+  {
+    "id": "n3_002",
+    "kanji": "連絡",
+    "kana": "れんらく",
+    "meaning_zh": "聯絡、通知",
+    "meaning_en": "contact/communication",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "絡まる",
+      "連帯",
+      "接続"
+    ],
+    "distractors_en": [
+      "to tangle",
+      "solidarity",
+      "connection"
+    ]
+  },
+  {
+    "id": "n3_003",
+    "kanji": "確認",
+    "kana": "かくにん",
+    "meaning_zh": "確認、確定",
+    "meaning_en": "confirmation",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "確信",
+      "認識",
+      "認定"
+    ],
+    "distractors_en": [
+      "conviction",
+      "awareness",
+      "certification"
+    ]
+  },
+  {
+    "id": "n3_004",
+    "kanji": "相談",
+    "kana": "そうだん",
+    "meaning_zh": "商量、諮詢",
+    "meaning_en": "consultation",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "談話",
+      "相互",
+      "交渉"
+    ],
+    "distractors_en": [
+      "conversation",
+      "mutual",
+      "negotiation"
+    ]
+  },
+  {
+    "id": "n3_005",
+    "kanji": "返事",
+    "kana": "へんじ",
+    "meaning_zh": "回覆、回答",
+    "meaning_en": "reply/answer",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "返金",
+      "返却",
+      "事前"
+    ],
+    "distractors_en": [
+      "refund",
+      "return",
+      "in advance"
+    ]
+  },
+  {
+    "id": "n3_006",
+    "kanji": "内容",
+    "kana": "ないよう",
+    "meaning_zh": "內容",
+    "meaning_en": "content/details",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "外容",
+      "容量",
+      "用途"
+    ],
+    "distractors_en": [
+      "outer appearance",
+      "capacity",
+      "usage"
+    ]
+  },
+  {
+    "id": "n3_007",
+    "kanji": "目的",
+    "kana": "もくてき",
+    "meaning_zh": "目的",
+    "meaning_en": "purpose/goal",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "目標",
+      "目安",
+      "的確"
+    ],
+    "distractors_en": [
+      "target",
+      "estimate",
+      "accurate"
+    ]
+  },
+  {
+    "id": "n3_008",
+    "kanji": "理由",
+    "kana": "りゆう",
+    "meaning_zh": "理由、原因",
+    "meaning_en": "reason",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "理解",
+      "由来",
+      "原因"
+    ],
+    "distractors_en": [
+      "understanding",
+      "origin",
+      "cause"
+    ]
+  },
+  {
+    "id": "n3_009",
+    "kanji": "方法",
+    "kana": "ほうほう",
+    "meaning_zh": "方法",
+    "meaning_en": "method/way",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "方向",
+      "方式",
+      "手法"
+    ],
+    "distractors_en": [
+      "direction",
+      "style",
+      "technique"
+    ]
+  },
+  {
+    "id": "n3_010",
+    "kanji": "場合",
+    "kana": "ばあい",
+    "meaning_zh": "情況、場合",
+    "meaning_en": "case/situation",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "場所",
+      "状況",
+      "機会"
+    ],
+    "distractors_en": [
+      "place",
+      "situation",
+      "opportunity"
+    ]
+  },
+  {
+    "id": "n3_011",
+    "kanji": "普通",
+    "kana": "ふつう",
+    "meaning_zh": "普通、一般",
+    "meaning_en": "ordinary/normal",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "特別",
+      "通常",
+      "平均"
+    ],
+    "distractors_en": [
+      "special",
+      "usual",
+      "average"
+    ]
+  },
+  {
+    "id": "n3_012",
+    "kanji": "特別",
+    "kana": "とくべつ",
+    "meaning_zh": "特別",
+    "meaning_en": "special",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "普通",
+      "特定",
+      "別々"
+    ],
+    "distractors_en": [
+      "ordinary",
+      "specific",
+      "separate"
+    ]
+  },
+  {
+    "id": "n3_013",
+    "kanji": "全体",
+    "kana": "ぜんたい",
+    "meaning_zh": "整體、全部",
+    "meaning_en": "whole/entirety",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "全員",
+      "全部",
+      "体全"
+    ],
+    "distractors_en": [
+      "all members",
+      "everything",
+      "whole body"
+    ]
+  },
+  {
+    "id": "n3_014",
+    "kanji": "様子",
+    "kana": "ようす",
+    "meaning_zh": "樣子、狀況",
+    "meaning_en": "state/appearance",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "態度",
+      "状態",
+      "見た目"
+    ],
+    "distractors_en": [
+      "attitude",
+      "condition",
+      "appearance"
+    ]
+  },
+  {
+    "id": "n3_015",
+    "kanji": "代わり",
+    "kana": "かわり",
+    "meaning_zh": "代替、替換",
+    "meaning_en": "substitute/replacement",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "替え",
+      "交代",
+      "代表"
+    ],
+    "distractors_en": [
+      "spare",
+      "rotation",
+      "representative"
+    ]
+  },
+  {
+    "id": "n3_016",
+    "kanji": "気分",
+    "kana": "きぶん",
+    "meaning_zh": "心情、氣氛",
+    "meaning_en": "mood/feeling",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "気持ち",
+      "雰囲気",
+      "感情"
+    ],
+    "distractors_en": [
+      "feeling",
+      "atmosphere",
+      "emotion"
+    ]
+  },
+  {
+    "id": "n3_017",
+    "kanji": "生活",
+    "kana": "せいかつ",
+    "meaning_zh": "生活",
+    "meaning_en": "daily life/living",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "生命",
+      "活動",
+      "生存"
+    ],
+    "distractors_en": [
+      "life/living thing",
+      "activity",
+      "survival"
+    ]
+  },
+  {
+    "id": "n3_018",
+    "kanji": "習慣",
+    "kana": "しゅうかん",
+    "meaning_zh": "習慣",
+    "meaning_en": "habit/custom",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "習得",
+      "慣れ",
+      "風習"
+    ],
+    "distractors_en": [
+      "acquisition",
+      "to get used to",
+      "custom/practice"
+    ]
+  },
+  {
+    "id": "n3_019",
+    "kanji": "経験",
+    "kana": "けいけん",
+    "meaning_zh": "經驗",
+    "meaning_en": "experience",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "体験",
+      "経歴",
+      "経過"
+    ],
+    "distractors_en": [
+      "hands-on experience",
+      "career history",
+      "passage of time"
+    ]
+  },
+  {
+    "id": "n3_020",
+    "kanji": "気づく",
+    "kana": "きづく",
+    "meaning_zh": "注意到、發覺",
+    "meaning_en": "to notice/realize",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "気にする",
+      "気になる",
+      "感じる"
+    ],
+    "distractors_en": [
+      "to mind/care",
+      "to be concerned",
+      "to feel"
+    ]
+  },
+  {
+    "id": "n3_021",
+    "kanji": "増える",
+    "kana": "ふえる",
+    "meaning_zh": "增加",
+    "meaning_en": "to increase",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "減る",
+      "増やす",
+      "多い"
+    ],
+    "distractors_en": [
+      "to decrease",
+      "to increase (transitive)",
+      "many/much"
+    ]
+  },
+  {
+    "id": "n3_022",
+    "kanji": "減る",
+    "kana": "へる",
+    "meaning_zh": "減少",
+    "meaning_en": "to decrease",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "増える",
+      "減らす",
+      "少ない"
+    ],
+    "distractors_en": [
+      "to increase",
+      "to reduce",
+      "few/little"
+    ]
+  },
+  {
+    "id": "n3_023",
+    "kanji": "続ける",
+    "kana": "つづける",
+    "meaning_zh": "繼續",
+    "meaning_en": "to continue",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "続く",
+      "続き",
+      "継続"
+    ],
+    "distractors_en": [
+      "to continue (intrans.)",
+      "continuation",
+      "continuation"
+    ]
+  },
+  {
+    "id": "n3_024",
+    "kanji": "決める",
+    "kana": "きめる",
+    "meaning_zh": "決定",
+    "meaning_en": "to decide",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "決まる",
+      "決断",
+      "解決"
+    ],
+    "distractors_en": [
+      "to be decided",
+      "decision",
+      "resolution"
+    ]
+  },
+  {
+    "id": "n3_025",
+    "kanji": "比べる",
+    "kana": "くらべる",
+    "meaning_zh": "比較",
+    "meaning_en": "to compare",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "比率",
+      "対比",
+      "比例"
+    ],
+    "distractors_en": [
+      "ratio",
+      "contrast",
+      "proportion"
+    ]
+  },
+  {
+    "id": "n3_026",
+    "kanji": "変わる",
+    "kana": "かわる",
+    "meaning_zh": "改變",
+    "meaning_en": "to change",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "変える",
+      "変化",
+      "替わる"
+    ],
+    "distractors_en": [
+      "to change (trans.)",
+      "change",
+      "to be replaced"
+    ]
+  },
+  {
+    "id": "n3_027",
+    "kanji": "印象",
+    "kana": "いんしょう",
+    "meaning_zh": "印象",
+    "meaning_en": "impression",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "印刷",
+      "象徴",
+      "感想"
+    ],
+    "distractors_en": [
+      "printing",
+      "symbol",
+      "thoughts/comments"
+    ]
+  },
+  {
+    "id": "n3_028",
+    "kanji": "以上",
+    "kana": "いじょう",
+    "meaning_zh": "以上、超過",
+    "meaning_en": "above/more than",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "以下",
+      "以内",
+      "上記"
+    ],
+    "distractors_en": [
+      "below/less than",
+      "within",
+      "above-mentioned"
+    ]
+  },
+  {
+    "id": "n3_029",
+    "kanji": "以下",
+    "kana": "いか",
+    "meaning_zh": "以下、不超過",
+    "meaning_en": "below/less than",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "以上",
+      "以外",
+      "下記"
+    ],
+    "distractors_en": [
+      "above/more than",
+      "other than",
+      "below-mentioned"
+    ]
+  },
+  {
+    "id": "n3_030",
+    "kanji": "確かめる",
+    "kana": "たしかめる",
+    "meaning_zh": "確認、查明",
+    "meaning_en": "to verify/confirm",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "確認",
+      "確信",
+      "確かに"
+    ],
+    "distractors_en": [
+      "confirmation",
+      "conviction",
+      "certainly"
+    ]
+  },
+  {
+    "id": "n3_031",
+    "kanji": "責任",
+    "kana": "せきにん",
+    "meaning_zh": "責任",
+    "meaning_en": "responsibility",
+    "category": "仕事",
+    "category_en": "Work",
+    "level": "N3",
+    "distractors": [
+      "義務",
+      "役割",
+      "担当"
+    ],
+    "distractors_en": [
+      "obligation",
+      "role",
+      "in charge"
+    ]
+  },
+  {
+    "id": "n3_032",
+    "kanji": "協力",
+    "kana": "きょうりょく",
+    "meaning_zh": "合作、協助",
+    "meaning_en": "cooperation",
+    "category": "仕事",
+    "category_en": "Work",
+    "level": "N3",
+    "distractors": [
+      "協議",
+      "力作",
+      "共同"
+    ],
+    "distractors_en": [
+      "discussion",
+      "powerful work",
+      "joint"
+    ]
+  },
+  {
+    "id": "n3_033",
+    "kanji": "管理",
+    "kana": "かんり",
+    "meaning_zh": "管理",
+    "meaning_en": "management",
+    "category": "仕事",
+    "category_en": "Work",
+    "level": "N3",
+    "distractors": [
+      "経営",
+      "運営",
+      "制御"
+    ],
+    "distractors_en": [
+      "business management",
+      "operation",
+      "control"
+    ]
+  },
+  {
+    "id": "n3_034",
+    "kanji": "計画",
+    "kana": "けいかく",
+    "meaning_zh": "計畫",
+    "meaning_en": "plan",
+    "category": "仕事",
+    "category_en": "Work",
+    "level": "N3",
+    "distractors": [
+      "企画",
+      "予定",
+      "計算"
+    ],
+    "distractors_en": [
+      "project/planning",
+      "schedule",
+      "calculation"
+    ]
+  },
+  {
+    "id": "n3_035",
+    "kanji": "努力",
+    "kana": "どりょく",
+    "meaning_zh": "努力",
+    "meaning_en": "effort",
+    "category": "仕事",
+    "category_en": "Work",
+    "level": "N3",
+    "distractors": [
+      "苦労",
+      "頑張り",
+      "精進"
+    ],
+    "distractors_en": [
+      "hardship",
+      "perseverance",
+      "devotion"
+    ]
+  },
+  {
+    "id": "n3_036",
+    "kanji": "成功",
+    "kana": "せいこう",
+    "meaning_zh": "成功",
+    "meaning_en": "success",
+    "category": "仕事",
+    "category_en": "Work",
+    "level": "N3",
+    "distractors": [
+      "失敗",
+      "達成",
+      "完成"
+    ],
+    "distractors_en": [
+      "failure",
+      "achievement",
+      "completion"
+    ]
+  },
+  {
+    "id": "n3_037",
+    "kanji": "失敗",
+    "kana": "しっぱい",
+    "meaning_zh": "失敗",
+    "meaning_en": "failure",
+    "category": "仕事",
+    "category_en": "Work",
+    "level": "N3",
+    "distractors": [
+      "成功",
+      "間違い",
+      "ミス"
+    ],
+    "distractors_en": [
+      "success",
+      "mistake",
+      "miss/error"
+    ]
+  },
+  {
+    "id": "n3_038",
+    "kanji": "改善",
+    "kana": "かいぜん",
+    "meaning_zh": "改善、改良",
+    "meaning_en": "improvement",
+    "category": "仕事",
+    "category_en": "Work",
+    "level": "N3",
+    "distractors": [
+      "改革",
+      "改正",
+      "向上"
+    ],
+    "distractors_en": [
+      "reform",
+      "revision",
+      "improvement"
+    ]
+  },
+  {
+    "id": "n3_039",
+    "kanji": "提案",
+    "kana": "ていあん",
+    "meaning_zh": "提案、建議",
+    "meaning_en": "proposal/suggestion",
+    "category": "仕事",
+    "category_en": "Work",
+    "level": "N3",
+    "distractors": [
+      "提出",
+      "意見",
+      "申請"
+    ],
+    "distractors_en": [
+      "submission",
+      "opinion",
+      "application"
+    ]
+  },
+  {
+    "id": "n3_040",
+    "kanji": "申し込む",
+    "kana": "もうしこむ",
+    "meaning_zh": "申請、報名",
+    "meaning_en": "to apply/sign up",
+    "category": "仕事",
+    "category_en": "Work",
+    "level": "N3",
+    "distractors": [
+      "申請",
+      "登録",
+      "届け出る"
+    ],
+    "distractors_en": [
+      "application",
+      "registration",
+      "to report/notify"
+    ]
+  },
+  {
+    "id": "n3_041",
+    "kanji": "断る",
+    "kana": "ことわる",
+    "meaning_zh": "拒絕",
+    "meaning_en": "to refuse/decline",
+    "category": "仕事",
+    "category_en": "Work",
+    "level": "N3",
+    "distractors": [
+      "拒否",
+      "お断り",
+      "辞退"
+    ],
+    "distractors_en": [
+      "rejection",
+      "refusal",
+      "declining"
+    ]
+  },
+  {
+    "id": "n3_042",
+    "kanji": "認める",
+    "kana": "みとめる",
+    "meaning_zh": "承認、認可",
+    "meaning_en": "to acknowledge/admit",
+    "category": "仕事",
+    "category_en": "Work",
+    "level": "N3",
+    "distractors": [
+      "認識",
+      "許可",
+      "確認"
+    ],
+    "distractors_en": [
+      "recognition",
+      "permission",
+      "confirmation"
+    ]
+  },
+  {
+    "id": "n3_043",
+    "kanji": "報告",
+    "kana": "ほうこく",
+    "meaning_zh": "報告",
+    "meaning_en": "report",
+    "category": "仕事",
+    "category_en": "Work",
+    "level": "N3",
+    "distractors": [
+      "連絡",
+      "相談",
+      "発表"
+    ],
+    "distractors_en": [
+      "contact",
+      "consultation",
+      "presentation"
+    ]
+  },
+  {
+    "id": "n3_044",
+    "kanji": "参加",
+    "kana": "さんか",
+    "meaning_zh": "參加",
+    "meaning_en": "participation",
+    "category": "仕事",
+    "category_en": "Work",
+    "level": "N3",
+    "distractors": [
+      "出席",
+      "加入",
+      "参加者"
+    ],
+    "distractors_en": [
+      "attendance",
+      "joining",
+      "participant"
+    ]
+  },
+  {
+    "id": "n3_045",
+    "kanji": "担当",
+    "kana": "たんとう",
+    "meaning_zh": "負責、主責",
+    "meaning_en": "in charge/assigned to",
+    "category": "仕事",
+    "category_en": "Work",
+    "level": "N3",
+    "distractors": [
+      "責任",
+      "役割",
+      "担う"
+    ],
+    "distractors_en": [
+      "responsibility",
+      "role",
+      "to bear/shoulder"
+    ]
+  },
+  {
+    "id": "n3_046",
+    "kanji": "期限",
+    "kana": "きげん",
+    "meaning_zh": "期限、截止日",
+    "meaning_en": "deadline",
+    "category": "仕事",
+    "category_en": "Work",
+    "level": "N3",
+    "distractors": [
+      "期間",
+      "期日",
+      "締め切り"
+    ],
+    "distractors_en": [
+      "period",
+      "date",
+      "deadline"
+    ]
+  },
+  {
+    "id": "n3_047",
+    "kanji": "実際",
+    "kana": "じっさい",
+    "meaning_zh": "實際上",
+    "meaning_en": "actually/in reality",
+    "category": "仕事",
+    "category_en": "Work",
+    "level": "N3",
+    "distractors": [
+      "実は",
+      "現実",
+      "実情"
+    ],
+    "distractors_en": [
+      "actually",
+      "reality",
+      "actual situation"
+    ]
+  },
+  {
+    "id": "n3_048",
+    "kanji": "完成",
+    "kana": "かんせい",
+    "meaning_zh": "完成",
+    "meaning_en": "completion",
+    "category": "仕事",
+    "category_en": "Work",
+    "level": "N3",
+    "distractors": [
+      "完了",
+      "達成",
+      "完璧"
+    ],
+    "distractors_en": [
+      "completion",
+      "achievement",
+      "perfect"
+    ]
+  },
+  {
+    "id": "n3_049",
+    "kanji": "実現",
+    "kana": "じつげん",
+    "meaning_zh": "實現",
+    "meaning_en": "realization/achievement",
+    "category": "仕事",
+    "category_en": "Work",
+    "level": "N3",
+    "distractors": [
+      "達成",
+      "成就",
+      "現実"
+    ],
+    "distractors_en": [
+      "achievement",
+      "accomplishment",
+      "reality"
+    ]
+  },
+  {
+    "id": "n3_050",
+    "kanji": "進む",
+    "kana": "すすむ",
+    "meaning_zh": "前進、進展",
+    "meaning_en": "to advance/proceed",
+    "category": "仕事",
+    "category_en": "Work",
+    "level": "N3",
+    "distractors": [
+      "進める",
+      "前進",
+      "発展"
+    ],
+    "distractors_en": [
+      "to move forward (trans.)",
+      "advance",
+      "development"
+    ]
+  },
+  {
+    "id": "n3_051",
+    "kanji": "驚く",
+    "kana": "おどろく",
+    "meaning_zh": "驚訝",
+    "meaning_en": "to be surprised",
+    "category": "感情",
+    "category_en": "Emotions",
+    "level": "N3",
+    "distractors": [
+      "びっくり",
+      "驚き",
+      "驚嘆"
+    ],
+    "distractors_en": [
+      "startled",
+      "surprise",
+      "amazement"
+    ]
+  },
+  {
+    "id": "n3_052",
+    "kanji": "困る",
+    "kana": "こまる",
+    "meaning_zh": "感到困擾",
+    "meaning_en": "to be troubled/at a loss",
+    "category": "感情",
+    "category_en": "Emotions",
+    "level": "N3",
+    "distractors": [
+      "悩む",
+      "苦しむ",
+      "迷う"
+    ],
+    "distractors_en": [
+      "to worry",
+      "to suffer",
+      "to hesitate"
+    ]
+  },
+  {
+    "id": "n3_053",
+    "kanji": "喜ぶ",
+    "kana": "よろこぶ",
+    "meaning_zh": "高興、喜悅",
+    "meaning_en": "to be glad/happy",
+    "category": "感情",
+    "category_en": "Emotions",
+    "level": "N3",
+    "distractors": [
+      "嬉しい",
+      "楽しむ",
+      "満足"
+    ],
+    "distractors_en": [
+      "happy",
+      "to enjoy",
+      "satisfaction"
+    ]
+  },
+  {
+    "id": "n3_054",
+    "kanji": "悲しむ",
+    "kana": "かなしむ",
+    "meaning_zh": "悲傷",
+    "meaning_en": "to be sad",
+    "category": "感情",
+    "category_en": "Emotions",
+    "level": "N3",
+    "distractors": [
+      "悲しい",
+      "泣く",
+      "辛い"
+    ],
+    "distractors_en": [
+      "sad",
+      "to cry",
+      "painful/hard"
+    ]
+  },
+  {
+    "id": "n3_055",
+    "kanji": "怒る",
+    "kana": "おこる",
+    "meaning_zh": "生氣、憤怒",
+    "meaning_en": "to get angry",
+    "category": "感情",
+    "category_en": "Emotions",
+    "level": "N3",
+    "distractors": [
+      "叱る",
+      "怒り",
+      "腹立つ"
+    ],
+    "distractors_en": [
+      "to scold",
+      "anger",
+      "to get irritated"
+    ]
+  },
+  {
+    "id": "n3_056",
+    "kanji": "心配",
+    "kana": "しんぱい",
+    "meaning_zh": "擔心、擔憂",
+    "meaning_en": "worry/concern",
+    "category": "感情",
+    "category_en": "Emotions",
+    "level": "N3",
+    "distractors": [
+      "不安",
+      "気にする",
+      "悩み"
+    ],
+    "distractors_en": [
+      "anxiety",
+      "to worry/mind",
+      "worry/trouble"
+    ]
+  },
+  {
+    "id": "n3_057",
+    "kanji": "緊張",
+    "kana": "きんちょう",
+    "meaning_zh": "緊張",
+    "meaning_en": "tension/nervousness",
+    "category": "感情",
+    "category_en": "Emotions",
+    "level": "N3",
+    "distractors": [
+      "不安",
+      "心配",
+      "焦り"
+    ],
+    "distractors_en": [
+      "anxiety",
+      "worry",
+      "impatience"
+    ]
+  },
+  {
+    "id": "n3_058",
+    "kanji": "安心",
+    "kana": "あんしん",
+    "meaning_zh": "放心、安心",
+    "meaning_en": "relief/reassurance",
+    "category": "感情",
+    "category_en": "Emotions",
+    "level": "N3",
+    "distractors": [
+      "安全",
+      "安定",
+      "落ち着く"
+    ],
+    "distractors_en": [
+      "safety",
+      "stability",
+      "to calm down"
+    ]
+  },
+  {
+    "id": "n3_059",
+    "kanji": "興味",
+    "kana": "きょうみ",
+    "meaning_zh": "興趣",
+    "meaning_en": "interest",
+    "category": "感情",
+    "category_en": "Emotions",
+    "level": "N3",
+    "distractors": [
+      "関心",
+      "趣味",
+      "好奇心"
+    ],
+    "distractors_en": [
+      "concern/interest",
+      "hobby",
+      "curiosity"
+    ]
+  },
+  {
+    "id": "n3_060",
+    "kanji": "満足",
+    "kana": "まんぞく",
+    "meaning_zh": "滿足",
+    "meaning_en": "satisfaction",
+    "category": "感情",
+    "category_en": "Emotions",
+    "level": "N3",
+    "distractors": [
+      "充実",
+      "十分",
+      "納得"
+    ],
+    "distractors_en": [
+      "fulfillment",
+      "sufficient",
+      "convinced"
+    ]
+  },
+  {
+    "id": "n3_061",
+    "kanji": "我慢",
+    "kana": "がまん",
+    "meaning_zh": "忍耐、克制",
+    "meaning_en": "patience/endurance",
+    "category": "感情",
+    "category_en": "Emotions",
+    "level": "N3",
+    "distractors": [
+      "忍耐",
+      "辛抱",
+      "耐える"
+    ],
+    "distractors_en": [
+      "patience",
+      "perseverance",
+      "to endure"
+    ]
+  },
+  {
+    "id": "n3_062",
+    "kanji": "後悔",
+    "kana": "こうかい",
+    "meaning_zh": "後悔",
+    "meaning_en": "regret",
+    "category": "感情",
+    "category_en": "Emotions",
+    "level": "N3",
+    "distractors": [
+      "反省",
+      "悔やむ",
+      "残念"
+    ],
+    "distractors_en": [
+      "self-reflection",
+      "to regret",
+      "disappointment"
+    ]
+  },
+  {
+    "id": "n3_063",
+    "kanji": "不安",
+    "kana": "ふあん",
+    "meaning_zh": "不安、焦慮",
+    "meaning_en": "anxiety/unease",
+    "category": "感情",
+    "category_en": "Emotions",
+    "level": "N3",
+    "distractors": [
+      "心配",
+      "緊張",
+      "恐れ"
+    ],
+    "distractors_en": [
+      "worry",
+      "nervousness",
+      "fear"
+    ]
+  },
+  {
+    "id": "n3_064",
+    "kanji": "期待",
+    "kana": "きたい",
+    "meaning_zh": "期待",
+    "meaning_en": "expectation/hope",
+    "category": "感情",
+    "category_en": "Emotions",
+    "level": "N3",
+    "distractors": [
+      "希望",
+      "楽しみ",
+      "予想"
+    ],
+    "distractors_en": [
+      "hope",
+      "looking forward to",
+      "expectation"
+    ]
+  },
+  {
+    "id": "n3_065",
+    "kanji": "感謝",
+    "kana": "かんしゃ",
+    "meaning_zh": "感謝",
+    "meaning_en": "gratitude/appreciation",
+    "category": "感情",
+    "category_en": "Emotions",
+    "level": "N3",
+    "distractors": [
+      "お礼",
+      "ありがとう",
+      "謝意"
+    ],
+    "distractors_en": [
+      "thanks",
+      "thank you",
+      "expression of gratitude"
+    ]
+  },
+  {
+    "id": "n3_066",
+    "kanji": "信頼",
+    "kana": "しんらい",
+    "meaning_zh": "信賴",
+    "meaning_en": "trust",
+    "category": "感情",
+    "category_en": "Emotions",
+    "level": "N3",
+    "distractors": [
+      "信用",
+      "信じる",
+      "頼る"
+    ],
+    "distractors_en": [
+      "credit/trust",
+      "to believe",
+      "to rely on"
+    ]
+  },
+  {
+    "id": "n3_067",
+    "kanji": "残念",
+    "kana": "ざんねん",
+    "meaning_zh": "遺憾、可惜",
+    "meaning_en": "disappointment/regret",
+    "category": "感情",
+    "category_en": "Emotions",
+    "level": "N3",
+    "distractors": [
+      "後悔",
+      "惜しい",
+      "悲しい"
+    ],
+    "distractors_en": [
+      "regret",
+      "a pity/waste",
+      "sad"
+    ]
+  },
+  {
+    "id": "n3_068",
+    "kanji": "自信",
+    "kana": "じしん",
+    "meaning_zh": "自信",
+    "meaning_en": "self-confidence",
+    "category": "感情",
+    "category_en": "Emotions",
+    "level": "N3",
+    "distractors": [
+      "自覚",
+      "自尊",
+      "信念"
+    ],
+    "distractors_en": [
+      "self-awareness",
+      "self-respect",
+      "belief/conviction"
+    ]
+  },
+  {
+    "id": "n3_069",
+    "kanji": "恥ずかしい",
+    "kana": "はずかしい",
+    "meaning_zh": "害羞、難為情",
+    "meaning_en": "embarrassing/shy",
+    "category": "感情",
+    "category_en": "Emotions",
+    "level": "N3",
+    "distractors": [
+      "照れる",
+      "恥じる",
+      "はにかむ"
+    ],
+    "distractors_en": [
+      "to be shy",
+      "to be ashamed",
+      "to be bashful"
+    ]
+  },
+  {
+    "id": "n3_070",
+    "kanji": "寂しい",
+    "kana": "さびしい",
+    "meaning_zh": "寂寞、孤單",
+    "meaning_en": "lonely",
+    "category": "感情",
+    "category_en": "Emotions",
+    "level": "N3",
+    "distractors": [
+      "孤独",
+      "一人",
+      "淋しい"
+    ],
+    "distractors_en": [
+      "loneliness",
+      "alone",
+      "lonely (alt. kanji)"
+    ]
+  },
+  {
+    "id": "n3_071",
+    "kanji": "事故",
+    "kana": "じこ",
+    "meaning_zh": "事故、意外",
+    "meaning_en": "accident",
+    "category": "社会",
+    "category_en": "Society",
+    "level": "N3",
+    "distractors": [
+      "事件",
+      "災害",
+      "トラブル"
+    ],
+    "distractors_en": [
+      "incident",
+      "disaster",
+      "trouble"
+    ]
+  },
+  {
+    "id": "n3_072",
+    "kanji": "事件",
+    "kana": "じけん",
+    "meaning_zh": "事件",
+    "meaning_en": "incident/case",
+    "category": "社会",
+    "category_en": "Society",
+    "level": "N3",
+    "distractors": [
+      "事故",
+      "問題",
+      "出来事"
+    ],
+    "distractors_en": [
+      "accident",
+      "problem",
+      "event"
+    ]
+  },
+  {
+    "id": "n3_073",
+    "kanji": "政府",
+    "kana": "せいふ",
+    "meaning_zh": "政府",
+    "meaning_en": "government",
+    "category": "社会",
+    "category_en": "Society",
+    "level": "N3",
+    "distractors": [
+      "政治",
+      "行政",
+      "国家"
+    ],
+    "distractors_en": [
+      "politics",
+      "administration",
+      "state/nation"
+    ]
+  },
+  {
+    "id": "n3_074",
+    "kanji": "経済",
+    "kana": "けいざい",
+    "meaning_zh": "經濟",
+    "meaning_en": "economy",
+    "category": "社会",
+    "category_en": "Society",
+    "level": "N3",
+    "distractors": [
+      "景気",
+      "財政",
+      "金融"
+    ],
+    "distractors_en": [
+      "economic conditions",
+      "public finance",
+      "finance"
+    ]
+  },
+  {
+    "id": "n3_075",
+    "kanji": "環境",
+    "kana": "かんきょう",
+    "meaning_zh": "環境",
+    "meaning_en": "environment",
+    "category": "社会",
+    "category_en": "Society",
+    "level": "N3",
+    "distractors": [
+      "自然",
+      "周囲",
+      "状況"
+    ],
+    "distractors_en": [
+      "nature",
+      "surroundings",
+      "situation"
+    ]
+  },
+  {
+    "id": "n3_076",
+    "kanji": "解決",
+    "kana": "かいけつ",
+    "meaning_zh": "解決",
+    "meaning_en": "solution/resolution",
+    "category": "社会",
+    "category_en": "Society",
+    "level": "N3",
+    "distractors": [
+      "処理",
+      "対処",
+      "克服"
+    ],
+    "distractors_en": [
+      "processing",
+      "dealing with",
+      "overcoming"
+    ]
+  },
+  {
+    "id": "n3_077",
+    "kanji": "意見",
+    "kana": "いけん",
+    "meaning_zh": "意見、看法",
+    "meaning_en": "opinion",
+    "category": "社会",
+    "category_en": "Society",
+    "level": "N3",
+    "distractors": [
+      "考え",
+      "見解",
+      "主張"
+    ],
+    "distractors_en": [
+      "thought/idea",
+      "view",
+      "claim/assertion"
+    ]
+  },
+  {
+    "id": "n3_078",
+    "kanji": "賛成",
+    "kana": "さんせい",
+    "meaning_zh": "贊成、同意",
+    "meaning_en": "agreement/approval",
+    "category": "社会",
+    "category_en": "Society",
+    "level": "N3",
+    "distractors": [
+      "反対",
+      "同意",
+      "支持"
+    ],
+    "distractors_en": [
+      "opposition",
+      "consent",
+      "support"
+    ]
+  },
+  {
+    "id": "n3_079",
+    "kanji": "反対",
+    "kana": "はんたい",
+    "meaning_zh": "反對",
+    "meaning_en": "opposition",
+    "category": "社会",
+    "category_en": "Society",
+    "level": "N3",
+    "distractors": [
+      "賛成",
+      "拒否",
+      "否定"
+    ],
+    "distractors_en": [
+      "agreement",
+      "rejection",
+      "denial"
+    ]
+  },
+  {
+    "id": "n3_080",
+    "kanji": "危険",
+    "kana": "きけん",
+    "meaning_zh": "危險",
+    "meaning_en": "danger",
+    "category": "社会",
+    "category_en": "Society",
+    "level": "N3",
+    "distractors": [
+      "安全",
+      "リスク",
+      "恐れ"
+    ],
+    "distractors_en": [
+      "safety",
+      "risk",
+      "fear"
+    ]
+  },
+  {
+    "id": "n3_081",
+    "kanji": "影響",
+    "kana": "えいきょう",
+    "meaning_zh": "影響",
+    "meaning_en": "influence/effect",
+    "category": "社会",
+    "category_en": "Society",
+    "level": "N3",
+    "distractors": [
+      "効果",
+      "作用",
+      "結果"
+    ],
+    "distractors_en": [
+      "effect",
+      "action/effect",
+      "result"
+    ]
+  },
+  {
+    "id": "n3_082",
+    "kanji": "原因",
+    "kana": "げんいん",
+    "meaning_zh": "原因",
+    "meaning_en": "cause",
+    "category": "社会",
+    "category_en": "Society",
+    "level": "N3",
+    "distractors": [
+      "理由",
+      "根拠",
+      "要因"
+    ],
+    "distractors_en": [
+      "reason",
+      "basis",
+      "factor"
+    ]
+  },
+  {
+    "id": "n3_083",
+    "kanji": "結果",
+    "kana": "けっか",
+    "meaning_zh": "結果",
+    "meaning_en": "result/outcome",
+    "category": "社会",
+    "category_en": "Society",
+    "level": "N3",
+    "distractors": [
+      "成果",
+      "影響",
+      "成績"
+    ],
+    "distractors_en": [
+      "achievement",
+      "influence",
+      "grade/result"
+    ]
+  },
+  {
+    "id": "n3_084",
+    "kanji": "変化",
+    "kana": "へんか",
+    "meaning_zh": "變化、變遷",
+    "meaning_en": "change",
+    "category": "社会",
+    "category_en": "Society",
+    "level": "N3",
+    "distractors": [
+      "変更",
+      "変わる",
+      "移行"
+    ],
+    "distractors_en": [
+      "change/revision",
+      "to change",
+      "transition"
+    ]
+  },
+  {
+    "id": "n3_085",
+    "kanji": "発展",
+    "kana": "はってん",
+    "meaning_zh": "發展",
+    "meaning_en": "development/growth",
+    "category": "社会",
+    "category_en": "Society",
+    "level": "N3",
+    "distractors": [
+      "発達",
+      "進歩",
+      "成長"
+    ],
+    "distractors_en": [
+      "development",
+      "progress",
+      "growth"
+    ]
+  },
+  {
+    "id": "n3_086",
+    "kanji": "増加",
+    "kana": "ぞうか",
+    "meaning_zh": "增加",
+    "meaning_en": "increase",
+    "category": "社会",
+    "category_en": "Society",
+    "level": "N3",
+    "distractors": [
+      "減少",
+      "上昇",
+      "増大"
+    ],
+    "distractors_en": [
+      "decrease",
+      "rise",
+      "growth"
+    ]
+  },
+  {
+    "id": "n3_087",
+    "kanji": "減少",
+    "kana": "げんしょう",
+    "meaning_zh": "減少",
+    "meaning_en": "decrease",
+    "category": "社会",
+    "category_en": "Society",
+    "level": "N3",
+    "distractors": [
+      "増加",
+      "低下",
+      "削減"
+    ],
+    "distractors_en": [
+      "increase",
+      "decline",
+      "reduction"
+    ]
+  },
+  {
+    "id": "n3_088",
+    "kanji": "安全",
+    "kana": "あんぜん",
+    "meaning_zh": "安全",
+    "meaning_en": "safety",
+    "category": "社会",
+    "category_en": "Society",
+    "level": "N3",
+    "distractors": [
+      "危険",
+      "安心",
+      "保護"
+    ],
+    "distractors_en": [
+      "danger",
+      "relief",
+      "protection"
+    ]
+  },
+  {
+    "id": "n3_089",
+    "kanji": "社会",
+    "kana": "しゃかい",
+    "meaning_zh": "社會",
+    "meaning_en": "society",
+    "category": "社会",
+    "category_en": "Society",
+    "level": "N3",
+    "distractors": [
+      "世界",
+      "世間",
+      "国"
+    ],
+    "distractors_en": [
+      "world",
+      "public/society",
+      "country"
+    ]
+  },
+  {
+    "id": "n3_090",
+    "kanji": "問題",
+    "kana": "もんだい",
+    "meaning_zh": "問題",
+    "meaning_en": "problem/issue",
+    "category": "社会",
+    "category_en": "Society",
+    "level": "N3",
+    "distractors": [
+      "課題",
+      "難題",
+      "事柄"
+    ],
+    "distractors_en": [
+      "task/challenge",
+      "difficult problem",
+      "matter"
+    ]
+  },
+  {
+    "id": "n3_091",
+    "kanji": "季節",
+    "kana": "きせつ",
+    "meaning_zh": "季節",
+    "meaning_en": "season",
+    "category": "自然",
+    "category_en": "Nature",
+    "level": "N3",
+    "distractors": [
+      "時期",
+      "時節",
+      "年間"
+    ],
+    "distractors_en": [
+      "period/time",
+      "season/occasion",
+      "annual"
+    ]
+  },
+  {
+    "id": "n3_092",
+    "kanji": "気候",
+    "kana": "きこう",
+    "meaning_zh": "氣候",
+    "meaning_en": "climate",
+    "category": "自然",
+    "category_en": "Nature",
+    "level": "N3",
+    "distractors": [
+      "天気",
+      "天候",
+      "気温"
+    ],
+    "distractors_en": [
+      "weather",
+      "weather conditions",
+      "temperature"
+    ]
+  },
+  {
+    "id": "n3_093",
+    "kanji": "温度",
+    "kana": "おんど",
+    "meaning_zh": "溫度",
+    "meaning_en": "temperature",
+    "category": "自然",
+    "category_en": "Nature",
+    "level": "N3",
+    "distractors": [
+      "気温",
+      "体温",
+      "熱"
+    ],
+    "distractors_en": [
+      "air temperature",
+      "body temperature",
+      "heat"
+    ]
+  },
+  {
+    "id": "n3_094",
+    "kanji": "台風",
+    "kana": "たいふう",
+    "meaning_zh": "颱風",
+    "meaning_en": "typhoon",
+    "category": "自然",
+    "category_en": "Nature",
+    "level": "N3",
+    "distractors": [
+      "嵐",
+      "竜巻",
+      "低気圧"
+    ],
+    "distractors_en": [
+      "storm",
+      "tornado",
+      "low pressure"
+    ]
+  },
+  {
+    "id": "n3_095",
+    "kanji": "地震",
+    "kana": "じしん",
+    "meaning_zh": "地震",
+    "meaning_en": "earthquake",
+    "category": "自然",
+    "category_en": "Nature",
+    "level": "N3",
+    "distractors": [
+      "津波",
+      "噴火",
+      "土砂崩れ"
+    ],
+    "distractors_en": [
+      "tsunami",
+      "volcanic eruption",
+      "landslide"
+    ]
+  },
+  {
+    "id": "n3_096",
+    "kanji": "洪水",
+    "kana": "こうずい",
+    "meaning_zh": "洪水",
+    "meaning_en": "flood",
+    "category": "自然",
+    "category_en": "Nature",
+    "level": "N3",
+    "distractors": [
+      "大雨",
+      "水害",
+      "氾濫"
+    ],
+    "distractors_en": [
+      "heavy rain",
+      "flood damage",
+      "overflow"
+    ]
+  },
+  {
+    "id": "n3_097",
+    "kanji": "森林",
+    "kana": "しんりん",
+    "meaning_zh": "森林",
+    "meaning_en": "forest",
+    "category": "自然",
+    "category_en": "Nature",
+    "level": "N3",
+    "distractors": [
+      "森",
+      "林",
+      "jungle"
+    ],
+    "distractors_en": [
+      "forest (small)",
+      "woods",
+      "jungle"
+    ]
+  },
+  {
+    "id": "n3_098",
+    "kanji": "空気",
+    "kana": "くうき",
+    "meaning_zh": "空氣",
+    "meaning_en": "air",
+    "category": "自然",
+    "category_en": "Nature",
+    "level": "N3",
+    "distractors": [
+      "大気",
+      "雰囲気",
+      "気体"
+    ],
+    "distractors_en": [
+      "atmosphere",
+      "atmosphere/mood",
+      "gas"
+    ]
+  },
+  {
+    "id": "n3_099",
+    "kanji": "資源",
+    "kana": "しげん",
+    "meaning_zh": "資源",
+    "meaning_en": "resources",
+    "category": "自然",
+    "category_en": "Nature",
+    "level": "N3",
+    "distractors": [
+      "材料",
+      "素材",
+      "原材料"
+    ],
+    "distractors_en": [
+      "material",
+      "material/ingredient",
+      "raw material"
+    ]
+  },
+  {
+    "id": "n3_100",
+    "kanji": "自然",
+    "kana": "しぜん",
+    "meaning_zh": "自然",
+    "meaning_en": "nature",
+    "category": "自然",
+    "category_en": "Nature",
+    "level": "N3",
+    "distractors": [
+      "環境",
+      "生態",
+      "生物"
+    ],
+    "distractors_en": [
+      "environment",
+      "ecosystem",
+      "living things"
+    ]
+  },
+  {
+    "id": "n3_101",
+    "kanji": "生物",
+    "kana": "せいぶつ",
+    "meaning_zh": "生物",
+    "meaning_en": "living things/organism",
+    "category": "自然",
+    "category_en": "Nature",
+    "level": "N3",
+    "distractors": [
+      "動物",
+      "植物",
+      "微生物"
+    ],
+    "distractors_en": [
+      "animal",
+      "plant",
+      "microorganism"
+    ]
+  },
+  {
+    "id": "n3_102",
+    "kanji": "植物",
+    "kana": "しょくぶつ",
+    "meaning_zh": "植物",
+    "meaning_en": "plant",
+    "category": "自然",
+    "category_en": "Nature",
+    "level": "N3",
+    "distractors": [
+      "動物",
+      "生物",
+      "草木"
+    ],
+    "distractors_en": [
+      "animal",
+      "living thing",
+      "plants and trees"
+    ]
+  },
+  {
+    "id": "n3_103",
+    "kanji": "海岸",
+    "kana": "かいがん",
+    "meaning_zh": "海岸、海邊",
+    "meaning_en": "coast/beach",
+    "category": "自然",
+    "category_en": "Nature",
+    "level": "N3",
+    "distractors": [
+      "砂浜",
+      "湖岸",
+      "浜辺"
+    ],
+    "distractors_en": [
+      "sandy beach",
+      "lakeshore",
+      "beach"
+    ]
+  },
+  {
+    "id": "n3_104",
+    "kanji": "土地",
+    "kana": "とち",
+    "meaning_zh": "土地",
+    "meaning_en": "land/ground",
+    "category": "自然",
+    "category_en": "Nature",
+    "level": "N3",
+    "distractors": [
+      "地面",
+      "敷地",
+      "場所"
+    ],
+    "distractors_en": [
+      "ground surface",
+      "premises",
+      "place"
+    ]
+  },
+  {
+    "id": "n3_105",
+    "kanji": "砂漠",
+    "kana": "さばく",
+    "meaning_zh": "沙漠",
+    "meaning_en": "desert",
+    "category": "自然",
+    "category_en": "Nature",
+    "level": "N3",
+    "distractors": [
+      "荒野",
+      "砂浜",
+      "乾燥地"
+    ],
+    "distractors_en": [
+      "wilderness",
+      "sandy beach",
+      "arid land"
+    ]
+  },
+  {
+    "id": "n3_106",
+    "kanji": "症状",
+    "kana": "しょうじょう",
+    "meaning_zh": "症狀",
+    "meaning_en": "symptoms",
+    "category": "健康",
+    "category_en": "Health",
+    "level": "N3",
+    "distractors": [
+      "病状",
+      "状態",
+      "様子"
+    ],
+    "distractors_en": [
+      "condition of illness",
+      "condition",
+      "state/appearance"
+    ]
+  },
+  {
+    "id": "n3_107",
+    "kanji": "検査",
+    "kana": "けんさ",
+    "meaning_zh": "檢查",
+    "meaning_en": "examination/test",
+    "category": "健康",
+    "category_en": "Health",
+    "level": "N3",
+    "distractors": [
+      "診察",
+      "調査",
+      "試験"
+    ],
+    "distractors_en": [
+      "medical examination",
+      "investigation",
+      "exam"
+    ]
+  },
+  {
+    "id": "n3_108",
+    "kanji": "治療",
+    "kana": "ちりょう",
+    "meaning_zh": "治療",
+    "meaning_en": "treatment",
+    "category": "健康",
+    "category_en": "Health",
+    "level": "N3",
+    "distractors": [
+      "手術",
+      "処置",
+      "医療"
+    ],
+    "distractors_en": [
+      "surgery",
+      "treatment/measure",
+      "medical care"
+    ]
+  },
+  {
+    "id": "n3_109",
+    "kanji": "手術",
+    "kana": "しゅじゅつ",
+    "meaning_zh": "手術",
+    "meaning_en": "surgery/operation",
+    "category": "健康",
+    "category_en": "Health",
+    "level": "N3",
+    "distractors": [
+      "治療",
+      "処置",
+      "手当"
+    ],
+    "distractors_en": [
+      "treatment",
+      "measure/treatment",
+      "first aid"
+    ]
+  },
+  {
+    "id": "n3_110",
+    "kanji": "入院",
+    "kana": "にゅういん",
+    "meaning_zh": "住院",
+    "meaning_en": "hospitalization",
+    "category": "健康",
+    "category_en": "Health",
+    "level": "N3",
+    "distractors": [
+      "退院",
+      "通院",
+      "入所"
+    ],
+    "distractors_en": [
+      "discharge",
+      "hospital visit",
+      "admission"
+    ]
+  },
+  {
+    "id": "n3_111",
+    "kanji": "退院",
+    "kana": "たいいん",
+    "meaning_zh": "出院",
+    "meaning_en": "discharge from hospital",
+    "category": "健康",
+    "category_en": "Health",
+    "level": "N3",
+    "distractors": [
+      "入院",
+      "通院",
+      "回復"
+    ],
+    "distractors_en": [
+      "hospitalization",
+      "hospital visit",
+      "recovery"
+    ]
+  },
+  {
+    "id": "n3_112",
+    "kanji": "体重",
+    "kana": "たいじゅう",
+    "meaning_zh": "體重",
+    "meaning_en": "body weight",
+    "category": "健康",
+    "category_en": "Health",
+    "level": "N3",
+    "distractors": [
+      "体格",
+      "体力",
+      "体型"
+    ],
+    "distractors_en": [
+      "physique",
+      "physical strength",
+      "body shape"
+    ]
+  },
+  {
+    "id": "n3_113",
+    "kanji": "血圧",
+    "kana": "けつあつ",
+    "meaning_zh": "血壓",
+    "meaning_en": "blood pressure",
+    "category": "健康",
+    "category_en": "Health",
+    "level": "N3",
+    "distractors": [
+      "血糖",
+      "血液",
+      "脈拍"
+    ],
+    "distractors_en": [
+      "blood sugar",
+      "blood",
+      "pulse"
+    ]
+  },
+  {
+    "id": "n3_114",
+    "kanji": "睡眠",
+    "kana": "すいみん",
+    "meaning_zh": "睡眠",
+    "meaning_en": "sleep",
+    "category": "健康",
+    "category_en": "Health",
+    "level": "N3",
+    "distractors": [
+      "休息",
+      "仮眠",
+      "昼寝"
+    ],
+    "distractors_en": [
+      "rest",
+      "nap",
+      "afternoon nap"
+    ]
+  },
+  {
+    "id": "n3_115",
+    "kanji": "疲れ",
+    "kana": "つかれ",
+    "meaning_zh": "疲勞",
+    "meaning_en": "fatigue/tiredness",
+    "category": "健康",
+    "category_en": "Health",
+    "level": "N3",
+    "distractors": [
+      "倦怠感",
+      "疲労",
+      "だるい"
+    ],
+    "distractors_en": [
+      "feeling of lethargy",
+      "fatigue",
+      "lethargic"
+    ]
+  },
+  {
+    "id": "n3_116",
+    "kanji": "回復",
+    "kana": "かいふく",
+    "meaning_zh": "恢復",
+    "meaning_en": "recovery",
+    "category": "健康",
+    "category_en": "Health",
+    "level": "N3",
+    "distractors": [
+      "改善",
+      "復活",
+      "治る"
+    ],
+    "distractors_en": [
+      "improvement",
+      "revival",
+      "to heal"
+    ]
+  },
+  {
+    "id": "n3_117",
+    "kanji": "予防",
+    "kana": "よぼう",
+    "meaning_zh": "預防",
+    "meaning_en": "prevention",
+    "category": "健康",
+    "category_en": "Health",
+    "level": "N3",
+    "distractors": [
+      "防止",
+      "対策",
+      "防ぐ"
+    ],
+    "distractors_en": [
+      "prevention/stop",
+      "measure",
+      "to prevent"
+    ]
+  },
+  {
+    "id": "n3_118",
+    "kanji": "体調",
+    "kana": "たいちょう",
+    "meaning_zh": "身體狀況",
+    "meaning_en": "physical condition",
+    "category": "健康",
+    "category_en": "Health",
+    "level": "N3",
+    "distractors": [
+      "体格",
+      "体質",
+      "体力"
+    ],
+    "distractors_en": [
+      "physique",
+      "constitution",
+      "physical strength"
+    ]
+  },
+  {
+    "id": "n3_119",
+    "kanji": "食欲",
+    "kana": "しょくよく",
+    "meaning_zh": "食慾",
+    "meaning_en": "appetite",
+    "category": "健康",
+    "category_en": "Health",
+    "level": "N3",
+    "distractors": [
+      "空腹",
+      "満腹",
+      "欲求"
+    ],
+    "distractors_en": [
+      "hungry",
+      "full",
+      "desire"
+    ]
+  },
+  {
+    "id": "n3_120",
+    "kanji": "感染",
+    "kana": "かんせん",
+    "meaning_zh": "感染",
+    "meaning_en": "infection",
+    "category": "健康",
+    "category_en": "Health",
+    "level": "N3",
+    "distractors": [
+      "伝染",
+      "汚染",
+      "罹患"
+    ],
+    "distractors_en": [
+      "contagion",
+      "contamination",
+      "falling ill"
+    ]
+  },
+  {
+    "id": "n3_121",
+    "kanji": "渋滞",
+    "kana": "じゅうたい",
+    "meaning_zh": "塞車",
+    "meaning_en": "traffic jam",
+    "category": "交通",
+    "category_en": "Transportation",
+    "level": "N3",
+    "distractors": [
+      "混雑",
+      "交通",
+      "込む"
+    ],
+    "distractors_en": [
+      "crowded/congested",
+      "traffic",
+      "to be crowded"
+    ]
+  },
+  {
+    "id": "n3_122",
+    "kanji": "運転",
+    "kana": "うんてん",
+    "meaning_zh": "駕駛",
+    "meaning_en": "driving",
+    "category": "交通",
+    "category_en": "Transportation",
+    "level": "N3",
+    "distractors": [
+      "操縦",
+      "操作",
+      "ドライブ"
+    ],
+    "distractors_en": [
+      "piloting",
+      "operation",
+      "drive (for leisure)"
+    ]
+  },
+  {
+    "id": "n3_123",
+    "kanji": "出発",
+    "kana": "しゅっぱつ",
+    "meaning_zh": "出發",
+    "meaning_en": "departure",
+    "category": "交通",
+    "category_en": "Transportation",
+    "level": "N3",
+    "distractors": [
+      "到着",
+      "発車",
+      "出る"
+    ],
+    "distractors_en": [
+      "arrival",
+      "departure of vehicle",
+      "to leave"
+    ]
+  },
+  {
+    "id": "n3_124",
+    "kanji": "到着",
+    "kana": "とうちゃく",
+    "meaning_zh": "到達、抵達",
+    "meaning_en": "arrival",
+    "category": "交通",
+    "category_en": "Transportation",
+    "level": "N3",
+    "distractors": [
+      "出発",
+      "着く",
+      "帰着"
+    ],
+    "distractors_en": [
+      "departure",
+      "to arrive",
+      "returning/arrival"
+    ]
+  },
+  {
+    "id": "n3_125",
+    "kanji": "乗り換え",
+    "kana": "のりかえ",
+    "meaning_zh": "轉乘",
+    "meaning_en": "transfer/connection",
+    "category": "交通",
+    "category_en": "Transportation",
+    "level": "N3",
+    "distractors": [
+      "乗車",
+      "乗り継ぎ",
+      "乗り降り"
+    ],
+    "distractors_en": [
+      "boarding",
+      "transit/connection",
+      "getting on and off"
+    ]
+  },
+  {
+    "id": "n3_126",
+    "kanji": "遅延",
+    "kana": "ちえん",
+    "meaning_zh": "延誤、誤點",
+    "meaning_en": "delay",
+    "category": "交通",
+    "category_en": "Transportation",
+    "level": "N3",
+    "distractors": [
+      "遅れ",
+      "延長",
+      "遅刻"
+    ],
+    "distractors_en": [
+      "delay/lateness",
+      "extension",
+      "being late"
+    ]
+  },
+  {
+    "id": "n3_127",
+    "kanji": "往復",
+    "kana": "おうふく",
+    "meaning_zh": "來回",
+    "meaning_en": "round trip",
+    "category": "交通",
+    "category_en": "Transportation",
+    "level": "N3",
+    "distractors": [
+      "片道",
+      "行き来",
+      "ラウンドトリップ"
+    ],
+    "distractors_en": [
+      "one way",
+      "going back and forth",
+      "round trip (English)"
+    ]
+  },
+  {
+    "id": "n3_128",
+    "kanji": "片道",
+    "kana": "かたみち",
+    "meaning_zh": "單程",
+    "meaning_en": "one way",
+    "category": "交通",
+    "category_en": "Transportation",
+    "level": "N3",
+    "distractors": [
+      "往復",
+      "片側",
+      "一方通行"
+    ],
+    "distractors_en": [
+      "round trip",
+      "one side",
+      "one-way traffic"
+    ]
+  },
+  {
+    "id": "n3_129",
+    "kanji": "運賃",
+    "kana": "うんちん",
+    "meaning_zh": "車費、票價",
+    "meaning_en": "fare",
+    "category": "交通",
+    "category_en": "Transportation",
+    "level": "N3",
+    "distractors": [
+      "料金",
+      "交通費",
+      "旅費"
+    ],
+    "distractors_en": [
+      "fee/charge",
+      "transportation cost",
+      "travel expenses"
+    ]
+  },
+  {
+    "id": "n3_130",
+    "kanji": "時刻表",
+    "kana": "じこくひょう",
+    "meaning_zh": "時刻表",
+    "meaning_en": "timetable/schedule",
+    "category": "交通",
+    "category_en": "Transportation",
+    "level": "N3",
+    "distractors": [
+      "スケジュール",
+      "予定表",
+      "ダイヤ"
+    ],
+    "distractors_en": [
+      "schedule",
+      "schedule chart",
+      "train schedule"
+    ]
+  },
+  {
+    "id": "n3_131",
+    "kanji": "横断歩道",
+    "kana": "おうだんほどう",
+    "meaning_zh": "斑馬線、人行橫道",
+    "meaning_en": "crosswalk/pedestrian crossing",
+    "category": "交通",
+    "category_en": "Transportation",
+    "level": "N3",
+    "distractors": [
+      "歩道",
+      "交差点",
+      "踏切"
+    ],
+    "distractors_en": [
+      "sidewalk",
+      "intersection",
+      "railroad crossing"
+    ]
+  },
+  {
+    "id": "n3_132",
+    "kanji": "高速道路",
+    "kana": "こうそくどうろ",
+    "meaning_zh": "高速公路",
+    "meaning_en": "expressway/highway",
+    "category": "交通",
+    "category_en": "Transportation",
+    "level": "N3",
+    "distractors": [
+      "国道",
+      "幹線道路",
+      "バイパス"
+    ],
+    "distractors_en": [
+      "national route",
+      "main road",
+      "bypass"
+    ]
+  },
+  {
+    "id": "n3_133",
+    "kanji": "方向",
+    "kana": "ほうこう",
+    "meaning_zh": "方向",
+    "meaning_en": "direction",
+    "category": "交通",
+    "category_en": "Transportation",
+    "level": "N3",
+    "distractors": [
+      "向き",
+      "方角",
+      "方面"
+    ],
+    "distractors_en": [
+      "facing direction",
+      "compass direction",
+      "direction/area"
+    ]
+  },
+  {
+    "id": "n3_134",
+    "kanji": "距離",
+    "kana": "きょり",
+    "meaning_zh": "距離",
+    "meaning_en": "distance",
+    "category": "交通",
+    "category_en": "Transportation",
+    "level": "N3",
+    "distractors": [
+      "間隔",
+      "長さ",
+      "差"
+    ],
+    "distractors_en": [
+      "interval/gap",
+      "length",
+      "difference"
+    ]
+  },
+  {
+    "id": "n3_135",
+    "kanji": "駐車",
+    "kana": "ちゅうしゃ",
+    "meaning_zh": "停車",
+    "meaning_en": "parking",
+    "category": "交通",
+    "category_en": "Transportation",
+    "level": "N3",
+    "distractors": [
+      "駐輪",
+      "停車",
+      "駐車場"
+    ],
+    "distractors_en": [
+      "bicycle parking",
+      "stopping",
+      "parking lot"
+    ]
+  },
+  {
+    "id": "n3_136",
+    "kanji": "知識",
+    "kana": "ちしき",
+    "meaning_zh": "知識",
+    "meaning_en": "knowledge",
+    "category": "教育",
+    "category_en": "Education",
+    "level": "N3",
+    "distractors": [
+      "情報",
+      "学識",
+      "常識"
+    ],
+    "distractors_en": [
+      "information",
+      "academic knowledge",
+      "common sense"
+    ]
+  },
+  {
+    "id": "n3_137",
+    "kanji": "理解",
+    "kana": "りかい",
+    "meaning_zh": "理解",
+    "meaning_en": "understanding/comprehension",
+    "category": "教育",
+    "category_en": "Education",
+    "level": "N3",
+    "distractors": [
+      "了解",
+      "把握",
+      "認識"
+    ],
+    "distractors_en": [
+      "acknowledgment",
+      "grasp/understanding",
+      "recognition"
+    ]
+  },
+  {
+    "id": "n3_138",
+    "kanji": "研究",
+    "kana": "けんきゅう",
+    "meaning_zh": "研究",
+    "meaning_en": "research",
+    "category": "教育",
+    "category_en": "Education",
+    "level": "N3",
+    "distractors": [
+      "調査",
+      "勉強",
+      "学習"
+    ],
+    "distractors_en": [
+      "investigation",
+      "study",
+      "learning"
+    ]
+  },
+  {
+    "id": "n3_139",
+    "kanji": "調査",
+    "kana": "ちょうさ",
+    "meaning_zh": "調查",
+    "meaning_en": "investigation/survey",
+    "category": "教育",
+    "category_en": "Education",
+    "level": "N3",
+    "distractors": [
+      "研究",
+      "検査",
+      "調べる"
+    ],
+    "distractors_en": [
+      "research",
+      "examination",
+      "to investigate"
+    ]
+  },
+  {
+    "id": "n3_140",
+    "kanji": "発表",
+    "kana": "はっぴょう",
+    "meaning_zh": "發表",
+    "meaning_en": "presentation/announcement",
+    "category": "教育",
+    "category_en": "Education",
+    "level": "N3",
+    "distractors": [
+      "報告",
+      "発言",
+      "プレゼン"
+    ],
+    "distractors_en": [
+      "report",
+      "statement",
+      "presentation"
+    ]
+  },
+  {
+    "id": "n3_141",
+    "kanji": "合格",
+    "kana": "ごうかく",
+    "meaning_zh": "合格、通過",
+    "meaning_en": "passing (exam)",
+    "category": "教育",
+    "category_en": "Education",
+    "level": "N3",
+    "distractors": [
+      "不合格",
+      "通過",
+      "受かる"
+    ],
+    "distractors_en": [
+      "failing",
+      "passing through",
+      "to pass"
+    ]
+  },
+  {
+    "id": "n3_142",
+    "kanji": "卒業",
+    "kana": "そつぎょう",
+    "meaning_zh": "畢業",
+    "meaning_en": "graduation",
+    "category": "教育",
+    "category_en": "Education",
+    "level": "N3",
+    "distractors": [
+      "入学",
+      "修了",
+      "卒業式"
+    ],
+    "distractors_en": [
+      "enrollment",
+      "completion",
+      "graduation ceremony"
+    ]
+  },
+  {
+    "id": "n3_143",
+    "kanji": "留学",
+    "kana": "りゅうがく",
+    "meaning_zh": "留學",
+    "meaning_en": "studying abroad",
+    "category": "教育",
+    "category_en": "Education",
+    "level": "N3",
+    "distractors": [
+      "海外旅行",
+      "海外研修",
+      "外国語学習"
+    ],
+    "distractors_en": [
+      "overseas travel",
+      "overseas training",
+      "foreign language study"
+    ]
+  },
+  {
+    "id": "n3_144",
+    "kanji": "資格",
+    "kana": "しかく",
+    "meaning_zh": "資格、證照",
+    "meaning_en": "qualification/certificate",
+    "category": "教育",
+    "category_en": "Education",
+    "level": "N3",
+    "distractors": [
+      "能力",
+      "免許",
+      "認定"
+    ],
+    "distractors_en": [
+      "ability",
+      "license",
+      "certification"
+    ]
+  },
+  {
+    "id": "n3_145",
+    "kanji": "技術",
+    "kana": "ぎじゅつ",
+    "meaning_zh": "技術、技能",
+    "meaning_en": "skill/technology",
+    "category": "教育",
+    "category_en": "Education",
+    "level": "N3",
+    "distractors": [
+      "技能",
+      "スキル",
+      "テクノロジー"
+    ],
+    "distractors_en": [
+      "technical skill",
+      "skill",
+      "technology"
+    ]
+  },
+  {
+    "id": "n3_146",
+    "kanji": "能力",
+    "kana": "のうりょく",
+    "meaning_zh": "能力",
+    "meaning_en": "ability/capability",
+    "category": "教育",
+    "category_en": "Education",
+    "level": "N3",
+    "distractors": [
+      "実力",
+      "才能",
+      "力"
+    ],
+    "distractors_en": [
+      "actual ability",
+      "talent",
+      "strength/power"
+    ]
+  },
+  {
+    "id": "n3_147",
+    "kanji": "基礎",
+    "kana": "きそ",
+    "meaning_zh": "基礎",
+    "meaning_en": "basics/foundation",
+    "category": "教育",
+    "category_en": "Education",
+    "level": "N3",
+    "distractors": [
+      "基本",
+      "土台",
+      "根本"
+    ],
+    "distractors_en": [
+      "basics",
+      "foundation/base",
+      "root/basis"
+    ]
+  },
+  {
+    "id": "n3_148",
+    "kanji": "応用",
+    "kana": "おうよう",
+    "meaning_zh": "應用",
+    "meaning_en": "application/applied use",
+    "category": "教育",
+    "category_en": "Education",
+    "level": "N3",
+    "distractors": [
+      "実用",
+      "活用",
+      "利用"
+    ],
+    "distractors_en": [
+      "practical use",
+      "utilization",
+      "use"
+    ]
+  },
+  {
+    "id": "n3_149",
+    "kanji": "実力",
+    "kana": "じつりょく",
+    "meaning_zh": "實力",
+    "meaning_en": "actual ability/true skill",
+    "category": "教育",
+    "category_en": "Education",
+    "level": "N3",
+    "distractors": [
+      "能力",
+      "実績",
+      "力量"
+    ],
+    "distractors_en": [
+      "ability",
+      "track record",
+      "capacity"
+    ]
+  },
+  {
+    "id": "n3_150",
+    "kanji": "専攻",
+    "kana": "せんこう",
+    "meaning_zh": "專攻、主修",
+    "meaning_en": "major/field of study",
+    "category": "教育",
+    "category_en": "Education",
+    "level": "N3",
+    "distractors": [
+      "専門",
+      "学科",
+      "分野"
+    ],
+    "distractors_en": [
+      "specialty",
+      "department",
+      "field"
+    ]
+  },
+  {
+    "id": "n3_151",
+    "kanji": "性格",
+    "kana": "せいかく",
+    "meaning_zh": "性格",
+    "meaning_en": "personality",
+    "category": "人間関係",
+    "category_en": "Relationships",
+    "level": "N3",
+    "distractors": [
+      "個性",
+      "人柄",
+      "気質"
+    ],
+    "distractors_en": [
+      "individuality",
+      "character",
+      "temperament"
+    ]
+  },
+  {
+    "id": "n3_152",
+    "kanji": "尊敬",
+    "kana": "そんけい",
+    "meaning_zh": "尊敬、敬仰",
+    "meaning_en": "respect/admiration",
+    "category": "人間関係",
+    "category_en": "Relationships",
+    "level": "N3",
+    "distractors": [
+      "敬意",
+      "敬う",
+      "尊重"
+    ],
+    "distractors_en": [
+      "respect (noun)",
+      "to respect",
+      "to value/respect"
+    ]
+  },
+  {
+    "id": "n3_153",
+    "kanji": "批判",
+    "kana": "ひはん",
+    "meaning_zh": "批判、批評",
+    "meaning_en": "criticism",
+    "category": "人間関係",
+    "category_en": "Relationships",
+    "level": "N3",
+    "distractors": [
+      "批評",
+      "非難",
+      "反論"
+    ],
+    "distractors_en": [
+      "critique",
+      "condemnation",
+      "counter-argument"
+    ]
+  },
+  {
+    "id": "n3_154",
+    "kanji": "誤解",
+    "kana": "ごかい",
+    "meaning_zh": "誤解、誤會",
+    "meaning_en": "misunderstanding",
+    "category": "人間関係",
+    "category_en": "Relationships",
+    "level": "N3",
+    "distractors": [
+      "理解",
+      "勘違い",
+      "間違い"
+    ],
+    "distractors_en": [
+      "understanding",
+      "misunderstanding",
+      "mistake"
+    ]
+  },
+  {
+    "id": "n3_155",
+    "kanji": "謝る",
+    "kana": "あやまる",
+    "meaning_zh": "道歉",
+    "meaning_en": "to apologize",
+    "category": "人間関係",
+    "category_en": "Relationships",
+    "level": "N3",
+    "distractors": [
+      "謝罪",
+      "お詫び",
+      "反省"
+    ],
+    "distractors_en": [
+      "apology",
+      "apology (formal)",
+      "self-reflection"
+    ]
+  },
+  {
+    "id": "n3_156",
+    "kanji": "許す",
+    "kana": "ゆるす",
+    "meaning_zh": "原諒、允許",
+    "meaning_en": "to forgive/allow",
+    "category": "人間関係",
+    "category_en": "Relationships",
+    "level": "N3",
+    "distractors": [
+      "許可",
+      "許し",
+      "認める"
+    ],
+    "distractors_en": [
+      "permission",
+      "forgiveness",
+      "to acknowledge"
+    ]
+  },
+  {
+    "id": "n3_157",
+    "kanji": "支える",
+    "kana": "ささえる",
+    "meaning_zh": "支持、撐持",
+    "meaning_en": "to support",
+    "category": "人間関係",
+    "category_en": "Relationships",
+    "level": "N3",
+    "distractors": [
+      "助ける",
+      "応援する",
+      "支援"
+    ],
+    "distractors_en": [
+      "to help",
+      "to cheer on",
+      "support"
+    ]
+  },
+  {
+    "id": "n3_158",
+    "kanji": "励ます",
+    "kana": "はげます",
+    "meaning_zh": "鼓勵",
+    "meaning_en": "to encourage",
+    "category": "人間関係",
+    "category_en": "Relationships",
+    "level": "N3",
+    "distractors": [
+      "応援",
+      "元気づける",
+      "勇気づける"
+    ],
+    "distractors_en": [
+      "to cheer on",
+      "to cheer up",
+      "to give courage"
+    ]
+  },
+  {
+    "id": "n3_159",
+    "kanji": "頼る",
+    "kana": "たよる",
+    "meaning_zh": "依賴、靠",
+    "meaning_en": "to rely on",
+    "category": "人間関係",
+    "category_en": "Relationships",
+    "level": "N3",
+    "distractors": [
+      "依存",
+      "頼む",
+      "信頼"
+    ],
+    "distractors_en": [
+      "dependence",
+      "to ask/request",
+      "trust"
+    ]
+  },
+  {
+    "id": "n3_160",
+    "kanji": "相手",
+    "kana": "あいて",
+    "meaning_zh": "對方、對象",
+    "meaning_en": "partner/other party",
+    "category": "人間関係",
+    "category_en": "Relationships",
+    "level": "N3",
+    "distractors": [
+      "他人",
+      "相方",
+      "対象"
+    ],
+    "distractors_en": [
+      "other person",
+      "partner",
+      "target/subject"
+    ]
+  },
+  {
+    "id": "n3_161",
+    "kanji": "仲間",
+    "kana": "なかま",
+    "meaning_zh": "夥伴、同伴",
+    "meaning_en": "companion/colleague",
+    "category": "人間関係",
+    "category_en": "Relationships",
+    "level": "N3",
+    "distractors": [
+      "友達",
+      "同僚",
+      "メンバー"
+    ],
+    "distractors_en": [
+      "friend",
+      "co-worker",
+      "member"
+    ]
+  },
+  {
+    "id": "n3_162",
+    "kanji": "親しい",
+    "kana": "したしい",
+    "meaning_zh": "親密",
+    "meaning_en": "close/intimate",
+    "category": "人間関係",
+    "category_en": "Relationships",
+    "level": "N3",
+    "distractors": [
+      "仲良し",
+      "近い",
+      "仲良い"
+    ],
+    "distractors_en": [
+      "good friends",
+      "close/near",
+      "on good terms"
+    ]
+  },
+  {
+    "id": "n3_163",
+    "kanji": "態度",
+    "kana": "たいど",
+    "meaning_zh": "態度",
+    "meaning_en": "attitude/manner",
+    "category": "人間関係",
+    "category_en": "Relationships",
+    "level": "N3",
+    "distractors": [
+      "様子",
+      "行動",
+      "姿勢"
+    ],
+    "distractors_en": [
+      "state/appearance",
+      "behavior",
+      "posture/attitude"
+    ]
+  },
+  {
+    "id": "n3_164",
+    "kanji": "付き合い",
+    "kana": "つきあい",
+    "meaning_zh": "交際、往來",
+    "meaning_en": "association/relationship",
+    "category": "人間関係",
+    "category_en": "Relationships",
+    "level": "N3",
+    "distractors": [
+      "交流",
+      "関係",
+      "付き合う"
+    ],
+    "distractors_en": [
+      "exchange",
+      "relationship",
+      "to go out/associate"
+    ]
+  },
+  {
+    "id": "n3_165",
+    "kanji": "関係",
+    "kana": "かんけい",
+    "meaning_zh": "關係",
+    "meaning_en": "relationship/connection",
+    "category": "人間関係",
+    "category_en": "Relationships",
+    "level": "N3",
+    "distractors": [
+      "関連",
+      "つながり",
+      "絆"
+    ],
+    "distractors_en": [
+      "connection/relation",
+      "link/connection",
+      "bond"
+    ]
+  },
+  {
+    "id": "n3_166",
+    "kanji": "伝統",
+    "kana": "でんとう",
+    "meaning_zh": "傳統",
+    "meaning_en": "tradition",
+    "category": "文化",
+    "category_en": "Culture",
+    "level": "N3",
+    "distractors": [
+      "文化",
+      "慣習",
+      "風習"
+    ],
+    "distractors_en": [
+      "culture",
+      "custom",
+      "custom/practice"
+    ]
+  },
+  {
+    "id": "n3_167",
+    "kanji": "風習",
+    "kana": "ふうしゅう",
+    "meaning_zh": "風俗習慣",
+    "meaning_en": "custom/practice",
+    "category": "文化",
+    "category_en": "Culture",
+    "level": "N3",
+    "distractors": [
+      "習慣",
+      "伝統",
+      "しきたり"
+    ],
+    "distractors_en": [
+      "habit",
+      "tradition",
+      "convention"
+    ]
+  },
+  {
+    "id": "n3_168",
+    "kanji": "行事",
+    "kana": "ぎょうじ",
+    "meaning_zh": "活動、儀式",
+    "meaning_en": "event/occasion",
+    "category": "文化",
+    "category_en": "Culture",
+    "level": "N3",
+    "distractors": [
+      "イベント",
+      "催し",
+      "式典"
+    ],
+    "distractors_en": [
+      "event",
+      "event/show",
+      "ceremony"
+    ]
+  },
+  {
+    "id": "n3_169",
+    "kanji": "娯楽",
+    "kana": "ごらく",
+    "meaning_zh": "娛樂",
+    "meaning_en": "entertainment/recreation",
+    "category": "文化",
+    "category_en": "Culture",
+    "level": "N3",
+    "distractors": [
+      "趣味",
+      "レジャー",
+      "遊び"
+    ],
+    "distractors_en": [
+      "hobby",
+      "leisure",
+      "play/fun"
+    ]
+  },
+  {
+    "id": "n3_170",
+    "kanji": "流行",
+    "kana": "りゅうこう",
+    "meaning_zh": "流行、趨勢",
+    "meaning_en": "trend/fashion",
+    "category": "文化",
+    "category_en": "Culture",
+    "level": "N3",
+    "distractors": [
+      "ファッション",
+      "ブーム",
+      "トレンド"
+    ],
+    "distractors_en": [
+      "fashion",
+      "boom/craze",
+      "trend"
+    ]
+  },
+  {
+    "id": "n3_171",
+    "kanji": "人気",
+    "kana": "にんき",
+    "meaning_zh": "人氣",
+    "meaning_en": "popularity",
+    "category": "文化",
+    "category_en": "Culture",
+    "level": "N3",
+    "distractors": [
+      "評判",
+      "好評",
+      "名声"
+    ],
+    "distractors_en": [
+      "reputation",
+      "favorable reception",
+      "fame"
+    ]
+  },
+  {
+    "id": "n3_172",
+    "kanji": "話題",
+    "kana": "わだい",
+    "meaning_zh": "話題",
+    "meaning_en": "topic/subject of conversation",
+    "category": "文化",
+    "category_en": "Culture",
+    "level": "N3",
+    "distractors": [
+      "テーマ",
+      "議題",
+      "内容"
+    ],
+    "distractors_en": [
+      "theme",
+      "agenda item",
+      "content"
+    ]
+  },
+  {
+    "id": "n3_173",
+    "kanji": "情報",
+    "kana": "じょうほう",
+    "meaning_zh": "資訊",
+    "meaning_en": "information",
+    "category": "文化",
+    "category_en": "Culture",
+    "level": "N3",
+    "distractors": [
+      "知識",
+      "ニュース",
+      "データ"
+    ],
+    "distractors_en": [
+      "knowledge",
+      "news",
+      "data"
+    ]
+  },
+  {
+    "id": "n3_174",
+    "kanji": "放送",
+    "kana": "ほうそう",
+    "meaning_zh": "播送、廣播",
+    "meaning_en": "broadcast",
+    "category": "文化",
+    "category_en": "Culture",
+    "level": "N3",
+    "distractors": [
+      "中継",
+      "配信",
+      "送信"
+    ],
+    "distractors_en": [
+      "relay broadcast",
+      "streaming",
+      "transmission"
+    ]
+  },
+  {
+    "id": "n3_175",
+    "kanji": "広告",
+    "kana": "こうこく",
+    "meaning_zh": "廣告",
+    "meaning_en": "advertisement",
+    "category": "文化",
+    "category_en": "Culture",
+    "level": "N3",
+    "distractors": [
+      "宣伝",
+      "PR",
+      "告知"
+    ],
+    "distractors_en": [
+      "publicity/advertising",
+      "public relations",
+      "notice/announcement"
+    ]
+  },
+  {
+    "id": "n3_176",
+    "kanji": "記事",
+    "kana": "きじ",
+    "meaning_zh": "文章、報導",
+    "meaning_en": "article (newspaper/web)",
+    "category": "文化",
+    "category_en": "Culture",
+    "level": "N3",
+    "distractors": [
+      "論文",
+      "コラム",
+      "報道"
+    ],
+    "distractors_en": [
+      "thesis/paper",
+      "column",
+      "news coverage"
+    ]
+  },
+  {
+    "id": "n3_177",
+    "kanji": "著者",
+    "kana": "ちょしゃ",
+    "meaning_zh": "作者、著者",
+    "meaning_en": "author",
+    "category": "文化",
+    "category_en": "Culture",
+    "level": "N3",
+    "distractors": [
+      "作者",
+      "筆者",
+      "編集者"
+    ],
+    "distractors_en": [
+      "author/creator",
+      "writer",
+      "editor"
+    ]
+  },
+  {
+    "id": "n3_178",
+    "kanji": "出版",
+    "kana": "しゅっぱん",
+    "meaning_zh": "出版",
+    "meaning_en": "publishing",
+    "category": "文化",
+    "category_en": "Culture",
+    "level": "N3",
+    "distractors": [
+      "発行",
+      "発売",
+      "刊行"
+    ],
+    "distractors_en": [
+      "issuance",
+      "release/sale",
+      "publication"
+    ]
+  },
+  {
+    "id": "n3_179",
+    "kanji": "状況",
+    "kana": "じょうきょう",
+    "meaning_zh": "狀況、情況",
+    "meaning_en": "situation/circumstances",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N3",
+    "distractors": [
+      "状態",
+      "場合",
+      "環境"
+    ],
+    "distractors_en": [
+      "condition/state",
+      "case",
+      "environment"
+    ]
+  },
+  {
+    "id": "n3_180",
+    "kanji": "条件",
+    "kana": "じょうけん",
+    "meaning_zh": "條件",
+    "meaning_en": "condition/requirement",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N3",
+    "distractors": [
+      "要件",
+      "要求",
+      "基準"
+    ],
+    "distractors_en": [
+      "requirement",
+      "demand",
+      "standard/criterion"
+    ]
+  },
+  {
+    "id": "n3_181",
+    "kanji": "程度",
+    "kana": "ていど",
+    "meaning_zh": "程度",
+    "meaning_en": "degree/extent",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N3",
+    "distractors": [
+      "レベル",
+      "範囲",
+      "限度"
+    ],
+    "distractors_en": [
+      "level",
+      "range",
+      "limit"
+    ]
+  },
+  {
+    "id": "n3_182",
+    "kanji": "範囲",
+    "kana": "はんい",
+    "meaning_zh": "範圍",
+    "meaning_en": "range/scope",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N3",
+    "distractors": [
+      "領域",
+      "程度",
+      "区域"
+    ],
+    "distractors_en": [
+      "domain/area",
+      "degree",
+      "zone/area"
+    ]
+  },
+  {
+    "id": "n3_183",
+    "kanji": "割合",
+    "kana": "わりあい",
+    "meaning_zh": "比例、比率",
+    "meaning_en": "proportion/ratio",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N3",
+    "distractors": [
+      "比率",
+      "割り算",
+      "パーセント"
+    ],
+    "distractors_en": [
+      "ratio",
+      "division",
+      "percent"
+    ]
+  },
+  {
+    "id": "n3_184",
+    "kanji": "記録",
+    "kana": "きろく",
+    "meaning_zh": "記錄",
+    "meaning_en": "record",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N3",
+    "distractors": [
+      "記念",
+      "履歴",
+      "データ"
+    ],
+    "distractors_en": [
+      "commemoration",
+      "history/log",
+      "data"
+    ]
+  },
+  {
+    "id": "n3_185",
+    "kanji": "証明",
+    "kana": "しょうめい",
+    "meaning_zh": "證明",
+    "meaning_en": "proof/certification",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N3",
+    "distractors": [
+      "証拠",
+      "認証",
+      "確認"
+    ],
+    "distractors_en": [
+      "evidence",
+      "authentication",
+      "confirmation"
+    ]
+  },
+  {
+    "id": "n3_186",
+    "kanji": "許可",
+    "kana": "きょか",
+    "meaning_zh": "許可",
+    "meaning_en": "permission",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N3",
+    "distractors": [
+      "承認",
+      "認可",
+      "禁止"
+    ],
+    "distractors_en": [
+      "approval",
+      "official approval",
+      "prohibition"
+    ]
+  },
+  {
+    "id": "n3_187",
+    "kanji": "禁止",
+    "kana": "きんし",
+    "meaning_zh": "禁止",
+    "meaning_en": "prohibition/ban",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N3",
+    "distractors": [
+      "許可",
+      "制限",
+      "規制"
+    ],
+    "distractors_en": [
+      "permission",
+      "restriction",
+      "regulation"
+    ]
+  },
+  {
+    "id": "n3_188",
+    "kanji": "義務",
+    "kana": "ぎむ",
+    "meaning_zh": "義務",
+    "meaning_en": "duty/obligation",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N3",
+    "distractors": [
+      "責任",
+      "権利",
+      "任務"
+    ],
+    "distractors_en": [
+      "responsibility",
+      "right",
+      "mission/duty"
+    ]
+  },
+  {
+    "id": "n3_189",
+    "kanji": "権利",
+    "kana": "けんり",
+    "meaning_zh": "權利",
+    "meaning_en": "right/privilege",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N3",
+    "distractors": [
+      "義務",
+      "資格",
+      "特権"
+    ],
+    "distractors_en": [
+      "obligation",
+      "qualification",
+      "privilege"
+    ]
+  },
+  {
+    "id": "n3_190",
+    "kanji": "制度",
+    "kana": "せいど",
+    "meaning_zh": "制度",
+    "meaning_en": "system/institution",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N3",
+    "distractors": [
+      "システム",
+      "仕組み",
+      "規則"
+    ],
+    "distractors_en": [
+      "system",
+      "mechanism",
+      "rule"
+    ]
+  },
+  {
+    "id": "n3_191",
+    "kanji": "規則",
+    "kana": "きそく",
+    "meaning_zh": "規則",
+    "meaning_en": "rule/regulation",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N3",
+    "distractors": [
+      "ルール",
+      "規定",
+      "法律"
+    ],
+    "distractors_en": [
+      "rule",
+      "regulation",
+      "law"
+    ]
+  },
+  {
+    "id": "n3_192",
+    "kanji": "目標",
+    "kana": "もくひょう",
+    "meaning_zh": "目標",
+    "meaning_en": "goal/target",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N3",
+    "distractors": [
+      "目的",
+      "ゴール",
+      "狙い"
+    ],
+    "distractors_en": [
+      "purpose",
+      "goal",
+      "aim/target"
+    ]
+  },
+  {
+    "id": "n3_193",
+    "kanji": "成果",
+    "kana": "せいか",
+    "meaning_zh": "成果",
+    "meaning_en": "result/achievement",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N3",
+    "distractors": [
+      "結果",
+      "実績",
+      "業績"
+    ],
+    "distractors_en": [
+      "result",
+      "track record",
+      "achievement"
+    ]
+  },
+  {
+    "id": "n3_194",
+    "kanji": "課題",
+    "kana": "かだい",
+    "meaning_zh": "課題、任務",
+    "meaning_en": "task/challenge",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N3",
+    "distractors": [
+      "問題",
+      "テーマ",
+      "宿題"
+    ],
+    "distractors_en": [
+      "problem",
+      "theme",
+      "homework"
+    ]
+  },
+  {
+    "id": "n3_195",
+    "kanji": "対策",
+    "kana": "たいさく",
+    "meaning_zh": "對策",
+    "meaning_en": "measure/countermeasure",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N3",
+    "distractors": [
+      "対応",
+      "解決",
+      "方策"
+    ],
+    "distractors_en": [
+      "response",
+      "resolution",
+      "measure"
+    ]
+  },
+  {
+    "id": "n3_196",
+    "kanji": "基準",
+    "kana": "きじゅん",
+    "meaning_zh": "基準、標準",
+    "meaning_en": "standard/criterion",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N3",
+    "distractors": [
+      "水準",
+      "標準",
+      "目安"
+    ],
+    "distractors_en": [
+      "level/standard",
+      "standard",
+      "estimate/guideline"
+    ]
+  },
+  {
+    "id": "n3_197",
+    "kanji": "手順",
+    "kana": "てじゅん",
+    "meaning_zh": "程序、步驟",
+    "meaning_en": "procedure/steps",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N3",
+    "distractors": [
+      "方法",
+      "プロセス",
+      "順序"
+    ],
+    "distractors_en": [
+      "method",
+      "process",
+      "order/sequence"
+    ]
+  },
+  {
+    "id": "n3_198",
+    "kanji": "仕組み",
+    "kana": "しくみ",
+    "meaning_zh": "結構、機制",
+    "meaning_en": "structure/mechanism",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N3",
+    "distractors": [
+      "制度",
+      "システム",
+      "構造"
+    ],
+    "distractors_en": [
+      "system",
+      "system",
+      "structure"
+    ]
+  },
+  {
+    "id": "n3_199",
+    "kanji": "役割",
+    "kana": "やくわり",
+    "meaning_zh": "角色、職責",
+    "meaning_en": "role",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N3",
+    "distractors": [
+      "役目",
+      "担当",
+      "機能"
+    ],
+    "distractors_en": [
+      "role/duty",
+      "in charge",
+      "function"
+    ]
+  },
+  {
+    "id": "n3_200",
+    "kanji": "注意",
+    "kana": "ちゅうい",
+    "meaning_zh": "注意、小心",
+    "meaning_en": "attention/caution",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N3",
+    "distractors": [
+      "警告",
+      "気をつける",
+      "用心"
+    ],
+    "distractors_en": [
+      "warning",
+      "to be careful",
+      "caution"
     ]
   }
 ]
