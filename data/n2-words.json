@@ -1,0 +1,4002 @@
+[
+  {
+    "id": "n2_001",
+    "kanji": "概念",
+    "kana": "がいねん",
+    "meaning_zh": "概念",
+    "meaning_en": "concept",
+    "category": "抽象・概念",
+    "category_en": "Abstract",
+    "level": "N2",
+    "distractors": [
+      "理念",
+      "定義",
+      "観念"
+    ],
+    "distractors_en": [
+      "ideal/philosophy",
+      "definition",
+      "idea/notion"
+    ]
+  },
+  {
+    "id": "n2_002",
+    "kanji": "理念",
+    "kana": "りねん",
+    "meaning_zh": "理念、理想",
+    "meaning_en": "philosophy/ideal",
+    "category": "抽象・概念",
+    "category_en": "Abstract",
+    "level": "N2",
+    "distractors": [
+      "概念",
+      "信念",
+      "方針"
+    ],
+    "distractors_en": [
+      "concept",
+      "belief",
+      "policy"
+    ]
+  },
+  {
+    "id": "n2_003",
+    "kanji": "定義",
+    "kana": "ていぎ",
+    "meaning_zh": "定義",
+    "meaning_en": "definition",
+    "category": "抽象・概念",
+    "category_en": "Abstract",
+    "level": "N2",
+    "distractors": [
+      "概念",
+      "説明",
+      "意味"
+    ],
+    "distractors_en": [
+      "concept",
+      "explanation",
+      "meaning"
+    ]
+  },
+  {
+    "id": "n2_004",
+    "kanji": "傾向",
+    "kana": "けいこう",
+    "meaning_zh": "傾向、趨勢",
+    "meaning_en": "tendency/trend",
+    "category": "抽象・概念",
+    "category_en": "Abstract",
+    "level": "N2",
+    "distractors": [
+      "動向",
+      "方向",
+      "流れ"
+    ],
+    "distractors_en": [
+      "trend/movement",
+      "direction",
+      "flow/trend"
+    ]
+  },
+  {
+    "id": "n2_005",
+    "kanji": "特徴",
+    "kana": "とくちょう",
+    "meaning_zh": "特徵",
+    "meaning_en": "characteristic/feature",
+    "category": "抽象・概念",
+    "category_en": "Abstract",
+    "level": "N2",
+    "distractors": [
+      "特色",
+      "性質",
+      "個性"
+    ],
+    "distractors_en": [
+      "distinctive feature",
+      "nature/quality",
+      "individuality"
+    ]
+  },
+  {
+    "id": "n2_006",
+    "kanji": "可能性",
+    "kana": "かのうせい",
+    "meaning_zh": "可能性",
+    "meaning_en": "possibility",
+    "category": "抽象・概念",
+    "category_en": "Abstract",
+    "level": "N2",
+    "distractors": [
+      "潜在性",
+      "見込み",
+      "確率"
+    ],
+    "distractors_en": [
+      "potential",
+      "prospect",
+      "probability"
+    ]
+  },
+  {
+    "id": "n2_007",
+    "kanji": "必然",
+    "kana": "ひつぜん",
+    "meaning_zh": "必然",
+    "meaning_en": "inevitability",
+    "category": "抽象・概念",
+    "category_en": "Abstract",
+    "level": "N2",
+    "distractors": [
+      "偶然",
+      "当然",
+      "確実"
+    ],
+    "distractors_en": [
+      "coincidence",
+      "naturally/of course",
+      "certain"
+    ]
+  },
+  {
+    "id": "n2_008",
+    "kanji": "偶然",
+    "kana": "ぐうぜん",
+    "meaning_zh": "偶然、巧合",
+    "meaning_en": "coincidence/by chance",
+    "category": "抽象・概念",
+    "category_en": "Abstract",
+    "level": "N2",
+    "distractors": [
+      "必然",
+      "たまたま",
+      "運"
+    ],
+    "distractors_en": [
+      "inevitability",
+      "happen to",
+      "luck"
+    ]
+  },
+  {
+    "id": "n2_009",
+    "kanji": "矛盾",
+    "kana": "むじゅん",
+    "meaning_zh": "矛盾",
+    "meaning_en": "contradiction",
+    "category": "抽象・概念",
+    "category_en": "Abstract",
+    "level": "N2",
+    "distractors": [
+      "対立",
+      "相違",
+      "不一致"
+    ],
+    "distractors_en": [
+      "conflict",
+      "difference",
+      "inconsistency"
+    ]
+  },
+  {
+    "id": "n2_010",
+    "kanji": "共通",
+    "kana": "きょうつう",
+    "meaning_zh": "共通、共同",
+    "meaning_en": "common/shared",
+    "category": "抽象・概念",
+    "category_en": "Abstract",
+    "level": "N2",
+    "distractors": [
+      "共同",
+      "同様",
+      "一般"
+    ],
+    "distractors_en": [
+      "joint/cooperative",
+      "similar",
+      "general"
+    ]
+  },
+  {
+    "id": "n2_011",
+    "kanji": "相違",
+    "kana": "そうい",
+    "meaning_zh": "差異",
+    "meaning_en": "difference/discrepancy",
+    "category": "抽象・概念",
+    "category_en": "Abstract",
+    "level": "N2",
+    "distractors": [
+      "差異",
+      "違い",
+      "区別"
+    ],
+    "distractors_en": [
+      "difference",
+      "difference",
+      "distinction"
+    ]
+  },
+  {
+    "id": "n2_012",
+    "kanji": "類似",
+    "kana": "るいじ",
+    "meaning_zh": "類似",
+    "meaning_en": "similarity/resemblance",
+    "category": "抽象・概念",
+    "category_en": "Abstract",
+    "level": "N2",
+    "distractors": [
+      "同様",
+      "似た",
+      "同一"
+    ],
+    "distractors_en": [
+      "similar",
+      "similar/like",
+      "identical"
+    ]
+  },
+  {
+    "id": "n2_013",
+    "kanji": "対照",
+    "kana": "たいしょう",
+    "meaning_zh": "對照、對比",
+    "meaning_en": "contrast",
+    "category": "抽象・概念",
+    "category_en": "Abstract",
+    "level": "N2",
+    "distractors": [
+      "比較",
+      "対比",
+      "違い"
+    ],
+    "distractors_en": [
+      "comparison",
+      "contrast",
+      "difference"
+    ]
+  },
+  {
+    "id": "n2_014",
+    "kanji": "分類",
+    "kana": "ぶんるい",
+    "meaning_zh": "分類",
+    "meaning_en": "classification",
+    "category": "抽象・概念",
+    "category_en": "Abstract",
+    "level": "N2",
+    "distractors": [
+      "区別",
+      "整理",
+      "分析"
+    ],
+    "distractors_en": [
+      "distinction",
+      "organization",
+      "analysis"
+    ]
+  },
+  {
+    "id": "n2_015",
+    "kanji": "前提",
+    "kana": "ぜんてい",
+    "meaning_zh": "前提",
+    "meaning_en": "premise/precondition",
+    "category": "抽象・概念",
+    "category_en": "Abstract",
+    "level": "N2",
+    "distractors": [
+      "条件",
+      "基準",
+      "根拠"
+    ],
+    "distractors_en": [
+      "condition",
+      "standard",
+      "basis"
+    ]
+  },
+  {
+    "id": "n2_016",
+    "kanji": "論理",
+    "kana": "ろんり",
+    "meaning_zh": "邏輯",
+    "meaning_en": "logic",
+    "category": "学問・論理",
+    "category_en": "Academic",
+    "level": "N2",
+    "distractors": [
+      "理論",
+      "理屈",
+      "論点"
+    ],
+    "distractors_en": [
+      "theory",
+      "reasoning",
+      "argument point"
+    ]
+  },
+  {
+    "id": "n2_017",
+    "kanji": "仮定",
+    "kana": "かてい",
+    "meaning_zh": "假設",
+    "meaning_en": "assumption/hypothesis",
+    "category": "学問・論理",
+    "category_en": "Academic",
+    "level": "N2",
+    "distractors": [
+      "前提",
+      "推測",
+      "仮説"
+    ],
+    "distractors_en": [
+      "premise",
+      "guess",
+      "hypothesis"
+    ]
+  },
+  {
+    "id": "n2_018",
+    "kanji": "根拠",
+    "kana": "こんきょ",
+    "meaning_zh": "根據",
+    "meaning_en": "basis/grounds",
+    "category": "学問・論理",
+    "category_en": "Academic",
+    "level": "N2",
+    "distractors": [
+      "証拠",
+      "理由",
+      "裏付け"
+    ],
+    "distractors_en": [
+      "evidence",
+      "reason",
+      "backing/support"
+    ]
+  },
+  {
+    "id": "n2_019",
+    "kanji": "証拠",
+    "kana": "しょうこ",
+    "meaning_zh": "證據",
+    "meaning_en": "evidence/proof",
+    "category": "学問・論理",
+    "category_en": "Academic",
+    "level": "N2",
+    "distractors": [
+      "根拠",
+      "証明",
+      "事実"
+    ],
+    "distractors_en": [
+      "basis",
+      "proof",
+      "fact"
+    ]
+  },
+  {
+    "id": "n2_020",
+    "kanji": "主張",
+    "kana": "しゅちょう",
+    "meaning_zh": "主張、主張",
+    "meaning_en": "claim/assertion",
+    "category": "学問・論理",
+    "category_en": "Academic",
+    "level": "N2",
+    "distractors": [
+      "意見",
+      "論点",
+      "見解"
+    ],
+    "distractors_en": [
+      "opinion",
+      "argument point",
+      "view"
+    ]
+  },
+  {
+    "id": "n2_021",
+    "kanji": "反論",
+    "kana": "はんろん",
+    "meaning_zh": "反論",
+    "meaning_en": "counter-argument",
+    "category": "学問・論理",
+    "category_en": "Academic",
+    "level": "N2",
+    "distractors": [
+      "反対",
+      "批判",
+      "否定"
+    ],
+    "distractors_en": [
+      "opposition",
+      "criticism",
+      "denial"
+    ]
+  },
+  {
+    "id": "n2_022",
+    "kanji": "分析",
+    "kana": "ぶんせき",
+    "meaning_zh": "分析",
+    "meaning_en": "analysis",
+    "category": "学問・論理",
+    "category_en": "Academic",
+    "level": "N2",
+    "distractors": [
+      "調査",
+      "考察",
+      "解析"
+    ],
+    "distractors_en": [
+      "investigation",
+      "examination",
+      "analysis"
+    ]
+  },
+  {
+    "id": "n2_023",
+    "kanji": "考察",
+    "kana": "こうさつ",
+    "meaning_zh": "考察、探討",
+    "meaning_en": "examination/consideration",
+    "category": "学問・論理",
+    "category_en": "Academic",
+    "level": "N2",
+    "distractors": [
+      "検討",
+      "分析",
+      "研究"
+    ],
+    "distractors_en": [
+      "consideration",
+      "analysis",
+      "research"
+    ]
+  },
+  {
+    "id": "n2_024",
+    "kanji": "検討",
+    "kana": "けんとう",
+    "meaning_zh": "研討、考慮",
+    "meaning_en": "examination/consideration",
+    "category": "学問・論理",
+    "category_en": "Academic",
+    "level": "N2",
+    "distractors": [
+      "考察",
+      "検証",
+      "審議"
+    ],
+    "distractors_en": [
+      "examination",
+      "verification",
+      "deliberation"
+    ]
+  },
+  {
+    "id": "n2_025",
+    "kanji": "評価",
+    "kana": "ひょうか",
+    "meaning_zh": "評價",
+    "meaning_en": "evaluation/assessment",
+    "category": "学問・論理",
+    "category_en": "Academic",
+    "level": "N2",
+    "distractors": [
+      "判断",
+      "採点",
+      "査定"
+    ],
+    "distractors_en": [
+      "judgment",
+      "grading",
+      "assessment"
+    ]
+  },
+  {
+    "id": "n2_026",
+    "kanji": "比較",
+    "kana": "ひかく",
+    "meaning_zh": "比較",
+    "meaning_en": "comparison",
+    "category": "学問・論理",
+    "category_en": "Academic",
+    "level": "N2",
+    "distractors": [
+      "対照",
+      "比べ",
+      "対比"
+    ],
+    "distractors_en": [
+      "contrast",
+      "comparison",
+      "contrast"
+    ]
+  },
+  {
+    "id": "n2_027",
+    "kanji": "客観的",
+    "kana": "きゃっかんてき",
+    "meaning_zh": "客觀的",
+    "meaning_en": "objective",
+    "category": "学問・論理",
+    "category_en": "Academic",
+    "level": "N2",
+    "distractors": [
+      "主観的",
+      "中立的",
+      "公平的"
+    ],
+    "distractors_en": [
+      "subjective",
+      "neutral",
+      "impartial"
+    ]
+  },
+  {
+    "id": "n2_028",
+    "kanji": "主観的",
+    "kana": "しゅかんてき",
+    "meaning_zh": "主觀的",
+    "meaning_en": "subjective",
+    "category": "学問・論理",
+    "category_en": "Academic",
+    "level": "N2",
+    "distractors": [
+      "客観的",
+      "個人的",
+      "感情的"
+    ],
+    "distractors_en": [
+      "objective",
+      "personal",
+      "emotional"
+    ]
+  },
+  {
+    "id": "n2_029",
+    "kanji": "論点",
+    "kana": "ろんてん",
+    "meaning_zh": "論點、爭點",
+    "meaning_en": "argument point/issue",
+    "category": "学問・論理",
+    "category_en": "Academic",
+    "level": "N2",
+    "distractors": [
+      "要点",
+      "主旨",
+      "争点"
+    ],
+    "distractors_en": [
+      "key point",
+      "main point",
+      "point of contention"
+    ]
+  },
+  {
+    "id": "n2_030",
+    "kanji": "見解",
+    "kana": "けんかい",
+    "meaning_zh": "見解",
+    "meaning_en": "view/opinion",
+    "category": "学問・論理",
+    "category_en": "Academic",
+    "level": "N2",
+    "distractors": [
+      "意見",
+      "見方",
+      "観点"
+    ],
+    "distractors_en": [
+      "opinion",
+      "way of seeing",
+      "viewpoint"
+    ]
+  },
+  {
+    "id": "n2_031",
+    "kanji": "契約",
+    "kana": "けいやく",
+    "meaning_zh": "契約",
+    "meaning_en": "contract",
+    "category": "仕事・経済",
+    "category_en": "Business",
+    "level": "N2",
+    "distractors": [
+      "合意",
+      "協定",
+      "条約"
+    ],
+    "distractors_en": [
+      "agreement",
+      "accord",
+      "treaty"
+    ]
+  },
+  {
+    "id": "n2_032",
+    "kanji": "交渉",
+    "kana": "こうしょう",
+    "meaning_zh": "交涉、談判",
+    "meaning_en": "negotiation",
+    "category": "仕事・経済",
+    "category_en": "Business",
+    "level": "N2",
+    "distractors": [
+      "協議",
+      "折衝",
+      "商談"
+    ],
+    "distractors_en": [
+      "consultation",
+      "negotiation",
+      "business talk"
+    ]
+  },
+  {
+    "id": "n2_033",
+    "kanji": "合意",
+    "kana": "ごうい",
+    "meaning_zh": "合意",
+    "meaning_en": "agreement/consensus",
+    "category": "仕事・経済",
+    "category_en": "Business",
+    "level": "N2",
+    "distractors": [
+      "同意",
+      "承諾",
+      "了承"
+    ],
+    "distractors_en": [
+      "consent",
+      "approval",
+      "acknowledgment"
+    ]
+  },
+  {
+    "id": "n2_034",
+    "kanji": "方針",
+    "kana": "ほうしん",
+    "meaning_zh": "方針、方向",
+    "meaning_en": "policy/direction",
+    "category": "仕事・経済",
+    "category_en": "Business",
+    "level": "N2",
+    "distractors": [
+      "方策",
+      "戦略",
+      "指針"
+    ],
+    "distractors_en": [
+      "measure/plan",
+      "strategy",
+      "guideline"
+    ]
+  },
+  {
+    "id": "n2_035",
+    "kanji": "予算",
+    "kana": "よさん",
+    "meaning_zh": "預算",
+    "meaning_en": "budget",
+    "category": "仕事・経済",
+    "category_en": "Business",
+    "level": "N2",
+    "distractors": [
+      "費用",
+      "資金",
+      "経費"
+    ],
+    "distractors_en": [
+      "cost",
+      "funds",
+      "expense"
+    ]
+  },
+  {
+    "id": "n2_036",
+    "kanji": "収入",
+    "kana": "しゅうにゅう",
+    "meaning_zh": "收入",
+    "meaning_en": "income/revenue",
+    "category": "仕事・経済",
+    "category_en": "Business",
+    "level": "N2",
+    "distractors": [
+      "支出",
+      "所得",
+      "賃金"
+    ],
+    "distractors_en": [
+      "expenditure",
+      "income/earnings",
+      "wage"
+    ]
+  },
+  {
+    "id": "n2_037",
+    "kanji": "支出",
+    "kana": "ししゅつ",
+    "meaning_zh": "支出",
+    "meaning_en": "expenditure",
+    "category": "仕事・経済",
+    "category_en": "Business",
+    "level": "N2",
+    "distractors": [
+      "収入",
+      "費用",
+      "出費"
+    ],
+    "distractors_en": [
+      "income",
+      "cost",
+      "expense"
+    ]
+  },
+  {
+    "id": "n2_038",
+    "kanji": "投資",
+    "kana": "とうし",
+    "meaning_zh": "投資",
+    "meaning_en": "investment",
+    "category": "仕事・経済",
+    "category_en": "Business",
+    "level": "N2",
+    "distractors": [
+      "融資",
+      "出資",
+      "資金"
+    ],
+    "distractors_en": [
+      "loan/financing",
+      "investment/capital",
+      "funds"
+    ]
+  },
+  {
+    "id": "n2_039",
+    "kanji": "赤字",
+    "kana": "あかじ",
+    "meaning_zh": "赤字、虧損",
+    "meaning_en": "deficit/loss",
+    "category": "仕事・経済",
+    "category_en": "Business",
+    "level": "N2",
+    "distractors": [
+      "黒字",
+      "損失",
+      "負債"
+    ],
+    "distractors_en": [
+      "surplus/profit",
+      "loss",
+      "debt"
+    ]
+  },
+  {
+    "id": "n2_040",
+    "kanji": "黒字",
+    "kana": "くろじ",
+    "meaning_zh": "盈餘、獲利",
+    "meaning_en": "surplus/profit",
+    "category": "仕事・経済",
+    "category_en": "Business",
+    "level": "N2",
+    "distractors": [
+      "赤字",
+      "利益",
+      "黒い"
+    ],
+    "distractors_en": [
+      "deficit/loss",
+      "profit",
+      "black"
+    ]
+  },
+  {
+    "id": "n2_041",
+    "kanji": "効率",
+    "kana": "こうりつ",
+    "meaning_zh": "效率",
+    "meaning_en": "efficiency",
+    "category": "仕事・経済",
+    "category_en": "Business",
+    "level": "N2",
+    "distractors": [
+      "効果",
+      "能率",
+      "生産性"
+    ],
+    "distractors_en": [
+      "effect",
+      "efficiency",
+      "productivity"
+    ]
+  },
+  {
+    "id": "n2_042",
+    "kanji": "優先",
+    "kana": "ゆうせん",
+    "meaning_zh": "優先",
+    "meaning_en": "priority",
+    "category": "仕事・経済",
+    "category_en": "Business",
+    "level": "N2",
+    "distractors": [
+      "重視",
+      "先行",
+      "優位"
+    ],
+    "distractors_en": [
+      "emphasis",
+      "going first",
+      "advantage"
+    ]
+  },
+  {
+    "id": "n2_043",
+    "kanji": "補助",
+    "kana": "ほじょ",
+    "meaning_zh": "補助、援助",
+    "meaning_en": "subsidy/assistance",
+    "category": "仕事・経済",
+    "category_en": "Business",
+    "level": "N2",
+    "distractors": [
+      "支援",
+      "補填",
+      "援助"
+    ],
+    "distractors_en": [
+      "support",
+      "compensation",
+      "aid"
+    ]
+  },
+  {
+    "id": "n2_044",
+    "kanji": "補償",
+    "kana": "ほしょう",
+    "meaning_zh": "補償",
+    "meaning_en": "compensation",
+    "category": "仕事・経済",
+    "category_en": "Business",
+    "level": "N2",
+    "distractors": [
+      "賠償",
+      "補助",
+      "保証"
+    ],
+    "distractors_en": [
+      "damages",
+      "subsidy",
+      "guarantee"
+    ]
+  },
+  {
+    "id": "n2_045",
+    "kanji": "保険",
+    "kana": "ほけん",
+    "meaning_zh": "保險",
+    "meaning_en": "insurance",
+    "category": "仕事・経済",
+    "category_en": "Business",
+    "level": "N2",
+    "distractors": [
+      "保証",
+      "補償",
+      "共済"
+    ],
+    "distractors_en": [
+      "guarantee",
+      "compensation",
+      "mutual aid"
+    ]
+  },
+  {
+    "id": "n2_046",
+    "kanji": "株式",
+    "kana": "かぶしき",
+    "meaning_zh": "股票",
+    "meaning_en": "stock/shares",
+    "category": "仕事・経済",
+    "category_en": "Business",
+    "level": "N2",
+    "distractors": [
+      "債券",
+      "証券",
+      "株"
+    ],
+    "distractors_en": [
+      "bond",
+      "securities",
+      "stock (informal)"
+    ]
+  },
+  {
+    "id": "n2_047",
+    "kanji": "税金",
+    "kana": "ぜいきん",
+    "meaning_zh": "稅金",
+    "meaning_en": "tax",
+    "category": "仕事・経済",
+    "category_en": "Business",
+    "level": "N2",
+    "distractors": [
+      "税率",
+      "徴収",
+      "課税"
+    ],
+    "distractors_en": [
+      "tax rate",
+      "collection",
+      "taxation"
+    ]
+  },
+  {
+    "id": "n2_048",
+    "kanji": "景気",
+    "kana": "けいき",
+    "meaning_zh": "景氣",
+    "meaning_en": "economic conditions",
+    "category": "仕事・経済",
+    "category_en": "Business",
+    "level": "N2",
+    "distractors": [
+      "経済",
+      "好景気",
+      "不況"
+    ],
+    "distractors_en": [
+      "economy",
+      "boom",
+      "recession"
+    ]
+  },
+  {
+    "id": "n2_049",
+    "kanji": "戦略",
+    "kana": "せんりゃく",
+    "meaning_zh": "戰略",
+    "meaning_en": "strategy",
+    "category": "仕事・経済",
+    "category_en": "Business",
+    "level": "N2",
+    "distractors": [
+      "戦術",
+      "方針",
+      "作戦"
+    ],
+    "distractors_en": [
+      "tactics",
+      "policy",
+      "plan/operation"
+    ]
+  },
+  {
+    "id": "n2_050",
+    "kanji": "競争",
+    "kana": "きょうそう",
+    "meaning_zh": "競爭",
+    "meaning_en": "competition",
+    "category": "仕事・経済",
+    "category_en": "Business",
+    "level": "N2",
+    "distractors": [
+      "競合",
+      "対抗",
+      "競い"
+    ],
+    "distractors_en": [
+      "rivalry",
+      "opposition",
+      "competing"
+    ]
+  },
+  {
+    "id": "n2_051",
+    "kanji": "制限",
+    "kana": "せいげん",
+    "meaning_zh": "限制",
+    "meaning_en": "restriction/limit",
+    "category": "社会・政治",
+    "category_en": "Society",
+    "level": "N2",
+    "distractors": [
+      "規制",
+      "禁止",
+      "制約"
+    ],
+    "distractors_en": [
+      "regulation",
+      "prohibition",
+      "constraint"
+    ]
+  },
+  {
+    "id": "n2_052",
+    "kanji": "規制",
+    "kana": "きせい",
+    "meaning_zh": "規制、管制",
+    "meaning_en": "regulation/control",
+    "category": "社会・政治",
+    "category_en": "Society",
+    "level": "N2",
+    "distractors": [
+      "制限",
+      "規則",
+      "統制"
+    ],
+    "distractors_en": [
+      "restriction",
+      "rule",
+      "control"
+    ]
+  },
+  {
+    "id": "n2_053",
+    "kanji": "措置",
+    "kana": "そち",
+    "meaning_zh": "措施",
+    "meaning_en": "measure/action",
+    "category": "社会・政治",
+    "category_en": "Society",
+    "level": "N2",
+    "distractors": [
+      "対策",
+      "手段",
+      "対応"
+    ],
+    "distractors_en": [
+      "countermeasure",
+      "means",
+      "response"
+    ]
+  },
+  {
+    "id": "n2_054",
+    "kanji": "施策",
+    "kana": "しさく",
+    "meaning_zh": "政策、施政",
+    "meaning_en": "policy measure",
+    "category": "社会・政治",
+    "category_en": "Society",
+    "level": "N2",
+    "distractors": [
+      "政策",
+      "方策",
+      "対策"
+    ],
+    "distractors_en": [
+      "policy",
+      "plan",
+      "countermeasure"
+    ]
+  },
+  {
+    "id": "n2_055",
+    "kanji": "議論",
+    "kana": "ぎろん",
+    "meaning_zh": "討論、辯論",
+    "meaning_en": "debate/discussion",
+    "category": "社会・政治",
+    "category_en": "Society",
+    "level": "N2",
+    "distractors": [
+      "論争",
+      "討議",
+      "話し合い"
+    ],
+    "distractors_en": [
+      "controversy",
+      "deliberation",
+      "discussion"
+    ]
+  },
+  {
+    "id": "n2_056",
+    "kanji": "民主主義",
+    "kana": "みんしゅしゅぎ",
+    "meaning_zh": "民主主義",
+    "meaning_en": "democracy",
+    "category": "社会・政治",
+    "category_en": "Society",
+    "level": "N2",
+    "distractors": [
+      "自由主義",
+      "社会主義",
+      "資本主義"
+    ],
+    "distractors_en": [
+      "liberalism",
+      "socialism",
+      "capitalism"
+    ]
+  },
+  {
+    "id": "n2_057",
+    "kanji": "平等",
+    "kana": "びょうどう",
+    "meaning_zh": "平等",
+    "meaning_en": "equality",
+    "category": "社会・政治",
+    "category_en": "Society",
+    "level": "N2",
+    "distractors": [
+      "公平",
+      "均等",
+      "差別"
+    ],
+    "distractors_en": [
+      "fairness",
+      "equality",
+      "discrimination"
+    ]
+  },
+  {
+    "id": "n2_058",
+    "kanji": "差別",
+    "kana": "さべつ",
+    "meaning_zh": "歧視、差別",
+    "meaning_en": "discrimination",
+    "category": "社会・政治",
+    "category_en": "Society",
+    "level": "N2",
+    "distractors": [
+      "区別",
+      "偏見",
+      "不平等"
+    ],
+    "distractors_en": [
+      "distinction",
+      "prejudice",
+      "inequality"
+    ]
+  },
+  {
+    "id": "n2_059",
+    "kanji": "偏見",
+    "kana": "へんけん",
+    "meaning_zh": "偏見",
+    "meaning_en": "prejudice/bias",
+    "category": "社会・政治",
+    "category_en": "Society",
+    "level": "N2",
+    "distractors": [
+      "差別",
+      "先入観",
+      "固定観念"
+    ],
+    "distractors_en": [
+      "discrimination",
+      "preconception",
+      "stereotype"
+    ]
+  },
+  {
+    "id": "n2_060",
+    "kanji": "格差",
+    "kana": "かくさ",
+    "meaning_zh": "差距、不平等",
+    "meaning_en": "disparity/gap",
+    "category": "社会・政治",
+    "category_en": "Society",
+    "level": "N2",
+    "distractors": [
+      "差異",
+      "不平等",
+      "開き"
+    ],
+    "distractors_en": [
+      "difference",
+      "inequality",
+      "gap"
+    ]
+  },
+  {
+    "id": "n2_061",
+    "kanji": "福祉",
+    "kana": "ふくし",
+    "meaning_zh": "福利、福祉",
+    "meaning_en": "welfare",
+    "category": "社会・政治",
+    "category_en": "Society",
+    "level": "N2",
+    "distractors": [
+      "福利",
+      "社会保障",
+      "支援"
+    ],
+    "distractors_en": [
+      "benefit",
+      "social security",
+      "support"
+    ]
+  },
+  {
+    "id": "n2_062",
+    "kanji": "貧困",
+    "kana": "ひんこん",
+    "meaning_zh": "貧困",
+    "meaning_en": "poverty",
+    "category": "社会・政治",
+    "category_en": "Society",
+    "level": "N2",
+    "distractors": [
+      "格差",
+      "貧しい",
+      "経済的困難"
+    ],
+    "distractors_en": [
+      "disparity",
+      "poor",
+      "economic hardship"
+    ]
+  },
+  {
+    "id": "n2_063",
+    "kanji": "人口",
+    "kana": "じんこう",
+    "meaning_zh": "人口",
+    "meaning_en": "population",
+    "category": "社会・政治",
+    "category_en": "Society",
+    "level": "N2",
+    "distractors": [
+      "人数",
+      "住民",
+      "国民"
+    ],
+    "distractors_en": [
+      "number of people",
+      "residents",
+      "citizens"
+    ]
+  },
+  {
+    "id": "n2_064",
+    "kanji": "少子化",
+    "kana": "しょうしか",
+    "meaning_zh": "少子化",
+    "meaning_en": "declining birth rate",
+    "category": "社会・政治",
+    "category_en": "Society",
+    "level": "N2",
+    "distractors": [
+      "高齢化",
+      "人口減少",
+      "出生率低下"
+    ],
+    "distractors_en": [
+      "aging society",
+      "population decline",
+      "birth rate decline"
+    ]
+  },
+  {
+    "id": "n2_065",
+    "kanji": "高齢化",
+    "kana": "こうれいか",
+    "meaning_zh": "高齡化",
+    "meaning_en": "aging society",
+    "category": "社会・政治",
+    "category_en": "Society",
+    "level": "N2",
+    "distractors": [
+      "少子化",
+      "老齢化",
+      "長寿化"
+    ],
+    "distractors_en": [
+      "declining birth rate",
+      "aging",
+      "longevity"
+    ]
+  },
+  {
+    "id": "n2_066",
+    "kanji": "葛藤",
+    "kana": "かっとう",
+    "meaning_zh": "葛藤、矛盾",
+    "meaning_en": "conflict/inner struggle",
+    "category": "感情・心理",
+    "category_en": "Psychology",
+    "level": "N2",
+    "distractors": [
+      "悩み",
+      "迷い",
+      "苦悩"
+    ],
+    "distractors_en": [
+      "worry",
+      "indecision",
+      "anguish"
+    ]
+  },
+  {
+    "id": "n2_067",
+    "kanji": "苦悩",
+    "kana": "くのう",
+    "meaning_zh": "苦惱",
+    "meaning_en": "anguish/suffering",
+    "category": "感情・心理",
+    "category_en": "Psychology",
+    "level": "N2",
+    "distractors": [
+      "苦しみ",
+      "悩み",
+      "苦痛"
+    ],
+    "distractors_en": [
+      "suffering",
+      "worry",
+      "pain"
+    ]
+  },
+  {
+    "id": "n2_068",
+    "kanji": "充実",
+    "kana": "じゅうじつ",
+    "meaning_zh": "充實",
+    "meaning_en": "fulfillment",
+    "category": "感情・心理",
+    "category_en": "Psychology",
+    "level": "N2",
+    "distractors": [
+      "満足",
+      "豊か",
+      "内容が濃い"
+    ],
+    "distractors_en": [
+      "satisfaction",
+      "rich/abundant",
+      "substantial"
+    ]
+  },
+  {
+    "id": "n2_069",
+    "kanji": "達成感",
+    "kana": "たっせいかん",
+    "meaning_zh": "成就感",
+    "meaning_en": "sense of achievement",
+    "category": "感情・心理",
+    "category_en": "Psychology",
+    "level": "N2",
+    "distractors": [
+      "満足感",
+      "優越感",
+      "喜び"
+    ],
+    "distractors_en": [
+      "sense of satisfaction",
+      "sense of superiority",
+      "joy"
+    ]
+  },
+  {
+    "id": "n2_070",
+    "kanji": "喪失感",
+    "kana": "そうしつかん",
+    "meaning_zh": "喪失感",
+    "meaning_en": "sense of loss",
+    "category": "感情・心理",
+    "category_en": "Psychology",
+    "level": "N2",
+    "distractors": [
+      "虚無感",
+      "悲しみ",
+      "孤独感"
+    ],
+    "distractors_en": [
+      "sense of emptiness",
+      "sadness",
+      "sense of loneliness"
+    ]
+  },
+  {
+    "id": "n2_071",
+    "kanji": "劣等感",
+    "kana": "れっとうかん",
+    "meaning_zh": "自卑感",
+    "meaning_en": "inferiority complex",
+    "category": "感情・心理",
+    "category_en": "Psychology",
+    "level": "N2",
+    "distractors": [
+      "優越感",
+      "自信のなさ",
+      "コンプレックス"
+    ],
+    "distractors_en": [
+      "superiority complex",
+      "lack of confidence",
+      "complex"
+    ]
+  },
+  {
+    "id": "n2_072",
+    "kanji": "優越感",
+    "kana": "ゆうえつかん",
+    "meaning_zh": "優越感",
+    "meaning_en": "sense of superiority",
+    "category": "感情・心理",
+    "category_en": "Psychology",
+    "level": "N2",
+    "distractors": [
+      "劣等感",
+      "自信",
+      "自尊感情"
+    ],
+    "distractors_en": [
+      "inferiority complex",
+      "confidence",
+      "self-esteem"
+    ]
+  },
+  {
+    "id": "n2_073",
+    "kana": "あせり",
+    "meaning_zh": "焦急、著急",
+    "meaning_en": "impatience/anxiety",
+    "category": "感情・心理",
+    "category_en": "Psychology",
+    "level": "N2",
+    "distractors": [
+      "緊張",
+      "不安",
+      "焦る"
+    ],
+    "distractors_en": [
+      "nervousness",
+      "anxiety",
+      "to be impatient"
+    ],
+    "kanji": "焦り"
+  },
+  {
+    "id": "n2_074",
+    "kanji": "躊躇",
+    "kana": "ちゅうちょ",
+    "meaning_zh": "猶豫、躊躇",
+    "meaning_en": "hesitation",
+    "category": "感情・心理",
+    "category_en": "Psychology",
+    "level": "N2",
+    "distractors": [
+      "迷い",
+      "ためらい",
+      "逡巡"
+    ],
+    "distractors_en": [
+      "indecision",
+      "wavering",
+      "hesitation"
+    ]
+  },
+  {
+    "id": "n2_075",
+    "kanji": "嫉妬",
+    "kana": "しっと",
+    "meaning_zh": "嫉妒",
+    "meaning_en": "jealousy/envy",
+    "category": "感情・心理",
+    "category_en": "Psychology",
+    "level": "N2",
+    "distractors": [
+      "羨望",
+      "妬み",
+      "ライバル心"
+    ],
+    "distractors_en": [
+      "admiration/envy",
+      "envy",
+      "rivalry"
+    ]
+  },
+  {
+    "id": "n2_076",
+    "kanji": "羨望",
+    "kana": "せんぼう",
+    "meaning_zh": "羨慕",
+    "meaning_en": "admiration/envy",
+    "category": "感情・心理",
+    "category_en": "Psychology",
+    "level": "N2",
+    "distractors": [
+      "嫉妬",
+      "憧れ",
+      "うらやむ"
+    ],
+    "distractors_en": [
+      "jealousy",
+      "yearning",
+      "to envy"
+    ]
+  },
+  {
+    "id": "n2_077",
+    "kanji": "憧れ",
+    "kana": "あこがれ",
+    "meaning_zh": "憧憬",
+    "meaning_en": "yearning/longing",
+    "category": "感情・心理",
+    "category_en": "Psychology",
+    "level": "N2",
+    "distractors": [
+      "理想",
+      "目標",
+      "夢"
+    ],
+    "distractors_en": [
+      "ideal",
+      "goal",
+      "dream"
+    ]
+  },
+  {
+    "id": "n2_078",
+    "kanji": "恨む",
+    "kana": "うらむ",
+    "meaning_zh": "怨恨",
+    "meaning_en": "to resent/bear a grudge",
+    "category": "感情・心理",
+    "category_en": "Psychology",
+    "level": "N2",
+    "distractors": [
+      "憎む",
+      "怒る",
+      "不満"
+    ],
+    "distractors_en": [
+      "to hate",
+      "to get angry",
+      "dissatisfaction"
+    ]
+  },
+  {
+    "id": "n2_079",
+    "kanji": "動揺",
+    "kana": "どうよう",
+    "meaning_zh": "動搖、不安",
+    "meaning_en": "agitation/upset",
+    "category": "感情・心理",
+    "category_en": "Psychology",
+    "level": "N2",
+    "distractors": [
+      "混乱",
+      "動く",
+      "焦り"
+    ],
+    "distractors_en": [
+      "confusion",
+      "to move",
+      "impatience"
+    ]
+  },
+  {
+    "id": "n2_080",
+    "kanji": "冷静",
+    "kana": "れいせい",
+    "meaning_zh": "冷靜",
+    "meaning_en": "calm/composed",
+    "category": "感情・心理",
+    "category_en": "Psychology",
+    "level": "N2",
+    "distractors": [
+      "落ち着く",
+      "平静",
+      "沈着"
+    ],
+    "distractors_en": [
+      "to calm down",
+      "calm/composed",
+      "composed"
+    ]
+  },
+  {
+    "id": "n2_081",
+    "kanji": "実験",
+    "kana": "じっけん",
+    "meaning_zh": "實驗",
+    "meaning_en": "experiment",
+    "category": "科学・技術",
+    "category_en": "Science",
+    "level": "N2",
+    "distractors": [
+      "研究",
+      "調査",
+      "試験"
+    ],
+    "distractors_en": [
+      "research",
+      "investigation",
+      "test"
+    ]
+  },
+  {
+    "id": "n2_082",
+    "kanji": "仮説",
+    "kana": "かせつ",
+    "meaning_zh": "假說",
+    "meaning_en": "hypothesis",
+    "category": "科学・技術",
+    "category_en": "Science",
+    "level": "N2",
+    "distractors": [
+      "理論",
+      "仮定",
+      "推論"
+    ],
+    "distractors_en": [
+      "theory",
+      "assumption",
+      "inference"
+    ]
+  },
+  {
+    "id": "n2_083",
+    "kanji": "証明",
+    "kana": "しょうめい",
+    "meaning_zh": "證明",
+    "meaning_en": "proof/demonstration",
+    "category": "科学・技術",
+    "category_en": "Science",
+    "level": "N2",
+    "distractors": [
+      "説明",
+      "立証",
+      "実証"
+    ],
+    "distractors_en": [
+      "explanation",
+      "proving",
+      "empirical proof"
+    ]
+  },
+  {
+    "id": "n2_084",
+    "kanji": "発見",
+    "kana": "はっけん",
+    "meaning_zh": "發現",
+    "meaning_en": "discovery",
+    "category": "科学・技術",
+    "category_en": "Science",
+    "level": "N2",
+    "distractors": [
+      "発明",
+      "発表",
+      "発覚"
+    ],
+    "distractors_en": [
+      "invention",
+      "announcement",
+      "coming to light"
+    ]
+  },
+  {
+    "id": "n2_085",
+    "kanji": "発明",
+    "kana": "はつめい",
+    "meaning_zh": "發明",
+    "meaning_en": "invention",
+    "category": "科学・技術",
+    "category_en": "Science",
+    "level": "N2",
+    "distractors": [
+      "発見",
+      "創造",
+      "開発"
+    ],
+    "distractors_en": [
+      "discovery",
+      "creation",
+      "development"
+    ]
+  },
+  {
+    "id": "n2_086",
+    "kanji": "人工知能",
+    "kana": "じんこうちのう",
+    "meaning_zh": "人工智慧",
+    "meaning_en": "artificial intelligence",
+    "category": "科学・技術",
+    "category_en": "Science",
+    "level": "N2",
+    "distractors": [
+      "機械学習",
+      "ロボット",
+      "コンピューター"
+    ],
+    "distractors_en": [
+      "machine learning",
+      "robot",
+      "computer"
+    ]
+  },
+  {
+    "id": "n2_087",
+    "kanji": "再生可能",
+    "kana": "さいせいかのう",
+    "meaning_zh": "可再生的",
+    "meaning_en": "renewable",
+    "category": "科学・技術",
+    "category_en": "Science",
+    "level": "N2",
+    "distractors": [
+      "持続可能",
+      "環境に優しい",
+      "エコ"
+    ],
+    "distractors_en": [
+      "sustainable",
+      "eco-friendly",
+      "eco"
+    ]
+  },
+  {
+    "id": "n2_088",
+    "kanji": "排出",
+    "kana": "はいしゅつ",
+    "meaning_zh": "排放、排出",
+    "meaning_en": "emission/discharge",
+    "category": "科学・技術",
+    "category_en": "Science",
+    "level": "N2",
+    "distractors": [
+      "放出",
+      "排除",
+      "廃棄"
+    ],
+    "distractors_en": [
+      "release",
+      "elimination",
+      "disposal"
+    ]
+  },
+  {
+    "id": "n2_089",
+    "kanji": "吸収",
+    "kana": "きゅうしゅう",
+    "meaning_zh": "吸收",
+    "meaning_en": "absorption",
+    "category": "科学・技術",
+    "category_en": "Science",
+    "level": "N2",
+    "distractors": [
+      "吸引",
+      "収集",
+      "取り込む"
+    ],
+    "distractors_en": [
+      "attraction",
+      "collection",
+      "to take in"
+    ]
+  },
+  {
+    "id": "n2_090",
+    "kanji": "循環",
+    "kana": "じゅんかん",
+    "meaning_zh": "循環",
+    "meaning_en": "circulation/cycle",
+    "category": "科学・技術",
+    "category_en": "Science",
+    "level": "N2",
+    "distractors": [
+      "回転",
+      "周期",
+      "サイクル"
+    ],
+    "distractors_en": [
+      "rotation",
+      "period/cycle",
+      "cycle"
+    ]
+  },
+  {
+    "id": "n2_091",
+    "kanji": "遺伝子",
+    "kana": "いでんし",
+    "meaning_zh": "基因",
+    "meaning_en": "gene",
+    "category": "科学・技術",
+    "category_en": "Science",
+    "level": "N2",
+    "distractors": [
+      "DNA",
+      "染色体",
+      "細胞"
+    ],
+    "distractors_en": [
+      "DNA",
+      "chromosome",
+      "cell"
+    ]
+  },
+  {
+    "id": "n2_092",
+    "kanji": "細胞",
+    "kana": "さいぼう",
+    "meaning_zh": "細胞",
+    "meaning_en": "cell",
+    "category": "科学・技術",
+    "category_en": "Science",
+    "level": "N2",
+    "distractors": [
+      "組織",
+      "器官",
+      "遺伝子"
+    ],
+    "distractors_en": [
+      "tissue",
+      "organ",
+      "gene"
+    ]
+  },
+  {
+    "id": "n2_093",
+    "kanji": "原子力",
+    "kana": "げんしりょく",
+    "meaning_zh": "核能",
+    "meaning_en": "nuclear power",
+    "category": "科学・技術",
+    "category_en": "Science",
+    "level": "N2",
+    "distractors": [
+      "太陽光",
+      "風力",
+      "水力"
+    ],
+    "distractors_en": [
+      "solar power",
+      "wind power",
+      "hydropower"
+    ]
+  },
+  {
+    "id": "n2_094",
+    "kanji": "宇宙",
+    "kana": "うちゅう",
+    "meaning_zh": "宇宙",
+    "meaning_en": "universe/space",
+    "category": "科学・技術",
+    "category_en": "Science",
+    "level": "N2",
+    "distractors": [
+      "空間",
+      "天体",
+      "銀河"
+    ],
+    "distractors_en": [
+      "space",
+      "celestial body",
+      "galaxy"
+    ]
+  },
+  {
+    "id": "n2_095",
+    "kanji": "重力",
+    "kana": "じゅうりょく",
+    "meaning_zh": "重力",
+    "meaning_en": "gravity",
+    "category": "科学・技術",
+    "category_en": "Science",
+    "level": "N2",
+    "distractors": [
+      "引力",
+      "磁力",
+      "圧力"
+    ],
+    "distractors_en": [
+      "gravitational pull",
+      "magnetic force",
+      "pressure"
+    ]
+  },
+  {
+    "id": "n2_096",
+    "kanji": "表現",
+    "kana": "ひょうげん",
+    "meaning_zh": "表現、表達",
+    "meaning_en": "expression",
+    "category": "言語・表現",
+    "category_en": "Language",
+    "level": "N2",
+    "distractors": [
+      "表示",
+      "表明",
+      "表わす"
+    ],
+    "distractors_en": [
+      "indication",
+      "statement",
+      "to express"
+    ]
+  },
+  {
+    "id": "n2_097",
+    "kanji": "述べる",
+    "kana": "のべる",
+    "meaning_zh": "陳述、說明",
+    "meaning_en": "to state/explain",
+    "category": "言語・表現",
+    "category_en": "Language",
+    "level": "N2",
+    "distractors": [
+      "話す",
+      "説明する",
+      "言及する"
+    ],
+    "distractors_en": [
+      "to speak",
+      "to explain",
+      "to mention"
+    ]
+  },
+  {
+    "id": "n2_098",
+    "kanji": "指摘",
+    "kana": "してき",
+    "meaning_zh": "指出",
+    "meaning_en": "to point out",
+    "category": "言語・表現",
+    "category_en": "Language",
+    "level": "N2",
+    "distractors": [
+      "指示",
+      "指導",
+      "示す"
+    ],
+    "distractors_en": [
+      "instruction",
+      "guidance",
+      "to indicate"
+    ]
+  },
+  {
+    "id": "n2_099",
+    "kanji": "強調",
+    "kana": "きょうちょう",
+    "meaning_zh": "強調",
+    "meaning_en": "emphasis",
+    "category": "言語・表現",
+    "category_en": "Language",
+    "level": "N2",
+    "distractors": [
+      "主張",
+      "アピール",
+      "重視"
+    ],
+    "distractors_en": [
+      "assertion",
+      "appeal",
+      "emphasis"
+    ]
+  },
+  {
+    "id": "n2_100",
+    "kanji": "把握",
+    "kana": "はあく",
+    "meaning_zh": "把握、掌握",
+    "meaning_en": "to grasp/understand",
+    "category": "言語・表現",
+    "category_en": "Language",
+    "level": "N2",
+    "distractors": [
+      "理解",
+      "掌握",
+      "了解"
+    ],
+    "distractors_en": [
+      "understanding",
+      "grasp",
+      "acknowledgment"
+    ]
+  },
+  {
+    "id": "n2_101",
+    "kanji": "示す",
+    "kana": "しめす",
+    "meaning_zh": "表示、指示",
+    "meaning_en": "to show/indicate",
+    "category": "言語・表現",
+    "category_en": "Language",
+    "level": "N2",
+    "distractors": [
+      "見せる",
+      "表す",
+      "指す"
+    ],
+    "distractors_en": [
+      "to show",
+      "to express",
+      "to point"
+    ]
+  },
+  {
+    "id": "n2_102",
+    "kanji": "区別",
+    "kana": "くべつ",
+    "meaning_zh": "區別",
+    "meaning_en": "distinction/differentiation",
+    "category": "言語・表現",
+    "category_en": "Language",
+    "level": "N2",
+    "distractors": [
+      "差別",
+      "分類",
+      "判断"
+    ],
+    "distractors_en": [
+      "discrimination",
+      "classification",
+      "judgment"
+    ]
+  },
+  {
+    "id": "n2_103",
+    "kanji": "判断",
+    "kana": "はんだん",
+    "meaning_zh": "判斷",
+    "meaning_en": "judgment/decision",
+    "category": "言語・表現",
+    "category_en": "Language",
+    "level": "N2",
+    "distractors": [
+      "評価",
+      "決断",
+      "判定"
+    ],
+    "distractors_en": [
+      "evaluation",
+      "decision",
+      "determination"
+    ]
+  },
+  {
+    "id": "n2_104",
+    "kanji": "翻訳",
+    "kana": "ほんやく",
+    "meaning_zh": "翻譯",
+    "meaning_en": "translation",
+    "category": "言語・表現",
+    "category_en": "Language",
+    "level": "N2",
+    "distractors": [
+      "通訳",
+      "訳す",
+      "解釈"
+    ],
+    "distractors_en": [
+      "interpretation (oral)",
+      "to translate",
+      "interpretation"
+    ]
+  },
+  {
+    "id": "n2_105",
+    "kanji": "解釈",
+    "kana": "かいしゃく",
+    "meaning_zh": "解釋",
+    "meaning_en": "interpretation",
+    "category": "言語・表現",
+    "category_en": "Language",
+    "level": "N2",
+    "distractors": [
+      "理解",
+      "説明",
+      "解説"
+    ],
+    "distractors_en": [
+      "understanding",
+      "explanation",
+      "commentary"
+    ]
+  },
+  {
+    "id": "n2_106",
+    "kanji": "論文",
+    "kana": "ろんぶん",
+    "meaning_zh": "論文",
+    "meaning_en": "thesis/paper",
+    "category": "言語・表現",
+    "category_en": "Language",
+    "level": "N2",
+    "distractors": [
+      "報告書",
+      "記事",
+      "文章"
+    ],
+    "distractors_en": [
+      "report",
+      "article",
+      "text"
+    ]
+  },
+  {
+    "id": "n2_107",
+    "kanji": "要約",
+    "kana": "ようやく",
+    "meaning_zh": "摘要、總結",
+    "meaning_en": "summary",
+    "category": "言語・表現",
+    "category_en": "Language",
+    "level": "N2",
+    "distractors": [
+      "要点",
+      "まとめ",
+      "概要"
+    ],
+    "distractors_en": [
+      "key point",
+      "summary",
+      "outline"
+    ]
+  },
+  {
+    "id": "n2_108",
+    "kanji": "要点",
+    "kana": "ようてん",
+    "meaning_zh": "要點",
+    "meaning_en": "key point/main point",
+    "category": "言語・表現",
+    "category_en": "Language",
+    "level": "N2",
+    "distractors": [
+      "要旨",
+      "ポイント",
+      "主旨"
+    ],
+    "distractors_en": [
+      "gist",
+      "point",
+      "main point"
+    ]
+  },
+  {
+    "id": "n2_109",
+    "kanji": "抽象的",
+    "kana": "ちゅうしょうてき",
+    "meaning_zh": "抽象的",
+    "meaning_en": "abstract",
+    "category": "言語・表現",
+    "category_en": "Language",
+    "level": "N2",
+    "distractors": [
+      "具体的",
+      "観念的",
+      "曖昧"
+    ],
+    "distractors_en": [
+      "concrete",
+      "conceptual",
+      "vague"
+    ]
+  },
+  {
+    "id": "n2_110",
+    "kanji": "具体的",
+    "kana": "ぐたいてき",
+    "meaning_zh": "具體的",
+    "meaning_en": "concrete/specific",
+    "category": "言語・表現",
+    "category_en": "Language",
+    "level": "N2",
+    "distractors": [
+      "抽象的",
+      "詳細",
+      "明確"
+    ],
+    "distractors_en": [
+      "abstract",
+      "detailed",
+      "clear/specific"
+    ]
+  },
+  {
+    "id": "n2_111",
+    "kanji": "芸術",
+    "kana": "げいじゅつ",
+    "meaning_zh": "藝術",
+    "meaning_en": "art",
+    "category": "文化・芸術",
+    "category_en": "Culture & Arts",
+    "level": "N2",
+    "distractors": [
+      "美術",
+      "芸能",
+      "文化"
+    ],
+    "distractors_en": [
+      "fine art",
+      "performing arts",
+      "culture"
+    ]
+  },
+  {
+    "id": "n2_112",
+    "kanji": "文学",
+    "kana": "ぶんがく",
+    "meaning_zh": "文學",
+    "meaning_en": "literature",
+    "category": "文化・芸術",
+    "category_en": "Culture & Arts",
+    "level": "N2",
+    "distractors": [
+      "文章",
+      "小説",
+      "芸術"
+    ],
+    "distractors_en": [
+      "text/writing",
+      "novel",
+      "art"
+    ]
+  },
+  {
+    "id": "n2_113",
+    "kanji": "哲学",
+    "kana": "てつがく",
+    "meaning_zh": "哲學",
+    "meaning_en": "philosophy",
+    "category": "文化・芸術",
+    "category_en": "Culture & Arts",
+    "level": "N2",
+    "distractors": [
+      "思想",
+      "宗教",
+      "学問"
+    ],
+    "distractors_en": [
+      "thought/ideology",
+      "religion",
+      "academic study"
+    ]
+  },
+  {
+    "id": "n2_114",
+    "kanji": "歴史",
+    "kana": "れきし",
+    "meaning_zh": "歷史",
+    "meaning_en": "history",
+    "category": "文化・芸術",
+    "category_en": "Culture & Arts",
+    "level": "N2",
+    "distractors": [
+      "伝統",
+      "文化",
+      "年代"
+    ],
+    "distractors_en": [
+      "tradition",
+      "culture",
+      "era"
+    ]
+  },
+  {
+    "id": "n2_115",
+    "kanji": "遺産",
+    "kana": "いさん",
+    "meaning_zh": "遺產",
+    "meaning_en": "heritage/legacy",
+    "category": "文化・芸術",
+    "category_en": "Culture & Arts",
+    "level": "N2",
+    "distractors": [
+      "文化財",
+      "遺跡",
+      "宝"
+    ],
+    "distractors_en": [
+      "cultural property",
+      "ruins",
+      "treasure"
+    ]
+  },
+  {
+    "id": "n2_116",
+    "kanji": "象徴",
+    "kana": "しょうちょう",
+    "meaning_zh": "象徵",
+    "meaning_en": "symbol",
+    "category": "文化・芸術",
+    "category_en": "Culture & Arts",
+    "level": "N2",
+    "distractors": [
+      "代表",
+      "シンボル",
+      "標識"
+    ],
+    "distractors_en": [
+      "representative",
+      "symbol",
+      "sign/mark"
+    ]
+  },
+  {
+    "id": "n2_117",
+    "kanji": "創造",
+    "kana": "そうぞう",
+    "meaning_zh": "創造",
+    "meaning_en": "creation",
+    "category": "文化・芸術",
+    "category_en": "Culture & Arts",
+    "level": "N2",
+    "distractors": [
+      "創作",
+      "発明",
+      "製作"
+    ],
+    "distractors_en": [
+      "creative work",
+      "invention",
+      "production"
+    ]
+  },
+  {
+    "id": "n2_118",
+    "kanji": "鑑賞",
+    "kana": "かんしょう",
+    "meaning_zh": "欣賞",
+    "meaning_en": "appreciation (art)",
+    "category": "文化・芸術",
+    "category_en": "Culture & Arts",
+    "level": "N2",
+    "distractors": [
+      "観賞",
+      "見る",
+      "楽しむ"
+    ],
+    "distractors_en": [
+      "viewing/appreciating",
+      "to see",
+      "to enjoy"
+    ]
+  },
+  {
+    "id": "n2_119",
+    "kanji": "批評",
+    "kana": "ひひょう",
+    "meaning_zh": "批評",
+    "meaning_en": "critique/review",
+    "category": "文化・芸術",
+    "category_en": "Culture & Arts",
+    "level": "N2",
+    "distractors": [
+      "批判",
+      "評価",
+      "感想"
+    ],
+    "distractors_en": [
+      "criticism",
+      "evaluation",
+      "impressions"
+    ]
+  },
+  {
+    "id": "n2_120",
+    "kanji": "影響力",
+    "kana": "えいきょうりょく",
+    "meaning_zh": "影響力",
+    "meaning_en": "influence/impact",
+    "category": "文化・芸術",
+    "category_en": "Culture & Arts",
+    "level": "N2",
+    "distractors": [
+      "影響",
+      "力",
+      "権威"
+    ],
+    "distractors_en": [
+      "influence",
+      "power",
+      "authority"
+    ]
+  },
+  {
+    "id": "n2_121",
+    "kanji": "追求する",
+    "kana": "ついきゅうする",
+    "meaning_zh": "追求",
+    "meaning_en": "to pursue",
+    "category": "複合表現",
+    "category_en": "Expressions",
+    "level": "N2",
+    "distractors": [
+      "求める",
+      "追う",
+      "目指す"
+    ],
+    "distractors_en": [
+      "to seek",
+      "to chase",
+      "to aim for"
+    ]
+  },
+  {
+    "id": "n2_122",
+    "kanji": "克服する",
+    "kana": "こくふくする",
+    "meaning_zh": "克服",
+    "meaning_en": "to overcome",
+    "category": "複合表現",
+    "category_en": "Expressions",
+    "level": "N2",
+    "distractors": [
+      "乗り越える",
+      "解決する",
+      "対処する"
+    ],
+    "distractors_en": [
+      "to get over",
+      "to solve",
+      "to deal with"
+    ]
+  },
+  {
+    "id": "n2_123",
+    "kanji": "促進する",
+    "kana": "そくしんする",
+    "meaning_zh": "促進",
+    "meaning_en": "to promote/accelerate",
+    "category": "複合表現",
+    "category_en": "Expressions",
+    "level": "N2",
+    "distractors": [
+      "推進する",
+      "加速する",
+      "進める"
+    ],
+    "distractors_en": [
+      "to drive forward",
+      "to accelerate",
+      "to advance"
+    ]
+  },
+  {
+    "id": "n2_124",
+    "kanji": "抑制する",
+    "kana": "よくせいする",
+    "meaning_zh": "抑制",
+    "meaning_en": "to suppress/restrain",
+    "category": "複合表現",
+    "category_en": "Expressions",
+    "level": "N2",
+    "distractors": [
+      "制限する",
+      "防ぐ",
+      "止める"
+    ],
+    "distractors_en": [
+      "to restrict",
+      "to prevent",
+      "to stop"
+    ]
+  },
+  {
+    "id": "n2_125",
+    "kanji": "維持する",
+    "kana": "いじする",
+    "meaning_zh": "維持",
+    "meaning_en": "to maintain",
+    "category": "複合表現",
+    "category_en": "Expressions",
+    "level": "N2",
+    "distractors": [
+      "保つ",
+      "継続する",
+      "続ける"
+    ],
+    "distractors_en": [
+      "to keep",
+      "to continue",
+      "to carry on"
+    ]
+  },
+  {
+    "id": "n2_126",
+    "kanji": "推進する",
+    "kana": "すいしんする",
+    "meaning_zh": "推進",
+    "meaning_en": "to promote/advance",
+    "category": "複合表現",
+    "category_en": "Expressions",
+    "level": "N2",
+    "distractors": [
+      "促進する",
+      "進める",
+      "実行する"
+    ],
+    "distractors_en": [
+      "to promote",
+      "to advance",
+      "to execute"
+    ]
+  },
+  {
+    "id": "n2_127",
+    "kanji": "妨げる",
+    "kana": "さまたげる",
+    "meaning_zh": "妨礙",
+    "meaning_en": "to hinder/obstruct",
+    "category": "複合表現",
+    "category_en": "Expressions",
+    "level": "N2",
+    "distractors": [
+      "邪魔する",
+      "阻む",
+      "防ぐ"
+    ],
+    "distractors_en": [
+      "to get in the way",
+      "to block",
+      "to prevent"
+    ]
+  },
+  {
+    "id": "n2_128",
+    "kanji": "生じる",
+    "kana": "しょうじる",
+    "meaning_zh": "產生、發生",
+    "meaning_en": "to arise/occur",
+    "category": "複合表現",
+    "category_en": "Expressions",
+    "level": "N2",
+    "distractors": [
+      "起きる",
+      "発生する",
+      "生まれる"
+    ],
+    "distractors_en": [
+      "to happen",
+      "to occur",
+      "to be born"
+    ]
+  },
+  {
+    "id": "n2_129",
+    "kanji": "伴う",
+    "kana": "ともなう",
+    "meaning_zh": "伴隨",
+    "meaning_en": "to accompany/involve",
+    "category": "複合表現",
+    "category_en": "Expressions",
+    "level": "N2",
+    "distractors": [
+      "連れる",
+      "一緒に",
+      "付き合う"
+    ],
+    "distractors_en": [
+      "to take along",
+      "together",
+      "to go with"
+    ]
+  },
+  {
+    "id": "n2_130",
+    "kanji": "及ぼす",
+    "kana": "およぼす",
+    "meaning_zh": "施加（影響）",
+    "meaning_en": "to exert/have (effect)",
+    "category": "複合表現",
+    "category_en": "Expressions",
+    "level": "N2",
+    "distractors": [
+      "与える",
+      "影響する",
+      "引き起こす"
+    ],
+    "distractors_en": [
+      "to give",
+      "to influence",
+      "to cause"
+    ]
+  },
+  {
+    "id": "n2_131",
+    "kanji": "取り組む",
+    "kana": "とりくむ",
+    "meaning_zh": "努力應對",
+    "meaning_en": "to tackle/work on",
+    "category": "複合表現",
+    "category_en": "Expressions",
+    "level": "N2",
+    "distractors": [
+      "取り扱う",
+      "対処する",
+      "挑む"
+    ],
+    "distractors_en": [
+      "to handle",
+      "to deal with",
+      "to challenge"
+    ]
+  },
+  {
+    "id": "n2_132",
+    "kanji": "見直す",
+    "kana": "みなおす",
+    "meaning_zh": "重新審視",
+    "meaning_en": "to review/reconsider",
+    "category": "複合表現",
+    "category_en": "Expressions",
+    "level": "N2",
+    "distractors": [
+      "再確認",
+      "再検討",
+      "改める"
+    ],
+    "distractors_en": [
+      "re-confirmation",
+      "re-examination",
+      "to revise"
+    ]
+  },
+  {
+    "id": "n2_133",
+    "kanji": "踏まえる",
+    "kana": "ふまえる",
+    "meaning_zh": "基於、根據",
+    "meaning_en": "to be based on/take into account",
+    "category": "複合表現",
+    "category_en": "Expressions",
+    "level": "N2",
+    "distractors": [
+      "基づく",
+      "考慮する",
+      "前提にする"
+    ],
+    "distractors_en": [
+      "to be based on",
+      "to consider",
+      "to presuppose"
+    ]
+  },
+  {
+    "id": "n2_134",
+    "kanji": "捉える",
+    "kana": "とらえる",
+    "meaning_zh": "掌握、理解",
+    "meaning_en": "to grasp/capture",
+    "category": "複合表現",
+    "category_en": "Expressions",
+    "level": "N2",
+    "distractors": [
+      "理解する",
+      "把握する",
+      "認識する"
+    ],
+    "distractors_en": [
+      "to understand",
+      "to grasp",
+      "to recognize"
+    ]
+  },
+  {
+    "id": "n2_135",
+    "kanji": "引き起こす",
+    "kana": "ひきおこす",
+    "meaning_zh": "引起、導致",
+    "meaning_en": "to cause/trigger",
+    "category": "複合表現",
+    "category_en": "Expressions",
+    "level": "N2",
+    "distractors": [
+      "起こす",
+      "生じる",
+      "もたらす"
+    ],
+    "distractors_en": [
+      "to cause",
+      "to arise",
+      "to bring about"
+    ]
+  },
+  {
+    "id": "n2_136",
+    "kanji": "持続可能",
+    "kana": "じぞくかのう",
+    "meaning_zh": "可持續的",
+    "meaning_en": "sustainable",
+    "category": "環境",
+    "category_en": "Environment",
+    "level": "N2",
+    "distractors": [
+      "再生可能",
+      "環境に優しい",
+      "永続的"
+    ],
+    "distractors_en": [
+      "renewable",
+      "eco-friendly",
+      "permanent"
+    ]
+  },
+  {
+    "id": "n2_137",
+    "kanji": "温暖化",
+    "kana": "おんだんか",
+    "meaning_zh": "暖化",
+    "meaning_en": "global warming",
+    "category": "環境",
+    "category_en": "Environment",
+    "level": "N2",
+    "distractors": [
+      "気候変動",
+      "異常気象",
+      "温室効果"
+    ],
+    "distractors_en": [
+      "climate change",
+      "extreme weather",
+      "greenhouse effect"
+    ]
+  },
+  {
+    "id": "n2_138",
+    "kanji": "二酸化炭素",
+    "kana": "にさんかたんそ",
+    "meaning_zh": "二氧化碳",
+    "meaning_en": "carbon dioxide",
+    "category": "環境",
+    "category_en": "Environment",
+    "level": "N2",
+    "distractors": [
+      "温室ガス",
+      "排気ガス",
+      "汚染物質"
+    ],
+    "distractors_en": [
+      "greenhouse gas",
+      "exhaust gas",
+      "pollutant"
+    ]
+  },
+  {
+    "id": "n2_139",
+    "kanji": "生態系",
+    "kana": "せいたいけい",
+    "meaning_zh": "生態系",
+    "meaning_en": "ecosystem",
+    "category": "環境",
+    "category_en": "Environment",
+    "level": "N2",
+    "distractors": [
+      "自然環境",
+      "食物連鎖",
+      "生物多様性"
+    ],
+    "distractors_en": [
+      "natural environment",
+      "food chain",
+      "biodiversity"
+    ]
+  },
+  {
+    "id": "n2_140",
+    "kanji": "絶滅",
+    "kana": "ぜつめつ",
+    "meaning_zh": "滅絕",
+    "meaning_en": "extinction",
+    "category": "環境",
+    "category_en": "Environment",
+    "level": "N2",
+    "distractors": [
+      "消滅",
+      "消えた",
+      "危機種"
+    ],
+    "distractors_en": [
+      "disappearance",
+      "extinct",
+      "endangered species"
+    ]
+  },
+  {
+    "id": "n2_141",
+    "kanji": "廃棄物",
+    "kana": "はいきぶつ",
+    "meaning_zh": "廢棄物",
+    "meaning_en": "waste/refuse",
+    "category": "環境",
+    "category_en": "Environment",
+    "level": "N2",
+    "distractors": [
+      "ゴミ",
+      "廃品",
+      "産業廃棄物"
+    ],
+    "distractors_en": [
+      "garbage",
+      "waste product",
+      "industrial waste"
+    ]
+  },
+  {
+    "id": "n2_142",
+    "kanji": "汚染",
+    "kana": "おせん",
+    "meaning_zh": "污染",
+    "meaning_en": "pollution/contamination",
+    "category": "環境",
+    "category_en": "Environment",
+    "level": "N2",
+    "distractors": [
+      "汚れ",
+      "公害",
+      "環境破壊"
+    ],
+    "distractors_en": [
+      "dirt/stain",
+      "pollution",
+      "environmental destruction"
+    ]
+  },
+  {
+    "id": "n2_143",
+    "kanji": "節約",
+    "kana": "せつやく",
+    "meaning_zh": "節約",
+    "meaning_en": "saving/conservation",
+    "category": "環境",
+    "category_en": "Environment",
+    "level": "N2",
+    "distractors": [
+      "省エネ",
+      "倹約",
+      "節制"
+    ],
+    "distractors_en": [
+      "energy saving",
+      "frugality",
+      "moderation"
+    ]
+  },
+  {
+    "id": "n2_144",
+    "kanji": "再利用",
+    "kana": "さいりよう",
+    "meaning_zh": "再利用",
+    "meaning_en": "reuse",
+    "category": "環境",
+    "category_en": "Environment",
+    "level": "N2",
+    "distractors": [
+      "リサイクル",
+      "再生",
+      "有効活用"
+    ],
+    "distractors_en": [
+      "recycling",
+      "regeneration",
+      "effective use"
+    ]
+  },
+  {
+    "id": "n2_145",
+    "kanji": "保護",
+    "kana": "ほご",
+    "meaning_zh": "保護",
+    "meaning_en": "protection",
+    "category": "環境",
+    "category_en": "Environment",
+    "level": "N2",
+    "distractors": [
+      "保全",
+      "守る",
+      "防護"
+    ],
+    "distractors_en": [
+      "conservation",
+      "to protect",
+      "protection"
+    ]
+  },
+  {
+    "id": "n2_146",
+    "kanji": "法律",
+    "kana": "ほうりつ",
+    "meaning_zh": "法律",
+    "meaning_en": "law",
+    "category": "制度・法律",
+    "category_en": "Law",
+    "level": "N2",
+    "distractors": [
+      "規則",
+      "法令",
+      "条例"
+    ],
+    "distractors_en": [
+      "rule",
+      "ordinance",
+      "bylaw"
+    ]
+  },
+  {
+    "id": "n2_147",
+    "kanji": "条約",
+    "kana": "じょうやく",
+    "meaning_zh": "條約",
+    "meaning_en": "treaty",
+    "category": "制度・法律",
+    "category_en": "Law",
+    "level": "N2",
+    "distractors": [
+      "協定",
+      "合意",
+      "契約"
+    ],
+    "distractors_en": [
+      "accord",
+      "agreement",
+      "contract"
+    ]
+  },
+  {
+    "id": "n2_148",
+    "kanji": "憲法",
+    "kana": "けんぽう",
+    "meaning_zh": "憲法",
+    "meaning_en": "constitution",
+    "category": "制度・法律",
+    "category_en": "Law",
+    "level": "N2",
+    "distractors": [
+      "法律",
+      "法典",
+      "基本法"
+    ],
+    "distractors_en": [
+      "law",
+      "legal code",
+      "basic law"
+    ]
+  },
+  {
+    "id": "n2_149",
+    "kanji": "裁判",
+    "kana": "さいばん",
+    "meaning_zh": "審判、裁判",
+    "meaning_en": "trial/court case",
+    "category": "制度・法律",
+    "category_en": "Law",
+    "level": "N2",
+    "distractors": [
+      "訴訟",
+      "裁定",
+      "判決"
+    ],
+    "distractors_en": [
+      "lawsuit",
+      "ruling",
+      "verdict"
+    ]
+  },
+  {
+    "id": "n2_150",
+    "kanji": "違反",
+    "kana": "いはん",
+    "meaning_zh": "違反",
+    "meaning_en": "violation",
+    "category": "制度・法律",
+    "category_en": "Law",
+    "level": "N2",
+    "distractors": [
+      "違法",
+      "反則",
+      "犯罪"
+    ],
+    "distractors_en": [
+      "illegal",
+      "infraction",
+      "crime"
+    ]
+  },
+  {
+    "id": "n2_151",
+    "kanji": "承認",
+    "kana": "しょうにん",
+    "meaning_zh": "承認",
+    "meaning_en": "approval/recognition",
+    "category": "制度・法律",
+    "category_en": "Law",
+    "level": "N2",
+    "distractors": [
+      "認可",
+      "許可",
+      "認定"
+    ],
+    "distractors_en": [
+      "official approval",
+      "permission",
+      "certification"
+    ]
+  },
+  {
+    "id": "n2_152",
+    "kanji": "申請",
+    "kana": "しんせい",
+    "meaning_zh": "申請",
+    "meaning_en": "application",
+    "category": "制度・法律",
+    "category_en": "Law",
+    "level": "N2",
+    "distractors": [
+      "申し込み",
+      "届け出",
+      "請求"
+    ],
+    "distractors_en": [
+      "application/sign-up",
+      "notification",
+      "claim/request"
+    ]
+  },
+  {
+    "id": "n2_153",
+    "kanji": "手続き",
+    "kana": "てつづき",
+    "meaning_zh": "手續",
+    "meaning_en": "procedure/formality",
+    "category": "制度・法律",
+    "category_en": "Law",
+    "level": "N2",
+    "distractors": [
+      "手順",
+      "プロセス",
+      "処理"
+    ],
+    "distractors_en": [
+      "steps",
+      "process",
+      "processing"
+    ]
+  },
+  {
+    "id": "n2_154",
+    "kanji": "書類",
+    "kana": "しょるい",
+    "meaning_zh": "文件、文書",
+    "meaning_en": "documents/paperwork",
+    "category": "制度・法律",
+    "category_en": "Law",
+    "level": "N2",
+    "distractors": [
+      "文書",
+      "資料",
+      "記録"
+    ],
+    "distractors_en": [
+      "document",
+      "material/data",
+      "record"
+    ]
+  },
+  {
+    "id": "n2_155",
+    "kanji": "期間",
+    "kana": "きかん",
+    "meaning_zh": "期間",
+    "meaning_en": "period/duration",
+    "category": "制度・法律",
+    "category_en": "Law",
+    "level": "N2",
+    "distractors": [
+      "期限",
+      "期日",
+      "時間"
+    ],
+    "distractors_en": [
+      "deadline",
+      "due date",
+      "time"
+    ]
+  },
+  {
+    "id": "n2_156",
+    "kanji": "人格",
+    "kana": "じんかく",
+    "meaning_zh": "人格",
+    "meaning_en": "personality/character",
+    "category": "人生・成長",
+    "category_en": "Life",
+    "level": "N2",
+    "distractors": [
+      "性格",
+      "個性",
+      "品格"
+    ],
+    "distractors_en": [
+      "personality",
+      "individuality",
+      "dignity/character"
+    ]
+  },
+  {
+    "id": "n2_157",
+    "kanji": "価値観",
+    "kana": "かちかん",
+    "meaning_zh": "價值觀",
+    "meaning_en": "values",
+    "category": "人生・成長",
+    "category_en": "Life",
+    "level": "N2",
+    "distractors": [
+      "考え方",
+      "信念",
+      "人生観"
+    ],
+    "distractors_en": [
+      "way of thinking",
+      "belief",
+      "outlook on life"
+    ]
+  },
+  {
+    "id": "n2_158",
+    "kanji": "人生観",
+    "kana": "じんせいかん",
+    "meaning_zh": "人生觀",
+    "meaning_en": "outlook on life",
+    "category": "人生・成長",
+    "category_en": "Life",
+    "level": "N2",
+    "distractors": [
+      "価値観",
+      "世界観",
+      "哲学"
+    ],
+    "distractors_en": [
+      "values",
+      "worldview",
+      "philosophy"
+    ]
+  },
+  {
+    "id": "n2_159",
+    "kanji": "自立",
+    "kana": "じりつ",
+    "meaning_zh": "自立",
+    "meaning_en": "independence/self-reliance",
+    "category": "人生・成長",
+    "category_en": "Life",
+    "level": "N2",
+    "distractors": [
+      "独立",
+      "自由",
+      "自主"
+    ],
+    "distractors_en": [
+      "independence",
+      "freedom",
+      "autonomy"
+    ]
+  },
+  {
+    "id": "n2_160",
+    "kanji": "成熟",
+    "kana": "せいじゅく",
+    "meaning_zh": "成熟",
+    "meaning_en": "maturity",
+    "category": "人生・成長",
+    "category_en": "Life",
+    "level": "N2",
+    "distractors": [
+      "成長",
+      "大人",
+      "熟練"
+    ],
+    "distractors_en": [
+      "growth",
+      "adult",
+      "skilled"
+    ]
+  },
+  {
+    "id": "n2_161",
+    "kanji": "向上心",
+    "kana": "こうじょうしん",
+    "meaning_zh": "上進心",
+    "meaning_en": "ambition/desire to improve",
+    "category": "人生・成長",
+    "category_en": "Life",
+    "level": "N2",
+    "distractors": [
+      "向上",
+      "野心",
+      "意欲"
+    ],
+    "distractors_en": [
+      "improvement",
+      "ambition",
+      "motivation"
+    ]
+  },
+  {
+    "id": "n2_162",
+    "kanji": "意欲",
+    "kana": "いよく",
+    "meaning_zh": "意願、熱情",
+    "meaning_en": "motivation/eagerness",
+    "category": "人生・成長",
+    "category_en": "Life",
+    "level": "N2",
+    "distractors": [
+      "やる気",
+      "熱意",
+      "積極性"
+    ],
+    "distractors_en": [
+      "drive/motivation",
+      "enthusiasm",
+      "positivity"
+    ]
+  },
+  {
+    "id": "n2_163",
+    "kanji": "忍耐",
+    "kana": "にんたい",
+    "meaning_zh": "忍耐",
+    "meaning_en": "patience/perseverance",
+    "category": "人生・成長",
+    "category_en": "Life",
+    "level": "N2",
+    "distractors": [
+      "我慢",
+      "辛抱",
+      "耐久"
+    ],
+    "distractors_en": [
+      "endurance",
+      "perseverance",
+      "endurance"
+    ]
+  },
+  {
+    "id": "n2_164",
+    "kanji": "誠実",
+    "kana": "せいじつ",
+    "meaning_zh": "誠實",
+    "meaning_en": "sincere/honest",
+    "category": "人生・成長",
+    "category_en": "Life",
+    "level": "N2",
+    "distractors": [
+      "正直",
+      "真面目",
+      "誠意"
+    ],
+    "distractors_en": [
+      "honest",
+      "serious/diligent",
+      "sincerity"
+    ]
+  },
+  {
+    "id": "n2_165",
+    "kanji": "謙虚",
+    "kana": "けんきょ",
+    "meaning_zh": "謙虛",
+    "meaning_en": "humble/modest",
+    "category": "人生・成長",
+    "category_en": "Life",
+    "level": "N2",
+    "distractors": [
+      "謙遜",
+      "控えめ",
+      "遠慮がち"
+    ],
+    "distractors_en": [
+      "modesty",
+      "reserved",
+      "hesitant/reserved"
+    ]
+  },
+  {
+    "id": "n2_166",
+    "kanji": "慢性",
+    "kana": "まんせい",
+    "meaning_zh": "慢性",
+    "meaning_en": "chronic",
+    "category": "医療",
+    "category_en": "Medical",
+    "level": "N2",
+    "distractors": [
+      "急性",
+      "長期",
+      "継続性"
+    ],
+    "distractors_en": [
+      "acute",
+      "long-term",
+      "continuity"
+    ]
+  },
+  {
+    "id": "n2_167",
+    "kanji": "急性",
+    "kana": "きゅうせい",
+    "meaning_zh": "急性",
+    "meaning_en": "acute",
+    "category": "医療",
+    "category_en": "Medical",
+    "level": "N2",
+    "distractors": [
+      "慢性",
+      "緊急",
+      "突発性"
+    ],
+    "distractors_en": [
+      "chronic",
+      "urgent",
+      "sudden onset"
+    ]
+  },
+  {
+    "id": "n2_168",
+    "kanji": "免疫",
+    "kana": "めんえき",
+    "meaning_zh": "免疫",
+    "meaning_en": "immunity",
+    "category": "医療",
+    "category_en": "Medical",
+    "level": "N2",
+    "distractors": [
+      "抵抗力",
+      "防御",
+      "抗体"
+    ],
+    "distractors_en": [
+      "resistance",
+      "defense",
+      "antibody"
+    ]
+  },
+  {
+    "id": "n2_169",
+    "kanji": "副作用",
+    "kana": "ふくさよう",
+    "meaning_zh": "副作用",
+    "meaning_en": "side effect",
+    "category": "医療",
+    "category_en": "Medical",
+    "level": "N2",
+    "distractors": [
+      "作用",
+      "効果",
+      "悪影響"
+    ],
+    "distractors_en": [
+      "effect",
+      "effect",
+      "negative influence"
+    ]
+  },
+  {
+    "id": "n2_170",
+    "kanji": "診断",
+    "kana": "しんだん",
+    "meaning_zh": "診斷",
+    "meaning_en": "diagnosis",
+    "category": "医療",
+    "category_en": "Medical",
+    "level": "N2",
+    "distractors": [
+      "検査",
+      "判定",
+      "診察"
+    ],
+    "distractors_en": [
+      "examination",
+      "determination",
+      "medical exam"
+    ]
+  },
+  {
+    "id": "n2_171",
+    "kanji": "処方",
+    "kana": "しょほう",
+    "meaning_zh": "處方",
+    "meaning_en": "prescription",
+    "category": "医療",
+    "category_en": "Medical",
+    "level": "N2",
+    "distractors": [
+      "処置",
+      "処理",
+      "方法"
+    ],
+    "distractors_en": [
+      "treatment",
+      "processing",
+      "method"
+    ]
+  },
+  {
+    "id": "n2_172",
+    "kanji": "栄養",
+    "kana": "えいよう",
+    "meaning_zh": "營養",
+    "meaning_en": "nutrition",
+    "category": "医療",
+    "category_en": "Medical",
+    "level": "N2",
+    "distractors": [
+      "食事",
+      "栄養素",
+      "カロリー"
+    ],
+    "distractors_en": [
+      "meal",
+      "nutrient",
+      "calorie"
+    ]
+  },
+  {
+    "id": "n2_173",
+    "kanji": "介護",
+    "kana": "かいご",
+    "meaning_zh": "照護",
+    "meaning_en": "nursing/care",
+    "category": "医療",
+    "category_en": "Medical",
+    "level": "N2",
+    "distractors": [
+      "看護",
+      "世話",
+      "支援"
+    ],
+    "distractors_en": [
+      "nursing",
+      "care",
+      "support"
+    ]
+  },
+  {
+    "id": "n2_174",
+    "kanji": "精神的",
+    "kana": "せいしんてき",
+    "meaning_zh": "精神上的",
+    "meaning_en": "mental/psychological",
+    "category": "医療",
+    "category_en": "Medical",
+    "level": "N2",
+    "distractors": [
+      "肉体的",
+      "心理的",
+      "感情的"
+    ],
+    "distractors_en": [
+      "physical",
+      "psychological",
+      "emotional"
+    ]
+  },
+  {
+    "id": "n2_175",
+    "kanji": "肉体的",
+    "kana": "にくたいてき",
+    "meaning_zh": "肉體上的",
+    "meaning_en": "physical/bodily",
+    "category": "医療",
+    "category_en": "Medical",
+    "level": "N2",
+    "distractors": [
+      "精神的",
+      "身体的",
+      "体力的"
+    ],
+    "distractors_en": [
+      "mental",
+      "bodily",
+      "physical/stamina-related"
+    ]
+  },
+  {
+    "id": "n2_176",
+    "kanji": "経営",
+    "kana": "けいえい",
+    "meaning_zh": "經營",
+    "meaning_en": "management/business operation",
+    "category": "経営",
+    "category_en": "Management",
+    "level": "N2",
+    "distractors": [
+      "管理",
+      "運営",
+      "経済"
+    ],
+    "distractors_en": [
+      "management",
+      "operation",
+      "economy"
+    ]
+  },
+  {
+    "id": "n2_177",
+    "kanji": "組織",
+    "kana": "そしき",
+    "meaning_zh": "組織",
+    "meaning_en": "organization",
+    "category": "経営",
+    "category_en": "Management",
+    "level": "N2",
+    "distractors": [
+      "団体",
+      "機関",
+      "機構"
+    ],
+    "distractors_en": [
+      "group/organization",
+      "institution",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "n2_178",
+    "kanji": "人材",
+    "kana": "じんざい",
+    "meaning_zh": "人才",
+    "meaning_en": "human resources/talent",
+    "category": "経営",
+    "category_en": "Management",
+    "level": "N2",
+    "distractors": [
+      "人員",
+      "人力",
+      "スタッフ"
+    ],
+    "distractors_en": [
+      "personnel",
+      "manpower",
+      "staff"
+    ]
+  },
+  {
+    "id": "n2_179",
+    "kanji": "採用",
+    "kana": "さいよう",
+    "meaning_zh": "採用",
+    "meaning_en": "hiring/adoption",
+    "category": "経営",
+    "category_en": "Management",
+    "level": "N2",
+    "distractors": [
+      "雇用",
+      "起用",
+      "選抜"
+    ],
+    "distractors_en": [
+      "employment",
+      "appointment",
+      "selection"
+    ]
+  },
+  {
+    "id": "n2_180",
+    "kanji": "評判",
+    "kana": "ひょうばん",
+    "meaning_zh": "評價、名聲",
+    "meaning_en": "reputation",
+    "category": "経営",
+    "category_en": "Management",
+    "level": "N2",
+    "distractors": [
+      "名声",
+      "評価",
+      "口コミ"
+    ],
+    "distractors_en": [
+      "fame",
+      "evaluation",
+      "word-of-mouth"
+    ]
+  },
+  {
+    "id": "n2_181",
+    "kanji": "業績",
+    "kana": "ぎょうせき",
+    "meaning_zh": "業績",
+    "meaning_en": "business performance/achievement",
+    "category": "経営",
+    "category_en": "Management",
+    "level": "N2",
+    "distractors": [
+      "実績",
+      "成果",
+      "成績"
+    ],
+    "distractors_en": [
+      "track record",
+      "achievement",
+      "result/grade"
+    ]
+  },
+  {
+    "id": "n2_182",
+    "kanji": "利益",
+    "kana": "りえき",
+    "meaning_zh": "利益、利潤",
+    "meaning_en": "profit/benefit",
+    "category": "経営",
+    "category_en": "Management",
+    "level": "N2",
+    "distractors": [
+      "収益",
+      "黒字",
+      "メリット"
+    ],
+    "distractors_en": [
+      "earnings",
+      "surplus",
+      "merit/benefit"
+    ]
+  },
+  {
+    "id": "n2_183",
+    "kanji": "損失",
+    "kana": "そんしつ",
+    "meaning_zh": "損失",
+    "meaning_en": "loss",
+    "category": "経営",
+    "category_en": "Management",
+    "level": "N2",
+    "distractors": [
+      "赤字",
+      "被害",
+      "マイナス"
+    ],
+    "distractors_en": [
+      "deficit",
+      "damage",
+      "minus"
+    ]
+  },
+  {
+    "id": "n2_184",
+    "kanji": "需要",
+    "kana": "じゅよう",
+    "meaning_zh": "需求",
+    "meaning_en": "demand",
+    "category": "経営",
+    "category_en": "Management",
+    "level": "N2",
+    "distractors": [
+      "供給",
+      "要求",
+      "消費"
+    ],
+    "distractors_en": [
+      "supply",
+      "request",
+      "consumption"
+    ]
+  },
+  {
+    "id": "n2_185",
+    "kanji": "供給",
+    "kana": "きょうきゅう",
+    "meaning_zh": "供給",
+    "meaning_en": "supply",
+    "category": "経営",
+    "category_en": "Management",
+    "level": "N2",
+    "distractors": [
+      "需要",
+      "提供",
+      "流通"
+    ],
+    "distractors_en": [
+      "demand",
+      "provision",
+      "distribution"
+    ]
+  },
+  {
+    "id": "n2_186",
+    "kanji": "曖昧",
+    "kana": "あいまい",
+    "meaning_zh": "曖昧",
+    "meaning_en": "vague/ambiguous",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N2",
+    "distractors": [
+      "不明確",
+      "不透明",
+      "はっきりしない"
+    ],
+    "distractors_en": [
+      "unclear",
+      "opaque",
+      "not clear"
+    ]
+  },
+  {
+    "id": "n2_187",
+    "kanji": "柔軟",
+    "kana": "じゅうなん",
+    "meaning_zh": "彈性、靈活",
+    "meaning_en": "flexible",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N2",
+    "distractors": [
+      "融通",
+      "臨機応変",
+      "弾力的"
+    ],
+    "distractors_en": [
+      "flexibility",
+      "adaptable",
+      "elastic"
+    ]
+  },
+  {
+    "id": "n2_188",
+    "kanji": "厳密",
+    "kana": "げんみつ",
+    "meaning_zh": "嚴密",
+    "meaning_en": "strict/precise",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N2",
+    "distractors": [
+      "厳格",
+      "精密",
+      "正確"
+    ],
+    "distractors_en": [
+      "strict",
+      "precise",
+      "accurate"
+    ]
+  },
+  {
+    "id": "n2_189",
+    "kanji": "複雑",
+    "kana": "ふくざつ",
+    "meaning_zh": "複雜",
+    "meaning_en": "complex/complicated",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N2",
+    "distractors": [
+      "難しい",
+      "入り組んだ",
+      "困難"
+    ],
+    "distractors_en": [
+      "difficult",
+      "intricate",
+      "difficult"
+    ]
+  },
+  {
+    "id": "n2_190",
+    "kanji": "単純",
+    "kana": "たんじゅん",
+    "meaning_zh": "單純",
+    "meaning_en": "simple",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N2",
+    "distractors": [
+      "簡単",
+      "シンプル",
+      "単一"
+    ],
+    "distractors_en": [
+      "easy",
+      "simple",
+      "single"
+    ]
+  },
+  {
+    "id": "n2_191",
+    "kanji": "深刻",
+    "kana": "しんこく",
+    "meaning_zh": "嚴重",
+    "meaning_en": "serious/grave",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N2",
+    "distractors": [
+      "重大",
+      "重要",
+      "危機的"
+    ],
+    "distractors_en": [
+      "serious/important",
+      "important",
+      "critical"
+    ]
+  },
+  {
+    "id": "n2_192",
+    "kanji": "貴重",
+    "kana": "きちょう",
+    "meaning_zh": "珍貴",
+    "meaning_en": "precious/valuable",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N2",
+    "distractors": [
+      "大切",
+      "価値ある",
+      "重要"
+    ],
+    "distractors_en": [
+      "important/dear",
+      "valuable",
+      "important"
+    ]
+  },
+  {
+    "id": "n2_193",
+    "kanji": "膨大",
+    "kana": "ぼうだい",
+    "meaning_zh": "龐大",
+    "meaning_en": "enormous/vast",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N2",
+    "distractors": [
+      "莫大",
+      "大量",
+      "巨大"
+    ],
+    "distractors_en": [
+      "enormous",
+      "large amount",
+      "huge"
+    ]
+  },
+  {
+    "id": "n2_194",
+    "kanji": "微妙",
+    "kana": "びみょう",
+    "meaning_zh": "微妙",
+    "meaning_en": "subtle/delicate",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N2",
+    "distractors": [
+      "細かい",
+      "曖昧",
+      "難しい"
+    ],
+    "distractors_en": [
+      "detailed/fine",
+      "vague",
+      "difficult"
+    ]
+  },
+  {
+    "id": "n2_195",
+    "kanji": "著しい",
+    "kana": "いちじるしい",
+    "meaning_zh": "顯著的",
+    "meaning_en": "remarkable/striking",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N2",
+    "distractors": [
+      "明らか",
+      "目立つ",
+      "大幅"
+    ],
+    "distractors_en": [
+      "clear/obvious",
+      "conspicuous",
+      "significant"
+    ]
+  },
+  {
+    "id": "n2_196",
+    "kanji": "適切",
+    "kana": "てきせつ",
+    "meaning_zh": "適切",
+    "meaning_en": "appropriate/suitable",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N2",
+    "distractors": [
+      "適当",
+      "ふさわしい",
+      "妥当"
+    ],
+    "distractors_en": [
+      "appropriate/casual",
+      "fitting",
+      "appropriate/valid"
+    ]
+  },
+  {
+    "id": "n2_197",
+    "kanji": "妥当",
+    "kana": "だとう",
+    "meaning_zh": "妥當",
+    "meaning_en": "appropriate/valid",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N2",
+    "distractors": [
+      "適切",
+      "合理的",
+      "正当"
+    ],
+    "distractors_en": [
+      "appropriate",
+      "rational",
+      "legitimate"
+    ]
+  },
+  {
+    "id": "n2_198",
+    "kanji": "合理的",
+    "kana": "ごうりてき",
+    "meaning_zh": "合理的",
+    "meaning_en": "rational/logical",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N2",
+    "distractors": [
+      "論理的",
+      "理屈的",
+      "効率的"
+    ],
+    "distractors_en": [
+      "logical",
+      "reasoning-based",
+      "efficient"
+    ]
+  },
+  {
+    "id": "n2_199",
+    "kanji": "本質的",
+    "kana": "ほんしつてき",
+    "meaning_zh": "本質上的",
+    "meaning_en": "essential/fundamental",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N2",
+    "distractors": [
+      "根本的",
+      "基本的",
+      "核心的"
+    ],
+    "distractors_en": [
+      "fundamental",
+      "basic",
+      "core"
+    ]
+  },
+  {
+    "id": "n2_200",
+    "kanji": "徐々に",
+    "kana": "じょじょに",
+    "meaning_zh": "逐漸",
+    "meaning_en": "gradually",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N2",
+    "distractors": [
+      "少しずつ",
+      "段階的に",
+      "ゆっくり"
+    ],
+    "distractors_en": [
+      "little by little",
+      "step by step",
+      "slowly"
+    ]
+  }
+]

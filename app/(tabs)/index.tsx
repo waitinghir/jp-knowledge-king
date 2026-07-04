@@ -100,14 +100,14 @@ export default function HomeScreen() {
 
         {/* Word level selector */}
         <View style={styles.levelSelector}>
-          {(['N4', 'N3', '生活', 'all'] as WordLevel[]).map((lv) => (
+          {(['N4', 'N3', 'N2', '生活', 'all'] as WordLevel[]).map((lv) => (
             <Pressable
               key={lv}
               style={[styles.levelBtn, wordLevel === lv && styles.levelBtnActive]}
               onPress={() => setWordLevel(lv)}
             >
               <Text style={[styles.levelBtnText, wordLevel === lv && styles.levelBtnTextActive]}>
-                {lv === 'N4' ? s.levelN4 : lv === 'N3' ? s.levelN3 : lv === '生活' ? s.levelLife : s.levelAll}
+                {lv === 'N4' ? s.levelN4 : lv === 'N3' ? s.levelN3 : lv === 'N2' ? s.levelN2 : lv === '生活' ? s.levelLife : s.levelAll}
               </Text>
             </Pressable>
           ))}
