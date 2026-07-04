@@ -11,7 +11,7 @@
     "distractors": [
       "理念",
       "定義",
-      "観念"
+      "觀念"
     ],
     "distractors_en": [
       "ideal/philosophy",
@@ -50,8 +50,8 @@
     "level": "N2",
     "distractors": [
       "概念",
-      "説明",
-      "意味"
+      "說明",
+      "意義"
     ],
     "distractors_en": [
       "concept",
@@ -69,9 +69,9 @@
     "category_en": "Abstract",
     "level": "N2",
     "distractors": [
-      "動向",
       "方向",
-      "流れ"
+      "動向",
+      "流向"
     ],
     "distractors_en": [
       "trend/movement",
@@ -109,9 +109,9 @@
     "category_en": "Abstract",
     "level": "N2",
     "distractors": [
-      "潜在性",
-      "見込み",
-      "確率"
+      "潛力",
+      "前景",
+      "機率"
     ],
     "distractors_en": [
       "potential",
@@ -130,8 +130,8 @@
     "level": "N2",
     "distractors": [
       "偶然",
-      "当然",
-      "確実"
+      "當然",
+      "確實"
     ],
     "distractors_en": [
       "coincidence",
@@ -150,8 +150,8 @@
     "level": "N2",
     "distractors": [
       "必然",
-      "たまたま",
-      "運"
+      "剛好",
+      "運氣"
     ],
     "distractors_en": [
       "inevitability",
@@ -169,8 +169,8 @@
     "category_en": "Abstract",
     "level": "N2",
     "distractors": [
-      "対立",
-      "相違",
+      "對立",
+      "差異",
       "不一致"
     ],
     "distractors_en": [
@@ -190,7 +190,7 @@
     "level": "N2",
     "distractors": [
       "共同",
-      "同様",
+      "類似",
       "一般"
     ],
     "distractors_en": [
@@ -209,9 +209,9 @@
     "category_en": "Abstract",
     "level": "N2",
     "distractors": [
-      "差異",
-      "違い",
-      "区別"
+      "相同",
+      "比例",
+      "範圍"
     ],
     "distractors_en": [
       "difference",
@@ -229,9 +229,9 @@
     "category_en": "Abstract",
     "level": "N2",
     "distractors": [
-      "同様",
-      "似た",
-      "同一"
+      "相異",
+      "對比",
+      "無關"
     ],
     "distractors_en": [
       "similar",
@@ -250,8 +250,8 @@
     "level": "N2",
     "distractors": [
       "比較",
-      "対比",
-      "違い"
+      "差別",
+      "相同"
     ],
     "distractors_en": [
       "comparison",
@@ -269,7 +269,7 @@
     "category_en": "Abstract",
     "level": "N2",
     "distractors": [
-      "区別",
+      "區別",
       "整理",
       "分析"
     ],
@@ -289,9 +289,9 @@
     "category_en": "Abstract",
     "level": "N2",
     "distractors": [
-      "条件",
-      "基準",
-      "根拠"
+      "條件",
+      "標準",
+      "依據"
     ],
     "distractors_en": [
       "condition",
@@ -310,8 +310,8 @@
     "level": "N2",
     "distractors": [
       "理論",
-      "理屈",
-      "論点"
+      "道理",
+      "論點"
     ],
     "distractors_en": [
       "theory",
@@ -331,7 +331,7 @@
     "distractors": [
       "前提",
       "推測",
-      "仮説"
+      "假說"
     ],
     "distractors_en": [
       "premise",
@@ -349,9 +349,9 @@
     "category_en": "Academic",
     "level": "N2",
     "distractors": [
-      "証拠",
+      "證據",
       "理由",
-      "裏付け"
+      "結論"
     ],
     "distractors_en": [
       "evidence",
@@ -369,9 +369,9 @@
     "category_en": "Academic",
     "level": "N2",
     "distractors": [
-      "根拠",
-      "証明",
-      "事実"
+      "依據",
+      "證明",
+      "事實"
     ],
     "distractors_en": [
       "basis",
@@ -390,7 +390,7 @@
     "level": "N2",
     "distractors": [
       "意見",
-      "論点",
+      "論點",
       "見解"
     ],
     "distractors_en": [
@@ -409,7 +409,7 @@
     "category_en": "Academic",
     "level": "N2",
     "distractors": [
-      "反対",
+      "反對",
       "批判",
       "否定"
     ],
@@ -429,7 +429,7 @@
     "category_en": "Academic",
     "level": "N2",
     "distractors": [
-      "調査",
+      "調查",
       "考察",
       "解析"
     ],
@@ -449,7 +449,7 @@
     "category_en": "Academic",
     "level": "N2",
     "distractors": [
-      "検討",
+      "檢討",
       "分析",
       "研究"
     ],
@@ -470,7 +470,7 @@
     "level": "N2",
     "distractors": [
       "考察",
-      "検証",
+      "驗證",
       "審議"
     ],
     "distractors_en": [
@@ -489,9 +489,9 @@
     "category_en": "Academic",
     "level": "N2",
     "distractors": [
-      "判断",
-      "採点",
-      "査定"
+      "判斷",
+      "評分",
+      "鑑定"
     ],
     "distractors_en": [
       "judgment",
@@ -509,9 +509,9 @@
     "category_en": "Academic",
     "level": "N2",
     "distractors": [
-      "対照",
-      "比べ",
-      "対比"
+      "對照",
+      "差別",
+      "評估"
     ],
     "distractors_en": [
       "contrast",
@@ -529,7 +529,7 @@
     "category_en": "Academic",
     "level": "N2",
     "distractors": [
-      "主観的",
+      "主觀的",
       "中立的",
       "公平的"
     ],
@@ -549,9 +549,9 @@
     "category_en": "Academic",
     "level": "N2",
     "distractors": [
-      "客観的",
+      "客觀的",
       "個人的",
-      "感情的"
+      "情緒化的"
     ],
     "distractors_en": [
       "objective",
@@ -569,9 +569,9 @@
     "category_en": "Academic",
     "level": "N2",
     "distractors": [
-      "要点",
+      "要點",
       "主旨",
-      "争点"
+      "爭議點"
     ],
     "distractors_en": [
       "key point",
@@ -590,8 +590,8 @@
     "level": "N2",
     "distractors": [
       "意見",
-      "見方",
-      "観点"
+      "看法",
+      "觀點"
     ],
     "distractors_en": [
       "opinion",
@@ -609,9 +609,9 @@
     "category_en": "Business",
     "level": "N2",
     "distractors": [
-      "合意",
+      "協議",
       "協定",
-      "条約"
+      "條約"
     ],
     "distractors_en": [
       "agreement",
@@ -651,7 +651,7 @@
     "distractors": [
       "同意",
       "承諾",
-      "了承"
+      "認可"
     ],
     "distractors_en": [
       "consent",
@@ -669,9 +669,9 @@
     "category_en": "Business",
     "level": "N2",
     "distractors": [
-      "方策",
-      "戦略",
-      "指針"
+      "對策",
+      "戰略",
+      "準則"
     ],
     "distractors_en": [
       "measure/plan",
@@ -691,7 +691,7 @@
     "distractors": [
       "費用",
       "資金",
-      "経費"
+      "經費"
     ],
     "distractors_en": [
       "cost",
@@ -711,7 +711,7 @@
     "distractors": [
       "支出",
       "所得",
-      "賃金"
+      "薪資"
     ],
     "distractors_en": [
       "expenditure",
@@ -729,9 +729,9 @@
     "category_en": "Business",
     "level": "N2",
     "distractors": [
-      "収入",
+      "收入",
       "費用",
-      "出費"
+      "開銷"
     ],
     "distractors_en": [
       "income",
@@ -769,7 +769,7 @@
     "category_en": "Business",
     "level": "N2",
     "distractors": [
-      "黒字",
+      "盈餘",
       "損失",
       "負債"
     ],
@@ -789,9 +789,9 @@
     "category_en": "Business",
     "level": "N2",
     "distractors": [
-      "赤字",
-      "利益",
-      "黒い"
+      "虧損",
+      "成本",
+      "收入"
     ],
     "distractors_en": [
       "deficit/loss",
@@ -809,9 +809,9 @@
     "category_en": "Business",
     "level": "N2",
     "distractors": [
-      "効果",
-      "能率",
-      "生産性"
+      "效果",
+      "產能",
+      "生產力"
     ],
     "distractors_en": [
       "effect",
@@ -830,8 +830,8 @@
     "level": "N2",
     "distractors": [
       "重視",
-      "先行",
-      "優位"
+      "搶先",
+      "優勢"
     ],
     "distractors_en": [
       "emphasis",
@@ -850,7 +850,7 @@
     "level": "N2",
     "distractors": [
       "支援",
-      "補填",
+      "填補",
       "援助"
     ],
     "distractors_en": [
@@ -871,7 +871,7 @@
     "distractors": [
       "賠償",
       "補助",
-      "保証"
+      "保證"
     ],
     "distractors_en": [
       "damages",
@@ -889,9 +889,9 @@
     "category_en": "Business",
     "level": "N2",
     "distractors": [
-      "保証",
+      "保證",
       "補償",
-      "共済"
+      "互助"
     ],
     "distractors_en": [
       "guarantee",
@@ -910,8 +910,8 @@
     "level": "N2",
     "distractors": [
       "債券",
-      "証券",
-      "株"
+      "證券",
+      "股份"
     ],
     "distractors_en": [
       "bond",
@@ -929,9 +929,9 @@
     "category_en": "Business",
     "level": "N2",
     "distractors": [
-      "税率",
-      "徴収",
-      "課税"
+      "稅率",
+      "徵收",
+      "課稅"
     ],
     "distractors_en": [
       "tax rate",
@@ -949,9 +949,9 @@
     "category_en": "Business",
     "level": "N2",
     "distractors": [
-      "経済",
-      "好景気",
-      "不況"
+      "經濟",
+      "繁榮",
+      "蕭條"
     ],
     "distractors_en": [
       "economy",
@@ -969,9 +969,9 @@
     "category_en": "Business",
     "level": "N2",
     "distractors": [
-      "戦術",
+      "戰術",
       "方針",
-      "作戦"
+      "作戰"
     ],
     "distractors_en": [
       "tactics",
@@ -989,9 +989,9 @@
     "category_en": "Business",
     "level": "N2",
     "distractors": [
-      "競合",
-      "対抗",
-      "競い"
+      "對抗",
+      "合作",
+      "衝突"
     ],
     "distractors_en": [
       "rivalry",
@@ -1009,9 +1009,9 @@
     "category_en": "Society",
     "level": "N2",
     "distractors": [
-      "規制",
+      "管制",
       "禁止",
-      "制約"
+      "約束"
     ],
     "distractors_en": [
       "regulation",
@@ -1029,9 +1029,9 @@
     "category_en": "Society",
     "level": "N2",
     "distractors": [
-      "制限",
+      "限制",
       "規則",
-      "統制"
+      "控制"
     ],
     "distractors_en": [
       "restriction",
@@ -1049,9 +1049,9 @@
     "category_en": "Society",
     "level": "N2",
     "distractors": [
-      "対策",
+      "對策",
       "手段",
-      "対応"
+      "應對"
     ],
     "distractors_en": [
       "countermeasure",
@@ -1070,8 +1070,8 @@
     "level": "N2",
     "distractors": [
       "政策",
-      "方策",
-      "対策"
+      "方案",
+      "對策"
     ],
     "distractors_en": [
       "policy",
@@ -1089,9 +1089,9 @@
     "category_en": "Society",
     "level": "N2",
     "distractors": [
-      "論争",
-      "討議",
-      "話し合い"
+      "爭論",
+      "協商",
+      "交談"
     ],
     "distractors_en": [
       "controversy",
@@ -1110,7 +1110,7 @@
     "level": "N2",
     "distractors": [
       "自由主義",
-      "社会主義",
+      "社會主義",
       "資本主義"
     ],
     "distractors_en": [
@@ -1149,7 +1149,7 @@
     "category_en": "Society",
     "level": "N2",
     "distractors": [
-      "区別",
+      "區別",
       "偏見",
       "不平等"
     ],
@@ -1169,9 +1169,9 @@
     "category_en": "Society",
     "level": "N2",
     "distractors": [
-      "差別",
-      "先入観",
-      "固定観念"
+      "歧視",
+      "先入為主",
+      "刻板印象"
     ],
     "distractors_en": [
       "discrimination",
@@ -1189,9 +1189,9 @@
     "category_en": "Society",
     "level": "N2",
     "distractors": [
-      "差異",
-      "不平等",
-      "開き"
+      "差別",
+      "不均",
+      "距離"
     ],
     "distractors_en": [
       "difference",
@@ -1209,9 +1209,9 @@
     "category_en": "Society",
     "level": "N2",
     "distractors": [
-      "福利",
-      "社会保障",
-      "支援"
+      "津貼",
+      "社會保障",
+      "援助"
     ],
     "distractors_en": [
       "benefit",
@@ -1229,9 +1229,9 @@
     "category_en": "Society",
     "level": "N2",
     "distractors": [
-      "格差",
-      "貧しい",
-      "経済的困難"
+      "富裕",
+      "債務",
+      "飢餓"
     ],
     "distractors_en": [
       "disparity",
@@ -1249,9 +1249,9 @@
     "category_en": "Society",
     "level": "N2",
     "distractors": [
-      "人数",
-      "住民",
-      "国民"
+      "人數",
+      "居民",
+      "國民"
     ],
     "distractors_en": [
       "number of people",
@@ -1269,9 +1269,9 @@
     "category_en": "Society",
     "level": "N2",
     "distractors": [
-      "高齢化",
+      "高齡化",
       "人口減少",
-      "出生率低下"
+      "出生率下降"
     ],
     "distractors_en": [
       "aging society",
@@ -1290,8 +1290,8 @@
     "level": "N2",
     "distractors": [
       "少子化",
-      "老齢化",
-      "長寿化"
+      "老化",
+      "長壽化"
     ],
     "distractors_en": [
       "declining birth rate",
@@ -1309,9 +1309,9 @@
     "category_en": "Psychology",
     "level": "N2",
     "distractors": [
-      "悩み",
-      "迷い",
-      "苦悩"
+      "煩惱",
+      "猶豫",
+      "痛苦"
     ],
     "distractors_en": [
       "worry",
@@ -1329,9 +1329,9 @@
     "category_en": "Psychology",
     "level": "N2",
     "distractors": [
-      "苦しみ",
-      "悩み",
-      "苦痛"
+      "喜悅",
+      "疲勞",
+      "空虛"
     ],
     "distractors_en": [
       "suffering",
@@ -1349,9 +1349,9 @@
     "category_en": "Psychology",
     "level": "N2",
     "distractors": [
-      "満足",
-      "豊か",
-      "内容が濃い"
+      "滿足",
+      "豐富",
+      "空洞"
     ],
     "distractors_en": [
       "satisfaction",
@@ -1369,9 +1369,9 @@
     "category_en": "Psychology",
     "level": "N2",
     "distractors": [
-      "満足感",
+      "滿足感",
       "優越感",
-      "喜び"
+      "喜悅"
     ],
     "distractors_en": [
       "sense of satisfaction",
@@ -1389,9 +1389,9 @@
     "category_en": "Psychology",
     "level": "N2",
     "distractors": [
-      "虚無感",
-      "悲しみ",
-      "孤独感"
+      "空虛感",
+      "悲傷",
+      "孤獨感"
     ],
     "distractors_en": [
       "sense of emptiness",
@@ -1410,8 +1410,8 @@
     "level": "N2",
     "distractors": [
       "優越感",
-      "自信のなさ",
-      "コンプレックス"
+      "缺乏自信",
+      "情結"
     ],
     "distractors_en": [
       "superiority complex",
@@ -1431,7 +1431,7 @@
     "distractors": [
       "劣等感",
       "自信",
-      "自尊感情"
+      "自尊心"
     ],
     "distractors_en": [
       "inferiority complex",
@@ -1450,7 +1450,7 @@
     "distractors": [
       "緊張",
       "不安",
-      "焦る"
+      "冷靜"
     ],
     "distractors_en": [
       "nervousness",
@@ -1469,9 +1469,9 @@
     "category_en": "Psychology",
     "level": "N2",
     "distractors": [
-      "迷い",
-      "ためらい",
-      "逡巡"
+      "果斷",
+      "迷惘",
+      "拖延"
     ],
     "distractors_en": [
       "indecision",
@@ -1489,9 +1489,9 @@
     "category_en": "Psychology",
     "level": "N2",
     "distractors": [
-      "羨望",
-      "妬み",
-      "ライバル心"
+      "羨慕",
+      "欽佩",
+      "競爭心"
     ],
     "distractors_en": [
       "admiration/envy",
@@ -1509,9 +1509,9 @@
     "category_en": "Psychology",
     "level": "N2",
     "distractors": [
-      "嫉妬",
-      "憧れ",
-      "うらやむ"
+      "嫉妒",
+      "嚮往",
+      "崇拜"
     ],
     "distractors_en": [
       "jealousy",
@@ -1549,9 +1549,9 @@
     "category_en": "Psychology",
     "level": "N2",
     "distractors": [
-      "憎む",
-      "怒る",
-      "不満"
+      "原諒",
+      "生氣",
+      "不滿"
     ],
     "distractors_en": [
       "to hate",
@@ -1569,9 +1569,9 @@
     "category_en": "Psychology",
     "level": "N2",
     "distractors": [
-      "混乱",
-      "動く",
-      "焦り"
+      "混亂",
+      "移動",
+      "焦躁"
     ],
     "distractors_en": [
       "confusion",
@@ -1589,9 +1589,9 @@
     "category_en": "Psychology",
     "level": "N2",
     "distractors": [
-      "落ち着く",
-      "平静",
-      "沈着"
+      "慌張",
+      "激動",
+      "緊張"
     ],
     "distractors_en": [
       "to calm down",
@@ -1610,8 +1610,8 @@
     "level": "N2",
     "distractors": [
       "研究",
-      "調査",
-      "試験"
+      "調查",
+      "測試"
     ],
     "distractors_en": [
       "research",
@@ -1630,7 +1630,7 @@
     "level": "N2",
     "distractors": [
       "理論",
-      "仮定",
+      "假定",
       "推論"
     ],
     "distractors_en": [
@@ -1649,9 +1649,9 @@
     "category_en": "Science",
     "level": "N2",
     "distractors": [
-      "説明",
-      "立証",
-      "実証"
+      "說明",
+      "立證",
+      "實證"
     ],
     "distractors_en": [
       "explanation",
@@ -1669,9 +1669,9 @@
     "category_en": "Science",
     "level": "N2",
     "distractors": [
-      "発明",
-      "発表",
-      "発覚"
+      "發明",
+      "發表",
+      "揭發"
     ],
     "distractors_en": [
       "invention",
@@ -1689,9 +1689,9 @@
     "category_en": "Science",
     "level": "N2",
     "distractors": [
-      "発見",
+      "發現",
       "創造",
-      "開発"
+      "開發"
     ],
     "distractors_en": [
       "discovery",
@@ -1709,9 +1709,9 @@
     "category_en": "Science",
     "level": "N2",
     "distractors": [
-      "機械学習",
-      "ロボット",
-      "コンピューター"
+      "機器學習",
+      "機器人",
+      "電腦"
     ],
     "distractors_en": [
       "machine learning",
@@ -1729,9 +1729,9 @@
     "category_en": "Science",
     "level": "N2",
     "distractors": [
-      "持続可能",
-      "環境に優しい",
-      "エコ"
+      "永續的",
+      "環保的",
+      "節能的"
     ],
     "distractors_en": [
       "sustainable",
@@ -1751,7 +1751,7 @@
     "distractors": [
       "放出",
       "排除",
-      "廃棄"
+      "廢棄"
     ],
     "distractors_en": [
       "release",
@@ -1770,8 +1770,8 @@
     "level": "N2",
     "distractors": [
       "吸引",
-      "収集",
-      "取り込む"
+      "收集",
+      "排出"
     ],
     "distractors_en": [
       "attraction",
@@ -1789,9 +1789,9 @@
     "category_en": "Science",
     "level": "N2",
     "distractors": [
-      "回転",
-      "周期",
-      "サイクル"
+      "旋轉",
+      "週期",
+      "流動"
     ],
     "distractors_en": [
       "rotation",
@@ -1810,7 +1810,7 @@
     "level": "N2",
     "distractors": [
       "DNA",
-      "染色体",
+      "染色體",
       "細胞"
     ],
     "distractors_en": [
@@ -1831,7 +1831,7 @@
     "distractors": [
       "組織",
       "器官",
-      "遺伝子"
+      "基因"
     ],
     "distractors_en": [
       "tissue",
@@ -1870,7 +1870,7 @@
     "level": "N2",
     "distractors": [
       "空間",
-      "天体",
+      "天體",
       "銀河"
     ],
     "distractors_en": [
@@ -1891,7 +1891,7 @@
     "distractors": [
       "引力",
       "磁力",
-      "圧力"
+      "壓力"
     ],
     "distractors_en": [
       "gravitational pull",
@@ -1910,8 +1910,8 @@
     "level": "N2",
     "distractors": [
       "表示",
-      "表明",
-      "表わす"
+      "陳述",
+      "隱藏"
     ],
     "distractors_en": [
       "indication",
@@ -1929,9 +1929,9 @@
     "category_en": "Language",
     "level": "N2",
     "distractors": [
-      "話す",
-      "説明する",
-      "言及する"
+      "說話",
+      "解釋",
+      "提及"
     ],
     "distractors_en": [
       "to speak",
@@ -1951,7 +1951,7 @@
     "distractors": [
       "指示",
       "指導",
-      "示す"
+      "暗示"
     ],
     "distractors_en": [
       "instruction",
@@ -1970,8 +1970,8 @@
     "level": "N2",
     "distractors": [
       "主張",
-      "アピール",
-      "重視"
+      "呼籲",
+      "忽視"
     ],
     "distractors_en": [
       "assertion",
@@ -1990,8 +1990,8 @@
     "level": "N2",
     "distractors": [
       "理解",
-      "掌握",
-      "了解"
+      "領會",
+      "認知"
     ],
     "distractors_en": [
       "understanding",
@@ -2009,9 +2009,9 @@
     "category_en": "Language",
     "level": "N2",
     "distractors": [
-      "見せる",
-      "表す",
-      "指す"
+      "展示",
+      "表達",
+      "指向"
     ],
     "distractors_en": [
       "to show",
@@ -2029,9 +2029,9 @@
     "category_en": "Language",
     "level": "N2",
     "distractors": [
-      "差別",
+      "歧視",
       "分類",
-      "判断"
+      "判斷"
     ],
     "distractors_en": [
       "discrimination",
@@ -2049,8 +2049,8 @@
     "category_en": "Language",
     "level": "N2",
     "distractors": [
-      "評価",
-      "決断",
+      "評價",
+      "決斷",
       "判定"
     ],
     "distractors_en": [
@@ -2069,9 +2069,9 @@
     "category_en": "Language",
     "level": "N2",
     "distractors": [
-      "通訳",
-      "訳す",
-      "解釈"
+      "口譯",
+      "編輯",
+      "解讀"
     ],
     "distractors_en": [
       "interpretation (oral)",
@@ -2090,8 +2090,8 @@
     "level": "N2",
     "distractors": [
       "理解",
-      "説明",
-      "解説"
+      "說明",
+      "解說"
     ],
     "distractors_en": [
       "understanding",
@@ -2109,9 +2109,9 @@
     "category_en": "Language",
     "level": "N2",
     "distractors": [
-      "報告書",
-      "記事",
-      "文章"
+      "報告",
+      "文章",
+      "評論"
     ],
     "distractors_en": [
       "report",
@@ -2129,9 +2129,9 @@
     "category_en": "Language",
     "level": "N2",
     "distractors": [
-      "要点",
-      "まとめ",
-      "概要"
+      "要點",
+      "概要",
+      "細節"
     ],
     "distractors_en": [
       "key point",
@@ -2149,9 +2149,9 @@
     "category_en": "Language",
     "level": "N2",
     "distractors": [
-      "要旨",
-      "ポイント",
-      "主旨"
+      "主旨",
+      "細節",
+      "結論"
     ],
     "distractors_en": [
       "gist",
@@ -2169,9 +2169,9 @@
     "category_en": "Language",
     "level": "N2",
     "distractors": [
-      "具体的",
-      "観念的",
-      "曖昧"
+      "具體的",
+      "觀念的",
+      "模糊的"
     ],
     "distractors_en": [
       "concrete",
@@ -2210,7 +2210,7 @@
     "level": "N2",
     "distractors": [
       "美術",
-      "芸能",
+      "演藝",
       "文化"
     ],
     "distractors_en": [
@@ -2230,8 +2230,8 @@
     "level": "N2",
     "distractors": [
       "文章",
-      "小説",
-      "芸術"
+      "小說",
+      "藝術"
     ],
     "distractors_en": [
       "text/writing",
@@ -2251,7 +2251,7 @@
     "distractors": [
       "思想",
       "宗教",
-      "学問"
+      "學問"
     ],
     "distractors_en": [
       "thought/ideology",
@@ -2269,7 +2269,7 @@
     "category_en": "Culture & Arts",
     "level": "N2",
     "distractors": [
-      "伝統",
+      "傳統",
       "文化",
       "年代"
     ],
@@ -2289,9 +2289,9 @@
     "category_en": "Culture & Arts",
     "level": "N2",
     "distractors": [
-      "文化財",
+      "文化財產",
       "遺跡",
-      "宝"
+      "寶物"
     ],
     "distractors_en": [
       "cultural property",
@@ -2310,8 +2310,8 @@
     "level": "N2",
     "distractors": [
       "代表",
-      "シンボル",
-      "標識"
+      "標誌",
+      "記號"
     ],
     "distractors_en": [
       "representative",
@@ -2330,7 +2330,7 @@
     "level": "N2",
     "distractors": [
       "創作",
-      "発明",
+      "發明",
       "製作"
     ],
     "distractors_en": [
@@ -2349,9 +2349,9 @@
     "category_en": "Culture & Arts",
     "level": "N2",
     "distractors": [
-      "観賞",
-      "見る",
-      "楽しむ"
+      "觀賞",
+      "觀看",
+      "享受"
     ],
     "distractors_en": [
       "viewing/appreciating",
@@ -2370,7 +2370,7 @@
     "level": "N2",
     "distractors": [
       "批判",
-      "評価",
+      "評價",
       "感想"
     ],
     "distractors_en": [
@@ -2390,8 +2390,8 @@
     "level": "N2",
     "distractors": [
       "影響",
-      "力",
-      "権威"
+      "力量",
+      "權威"
     ],
     "distractors_en": [
       "influence",
@@ -2409,9 +2409,9 @@
     "category_en": "Expressions",
     "level": "N2",
     "distractors": [
-      "求める",
-      "追う",
-      "目指す"
+      "尋求",
+      "追逐",
+      "瞄準"
     ],
     "distractors_en": [
       "to seek",
@@ -2429,9 +2429,9 @@
     "category_en": "Expressions",
     "level": "N2",
     "distractors": [
-      "乗り越える",
-      "解決する",
-      "対処する"
+      "跨越",
+      "解決",
+      "應對"
     ],
     "distractors_en": [
       "to get over",
@@ -2449,9 +2449,9 @@
     "category_en": "Expressions",
     "level": "N2",
     "distractors": [
-      "推進する",
-      "加速する",
-      "進める"
+      "推動",
+      "加速",
+      "阻礙"
     ],
     "distractors_en": [
       "to drive forward",
@@ -2469,9 +2469,9 @@
     "category_en": "Expressions",
     "level": "N2",
     "distractors": [
-      "制限する",
-      "防ぐ",
-      "止める"
+      "限制",
+      "防止",
+      "停止"
     ],
     "distractors_en": [
       "to restrict",
@@ -2489,9 +2489,9 @@
     "category_en": "Expressions",
     "level": "N2",
     "distractors": [
-      "保つ",
-      "継続する",
-      "続ける"
+      "放棄",
+      "持續",
+      "中斷"
     ],
     "distractors_en": [
       "to keep",
@@ -2509,9 +2509,9 @@
     "category_en": "Expressions",
     "level": "N2",
     "distractors": [
-      "促進する",
-      "進める",
-      "実行する"
+      "促進",
+      "倒退",
+      "執行"
     ],
     "distractors_en": [
       "to promote",
@@ -2529,9 +2529,9 @@
     "category_en": "Expressions",
     "level": "N2",
     "distractors": [
-      "邪魔する",
-      "阻む",
-      "防ぐ"
+      "干擾",
+      "阻擋",
+      "協助"
     ],
     "distractors_en": [
       "to get in the way",
@@ -2549,9 +2549,9 @@
     "category_en": "Expressions",
     "level": "N2",
     "distractors": [
-      "起きる",
-      "発生する",
-      "生まれる"
+      "消失",
+      "出現",
+      "誕生"
     ],
     "distractors_en": [
       "to happen",
@@ -2569,9 +2569,9 @@
     "category_en": "Expressions",
     "level": "N2",
     "distractors": [
-      "連れる",
-      "一緒に",
-      "付き合う"
+      "帶領",
+      "一同",
+      "陪伴"
     ],
     "distractors_en": [
       "to take along",
@@ -2589,9 +2589,9 @@
     "category_en": "Expressions",
     "level": "N2",
     "distractors": [
-      "与える",
-      "影響する",
-      "引き起こす"
+      "給予",
+      "影響",
+      "引發"
     ],
     "distractors_en": [
       "to give",
@@ -2609,9 +2609,9 @@
     "category_en": "Expressions",
     "level": "N2",
     "distractors": [
-      "取り扱う",
-      "対処する",
-      "挑む"
+      "處理",
+      "應付",
+      "挑戰"
     ],
     "distractors_en": [
       "to handle",
@@ -2629,9 +2629,9 @@
     "category_en": "Expressions",
     "level": "N2",
     "distractors": [
-      "再確認",
-      "再検討",
-      "改める"
+      "重新確認",
+      "重新檢討",
+      "修改"
     ],
     "distractors_en": [
       "re-confirmation",
@@ -2649,9 +2649,9 @@
     "category_en": "Expressions",
     "level": "N2",
     "distractors": [
-      "基づく",
-      "考慮する",
-      "前提にする"
+      "忽略",
+      "考量",
+      "假設"
     ],
     "distractors_en": [
       "to be based on",
@@ -2669,9 +2669,9 @@
     "category_en": "Expressions",
     "level": "N2",
     "distractors": [
-      "理解する",
-      "把握する",
-      "認識する"
+      "誤解",
+      "忽略",
+      "辨認"
     ],
     "distractors_en": [
       "to understand",
@@ -2689,9 +2689,9 @@
     "category_en": "Expressions",
     "level": "N2",
     "distractors": [
-      "起こす",
-      "生じる",
-      "もたらす"
+      "阻止",
+      "產生",
+      "帶來"
     ],
     "distractors_en": [
       "to cause",
@@ -2709,9 +2709,9 @@
     "category_en": "Environment",
     "level": "N2",
     "distractors": [
-      "再生可能",
-      "環境に優しい",
-      "永続的"
+      "可再生的",
+      "環保的",
+      "永久的"
     ],
     "distractors_en": [
       "renewable",
@@ -2729,9 +2729,9 @@
     "category_en": "Environment",
     "level": "N2",
     "distractors": [
-      "気候変動",
-      "異常気象",
-      "温室効果"
+      "氣候變遷",
+      "異常氣候",
+      "溫室效應"
     ],
     "distractors_en": [
       "climate change",
@@ -2749,9 +2749,9 @@
     "category_en": "Environment",
     "level": "N2",
     "distractors": [
-      "温室ガス",
-      "排気ガス",
-      "汚染物質"
+      "溫室氣體",
+      "廢氣",
+      "污染物"
     ],
     "distractors_en": [
       "greenhouse gas",
@@ -2770,8 +2770,8 @@
     "level": "N2",
     "distractors": [
       "自然環境",
-      "食物連鎖",
-      "生物多様性"
+      "食物鏈",
+      "生物多樣性"
     ],
     "distractors_en": [
       "natural environment",
@@ -2789,9 +2789,9 @@
     "category_en": "Environment",
     "level": "N2",
     "distractors": [
-      "消滅",
-      "消えた",
-      "危機種"
+      "消失",
+      "繁衍",
+      "瀕危物種"
     ],
     "distractors_en": [
       "disappearance",
@@ -2809,9 +2809,9 @@
     "category_en": "Environment",
     "level": "N2",
     "distractors": [
-      "ゴミ",
-      "廃品",
-      "産業廃棄物"
+      "垃圾",
+      "廢品",
+      "工業廢料"
     ],
     "distractors_en": [
       "garbage",
@@ -2829,9 +2829,9 @@
     "category_en": "Environment",
     "level": "N2",
     "distractors": [
-      "汚れ",
-      "公害",
-      "環境破壊"
+      "髒污",
+      "淨化",
+      "環境破壞"
     ],
     "distractors_en": [
       "dirt/stain",
@@ -2849,8 +2849,8 @@
     "category_en": "Environment",
     "level": "N2",
     "distractors": [
-      "省エネ",
-      "倹約",
+      "節能",
+      "儉樸",
       "節制"
     ],
     "distractors_en": [
@@ -2869,9 +2869,9 @@
     "category_en": "Environment",
     "level": "N2",
     "distractors": [
-      "リサイクル",
+      "回收",
       "再生",
-      "有効活用"
+      "有效利用"
     ],
     "distractors_en": [
       "recycling",
@@ -2889,9 +2889,9 @@
     "category_en": "Environment",
     "level": "N2",
     "distractors": [
-      "保全",
-      "守る",
-      "防護"
+      "破壞",
+      "維護",
+      "傷害"
     ],
     "distractors_en": [
       "conservation",
@@ -2911,7 +2911,7 @@
     "distractors": [
       "規則",
       "法令",
-      "条例"
+      "條例"
     ],
     "distractors_en": [
       "rule",
@@ -2930,7 +2930,7 @@
     "level": "N2",
     "distractors": [
       "協定",
-      "合意",
+      "協議",
       "契約"
     ],
     "distractors_en": [
@@ -2990,7 +2990,7 @@
     "level": "N2",
     "distractors": [
       "違法",
-      "反則",
+      "犯規",
       "犯罪"
     ],
     "distractors_en": [
@@ -3029,8 +3029,8 @@
     "category_en": "Law",
     "level": "N2",
     "distractors": [
-      "申し込み",
-      "届け出",
+      "報名",
+      "通報",
       "請求"
     ],
     "distractors_en": [
@@ -3049,9 +3049,9 @@
     "category_en": "Law",
     "level": "N2",
     "distractors": [
-      "手順",
-      "プロセス",
-      "処理"
+      "步驟",
+      "流程",
+      "處理"
     ],
     "distractors_en": [
       "steps",
@@ -3071,7 +3071,7 @@
     "distractors": [
       "文書",
       "資料",
-      "記録"
+      "記錄"
     ],
     "distractors_en": [
       "document",
@@ -3090,7 +3090,7 @@
     "level": "N2",
     "distractors": [
       "期限",
-      "期日",
+      "日期",
       "時間"
     ],
     "distractors_en": [
@@ -3129,9 +3129,9 @@
     "category_en": "Life",
     "level": "N2",
     "distractors": [
-      "考え方",
+      "思維方式",
       "信念",
-      "人生観"
+      "人生觀"
     ],
     "distractors_en": [
       "way of thinking",
@@ -3149,9 +3149,9 @@
     "category_en": "Life",
     "level": "N2",
     "distractors": [
-      "価値観",
-      "世界観",
-      "哲学"
+      "價值觀",
+      "世界觀",
+      "哲學"
     ],
     "distractors_en": [
       "values",
@@ -3169,7 +3169,7 @@
     "category_en": "Life",
     "level": "N2",
     "distractors": [
-      "独立",
+      "獨立",
       "自由",
       "自主"
     ],
@@ -3190,7 +3190,7 @@
     "level": "N2",
     "distractors": [
       "成長",
-      "大人",
+      "成人",
       "熟練"
     ],
     "distractors_en": [
@@ -3209,9 +3209,9 @@
     "category_en": "Life",
     "level": "N2",
     "distractors": [
-      "向上",
+      "進取",
       "野心",
-      "意欲"
+      "幹勁"
     ],
     "distractors_en": [
       "improvement",
@@ -3229,8 +3229,8 @@
     "category_en": "Life",
     "level": "N2",
     "distractors": [
-      "やる気",
-      "熱意",
+      "幹勁",
+      "熱忱",
       "積極性"
     ],
     "distractors_en": [
@@ -3249,9 +3249,9 @@
     "category_en": "Life",
     "level": "N2",
     "distractors": [
-      "我慢",
-      "辛抱",
-      "耐久"
+      "忍受",
+      "堅忍",
+      "耐力"
     ],
     "distractors_en": [
       "endurance",
@@ -3270,7 +3270,7 @@
     "level": "N2",
     "distractors": [
       "正直",
-      "真面目",
+      "認真",
       "誠意"
     ],
     "distractors_en": [
@@ -3289,9 +3289,9 @@
     "category_en": "Life",
     "level": "N2",
     "distractors": [
-      "謙遜",
-      "控えめ",
-      "遠慮がち"
+      "傲慢",
+      "含蓄",
+      "拘謹"
     ],
     "distractors_en": [
       "modesty",
@@ -3311,7 +3311,7 @@
     "distractors": [
       "急性",
       "長期",
-      "継続性"
+      "持續性"
     ],
     "distractors_en": [
       "acute",
@@ -3331,7 +3331,7 @@
     "distractors": [
       "慢性",
       "緊急",
-      "突発性"
+      "突發性"
     ],
     "distractors_en": [
       "chronic",
@@ -3350,8 +3350,8 @@
     "level": "N2",
     "distractors": [
       "抵抗力",
-      "防御",
-      "抗体"
+      "防禦",
+      "抗體"
     ],
     "distractors_en": [
       "resistance",
@@ -3370,8 +3370,8 @@
     "level": "N2",
     "distractors": [
       "作用",
-      "効果",
-      "悪影響"
+      "效果",
+      "不良影響"
     ],
     "distractors_en": [
       "effect",
@@ -3389,7 +3389,7 @@
     "category_en": "Medical",
     "level": "N2",
     "distractors": [
-      "検査",
+      "檢查",
       "判定",
       "診察"
     ],
@@ -3409,8 +3409,8 @@
     "category_en": "Medical",
     "level": "N2",
     "distractors": [
-      "処置",
-      "処理",
+      "處置",
+      "處理",
       "方法"
     ],
     "distractors_en": [
@@ -3429,9 +3429,9 @@
     "category_en": "Medical",
     "level": "N2",
     "distractors": [
-      "食事",
-      "栄養素",
-      "カロリー"
+      "餐點",
+      "養分",
+      "熱量"
     ],
     "distractors_en": [
       "meal",
@@ -3469,9 +3469,9 @@
     "category_en": "Medical",
     "level": "N2",
     "distractors": [
-      "肉体的",
-      "心理的",
-      "感情的"
+      "肉體上的",
+      "心理上的",
+      "情緒上的"
     ],
     "distractors_en": [
       "physical",
@@ -3489,9 +3489,9 @@
     "category_en": "Medical",
     "level": "N2",
     "distractors": [
-      "精神的",
-      "身体的",
-      "体力的"
+      "精神上的",
+      "身體上的",
+      "體力上的"
     ],
     "distractors_en": [
       "mental",
@@ -3510,8 +3510,8 @@
     "level": "N2",
     "distractors": [
       "管理",
-      "運営",
-      "経済"
+      "營運",
+      "經濟"
     ],
     "distractors_en": [
       "management",
@@ -3529,8 +3529,8 @@
     "category_en": "Management",
     "level": "N2",
     "distractors": [
-      "団体",
-      "機関",
+      "團體",
+      "機關",
       "機構"
     ],
     "distractors_en": [
@@ -3551,7 +3551,7 @@
     "distractors": [
       "人員",
       "人力",
-      "スタッフ"
+      "員工"
     ],
     "distractors_en": [
       "personnel",
@@ -3570,8 +3570,8 @@
     "level": "N2",
     "distractors": [
       "雇用",
-      "起用",
-      "選抜"
+      "任用",
+      "選拔"
     ],
     "distractors_en": [
       "employment",
@@ -3589,9 +3589,9 @@
     "category_en": "Management",
     "level": "N2",
     "distractors": [
-      "名声",
-      "評価",
-      "口コミ"
+      "名望",
+      "評估",
+      "口碑"
     ],
     "distractors_en": [
       "fame",
@@ -3609,7 +3609,7 @@
     "category_en": "Management",
     "level": "N2",
     "distractors": [
-      "実績",
+      "實績",
       "成果",
       "成績"
     ],
@@ -3629,9 +3629,9 @@
     "category_en": "Management",
     "level": "N2",
     "distractors": [
-      "収益",
-      "黒字",
-      "メリット"
+      "收益",
+      "盈餘",
+      "好處"
     ],
     "distractors_en": [
       "earnings",
@@ -3649,9 +3649,9 @@
     "category_en": "Management",
     "level": "N2",
     "distractors": [
-      "赤字",
-      "被害",
-      "マイナス"
+      "虧損",
+      "損害",
+      "負值"
     ],
     "distractors_en": [
       "deficit",
@@ -3709,9 +3709,9 @@
     "category_en": "General",
     "level": "N2",
     "distractors": [
-      "不明確",
-      "不透明",
-      "はっきりしない"
+      "明確",
+      "透明",
+      "直接"
     ],
     "distractors_en": [
       "unclear",
@@ -3729,9 +3729,9 @@
     "category_en": "General",
     "level": "N2",
     "distractors": [
-      "融通",
-      "臨機応変",
-      "弾力的"
+      "變通",
+      "隨機應變",
+      "死板"
     ],
     "distractors_en": [
       "flexibility",
@@ -3749,7 +3749,7 @@
     "category_en": "General",
     "level": "N2",
     "distractors": [
-      "厳格",
+      "嚴格",
       "精密",
       "正確"
     ],
@@ -3769,9 +3769,9 @@
     "category_en": "General",
     "level": "N2",
     "distractors": [
-      "難しい",
-      "入り組んだ",
-      "困難"
+      "簡單",
+      "困難",
+      "清楚"
     ],
     "distractors_en": [
       "difficult",
@@ -3789,9 +3789,9 @@
     "category_en": "General",
     "level": "N2",
     "distractors": [
-      "簡単",
-      "シンプル",
-      "単一"
+      "複雜",
+      "容易",
+      "單一"
     ],
     "distractors_en": [
       "easy",
@@ -3811,7 +3811,7 @@
     "distractors": [
       "重大",
       "重要",
-      "危機的"
+      "危急"
     ],
     "distractors_en": [
       "serious/important",
@@ -3829,8 +3829,8 @@
     "category_en": "General",
     "level": "N2",
     "distractors": [
-      "大切",
-      "価値ある",
+      "廉價",
+      "有價值",
       "重要"
     ],
     "distractors_en": [
@@ -3869,9 +3869,9 @@
     "category_en": "General",
     "level": "N2",
     "distractors": [
-      "細かい",
-      "曖昧",
-      "難しい"
+      "細膩",
+      "模糊",
+      "困難"
     ],
     "distractors_en": [
       "detailed/fine",
@@ -3889,9 +3889,9 @@
     "category_en": "General",
     "level": "N2",
     "distractors": [
-      "明らか",
-      "目立つ",
-      "大幅"
+      "明顯的",
+      "醒目的",
+      "重大的"
     ],
     "distractors_en": [
       "clear/obvious",
@@ -3909,9 +3909,9 @@
     "category_en": "General",
     "level": "N2",
     "distractors": [
-      "適当",
-      "ふさわしい",
-      "妥当"
+      "不當",
+      "過度",
+      "隨意"
     ],
     "distractors_en": [
       "appropriate/casual",
@@ -3929,9 +3929,9 @@
     "category_en": "General",
     "level": "N2",
     "distractors": [
-      "適切",
-      "合理的",
-      "正当"
+      "適當",
+      "合理",
+      "正當"
     ],
     "distractors_en": [
       "appropriate",
@@ -3949,9 +3949,9 @@
     "category_en": "General",
     "level": "N2",
     "distractors": [
-      "論理的",
-      "理屈的",
-      "効率的"
+      "邏輯的",
+      "講理的",
+      "有效率的"
     ],
     "distractors_en": [
       "logical",
@@ -3989,9 +3989,9 @@
     "category_en": "General",
     "level": "N2",
     "distractors": [
-      "少しずつ",
-      "段階的に",
-      "ゆっくり"
+      "一點一點地",
+      "逐步地",
+      "緩慢地"
     ],
     "distractors_en": [
       "little by little",
