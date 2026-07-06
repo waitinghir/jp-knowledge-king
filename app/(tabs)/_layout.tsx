@@ -1,7 +1,9 @@
 import { Tabs } from 'expo-router';
 import { Text } from 'react-native';
+import { useStrings } from '../../utils/i18n';
 
 export default function TabLayout() {
+  const s = useStrings();
   return (
     <Tabs
       screenOptions={{
@@ -20,14 +22,14 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: '首頁',
+          title: s.homeTab,
           tabBarIcon: ({ color }) => <Text style={{ fontSize: 20, color }}>🏠</Text>,
         }}
       />
       <Tabs.Screen
         name="leaderboard"
         options={{
-          title: '排行榜',
+          title: s.leaderboardTab,
           tabBarIcon: ({ color }) => <Text style={{ fontSize: 20, color }}>🏆</Text>,
         }}
       />
