@@ -40,6 +40,10 @@
       "router": {},
       "eas": {
         "projectId": "f474bca9-2408-4414-be1a-9488d195b6c4"
+      },
+      "supabase": {
+        "url": "https://lhrbceooegduywhsdcgl.supabase.co",
+        "anonKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxocmJjZW9vZWdkdXl3aHNkY2dsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODMzNDY3MTgsImV4cCI6MjA5ODkyMjcxOH0.xYiuj1ki0QvvQebZJbdlf7R0SpFfn0mIIhJ8XQP8W0w"
       }
     },
     "owner": "waitinghir"
