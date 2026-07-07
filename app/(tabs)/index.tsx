@@ -135,6 +135,11 @@ export default function HomeScreen() {
             )}
           </Text>
         )}
+
+        {/* Feedback entry */}
+        <Pressable onPress={() => router.push('/feedback')} hitSlop={8}>
+          <Text style={styles.feedbackLink}>{s.feedbackLink}</Text>
+        </Pressable>
       </View>
     </SafeAreaView>
   );
@@ -245,4 +250,11 @@ const styles = StyleSheet.create({
 
   // Footer
   footer: { fontSize: 13, color: '#7F8C8D' },
+
+  // Feedback link
+  feedbackLink: {
+    fontSize: 12,
+    color: '#7F8C8D',
+    textDecorationLine: 'underline',
+  },
 });

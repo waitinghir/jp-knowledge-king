@@ -15,6 +15,7 @@ export default function RootLayout() {
         <Stack.Screen name="battle/matching" options={{ headerShown: false }} />
         <Stack.Screen name="battle/play" options={{ headerShown: false }} />
         <Stack.Screen name="battle/result" options={{ headerShown: false }} />
+        <Stack.Screen name="feedback" options={{ headerShown: false, presentation: 'modal' }} />
       </Stack>
       <StatusBar style="light" />
     </>

@@ -45,6 +45,20 @@ const strings = {
     leaderboardMe: '你',
     homeTab: '首頁',
 
+    // Feedback
+    feedbackLink: '💬 意見回饋',
+    feedbackTitle: '意見回饋',
+    feedbackSubtitle: '說說你的想法，開發者每一則都會看',
+    feedbackPlaceholder: '例如：希望增加聽力題、對戰太簡單、介面哪裡卡卡的…',
+    feedbackContactLabel: '聯絡方式（選填）',
+    feedbackContactPlaceholder: 'Email 或 IG，方便我回覆你',
+    feedbackSubmit: '送出回饋',
+    feedbackPrivacyHint: '匿名送出，不會收集個人資料',
+    feedbackThanksTitle: '感謝你的回饋',
+    feedbackThanksSub: '每一則都會親自看過',
+    feedbackBackHome: '回首頁',
+    feedbackError: '送出失敗，請檢查網路後再試一次',
+
     // Matching screen
     searching: (dots: string) => `尋找對手中${dots}`,
     matchingWait: '正在配對中，請稍候',
@@ -100,6 +114,20 @@ const strings = {
     leaderboardCalculatingHint: 'Play one battle to join this week\'s ranking',
     leaderboardMe: 'Me',
     homeTab: 'Home',
+
+    // Feedback
+    feedbackLink: '💬 Feedback',
+    feedbackTitle: 'Feedback',
+    feedbackSubtitle: 'Tell us what you think — the developer reads every message',
+    feedbackPlaceholder: 'e.g. add listening questions, battles feel too easy, UI feels clunky…',
+    feedbackContactLabel: 'Contact (optional)',
+    feedbackContactPlaceholder: 'Email or IG, in case you want a reply',
+    feedbackSubmit: 'Send Feedback',
+    feedbackPrivacyHint: 'Anonymous — no personal data collected',
+    feedbackThanksTitle: 'Thanks for your feedback',
+    feedbackThanksSub: 'Every message gets read personally',
+    feedbackBackHome: 'Back to Home',
+    feedbackError: 'Failed to send. Check your connection and try again.',
 
     // Matching screen
     searching: (dots: string) => `Finding opponent${dots}`,
