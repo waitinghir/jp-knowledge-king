@@ -4,7 +4,7 @@
 
 > **核心假設：**「跟對手比賽」的緊張感，會讓背日文單字從枯燥變上癮。
 
-**目前版本：v1.4.0**
+**目前版本：v1.5.1**（架上：v1.5.0）
 
 ---
 
@@ -19,6 +19,7 @@
 | 音效 | expo-av |
 | 本機儲存 | @react-native-async-storage/async-storage |
 | 國際化 | expo-localization（繁中 / 英文自動切換）|
+| 後端 | Supabase（意見回饋；會員系統開發中）|
 
 ---
 
@@ -42,6 +43,7 @@ jp-knowledge-king/
 │   │   ├── _layout.tsx          # Tab layout（首頁 + 排行榜）
 │   │   ├── index.tsx            # 首頁
 │   │   └── leaderboard.tsx      # 週排行榜
+│   ├── feedback.tsx             # 意見回饋（modal，寫入 Supabase）
 │   └── battle/
 │       ├── matching.tsx         # 配對頁（假裝找對手 1-2 秒）
 │       ├── play.tsx             # 對戰頁（出題 + 倒數 + 選項）
@@ -51,13 +53,15 @@ jp-knowledge-king/
 │   └── OptionButton.tsx         # 選項按鈕（含動畫）
 ├── data/
 │   ├── n4-words.json            # N4 題庫（200 個高頻單字）
-│   └── n3-words.json            # N3 題庫（40 個單字）
+│   ├── n3-words.json            # N3 題庫（200 字）+ 生活單字（40 字）
+│   └── n2-words.json            # N2 題庫（200 個單字）
 ├── utils/
 │   ├── ai-opponent.ts           # AI 對手邏輯 + 橡皮筋難度
 │   ├── leaderboard.ts           # 週排行榜邏輯（假玩家生成）
 │   ├── scoring.ts               # 計分邏輯
 │   ├── question.ts              # 出題 / 選項生成邏輯
 │   ├── storage.ts               # AsyncStorage 存取
+│   ├── supabase.ts              # Supabase client
 │   ├── wordBank.ts              # 題庫載入（remote + local fallback）
 │   └── i18n.ts                  # 多語字串
 └── types/
@@ -68,7 +72,7 @@ jp-knowledge-king/
 
 ## 遊戲規則
 
-1. 首頁選擇難度（N4 / N3 / 全部），點「開始對戰」
+1. 首頁選擇難度（N4 / N3 / N2 / 生活 / 全部），點「開始對戰」
 2. 配對動畫（1-2 秒）→ 顯示 AI 對手
 3. 5 題連續作答，每題 10 秒倒數
 4. 每題計分：答對 = `floor(100 × (剩餘秒數/10 + 0.1))`，答錯 = 0 分
@@ -135,6 +139,8 @@ eas submit --platform ios --latest
 
 | 版本 | 內容 |
 |------|------|
+| v1.5.1 | App 內意見回饋表單（Supabase）、Tab Bar 英文標籤修正 |
+| v1.5.0 | N2 題庫 200 字、N3 擴充為 200 字、新增「生活」分類、干擾選項全改繁中字義 |
 | v1.4.0 | 週排行榜、智慧配對（橡皮筋難度）、名字池擴充至 65 個 |
 | v1.3.0 | N3 題庫、難度選擇器（N4 / N3 / 全部） |
 | v1.1.0 | 雙語 i18n（繁中 / 英文）、英文題庫補齊 |
@@ -146,7 +152,8 @@ eas submit --platform ios --latest
 
 - [ ] 真人即時對戰（WebSocket）
 - [ ] 更多題型（中翻日、讀音、文法填空）
-- [ ] 擴充題庫（N2–N1）
+- [x] 擴充題庫（N2）
+- [ ] 擴充題庫（N1）
 - [ ] 帳號系統（Apple / Google 登入）
 - [ ] 聽力題（TTS 語音）
 - [ ] 錯題複習系統
