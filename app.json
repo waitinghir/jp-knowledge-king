@@ -34,7 +34,13 @@
     "scheme": "jpknowledgeking",
     "plugins": [
       "expo-router",
-      "expo-localization"
+      "expo-localization",
+      [
+        "expo-av",
+        {
+          "microphonePermission": false
+        }
+      ]
     ],
     "extra": {
       "router": {},
