@@ -10,12 +10,12 @@
     "level": "N4",
     "distractors": [
       "備用",
-      "就緒",
+      "結果",
       "決心"
     ],
     "distractors_en": [
-      "reserve/backup",
-      "readiness",
+      "backup",
+      "result",
       "resolution"
     ]
   },
@@ -29,14 +29,14 @@
     "category_en": "Daily Life",
     "level": "N4",
     "distractors": [
-      "遞送",
-      "通知",
-      "寄送"
+      "寄出",
+      "退回",
+      "遺失"
     ],
     "distractors_en": [
-      "to deliver",
-      "notification",
-      "to send"
+      "to send out",
+      "to be returned",
+      "to be lost"
     ]
   },
   {
@@ -49,14 +49,14 @@
     "category_en": "Daily Life",
     "level": "N4",
     "distractors": [
-      "送達",
       "收到",
-      "寄出"
+      "遺失",
+      "拒收"
     ],
     "distractors_en": [
-      "to arrive",
       "to receive",
-      "to ship out"
+      "to lose",
+      "to refuse delivery"
     ]
   },
   {
@@ -251,12 +251,12 @@
     "distractors": [
       "淋濕",
       "受潮",
-      "口渴"
+      "燃燒"
     ],
     "distractors_en": [
       "to get wet",
       "to become moist",
-      "to be thirsty"
+      "to burn"
     ]
   },
   {
@@ -450,12 +450,12 @@
     "level": "N4",
     "distractors": [
       "應考",
-      "領取",
+      "出口",
       "得獎"
     ],
     "distractors_en": [
       "taking an exam",
-      "receipt",
+      "exit",
       "winning an award"
     ]
   },
@@ -591,12 +591,12 @@
     "distractors": [
       "預習",
       "練習",
-      "學習"
+      "實習"
     ],
     "distractors_en": [
       "preview (before class)",
       "practice",
-      "studying"
+      "internship"
     ]
   },
   {
@@ -630,13 +630,13 @@
     "level": "N4",
     "distractors": [
       "口譯",
-      "編譯",
-      "解讀"
+      "校對",
+      "朗讀"
     ],
     "distractors_en": [
       "interpretation (oral)",
-      "to translate",
-      "interpretation"
+      "proofreading",
+      "reading aloud"
     ]
   },
   {
@@ -750,13 +750,13 @@
     "level": "N4",
     "distractors": [
       "實驗",
-      "體驗",
-      "考試"
+      "考試",
+      "檢查"
     ],
     "distractors_en": [
       "experiment",
-      "personal experience",
-      "exam/test"
+      "exam/test",
+      "inspection"
     ]
   },
   {
@@ -870,12 +870,12 @@
     "level": "N4",
     "distractors": [
       "約束",
-      "予定",
-      "予想"
+      "取消",
+      "預測"
     ],
     "distractors_en": [
       "promise",
-      "schedule",
+      "cancellation",
       "prediction"
     ]
   },
@@ -1095,7 +1095,7 @@
     ],
     "distractors_en": [
       "library",
-      "museum",
+      "history museum",
       "gymnasium"
     ]
   },
@@ -1131,12 +1131,12 @@
     "distractors": [
       "禁止停車",
       "車站",
-      "車庫"
+      "加油站"
     ],
     "distractors_en": [
       "no parking zone",
       "train station",
-      "garage"
+      "gas station"
     ]
   },
   {
@@ -1349,14 +1349,14 @@
     "category_en": "Shopping & Food",
     "level": "N4",
     "distractors": [
-      "禮物",
-      "紀念品",
-      "獎品"
+      "獎品",
+      "收據",
+      "行李"
     ],
     "distractors_en": [
-      "gift",
-      "memento",
-      "prize"
+      "prize",
+      "receipt",
+      "luggage"
     ]
   },
   {
@@ -1391,12 +1391,12 @@
     "distractors": [
       "失禮",
       "適當",
-      "親切"
+      "粗心"
     ],
     "distractors_en": [
       "rude",
       "appropriate",
-      "kind"
+      "careless"
     ]
   },
   {
@@ -1609,14 +1609,14 @@
     "category_en": "Relationships",
     "level": "N4",
     "distractors": [
-      "預約",
       "束縛",
-      "契約"
+      "謊言",
+      "拒絕"
     ],
     "distractors_en": [
-      "reservation",
-      "restraint/binding",
-      "contract"
+      "restraint",
+      "lie",
+      "refusal"
     ]
   },
   {
@@ -1663,20 +1663,20 @@
     "id": "n4_084",
     "kanji": "招待",
     "kana": "しょうたい",
-    "meaning_zh": "招待",
+    "meaning_zh": "邀請",
     "meaning_en": "invitation",
     "category": "人間關係",
     "category_en": "Relationships",
     "level": "N4",
     "distractors": [
       "介紹",
-      "接待",
-      "歡迎"
+      "拒絕",
+      "送行"
     ],
     "distractors_en": [
       "introduction",
-      "reception/hospitality",
-      "welcome"
+      "refusal",
+      "seeing off"
     ]
   },
   {
@@ -1691,12 +1691,12 @@
     "distractors": [
       "困擾",
       "麻煩",
-      "幫忙"
+      "責備"
     ],
     "distractors_en": [
       "trouble/nuisance",
       "bother",
-      "help/assistance"
+      "scolding"
     ]
   },
   {
@@ -1876,7 +1876,7 @@
     "distractors_en": [
       "to help",
       "to refuse",
-      "to order"
+      "to command"
     ]
   },
   {
@@ -2569,14 +2569,14 @@
     "category_en": "Verbs",
     "level": "N4",
     "distractors": [
-      "回去",
-      "交換",
-      "返還"
+      "保持",
+      "修理",
+      "隱藏"
     ],
     "distractors_en": [
-      "to go home",
-      "to exchange",
-      "to return/give back"
+      "to keep as is",
+      "to repair",
+      "to hide"
     ]
   },
   {
@@ -2891,12 +2891,12 @@
     "distractors": [
       "笑",
       "唱",
-      "叫"
+      "跑"
     ],
     "distractors_en": [
       "to laugh",
       "to sing",
-      "to shout"
+      "to run"
     ]
   },
   {
@@ -3009,12 +3009,12 @@
     "category_en": "Abstract Concepts",
     "level": "N4",
     "distractors": [
-      "週刊",
+      "意外",
       "期間",
       "時間"
     ],
     "distractors_en": [
-      "weekly publication",
+      "accident",
       "period",
       "time"
     ]
@@ -3170,12 +3170,12 @@
     "level": "N4",
     "distractors": [
       "結果",
-      "理由",
+      "對策",
       "目的"
     ],
     "distractors_en": [
       "result/outcome",
-      "reason",
+      "countermeasure",
       "purpose/goal"
     ]
   },
@@ -3209,12 +3209,12 @@
     "category_en": "Abstract Concepts",
     "level": "N4",
     "distractors": [
-      "目標",
+      "手段",
       "結果",
       "原因"
     ],
     "distractors_en": [
-      "target/aim",
+      "means/method",
       "result",
       "cause"
     ]
@@ -3231,12 +3231,12 @@
     "distractors": [
       "關心",
       "佩服",
-      "關聯"
+      "關門"
     ],
     "distractors_en": [
       "concern/interest",
       "admiration",
-      "relation/connection"
+      "closing (a shop)"
     ]
   },
   {
@@ -3249,12 +3249,12 @@
     "category_en": "Abstract Concepts",
     "level": "N4",
     "distractors": [
-      "感想",
+      "意義",
       "印象",
       "表現"
     ],
     "distractors_en": [
-      "impressions/thoughts",
+      "meaning",
       "impression",
       "expression"
     ]
@@ -3269,12 +3269,12 @@
     "category_en": "Abstract Concepts",
     "level": "N4",
     "distractors": [
-      "意見",
+      "計畫",
       "理想",
       "空想"
     ],
     "distractors_en": [
-      "opinion",
+      "plan",
       "ideal",
       "fantasy"
     ]
@@ -3289,14 +3289,14 @@
     "category_en": "Abstract Concepts",
     "level": "N4",
     "distractors": [
-      "嗜好",
       "意義",
-      "同伴"
+      "同伴",
+      "疑問"
     ],
     "distractors_en": [
-      "hobby",
       "meaning",
-      "ally/supporter"
+      "companion",
+      "question"
     ]
   },
   {
@@ -3309,14 +3309,14 @@
     "category_en": "Abstract Concepts",
     "level": "N4",
     "distractors": [
-      "興趣",
       "味道",
-      "意義"
+      "意義",
+      "工作"
     ],
     "distractors_en": [
-      "interest (in something)",
       "taste/flavor",
-      "meaning/significance"
+      "meaning/significance",
+      "work/job"
     ]
   },
   {
@@ -3369,12 +3369,12 @@
     "category_en": "Abstract Concepts",
     "level": "N4",
     "distractors": [
-      "原因",
+      "結論",
       "結果",
       "目的"
     ],
     "distractors_en": [
-      "cause",
+      "conclusion",
       "result",
       "purpose/goal"
     ]
@@ -3411,12 +3411,12 @@
     "distractors": [
       "地震",
       "洪水",
-      "暴風"
+      "乾旱"
     ],
     "distractors_en": [
       "earthquake",
       "flood",
-      "storm"
+      "drought"
     ]
   },
   {
@@ -3449,12 +3449,12 @@
     "category_en": "Nature & Seasons",
     "level": "N4",
     "distractors": [
-      "時節",
+      "節日",
       "節約",
       "調節"
     ],
     "distractors_en": [
-      "occasion/time",
+      "holiday/festival",
       "saving",
       "adjustment"
     ]
@@ -3691,12 +3691,12 @@
     "distractors": [
       "沙",
       "泥土",
-      "岩石"
+      "木頭"
     ],
     "distractors_en": [
       "sand",
       "soil",
-      "boulder/cliff"
+      "wood"
     ]
   },
   {
@@ -3709,12 +3709,12 @@
     "category_en": "Nature & Seasons",
     "level": "N4",
     "distractors": [
-      "樹林",
+      "沙漠",
       "農田",
       "庭院"
     ],
     "distractors_en": [
-      "woods/grove",
+      "desert",
       "field/farm",
       "garden"
     ]
@@ -3769,14 +3769,14 @@
     "category_en": "Nature & Seasons",
     "level": "N4",
     "distractors": [
-      "哭",
-      "笑",
-      "唱"
+      "飛",
+      "吃",
+      "睡"
     ],
     "distractors_en": [
-      "to cry (human)",
-      "to laugh",
-      "to sing"
+      "to fly",
+      "to eat",
+      "to sleep"
     ]
   },
   {
@@ -3789,14 +3789,14 @@
     "category_en": "Nature & Seasons",
     "level": "N4",
     "distractors": [
-      "買",
       "狩獵",
-      "逃跑"
+      "逃跑",
+      "賣"
     ],
     "distractors_en": [
-      "to buy",
       "to hunt",
-      "to escape"
+      "to escape",
+      "to sell"
     ]
   },
   {
@@ -3809,12 +3809,12 @@
     "category_en": "General",
     "level": "N4",
     "distractors": [
-      "事件",
+      "比賽",
       "事情",
       "事實"
     ],
     "distractors_en": [
-      "incident/case",
+      "competition",
       "matter",
       "fact"
     ]
@@ -3969,12 +3969,12 @@
     "category_en": "General",
     "level": "N4",
     "distractors": [
-      "快訊",
+      "報酬",
       "預報",
       "報告"
     ],
     "distractors_en": [
-      "breaking news",
+      "reward/pay",
       "forecast",
       "report"
     ]
