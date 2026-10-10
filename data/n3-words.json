@@ -3149,12 +3149,12 @@
     "category_en": "Health",
     "level": "N3",
     "distractors": [
-      "身高",
+      "視力",
       "成績",
       "年齡"
     ],
     "distractors_en": [
-      "height",
+      "eyesight",
       "grades",
       "age"
     ]
@@ -3311,7 +3311,7 @@
     "distractors": [
       "準時",
       "提早",
-      "停駛"
+      "客滿"
     ],
     "distractors_en": [
       "on time",
@@ -3409,8 +3409,8 @@
     "category_en": "Transportation",
     "level": "N3",
     "distractors": [
-      "人行道",
-      "十字路口",
+      "停車場",
+      "加油站",
       "平交道"
     ],
     "distractors_en": [
@@ -3890,7 +3890,7 @@
     "level": "N3",
     "distractors": [
       "責備",
-      "道謝",
+      "拒絕",
       "吹噓"
     ],
     "distractors_en": [

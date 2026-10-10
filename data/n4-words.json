@@ -9,7 +9,7 @@
     "category_en": "Daily Life",
     "level": "N4",
     "distractors": [
-      "備用",
+      "放棄",
       "結果",
       "決心"
     ],
@@ -129,12 +129,12 @@
     "category_en": "Daily Life",
     "level": "N4",
     "distractors": [
-      "尋找",
+      "丟掉",
       "遺失",
       "隱藏"
     ],
     "distractors_en": [
-      "to search for",
+      "to throw away",
       "to lose",
       "to hide"
     ]
@@ -149,12 +149,12 @@
     "category_en": "Daily Life",
     "level": "N4",
     "distractors": [
-      "找到",
+      "壞掉",
       "丟失",
       "隱藏"
     ],
     "distractors_en": [
-      "to find",
+      "to break",
       "to lose",
       "to hide"
     ]
@@ -209,12 +209,12 @@
     "category_en": "Daily Life",
     "level": "N4",
     "distractors": [
-      "決定",
+      "被取消",
       "猶豫",
       "改變"
     ],
     "distractors_en": [
-      "to decide",
+      "to be cancelled",
       "to hesitate",
       "to change"
     ]
@@ -629,12 +629,12 @@
     "category_en": "Work & School",
     "level": "N4",
     "distractors": [
-      "口譯",
+      "抄寫",
       "校對",
       "朗讀"
     ],
     "distractors_en": [
-      "interpretation (oral)",
+      "copying by hand",
       "proofreading",
       "reading aloud"
     ]
@@ -650,13 +650,13 @@
     "level": "N4",
     "distractors": [
       "發現",
-      "發售",
-      "發行"
+      "發明",
+      "發燒"
     ],
     "distractors_en": [
       "discovery",
-      "release/launch",
-      "publication"
+      "invention",
+      "fever"
     ]
   },
   {
@@ -729,9 +729,9 @@
     "category_en": "Work & School",
     "level": "N4",
     "distractors": [
-      "導覽",
-      "告別",
-      "邀請"
+      "道歉",
+      "邀請",
+      "告別"
     ],
     "distractors_en": [
       "guided tour",
@@ -930,12 +930,12 @@
     "level": "N4",
     "distractors": [
       "顏色",
-      "氣色",
+      "氣味",
       "特色"
     ],
     "distractors_en": [
       "color",
-      "complexion",
+      "smell",
       "characteristic"
     ]
   },
@@ -1109,12 +1109,12 @@
     "category_en": "Transport & Travel",
     "level": "N4",
     "distractors": [
-      "美術館",
+      "體育場",
       "圖書館",
       "水族館"
     ],
     "distractors_en": [
-      "art museum",
+      "stadium",
       "library",
       "aquarium"
     ]
@@ -1169,14 +1169,14 @@
     "category_en": "Transport & Travel",
     "level": "N4",
     "distractors": [
-      "標誌",
-      "路標",
-      "記號"
+      "隧道",
+      "雨傘",
+      "橋樑"
     ],
     "distractors_en": [
-      "sign",
-      "road marker",
-      "symbol"
+      "bridge",
+      "umbrella",
+      "spoon"
     ]
   },
   {
@@ -1190,13 +1190,13 @@
     "level": "N4",
     "distractors": [
       "區間車",
-      "特快車",
-      "普通車"
+      "普通車",
+      "貨運列車"
     ],
     "distractors_en": [
       "local train",
-      "limited express",
-      "regular train"
+      "regular train",
+      "freight train"
     ]
   },
   {
@@ -1369,7 +1369,7 @@
     "category_en": "Shopping & Food",
     "level": "N4",
     "distractors": [
-      "氣味",
+      "價格",
       "顏色",
       "形狀"
     ],
@@ -1531,12 +1531,12 @@
     "distractors": [
       "儲蓄",
       "借入",
-      "償還"
+      "遺失"
     ],
     "distractors_en": [
       "to save (money)",
       "to borrow",
-      "to return/repay"
+      "to lose"
     ]
   },
   {
@@ -1549,12 +1549,12 @@
     "category_en": "Shopping & Food",
     "level": "N4",
     "distractors": [
-      "手續費",
+      "學費",
       "材料",
       "原料"
     ],
     "distractors_en": [
-      "handling fee",
+      "tuition fee",
       "material",
       "raw material"
     ]
@@ -1689,13 +1689,13 @@
     "category_en": "Relationships",
     "level": "N4",
     "distractors": [
-      "困擾",
-      "麻煩",
+      "無聊",
+      "無禮",
       "責備"
     ],
     "distractors_en": [
-      "trouble/nuisance",
-      "bother",
+      "boredom",
+      "rudeness",
       "scolding"
     ]
   },
@@ -1850,13 +1850,13 @@
     "level": "N4",
     "distractors": [
       "妨礙",
-      "拜託",
-      "委託"
+      "遲到",
+      "逃跑"
     ],
     "distractors_en": [
-      "to bother/disturb",
-      "to request",
-      "to leave to someone"
+      "to cry",
+      "to run away",
+      "to be late"
     ]
   },
   {
@@ -1869,14 +1869,14 @@
     "category_en": "Relationships",
     "level": "N4",
     "distractors": [
-      "幫忙",
+      "睡覺",
       "拒絕",
-      "命令"
+      "游泳"
     ],
     "distractors_en": [
-      "to help",
+      "to sleep",
       "to refuse",
-      "to command"
+      "to swim"
     ]
   },
   {
@@ -2089,12 +2089,12 @@
     "category_en": "Adjectives",
     "level": "N4",
     "distractors": [
-      "正確",
+      "危險",
       "嚴格",
       "完美"
     ],
     "distractors_en": [
-      "correct/accurate",
+      "dangerous",
       "strict",
       "perfect"
     ]
@@ -2529,12 +2529,12 @@
     "category_en": "Verbs",
     "level": "N4",
     "distractors": [
-      "傳達",
+      "被破壞",
       "阻擋",
       "消失"
     ],
     "distractors_en": [
-      "to convey",
+      "to be broken",
       "to block",
       "to disappear"
     ]
@@ -3010,12 +3010,12 @@
     "level": "N4",
     "distractors": [
       "意外",
-      "期間",
+      "天氣",
       "時間"
     ],
     "distractors_en": [
       "accident",
-      "period",
+      "weather",
       "time"
     ]
   },
@@ -3049,12 +3049,12 @@
     "category_en": "Abstract Concepts",
     "level": "N4",
     "distractors": [
-      "文學",
+      "文具",
       "文章",
       "文法"
     ],
     "distractors_en": [
-      "literature",
+      "stationery",
       "sentence/text",
       "grammar"
     ]
@@ -3154,7 +3154,7 @@
       "學術"
     ],
     "distractors_en": [
-      "art",
+      "medicine",
       "fine arts",
       "academics"
     ]
@@ -3309,12 +3309,12 @@
     "category_en": "Abstract Concepts",
     "level": "N4",
     "distractors": [
-      "味道",
+      "薪水",
       "意義",
       "工作"
     ],
     "distractors_en": [
-      "taste/flavor",
+      "salary",
       "meaning/significance",
       "work/job"
     ]
@@ -3471,12 +3471,12 @@
     "distractors": [
       "海",
       "川",
-      "池"
+      "山"
     ],
     "distractors_en": [
       "sea/ocean",
       "river",
-      "pond"
+      "mountain"
     ]
   },
   {
@@ -3669,12 +3669,12 @@
     "category_en": "Nature & Seasons",
     "level": "N4",
     "distractors": [
-      "光",
+      "聲音",
       "色",
       "形"
     ],
     "distractors_en": [
-      "light",
+      "sound",
       "color",
       "shape"
     ]
@@ -3849,12 +3849,12 @@
     "category_en": "General",
     "level": "N4",
     "distractors": [
-      "記憶",
+      "抱怨",
       "記錄",
       "報導"
     ],
     "distractors_en": [
-      "memory",
+      "complaint",
       "record",
       "article/news"
     ]
@@ -3911,12 +3911,12 @@
     "distractors": [
       "世紀",
       "世代",
-      "世間"
+      "地下"
     ],
     "distractors_en": [
       "century",
       "generation",
-      "society/public"
+      "underground"
     ]
   },
   {
@@ -3950,13 +3950,13 @@
     "level": "N4",
     "distractors": [
       "選手",
-      "選擇",
-      "挑選"
+      "天氣預報",
+      "畢業"
     ],
     "distractors_en": [
       "athlete/player",
-      "selection/choice",
-      "to choose"
+      "graduation",
+      "weather forecast"
     ]
   },
   {
