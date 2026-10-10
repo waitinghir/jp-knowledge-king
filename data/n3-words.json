@@ -4289,14 +4289,14 @@
     "category_en": "Culture",
     "level": "N3",
     "distractors": [
-      "投訴",
       "秘密",
-      "商品"
+      "商品",
+      "合約"
     ],
     "distractors_en": [
-      "complaint",
       "secret",
-      "product"
+      "product",
+      "contract"
     ]
   },
   {

@@ -730,12 +730,12 @@
     "level": "N4",
     "distractors": [
       "導覽",
-      "說明",
+      "告別",
       "邀請"
     ],
     "distractors_en": [
-      "guidance",
-      "explanation",
+      "guided tour",
+      "farewell",
       "invitation"
     ]
   },
@@ -2890,12 +2890,12 @@
     "level": "N4",
     "distractors": [
       "笑",
-      "唱",
+      "跳",
       "跑"
     ],
     "distractors_en": [
       "to laugh",
-      "to sing",
+      "to jump",
       "to run"
     ]
   },
