@@ -6,7 +6,9 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "validate:words": "python3 scripts/validate_wordbank.py",
+    "setup:hooks": "git config core.hooksPath .githooks"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "2.2.0",
