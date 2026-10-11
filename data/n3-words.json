@@ -281,7 +281,7 @@
   },
   {
     "id": "gemini_215",
-    "kanji": "整合",
+    "kanji": "統合",
     "kana": "とうごう",
     "meaning_zh": "整合、統合",
     "meaning_en": "integration",
@@ -516,7 +516,7 @@
     "distractors_en": [
       "bangs/fringe",
       "moving",
-      "precious/valuable"
+      "to boil (water)"
     ]
   },
   {
@@ -809,14 +809,14 @@
     "category_en": "Daily Life",
     "level": "N3",
     "distractors": [
-      "不需要",
-      "要求",
-      "拼命"
+      "禁止",
+      "危險",
+      "免費"
     ],
     "distractors_en": [
-      "unnecessary",
-      "demand",
-      "desperate"
+      "forbidden",
+      "dangerous",
+      "free of charge"
     ]
   },
   {
@@ -829,14 +829,14 @@
     "category_en": "Daily Life",
     "level": "N3",
     "distractors": [
-      "糾纏",
-      "團結",
-      "連結"
+      "拒絕",
+      "搬家",
+      "等待"
     ],
     "distractors_en": [
-      "to tangle",
-      "solidarity",
-      "connection"
+      "refusal",
+      "moving house",
+      "waiting"
     ]
   },
   {
@@ -849,14 +849,14 @@
     "category_en": "Daily Life",
     "level": "N3",
     "distractors": [
-      "確信",
-      "認知",
-      "認證"
+      "忽略",
+      "猜測",
+      "取消"
     ],
     "distractors_en": [
-      "conviction",
-      "awareness",
-      "certification"
+      "overlooking",
+      "guessing",
+      "cancellation"
     ]
   },
   {
@@ -869,14 +869,14 @@
     "category_en": "Daily Life",
     "level": "N3",
     "distractors": [
-      "談話",
-      "相互",
-      "談判"
+      "命令",
+      "獨自決定",
+      "爭吵"
     ],
     "distractors_en": [
-      "conversation",
-      "mutual",
-      "negotiation"
+      "order/command",
+      "deciding alone",
+      "quarrel"
     ]
   },
   {
@@ -889,14 +889,14 @@
     "category_en": "Daily Life",
     "level": "N3",
     "distractors": [
-      "退款",
-      "歸還",
-      "事先"
+      "提問",
+      "沉默",
+      "邀請"
     ],
     "distractors_en": [
-      "refund",
-      "return",
-      "in advance"
+      "question",
+      "silence",
+      "invitation"
     ]
   },
   {
@@ -929,14 +929,14 @@
     "category_en": "Daily Life",
     "level": "N3",
     "distractors": [
-      "目標",
-      "估計",
-      "準確"
+      "手段",
+      "過程",
+      "結果"
     ],
     "distractors_en": [
-      "target",
-      "estimate",
-      "accurate"
+      "means",
+      "process",
+      "result"
     ]
   },
   {
@@ -949,14 +949,14 @@
     "category_en": "Daily Life",
     "level": "N3",
     "distractors": [
-      "理解",
-      "由來",
-      "藉口"
+      "結果",
+      "方法",
+      "例子"
     ],
     "distractors_en": [
-      "understanding",
-      "origin",
-      "cause"
+      "result",
+      "method",
+      "example"
     ]
   },
   {
@@ -969,14 +969,14 @@
     "category_en": "Daily Life",
     "level": "N3",
     "distractors": [
-      "方向",
-      "風格",
-      "技巧"
+      "目的",
+      "結果",
+      "原因"
     ],
     "distractors_en": [
-      "direction",
-      "style",
-      "technique"
+      "purpose",
+      "result",
+      "cause"
     ]
   },
   {
@@ -990,13 +990,13 @@
     "level": "N3",
     "distractors": [
       "場所",
-      "時機",
-      "機會"
+      "理由",
+      "結果"
     ],
     "distractors_en": [
       "place",
-      "situation",
-      "opportunity"
+      "reason",
+      "result"
     ]
   },
   {
@@ -1011,12 +1011,12 @@
     "distractors": [
       "特別",
       "罕見",
-      "平均"
+      "奇怪"
     ],
     "distractors_en": [
       "special",
-      "usual",
-      "average"
+      "rare",
+      "strange"
     ]
   },
   {
@@ -1030,13 +1030,13 @@
     "level": "N3",
     "distractors": [
       "普通",
-      "特定",
-      "個別"
+      "平凡",
+      "常見"
     ],
     "distractors_en": [
       "ordinary",
-      "specific",
-      "separate"
+      "plain",
+      "common"
     ]
   },
   {
@@ -1049,14 +1049,14 @@
     "category_en": "Daily Life",
     "level": "N3",
     "distractors": [
-      "全體人員",
       "部分",
-      "全身"
+      "一半",
+      "個別"
     ],
     "distractors_en": [
-      "all members",
-      "everything",
-      "whole body"
+      "part",
+      "half",
+      "individual"
     ]
   },
   {
@@ -1069,14 +1069,14 @@
     "category_en": "Daily Life",
     "level": "N3",
     "distractors": [
-      "態度",
-      "狀態",
-      "外觀"
+      "原因",
+      "名字",
+      "價格"
     ],
     "distractors_en": [
-      "attitude",
-      "condition",
-      "appearance"
+      "cause",
+      "name",
+      "price"
     ]
   },
   {
@@ -1089,14 +1089,14 @@
     "category_en": "Daily Life",
     "level": "N3",
     "distractors": [
-      "備用",
-      "輪替",
-      "代表"
+      "原本",
+      "追加",
+      "優先"
     ],
     "distractors_en": [
-      "spare",
-      "rotation",
-      "representative"
+      "the original",
+      "addition",
+      "priority"
     ]
   },
   {
@@ -1109,14 +1109,14 @@
     "category_en": "Daily Life",
     "level": "N3",
     "distractors": [
-      "感受",
-      "氛圍",
-      "情緒"
+      "體重",
+      "天氣",
+      "年齡"
     ],
     "distractors_en": [
-      "feeling",
-      "atmosphere",
-      "emotion"
+      "body weight",
+      "weather",
+      "age"
     ]
   },
   {
@@ -1129,14 +1129,14 @@
     "category_en": "Daily Life",
     "level": "N3",
     "distractors": [
-      "生命",
-      "活動",
-      "生存"
+      "死亡",
+      "旅行",
+      "夢想"
     ],
     "distractors_en": [
-      "life/living thing",
-      "activity",
-      "survival"
+      "death",
+      "travel",
+      "dream"
     ]
   },
   {
@@ -1149,14 +1149,14 @@
     "category_en": "Daily Life",
     "level": "N3",
     "distractors": [
-      "習得",
-      "適應",
-      "風俗"
+      "偶然",
+      "例外",
+      "意外"
     ],
     "distractors_en": [
-      "acquisition",
-      "to get used to",
-      "custom/practice"
+      "chance",
+      "exception",
+      "accident"
     ]
   },
   {
@@ -1169,14 +1169,14 @@
     "category_en": "Daily Life",
     "level": "N3",
     "distractors": [
-      "體驗",
-      "經歷",
-      "經過"
+      "想像",
+      "理論",
+      "傳聞"
     ],
     "distractors_en": [
-      "hands-on experience",
-      "career history",
-      "passage of time"
+      "imagination",
+      "theory",
+      "hearsay"
     ]
   },
   {
@@ -1189,14 +1189,14 @@
     "category_en": "Daily Life",
     "level": "N3",
     "distractors": [
-      "在意",
-      "擔心",
-      "感覺"
+      "忽略",
+      "忘記",
+      "隱瞞"
     ],
     "distractors_en": [
-      "to mind/care",
-      "to be concerned",
-      "to feel"
+      "to overlook",
+      "to forget",
+      "to hide"
     ]
   },
   {
@@ -1210,13 +1210,13 @@
     "level": "N3",
     "distractors": [
       "減少",
-      "維持",
-      "眾多"
+      "消失",
+      "停止"
     ],
     "distractors_en": [
       "to decrease",
-      "to increase (transitive)",
-      "many/much"
+      "to disappear",
+      "to stop"
     ]
   },
   {
@@ -1230,13 +1230,13 @@
     "level": "N3",
     "distractors": [
       "增加",
-      "維持",
-      "稀少"
+      "擴大",
+      "累積"
     ],
     "distractors_en": [
       "to increase",
-      "to reduce",
-      "few/little"
+      "to expand",
+      "to accumulate"
     ]
   },
   {
@@ -1251,12 +1251,12 @@
     "distractors": [
       "中斷",
       "停止",
-      "開始"
+      "放棄"
     ],
     "distractors_en": [
-      "to continue (intrans.)",
-      "continuation",
-      "continuation"
+      "to interrupt",
+      "to stop",
+      "to give up"
     ]
   },
   {
@@ -1271,12 +1271,12 @@
     "distractors": [
       "猶豫",
       "取消",
-      "解決"
+      "延後"
     ],
     "distractors_en": [
-      "to be decided",
-      "decision",
-      "resolution"
+      "to hesitate",
+      "to cancel",
+      "to postpone"
     ]
   },
   {
@@ -1289,14 +1289,14 @@
     "category_en": "Daily Life",
     "level": "N3",
     "distractors": [
-      "比率",
-      "對照",
-      "比例"
+      "合併",
+      "隱藏",
+      "複製"
     ],
     "distractors_en": [
-      "ratio",
-      "contrast",
-      "proportion"
+      "to combine",
+      "to hide",
+      "to copy"
     ]
   },
   {
@@ -1310,13 +1310,13 @@
     "level": "N3",
     "distractors": [
       "維持",
-      "固定",
-      "恢復"
+      "消失",
+      "增加"
     ],
     "distractors_en": [
-      "to change (trans.)",
-      "change",
-      "to be replaced"
+      "to stay the same",
+      "to disappear",
+      "to increase"
     ]
   },
   {
@@ -1329,14 +1329,14 @@
     "category_en": "Daily Life",
     "level": "N3",
     "distractors": [
-      "印刷",
-      "象徵",
-      "感想"
+      "習慣",
+      "計畫",
+      "規則"
     ],
     "distractors_en": [
-      "printing",
-      "symbol",
-      "thoughts/comments"
+      "habit",
+      "plan",
+      "rule"
     ]
   },
   {
@@ -1351,12 +1351,12 @@
     "distractors": [
       "以下",
       "以內",
-      "上述"
+      "以外"
     ],
     "distractors_en": [
       "below/less than",
       "within",
-      "above-mentioned"
+      "other than"
     ]
   },
   {
@@ -1371,12 +1371,12 @@
     "distractors": [
       "以上",
       "以外",
-      "下述"
+      "以前"
     ],
     "distractors_en": [
       "above/more than",
       "other than",
-      "below-mentioned"
+      "before"
     ]
   },
   {
@@ -1389,14 +1389,14 @@
     "category_en": "Daily Life",
     "level": "N3",
     "distractors": [
-      "證實",
-      "確信",
-      "肯定"
+      "猜測",
+      "忽略",
+      "隱瞞"
     ],
     "distractors_en": [
-      "confirmation",
-      "conviction",
-      "certainly"
+      "to guess",
+      "to ignore",
+      "to conceal"
     ]
   },
   {
@@ -1409,14 +1409,14 @@
     "category_en": "Work",
     "level": "N3",
     "distractors": [
-      "義務",
-      "角色",
-      "負責"
+      "權利",
+      "自由",
+      "興趣"
     ],
     "distractors_en": [
-      "obligation",
-      "role",
-      "in charge"
+      "right",
+      "freedom",
+      "interest"
     ]
   },
   {
@@ -1429,14 +1429,14 @@
     "category_en": "Work",
     "level": "N3",
     "distractors": [
-      "協商",
-      "傑作",
-      "共同"
+      "競爭",
+      "妨礙",
+      "對立"
     ],
     "distractors_en": [
-      "discussion",
-      "powerful work",
-      "joint"
+      "competition",
+      "obstruction",
+      "confrontation"
     ]
   },
   {
@@ -1449,14 +1449,14 @@
     "category_en": "Work",
     "level": "N3",
     "distractors": [
-      "經營",
-      "營運",
-      "控制"
+      "放任",
+      "破壞",
+      "購買"
     ],
     "distractors_en": [
-      "business management",
-      "operation",
-      "control"
+      "neglect",
+      "destruction",
+      "purchase"
     ]
   },
   {
@@ -1469,14 +1469,14 @@
     "category_en": "Work",
     "level": "N3",
     "distractors": [
-      "企劃",
-      "預定",
-      "計算"
+      "結果",
+      "偶然",
+      "回憶"
     ],
     "distractors_en": [
-      "project/planning",
-      "schedule",
-      "calculation"
+      "result",
+      "chance",
+      "memory"
     ]
   },
   {
@@ -1489,14 +1489,14 @@
     "category_en": "Work",
     "level": "N3",
     "distractors": [
-      "辛勞",
-      "堅持",
-      "精進"
+      "偷懶",
+      "放棄",
+      "運氣"
     ],
     "distractors_en": [
-      "hardship",
-      "perseverance",
-      "devotion"
+      "laziness",
+      "giving up",
+      "luck"
     ]
   },
   {
@@ -1510,13 +1510,13 @@
     "level": "N3",
     "distractors": [
       "失敗",
-      "達成",
-      "完成"
+      "放棄",
+      "延期"
     ],
     "distractors_en": [
       "failure",
-      "achievement",
-      "completion"
+      "giving up",
+      "postponement"
     ]
   },
   {
@@ -1530,13 +1530,13 @@
     "level": "N3",
     "distractors": [
       "成功",
-      "錯誤",
-      "失誤"
+      "勝利",
+      "完成"
     ],
     "distractors_en": [
       "success",
-      "mistake",
-      "miss/error"
+      "victory",
+      "completion"
     ]
   },
   {
@@ -1549,14 +1549,14 @@
     "category_en": "Work",
     "level": "N3",
     "distractors": [
-      "改革",
-      "修正",
-      "惡化"
+      "惡化",
+      "維持",
+      "放棄"
     ],
     "distractors_en": [
-      "reform",
-      "revision",
-      "improvement"
+      "deterioration",
+      "maintenance",
+      "abandonment"
     ]
   },
   {
@@ -1569,14 +1569,14 @@
     "category_en": "Work",
     "level": "N3",
     "distractors": [
-      "提交",
-      "意見",
-      "申請"
+      "拒絕",
+      "命令",
+      "抱怨"
     ],
     "distractors_en": [
-      "submission",
-      "opinion",
-      "application"
+      "rejection",
+      "order",
+      "complaint"
     ]
   },
   {
@@ -1589,14 +1589,14 @@
     "category_en": "Work",
     "level": "N3",
     "distractors": [
-      "撤回",
-      "登記",
-      "通報"
+      "取消",
+      "退出",
+      "拒絕"
     ],
     "distractors_en": [
-      "application",
-      "registration",
-      "to report/notify"
+      "to cancel",
+      "to withdraw",
+      "to refuse"
     ]
   },
   {
@@ -1611,12 +1611,12 @@
     "distractors": [
       "接受",
       "答應",
-      "同意"
+      "邀請"
     ],
     "distractors_en": [
-      "rejection",
-      "refusal",
-      "declining"
+      "to accept",
+      "to agree",
+      "to invite"
     ]
   },
   {
@@ -1629,14 +1629,14 @@
     "category_en": "Work",
     "level": "N3",
     "distractors": [
-      "認可",
-      "許可",
-      "確認"
+      "否認",
+      "隱瞞",
+      "懷疑"
     ],
     "distractors_en": [
-      "recognition",
-      "permission",
-      "confirmation"
+      "to deny",
+      "to conceal",
+      "to doubt"
     ]
   },
   {
@@ -1649,14 +1649,14 @@
     "category_en": "Work",
     "level": "N3",
     "distractors": [
-      "聯絡",
-      "商量",
-      "發表"
+      "隱瞞",
+      "提問",
+      "抱怨"
     ],
     "distractors_en": [
-      "contact",
-      "consultation",
-      "presentation"
+      "concealment",
+      "question",
+      "complaint"
     ]
   },
   {
@@ -1669,14 +1669,14 @@
     "category_en": "Work",
     "level": "N3",
     "distractors": [
-      "出席",
-      "加入",
-      "參與者"
+      "缺席",
+      "退出",
+      "旁觀"
     ],
     "distractors_en": [
-      "attendance",
-      "joining",
-      "participant"
+      "absence",
+      "withdrawal",
+      "watching from the side"
     ]
   },
   {
@@ -1689,14 +1689,14 @@
     "category_en": "Work",
     "level": "N3",
     "distractors": [
-      "責任",
-      "角色",
-      "承擔"
+      "退休",
+      "無關",
+      "外包"
     ],
     "distractors_en": [
-      "responsibility",
-      "role",
-      "to bear/shoulder"
+      "retirement",
+      "unrelated",
+      "outsourcing"
     ]
   },
   {
@@ -1709,14 +1709,14 @@
     "category_en": "Work",
     "level": "N3",
     "distractors": [
-      "期間",
-      "日期",
-      "延期"
+      "地點",
+      "價格",
+      "數量"
     ],
     "distractors_en": [
-      "period",
-      "date",
-      "deadline"
+      "location",
+      "price",
+      "quantity"
     ]
   },
   {
@@ -1729,14 +1729,14 @@
     "category_en": "Work",
     "level": "N3",
     "distractors": [
-      "其實",
-      "現實",
-      "實情"
+      "表面上",
+      "理論上",
+      "傳說中"
     ],
     "distractors_en": [
-      "actually",
-      "reality",
-      "actual situation"
+      "on the surface",
+      "in theory",
+      "according to legend"
     ]
   },
   {
@@ -1749,14 +1749,14 @@
     "category_en": "Work",
     "level": "N3",
     "distractors": [
-      "未完成",
-      "達成",
-      "完美"
+      "開始",
+      "中斷",
+      "失敗"
     ],
     "distractors_en": [
-      "completion",
-      "achievement",
-      "perfect"
+      "beginning",
+      "interruption",
+      "failure"
     ]
   },
   {
@@ -1769,14 +1769,14 @@
     "category_en": "Work",
     "level": "N3",
     "distractors": [
-      "達成",
-      "成就",
-      "現實"
+      "失敗",
+      "幻想",
+      "放棄"
     ],
     "distractors_en": [
-      "achievement",
-      "accomplishment",
-      "reality"
+      "failure",
+      "fantasy",
+      "abandonment"
     ]
   },
   {
@@ -1791,12 +1791,12 @@
     "distractors": [
       "後退",
       "停滯",
-      "發展"
+      "迷路"
     ],
     "distractors_en": [
-      "to move forward (trans.)",
-      "advance",
-      "development"
+      "to go back",
+      "to stagnate",
+      "to get lost"
     ]
   },
   {
@@ -1810,13 +1810,13 @@
     "level": "N3",
     "distractors": [
       "冷靜",
-      "疑惑",
-      "無感"
+      "無聊",
+      "習慣"
     ],
     "distractors_en": [
-      "startled",
-      "surprise",
-      "amazement"
+      "to be calm",
+      "to be bored",
+      "to be used to"
     ]
   },
   {
@@ -1829,14 +1829,14 @@
     "category_en": "Emotions",
     "level": "N3",
     "distractors": [
-      "煩惱",
-      "受苦",
-      "猶豫"
+      "放心",
+      "得意",
+      "滿足"
     ],
     "distractors_en": [
-      "to worry",
-      "to suffer",
-      "to hesitate"
+      "to feel relieved",
+      "to be proud",
+      "to be satisfied"
     ]
   },
   {
@@ -1850,13 +1850,13 @@
     "level": "N3",
     "distractors": [
       "難過",
-      "享受",
-      "滿足"
+      "生氣",
+      "害怕"
     ],
     "distractors_en": [
-      "happy",
-      "to enjoy",
-      "satisfaction"
+      "to be sad",
+      "to be angry",
+      "to be afraid"
     ]
   },
   {
@@ -1870,13 +1870,13 @@
     "level": "N3",
     "distractors": [
       "開心",
-      "哭泣",
-      "痛苦"
+      "驚訝",
+      "生氣"
     ],
     "distractors_en": [
-      "sad",
-      "to cry",
-      "painful/hard"
+      "to be happy",
+      "to be surprised",
+      "to be angry"
     ]
   },
   {
@@ -1889,14 +1889,14 @@
     "category_en": "Emotions",
     "level": "N3",
     "distractors": [
-      "責罵",
-      "冷靜",
-      "惱火"
+      "微笑",
+      "原諒",
+      "感謝"
     ],
     "distractors_en": [
-      "to scold",
-      "anger",
-      "to get irritated"
+      "to smile",
+      "to forgive",
+      "to thank"
     ]
   },
   {
@@ -1910,13 +1910,13 @@
     "level": "N3",
     "distractors": [
       "安心",
-      "在意",
-      "煩惱"
+      "期待",
+      "興奮"
     ],
     "distractors_en": [
-      "anxiety",
-      "to worry/mind",
-      "worry/trouble"
+      "relief",
+      "anticipation",
+      "excitement"
     ]
   },
   {
@@ -1929,14 +1929,14 @@
     "category_en": "Emotions",
     "level": "N3",
     "distractors": [
-      "不安",
-      "擔心",
-      "焦急"
+      "放鬆",
+      "無聊",
+      "自信"
     ],
     "distractors_en": [
-      "anxiety",
-      "worry",
-      "impatience"
+      "relaxation",
+      "boredom",
+      "confidence"
     ]
   },
   {
@@ -1949,14 +1949,14 @@
     "category_en": "Emotions",
     "level": "N3",
     "distractors": [
-      "安全",
-      "穩定",
-      "冷靜"
+      "擔心",
+      "驚訝",
+      "憤怒"
     ],
     "distractors_en": [
-      "safety",
-      "stability",
-      "to calm down"
+      "worry",
+      "surprise",
+      "anger"
     ]
   },
   {
@@ -1969,14 +1969,14 @@
     "category_en": "Emotions",
     "level": "N3",
     "distractors": [
-      "關心",
-      "嗜好",
-      "好奇心"
+      "厭倦",
+      "恐懼",
+      "責任"
     ],
     "distractors_en": [
-      "concern/interest",
-      "hobby",
-      "curiosity"
+      "boredom",
+      "fear",
+      "duty"
     ]
   },
   {
@@ -1989,14 +1989,14 @@
     "category_en": "Emotions",
     "level": "N3",
     "distractors": [
-      "充實",
-      "足夠",
-      "信服"
+      "不滿",
+      "後悔",
+      "嫉妒"
     ],
     "distractors_en": [
-      "fulfillment",
-      "sufficient",
-      "convinced"
+      "dissatisfaction",
+      "regret",
+      "jealousy"
     ]
   },
   {
@@ -2010,13 +2010,13 @@
     "level": "N3",
     "distractors": [
       "放縱",
-      "堅持",
-      "爆發"
+      "抱怨",
+      "發洩"
     ],
     "distractors_en": [
-      "patience",
-      "perseverance",
-      "to endure"
+      "indulgence",
+      "complaining",
+      "venting"
     ]
   },
   {
@@ -2029,14 +2029,14 @@
     "category_en": "Emotions",
     "level": "N3",
     "distractors": [
-      "反省",
       "慶幸",
-      "遺憾"
+      "驕傲",
+      "期待"
     ],
     "distractors_en": [
-      "self-reflection",
-      "to regret",
-      "disappointment"
+      "feeling lucky",
+      "pride",
+      "anticipation"
     ]
   },
   {
@@ -2049,14 +2049,14 @@
     "category_en": "Emotions",
     "level": "N3",
     "distractors": [
-      "擔心",
-      "緊張",
-      "恐懼"
+      "安心",
+      "自信",
+      "喜悅"
     ],
     "distractors_en": [
-      "worry",
-      "nervousness",
-      "fear"
+      "relief",
+      "confidence",
+      "joy"
     ]
   },
   {
@@ -2069,14 +2069,14 @@
     "category_en": "Emotions",
     "level": "N3",
     "distractors": [
-      "希望",
       "失望",
-      "預想"
+      "後悔",
+      "回憶"
     ],
     "distractors_en": [
-      "hope",
-      "looking forward to",
-      "expectation"
+      "disappointment",
+      "regret",
+      "memories"
     ]
   },
   {
@@ -2094,9 +2094,9 @@
       "責備"
     ],
     "distractors_en": [
-      "thanks",
-      "thank you",
-      "expression of gratitude"
+      "complaint",
+      "apology",
+      "blame"
     ]
   },
   {
@@ -2109,14 +2109,14 @@
     "category_en": "Emotions",
     "level": "N3",
     "distractors": [
-      "信用",
-      "相信",
-      "依賴"
+      "懷疑",
+      "背叛",
+      "輕視"
     ],
     "distractors_en": [
-      "credit/trust",
-      "to believe",
-      "to rely on"
+      "suspicion",
+      "betrayal",
+      "contempt"
     ]
   },
   {
@@ -2129,14 +2129,14 @@
     "category_en": "Emotions",
     "level": "N3",
     "distractors": [
-      "後悔",
-      "可惜",
-      "悲傷"
+      "幸運",
+      "滿意",
+      "驚喜"
     ],
     "distractors_en": [
-      "regret",
-      "a pity/waste",
-      "sad"
+      "lucky",
+      "satisfied",
+      "pleasant surprise"
     ]
   },
   {
@@ -2149,14 +2149,14 @@
     "category_en": "Emotions",
     "level": "N3",
     "distractors": [
-      "自覺",
-      "自尊",
-      "信念"
+      "自卑",
+      "恐懼",
+      "懷疑"
     ],
     "distractors_en": [
-      "self-awareness",
-      "self-respect",
-      "belief/conviction"
+      "inferiority",
+      "fear",
+      "doubt"
     ]
   },
   {
@@ -2169,14 +2169,14 @@
     "category_en": "Emotions",
     "level": "N3",
     "distractors": [
-      "大方",
-      "慚愧",
-      "自在"
+      "驕傲的",
+      "大方的",
+      "生氣的"
     ],
     "distractors_en": [
-      "to be shy",
-      "to be ashamed",
-      "to be bashful"
+      "proud",
+      "outgoing",
+      "angry"
     ]
   },
   {
@@ -2189,14 +2189,14 @@
     "category_en": "Emotions",
     "level": "N3",
     "distractors": [
-      "熱鬧",
-      "獨自",
-      "空虛"
+      "熱鬧的",
+      "開心的",
+      "忙碌的"
     ],
     "distractors_en": [
-      "loneliness",
-      "alone",
-      "lonely (alt. kanji)"
+      "lively",
+      "cheerful",
+      "busy"
     ]
   },
   {
@@ -2209,14 +2209,14 @@
     "category_en": "Society",
     "level": "N3",
     "distractors": [
-      "事件",
-      "災害",
-      "麻煩"
+      "慶典",
+      "會議",
+      "比賽"
     ],
     "distractors_en": [
-      "incident",
-      "disaster",
-      "trouble"
+      "festival",
+      "meeting",
+      "competition"
     ]
   },
   {
@@ -2229,14 +2229,14 @@
     "category_en": "Society",
     "level": "N3",
     "distractors": [
-      "事故",
-      "問題",
-      "事情"
+      "慶典",
+      "旅行",
+      "課程"
     ],
     "distractors_en": [
-      "accident",
-      "problem",
-      "event"
+      "celebration",
+      "trip",
+      "course"
     ]
   },
   {
@@ -2249,14 +2249,14 @@
     "category_en": "Society",
     "level": "N3",
     "distractors": [
-      "政治",
-      "行政",
-      "國家"
+      "企業",
+      "學校",
+      "家庭"
     ],
     "distractors_en": [
-      "politics",
-      "administration",
-      "state/nation"
+      "company",
+      "school",
+      "family"
     ]
   },
   {
@@ -2269,14 +2269,14 @@
     "category_en": "Society",
     "level": "N3",
     "distractors": [
-      "景氣",
-      "財政",
-      "金融"
+      "文化",
+      "宗教",
+      "藝術"
     ],
     "distractors_en": [
-      "economic conditions",
-      "public finance",
-      "finance"
+      "culture",
+      "religion",
+      "art"
     ]
   },
   {
@@ -2289,14 +2289,14 @@
     "category_en": "Society",
     "level": "N3",
     "distractors": [
-      "自然",
-      "周圍",
-      "狀況"
+      "個性",
+      "價格",
+      "歷史"
     ],
     "distractors_en": [
-      "nature",
-      "surroundings",
-      "situation"
+      "personality",
+      "price",
+      "history"
     ]
   },
   {
@@ -2309,14 +2309,14 @@
     "category_en": "Society",
     "level": "N3",
     "distractors": [
-      "處理",
-      "應對",
-      "克服"
+      "發生",
+      "惡化",
+      "擱置"
     ],
     "distractors_en": [
-      "processing",
-      "dealing with",
-      "overcoming"
+      "occurrence",
+      "worsening",
+      "shelving"
     ]
   },
   {
@@ -2329,14 +2329,14 @@
     "category_en": "Society",
     "level": "N3",
     "distractors": [
-      "想法",
-      "見解",
-      "主張"
+      "事實",
+      "命令",
+      "數據"
     ],
     "distractors_en": [
-      "thought/idea",
-      "view",
-      "claim/assertion"
+      "fact",
+      "order",
+      "data"
     ]
   },
   {
@@ -2350,13 +2350,13 @@
     "level": "N3",
     "distractors": [
       "反對",
-      "同意",
-      "支持"
+      "拒絕",
+      "棄權"
     ],
     "distractors_en": [
       "opposition",
-      "consent",
-      "support"
+      "rejection",
+      "abstention"
     ]
   },
   {
@@ -2370,13 +2370,13 @@
     "level": "N3",
     "distractors": [
       "贊成",
-      "拒絕",
-      "否定"
+      "支持",
+      "同意"
     ],
     "distractors_en": [
-      "agreement",
-      "rejection",
-      "denial"
+      "approval",
+      "support",
+      "consent"
     ]
   },
   {
@@ -2390,13 +2390,13 @@
     "level": "N3",
     "distractors": [
       "安全",
-      "風險",
-      "恐懼"
+      "和平",
+      "健康"
     ],
     "distractors_en": [
       "safety",
-      "risk",
-      "fear"
+      "peace",
+      "health"
     ]
   },
   {
@@ -2409,14 +2409,14 @@
     "category_en": "Society",
     "level": "N3",
     "distractors": [
-      "效果",
-      "作用",
-      "結果"
+      "原因",
+      "獨立",
+      "無關"
     ],
     "distractors_en": [
-      "effect",
-      "action/effect",
-      "result"
+      "cause",
+      "independence",
+      "irrelevance"
     ]
   },
   {
@@ -2429,14 +2429,14 @@
     "category_en": "Society",
     "level": "N3",
     "distractors": [
-      "理由",
-      "根據",
-      "因素"
+      "結果",
+      "目的",
+      "對策"
     ],
     "distractors_en": [
-      "reason",
-      "basis",
-      "factor"
+      "result",
+      "purpose",
+      "countermeasure"
     ]
   },
   {
@@ -2449,14 +2449,14 @@
     "category_en": "Society",
     "level": "N3",
     "distractors": [
-      "成果",
-      "影響",
-      "成績"
+      "原因",
+      "過程",
+      "動機"
     ],
     "distractors_en": [
-      "achievement",
-      "influence",
-      "grade/result"
+      "cause",
+      "process",
+      "motive"
     ]
   },
   {
@@ -2469,14 +2469,14 @@
     "category_en": "Society",
     "level": "N3",
     "distractors": [
-      "變更",
-      "轉變",
-      "過渡"
+      "維持",
+      "停止",
+      "重複"
     ],
     "distractors_en": [
-      "change/revision",
-      "to change",
-      "transition"
+      "staying the same",
+      "stopping",
+      "repetition"
     ]
   },
   {
@@ -2490,13 +2490,13 @@
     "level": "N3",
     "distractors": [
       "衰退",
-      "進步",
-      "成長"
+      "停滯",
+      "崩潰"
     ],
     "distractors_en": [
-      "development",
-      "progress",
-      "growth"
+      "decline",
+      "stagnation",
+      "collapse"
     ]
   },
   {
@@ -2510,13 +2510,13 @@
     "level": "N3",
     "distractors": [
       "減少",
-      "上升",
-      "停滯"
+      "下降",
+      "消失"
     ],
     "distractors_en": [
       "decrease",
-      "rise",
-      "growth"
+      "fall",
+      "disappearance"
     ]
   },
   {
@@ -2530,13 +2530,13 @@
     "level": "N3",
     "distractors": [
       "增加",
-      "下降",
-      "維持"
+      "上升",
+      "擴大"
     ],
     "distractors_en": [
       "increase",
-      "decline",
-      "reduction"
+      "rise",
+      "expansion"
     ]
   },
   {
@@ -2550,13 +2550,13 @@
     "level": "N3",
     "distractors": [
       "危險",
-      "安心",
-      "保護"
+      "事故",
+      "災害"
     ],
     "distractors_en": [
       "danger",
-      "relief",
-      "protection"
+      "accident",
+      "disaster"
     ]
   },
   {
@@ -2569,14 +2569,14 @@
     "category_en": "Society",
     "level": "N3",
     "distractors": [
-      "世界",
-      "世間",
-      "國家"
+      "個人",
+      "自然",
+      "宇宙"
     ],
     "distractors_en": [
-      "world",
-      "public/society",
-      "country"
+      "individual",
+      "nature",
+      "universe"
     ]
   },
   {
@@ -2589,14 +2589,14 @@
     "category_en": "Society",
     "level": "N3",
     "distractors": [
-      "課題",
-      "難題",
-      "事項"
+      "答案",
+      "解決",
+      "成功"
     ],
     "distractors_en": [
-      "task/challenge",
-      "difficult problem",
-      "matter"
+      "answer",
+      "solution",
+      "success"
     ]
   },
   {
@@ -2609,14 +2609,14 @@
     "category_en": "Nature",
     "level": "N3",
     "distractors": [
-      "時期",
-      "階段",
-      "全年"
+      "天氣",
+      "方向",
+      "距離"
     ],
     "distractors_en": [
-      "period/time",
-      "season/occasion",
-      "annual"
+      "weather",
+      "direction",
+      "distance"
     ]
   },
   {
@@ -2629,14 +2629,14 @@
     "category_en": "Nature",
     "level": "N3",
     "distractors": [
-      "天氣",
-      "天候",
-      "氣溫"
+      "地形",
+      "人口",
+      "語言"
     ],
     "distractors_en": [
-      "weather",
-      "weather conditions",
-      "temperature"
+      "terrain",
+      "population",
+      "language"
     ]
   },
   {
@@ -2649,14 +2649,14 @@
     "category_en": "Nature",
     "level": "N3",
     "distractors": [
-      "氣溫",
-      "體溫",
-      "熱度"
+      "濕度",
+      "高度",
+      "速度"
     ],
     "distractors_en": [
-      "air temperature",
-      "body temperature",
-      "heat"
+      "humidity",
+      "altitude",
+      "speed"
     ]
   },
   {
@@ -2669,14 +2669,14 @@
     "category_en": "Nature",
     "level": "N3",
     "distractors": [
-      "暴風",
-      "龍捲風",
-      "低氣壓"
+      "地震",
+      "乾旱",
+      "火災"
     ],
     "distractors_en": [
-      "storm",
-      "tornado",
-      "low pressure"
+      "earthquake",
+      "drought",
+      "fire"
     ]
   },
   {
@@ -2709,14 +2709,14 @@
     "category_en": "Nature",
     "level": "N3",
     "distractors": [
-      "大雨",
-      "水災",
-      "氾濫"
+      "乾旱",
+      "火災",
+      "暴雪"
     ],
     "distractors_en": [
-      "heavy rain",
-      "flood damage",
-      "overflow"
+      "drought",
+      "fire",
+      "blizzard"
     ]
   },
   {
@@ -2729,14 +2729,14 @@
     "category_en": "Nature",
     "level": "N3",
     "distractors": [
-      "樹林",
-      "林地",
-      "叢林"
+      "沙漠",
+      "草原",
+      "海洋"
     ],
     "distractors_en": [
-      "forest (small)",
-      "woods",
-      "jungle"
+      "desert",
+      "grassland",
+      "ocean"
     ]
   },
   {
@@ -2749,14 +2749,14 @@
     "category_en": "Nature",
     "level": "N3",
     "distractors": [
-      "大氣",
-      "氛圍",
-      "氣體"
+      "水",
+      "土壤",
+      "光線"
     ],
     "distractors_en": [
-      "atmosphere",
-      "atmosphere/mood",
-      "gas"
+      "water",
+      "soil",
+      "light"
     ]
   },
   {
@@ -2769,14 +2769,14 @@
     "category_en": "Nature",
     "level": "N3",
     "distractors": [
-      "材料",
-      "素材",
-      "原料"
+      "垃圾",
+      "產品",
+      "污染"
     ],
     "distractors_en": [
-      "material",
-      "material/ingredient",
-      "raw material"
+      "garbage",
+      "products",
+      "pollution"
     ]
   },
   {
@@ -2789,14 +2789,14 @@
     "category_en": "Nature",
     "level": "N3",
     "distractors": [
-      "環境",
-      "生態",
-      "生物"
+      "人工",
+      "都市",
+      "機械"
     ],
     "distractors_en": [
-      "environment",
-      "ecosystem",
-      "living things"
+      "artificial things",
+      "city",
+      "machinery"
     ]
   },
   {
@@ -2809,14 +2809,14 @@
     "category_en": "Nature",
     "level": "N3",
     "distractors": [
-      "動物",
-      "植物",
-      "微生物"
+      "礦物",
+      "機器",
+      "化石"
     ],
     "distractors_en": [
-      "animal",
-      "plant",
-      "microorganism"
+      "minerals",
+      "machines",
+      "fossils"
     ]
   },
   {
@@ -2830,13 +2830,13 @@
     "level": "N3",
     "distractors": [
       "動物",
-      "生物",
-      "草木"
+      "礦物",
+      "昆蟲"
     ],
     "distractors_en": [
       "animal",
-      "living thing",
-      "plants and trees"
+      "mineral",
+      "insect"
     ]
   },
   {
@@ -2849,14 +2849,14 @@
     "category_en": "Nature",
     "level": "N3",
     "distractors": [
-      "沙灘",
-      "湖岸",
-      "海濱"
+      "山頂",
+      "河川",
+      "森林"
     ],
     "distractors_en": [
-      "sandy beach",
-      "lakeshore",
-      "beach"
+      "mountaintop",
+      "river",
+      "forest"
     ]
   },
   {
@@ -2869,14 +2869,14 @@
     "category_en": "Nature",
     "level": "N3",
     "distractors": [
-      "地面",
-      "用地",
-      "場所"
+      "天空",
+      "建築物",
+      "河流"
     ],
     "distractors_en": [
-      "ground surface",
-      "premises",
-      "place"
+      "sky",
+      "building",
+      "stream"
     ]
   },
   {
@@ -2889,14 +2889,14 @@
     "category_en": "Nature",
     "level": "N3",
     "distractors": [
-      "荒野",
-      "沙灘",
-      "乾旱地"
+      "森林",
+      "沼澤",
+      "冰河"
     ],
     "distractors_en": [
-      "wilderness",
-      "sandy beach",
-      "arid land"
+      "forest",
+      "swamp",
+      "glacier"
     ]
   },
   {
@@ -2909,14 +2909,14 @@
     "category_en": "Health",
     "level": "N3",
     "distractors": [
-      "病情",
-      "狀態",
-      "樣子"
+      "藥物",
+      "醫院",
+      "健康"
     ],
     "distractors_en": [
-      "condition of illness",
-      "condition",
-      "state/appearance"
+      "medicine",
+      "hospital",
+      "health"
     ]
   },
   {
@@ -2929,14 +2929,14 @@
     "category_en": "Health",
     "level": "N3",
     "distractors": [
-      "診察",
-      "調查",
-      "測驗"
+      "治療",
+      "手術",
+      "休養"
     ],
     "distractors_en": [
-      "medical examination",
-      "investigation",
-      "exam"
+      "treatment",
+      "surgery",
+      "rest"
     ]
   },
   {
@@ -2949,14 +2949,14 @@
     "category_en": "Health",
     "level": "N3",
     "distractors": [
-      "手術",
-      "處置",
-      "醫療"
+      "檢查",
+      "預防",
+      "診斷"
     ],
     "distractors_en": [
-      "surgery",
-      "treatment/measure",
-      "medical care"
+      "check-up",
+      "prevention",
+      "diagnosis"
     ]
   },
   {
@@ -2969,14 +2969,14 @@
     "category_en": "Health",
     "level": "N3",
     "distractors": [
-      "治療",
-      "處置",
-      "急救"
+      "吃藥",
+      "打針",
+      "檢查"
     ],
     "distractors_en": [
-      "treatment",
-      "measure/treatment",
-      "first aid"
+      "taking medicine",
+      "injection",
+      "check-up"
     ]
   },
   {
@@ -2990,13 +2990,13 @@
     "level": "N3",
     "distractors": [
       "出院",
-      "看診",
-      "入住"
+      "看門診",
+      "請假"
     ],
     "distractors_en": [
-      "discharge",
-      "hospital visit",
-      "admission"
+      "discharge from hospital",
+      "outpatient visit",
+      "taking leave"
     ]
   },
   {
@@ -3010,13 +3010,13 @@
     "level": "N3",
     "distractors": [
       "住院",
-      "看診",
-      "康復"
+      "看門診",
+      "轉院"
     ],
     "distractors_en": [
       "hospitalization",
-      "hospital visit",
-      "recovery"
+      "outpatient visit",
+      "transfer to another hospital"
     ]
   },
   {
@@ -3029,14 +3029,14 @@
     "category_en": "Health",
     "level": "N3",
     "distractors": [
-      "體格",
-      "體力",
-      "體型"
+      "身高",
+      "視力",
+      "年齡"
     ],
     "distractors_en": [
-      "physique",
-      "physical strength",
-      "body shape"
+      "height",
+      "eyesight",
+      "age"
     ]
   },
   {
@@ -3050,12 +3050,12 @@
     "level": "N3",
     "distractors": [
       "血糖",
-      "血液",
+      "體溫",
       "脈搏"
     ],
     "distractors_en": [
       "blood sugar",
-      "blood",
+      "body temperature",
       "pulse"
     ]
   },
@@ -3069,14 +3069,14 @@
     "category_en": "Health",
     "level": "N3",
     "distractors": [
-      "休息",
-      "小睡",
-      "午睡"
+      "運動",
+      "飲食",
+      "工作"
     ],
     "distractors_en": [
-      "rest",
-      "nap",
-      "afternoon nap"
+      "exercise",
+      "diet",
+      "work"
     ]
   },
   {
@@ -3089,14 +3089,14 @@
     "category_en": "Health",
     "level": "N3",
     "distractors": [
-      "倦怠",
-      "精神",
-      "虛弱"
+      "精神飽滿",
+      "興奮",
+      "飢餓"
     ],
     "distractors_en": [
-      "feeling of lethargy",
-      "fatigue",
-      "lethargic"
+      "full of energy",
+      "excitement",
+      "hunger"
     ]
   },
   {
@@ -3109,14 +3109,14 @@
     "category_en": "Health",
     "level": "N3",
     "distractors": [
-      "改善",
-      "復活",
-      "痊癒"
+      "惡化",
+      "受傷",
+      "發病"
     ],
     "distractors_en": [
-      "improvement",
-      "revival",
-      "to heal"
+      "worsening",
+      "injury",
+      "falling ill"
     ]
   },
   {
@@ -3129,14 +3129,14 @@
     "category_en": "Health",
     "level": "N3",
     "distractors": [
-      "促進",
-      "對策",
-      "治療"
+      "治療",
+      "感染",
+      "擴散"
     ],
     "distractors_en": [
-      "prevention/stop",
-      "measure",
-      "to prevent"
+      "treatment",
+      "infection",
+      "spread"
     ]
   },
   {
@@ -3149,14 +3149,14 @@
     "category_en": "Health",
     "level": "N3",
     "distractors": [
-      "體格",
-      "體質",
-      "體力"
+      "視力",
+      "成績",
+      "年齡"
     ],
     "distractors_en": [
-      "physique",
-      "constitution",
-      "physical strength"
+      "eyesight",
+      "grades",
+      "age"
     ]
   },
   {
@@ -3169,14 +3169,14 @@
     "category_en": "Health",
     "level": "N3",
     "distractors": [
-      "飢餓",
-      "飽足",
-      "慾望"
+      "睡意",
+      "好奇心",
+      "怒氣"
     ],
     "distractors_en": [
-      "hungry",
-      "full",
-      "desire"
+      "sleepiness",
+      "curiosity",
+      "anger"
     ]
   },
   {
@@ -3189,14 +3189,14 @@
     "category_en": "Health",
     "level": "N3",
     "distractors": [
-      "傳染",
-      "污染",
-      "罹病"
+      "免疫",
+      "康復",
+      "消毒"
     ],
     "distractors_en": [
-      "contagion",
-      "contamination",
-      "falling ill"
+      "immunity",
+      "recovery",
+      "disinfection"
     ]
   },
   {
@@ -3209,14 +3209,14 @@
     "category_en": "Transportation",
     "level": "N3",
     "distractors": [
-      "擁擠",
-      "交通",
-      "順暢"
+      "暢通",
+      "停電",
+      "施工"
     ],
     "distractors_en": [
-      "crowded/congested",
-      "traffic",
-      "to be crowded"
+      "smooth traffic",
+      "power outage",
+      "construction work"
     ]
   },
   {
@@ -3229,14 +3229,14 @@
     "category_en": "Transportation",
     "level": "N3",
     "distractors": [
-      "操縱",
-      "操作",
-      "兜風"
+      "步行",
+      "搭車",
+      "修理"
     ],
     "distractors_en": [
-      "piloting",
-      "operation",
-      "drive (for leisure)"
+      "walking",
+      "riding as a passenger",
+      "repair"
     ]
   },
   {
@@ -3250,13 +3250,13 @@
     "level": "N3",
     "distractors": [
       "抵達",
-      "發車",
-      "離開"
+      "延誤",
+      "轉乘"
     ],
     "distractors_en": [
       "arrival",
-      "departure of vehicle",
-      "to leave"
+      "delay",
+      "transfer"
     ]
   },
   {
@@ -3270,13 +3270,13 @@
     "level": "N3",
     "distractors": [
       "出發",
-      "離開",
-      "返回"
+      "延誤",
+      "迷路"
     ],
     "distractors_en": [
       "departure",
-      "to arrive",
-      "returning/arrival"
+      "delay",
+      "getting lost"
     ]
   },
   {
@@ -3289,14 +3289,14 @@
     "category_en": "Transportation",
     "level": "N3",
     "distractors": [
-      "乘車",
-      "接駁",
-      "上下車"
+      "下車",
+      "售票",
+      "誤點"
     ],
     "distractors_en": [
-      "boarding",
-      "transit/connection",
-      "getting on and off"
+      "getting off",
+      "ticket sales",
+      "running late"
     ]
   },
   {
@@ -3310,13 +3310,13 @@
     "level": "N3",
     "distractors": [
       "準時",
-      "延長",
-      "遲到"
+      "提早",
+      "客滿"
     ],
     "distractors_en": [
-      "delay/lateness",
-      "extension",
-      "being late"
+      "on time",
+      "early",
+      "suspension of service"
     ]
   },
   {
@@ -3330,13 +3330,13 @@
     "level": "N3",
     "distractors": [
       "單程",
-      "折返",
-      "直達"
+      "直達",
+      "轉乘"
     ],
     "distractors_en": [
       "one way",
-      "going back and forth",
-      "round trip (English)"
+      "direct",
+      "transfer"
     ]
   },
   {
@@ -3350,13 +3350,13 @@
     "level": "N3",
     "distractors": [
       "來回",
-      "單側",
-      "單向通行"
+      "轉乘",
+      "環狀線"
     ],
     "distractors_en": [
       "round trip",
-      "one side",
-      "one-way traffic"
+      "transfer",
+      "loop line"
     ]
   },
   {
@@ -3369,14 +3369,14 @@
     "category_en": "Transportation",
     "level": "N3",
     "distractors": [
-      "費用",
-      "交通費",
-      "旅費"
+      "時刻表",
+      "座位",
+      "路線"
     ],
     "distractors_en": [
-      "fee/charge",
-      "transportation cost",
-      "travel expenses"
+      "timetable",
+      "seat",
+      "route"
     ]
   },
   {
@@ -3389,14 +3389,14 @@
     "category_en": "Transportation",
     "level": "N3",
     "distractors": [
-      "行程表",
-      "預定表",
-      "班次表"
+      "地圖",
+      "車票",
+      "菜單"
     ],
     "distractors_en": [
-      "schedule",
-      "schedule chart",
-      "train schedule"
+      "map",
+      "ticket",
+      "menu"
     ]
   },
   {
@@ -3409,8 +3409,8 @@
     "category_en": "Transportation",
     "level": "N3",
     "distractors": [
-      "人行道",
-      "十字路口",
+      "停車場",
+      "加油站",
       "平交道"
     ],
     "distractors_en": [
@@ -3429,14 +3429,14 @@
     "category_en": "Transportation",
     "level": "N3",
     "distractors": [
-      "國道",
-      "幹道",
-      "外環道"
+      "人行道",
+      "鐵路",
+      "自行車道"
     ],
     "distractors_en": [
-      "national route",
-      "main road",
-      "bypass"
+      "sidewalk",
+      "railway",
+      "bike lane"
     ]
   },
   {
@@ -3449,14 +3449,14 @@
     "category_en": "Transportation",
     "level": "N3",
     "distractors": [
-      "朝向",
-      "方位",
-      "方面"
+      "距離",
+      "速度",
+      "時間"
     ],
     "distractors_en": [
-      "facing direction",
-      "compass direction",
-      "direction/area"
+      "distance",
+      "speed",
+      "time"
     ]
   },
   {
@@ -3469,14 +3469,14 @@
     "category_en": "Transportation",
     "level": "N3",
     "distractors": [
-      "間隔",
-      "長度",
-      "差距"
+      "方向",
+      "重量",
+      "時刻"
     ],
     "distractors_en": [
-      "interval/gap",
-      "length",
-      "difference"
+      "direction",
+      "weight",
+      "time of day"
     ]
   },
   {
@@ -3489,14 +3489,14 @@
     "category_en": "Transportation",
     "level": "N3",
     "distractors": [
-      "停放單車",
-      "暫停",
-      "停車場"
+      "加油",
+      "洗車",
+      "超車"
     ],
     "distractors_en": [
-      "bicycle parking",
-      "stopping",
-      "parking lot"
+      "refueling",
+      "car wash",
+      "overtaking"
     ]
   },
   {
@@ -3509,14 +3509,14 @@
     "category_en": "Education",
     "level": "N3",
     "distractors": [
-      "資訊",
-      "學識",
-      "常識"
+      "經驗",
+      "體力",
+      "財產"
     ],
     "distractors_en": [
-      "information",
-      "academic knowledge",
-      "common sense"
+      "experience",
+      "stamina",
+      "property"
     ]
   },
   {
@@ -3530,13 +3530,13 @@
     "level": "N3",
     "distractors": [
       "誤解",
-      "領會",
-      "認知"
+      "忘記",
+      "懷疑"
     ],
     "distractors_en": [
-      "acknowledgment",
-      "grasp/understanding",
-      "recognition"
+      "misunderstanding",
+      "forgetting",
+      "doubt"
     ]
   },
   {
@@ -3549,14 +3549,14 @@
     "category_en": "Education",
     "level": "N3",
     "distractors": [
-      "調查",
-      "學習",
-      "進修"
+      "休閒",
+      "娛樂",
+      "運動"
     ],
     "distractors_en": [
-      "investigation",
-      "study",
-      "learning"
+      "leisure",
+      "entertainment",
+      "exercise"
     ]
   },
   {
@@ -3569,14 +3569,14 @@
     "category_en": "Education",
     "level": "N3",
     "distractors": [
-      "研究",
-      "檢驗",
-      "查明"
+      "隱瞞",
+      "宣傳",
+      "命令"
     ],
     "distractors_en": [
-      "research",
-      "examination",
-      "to investigate"
+      "cover-up",
+      "promotion",
+      "order"
     ]
   },
   {
@@ -3589,14 +3589,14 @@
     "category_en": "Education",
     "level": "N3",
     "distractors": [
-      "報告",
-      "發言",
-      "隱瞞"
+      "隱瞞",
+      "聆聽",
+      "準備"
     ],
     "distractors_en": [
-      "report",
-      "statement",
-      "presentation"
+      "concealment",
+      "listening",
+      "preparation"
     ]
   },
   {
@@ -3610,13 +3610,13 @@
     "level": "N3",
     "distractors": [
       "不合格",
-      "落榜",
-      "淘汰"
+      "缺考",
+      "補考"
     ],
     "distractors_en": [
       "failing",
-      "passing through",
-      "to pass"
+      "missing the exam",
+      "make-up exam"
     ]
   },
   {
@@ -3630,13 +3630,13 @@
     "level": "N3",
     "distractors": [
       "入學",
-      "結業",
-      "畢業典禮"
+      "休學",
+      "轉學"
     ],
     "distractors_en": [
       "enrollment",
-      "completion",
-      "graduation ceremony"
+      "leave of absence",
+      "changing schools"
     ]
   },
   {
@@ -3649,14 +3649,14 @@
     "category_en": "Education",
     "level": "N3",
     "distractors": [
-      "海外旅行",
-      "海外研習",
-      "外語學習"
+      "移民",
+      "出差",
+      "觀光"
     ],
     "distractors_en": [
-      "overseas travel",
-      "overseas training",
-      "foreign language study"
+      "emigration",
+      "business trip",
+      "sightseeing"
     ]
   },
   {
@@ -3669,14 +3669,14 @@
     "category_en": "Education",
     "level": "N3",
     "distractors": [
-      "能力",
-      "執照",
-      "認證"
+      "興趣",
+      "薪水",
+      "年齡"
     ],
     "distractors_en": [
-      "ability",
-      "license",
-      "certification"
+      "hobby",
+      "salary",
+      "age"
     ]
   },
   {
@@ -3690,13 +3690,13 @@
     "level": "N3",
     "distractors": [
       "理論",
-      "知識",
+      "運氣",
       "態度"
     ],
     "distractors_en": [
-      "technical skill",
-      "skill",
-      "technology"
+      "theory",
+      "luck",
+      "attitude"
     ]
   },
   {
@@ -3709,14 +3709,14 @@
     "category_en": "Education",
     "level": "N3",
     "distractors": [
-      "實力",
-      "才能",
-      "力量"
+      "弱點",
+      "意願",
+      "經費"
     ],
     "distractors_en": [
-      "actual ability",
-      "talent",
-      "strength/power"
+      "weakness",
+      "willingness",
+      "funding"
     ]
   },
   {
@@ -3730,13 +3730,13 @@
     "level": "N3",
     "distractors": [
       "進階",
-      "地基",
-      "根本"
+      "應用",
+      "頂端"
     ],
     "distractors_en": [
-      "basics",
-      "foundation/base",
-      "root/basis"
+      "advanced level",
+      "application",
+      "peak"
     ]
   },
   {
@@ -3749,14 +3749,14 @@
     "category_en": "Education",
     "level": "N3",
     "distractors": [
-      "實用",
-      "運用",
-      "利用"
+      "基礎",
+      "理論",
+      "原理"
     ],
     "distractors_en": [
-      "practical use",
-      "utilization",
-      "use"
+      "basics",
+      "theory",
+      "principle"
     ]
   },
   {
@@ -3769,14 +3769,14 @@
     "category_en": "Education",
     "level": "N3",
     "distractors": [
-      "能力",
-      "實績",
-      "力量"
+      "運氣",
+      "外表",
+      "名聲"
     ],
     "distractors_en": [
-      "ability",
-      "track record",
-      "capacity"
+      "luck",
+      "looks",
+      "fame"
     ]
   },
   {
@@ -3789,14 +3789,14 @@
     "category_en": "Education",
     "level": "N3",
     "distractors": [
-      "專業",
-      "學科",
-      "領域"
+      "社團",
+      "宿舍",
+      "學費"
     ],
     "distractors_en": [
-      "specialty",
-      "department",
-      "field"
+      "club activity",
+      "dormitory",
+      "tuition"
     ]
   },
   {
@@ -3809,14 +3809,14 @@
     "category_en": "Relationships",
     "level": "N3",
     "distractors": [
-      "個性",
-      "人品",
-      "氣質"
+      "外表",
+      "身高",
+      "學歷"
     ],
     "distractors_en": [
-      "individuality",
-      "character",
-      "temperament"
+      "appearance",
+      "height",
+      "education"
     ]
   },
   {
@@ -3831,12 +3831,12 @@
     "distractors": [
       "輕視",
       "厭惡",
-      "仰慕"
+      "嫉妒"
     ],
     "distractors_en": [
-      "respect (noun)",
-      "to respect",
-      "to value/respect"
+      "contempt",
+      "disgust",
+      "jealousy"
     ]
   },
   {
@@ -3849,14 +3849,14 @@
     "category_en": "Relationships",
     "level": "N3",
     "distractors": [
-      "批評",
-      "譴責",
-      "反駁"
+      "稱讚",
+      "支持",
+      "鼓勵"
     ],
     "distractors_en": [
-      "critique",
-      "condemnation",
-      "counter-argument"
+      "praise",
+      "support",
+      "encouragement"
     ]
   },
   {
@@ -3871,12 +3871,12 @@
     "distractors": [
       "理解",
       "諒解",
-      "錯誤"
+      "共識"
     ],
     "distractors_en": [
       "understanding",
-      "misunderstanding",
-      "mistake"
+      "forgiveness",
+      "consensus"
     ]
   },
   {
@@ -3889,14 +3889,14 @@
     "category_en": "Relationships",
     "level": "N3",
     "distractors": [
-      "賠罪",
-      "致歉",
-      "反省"
+      "責備",
+      "拒絕",
+      "吹噓"
     ],
     "distractors_en": [
-      "apology",
-      "apology (formal)",
-      "self-reflection"
+      "to blame",
+      "to thank",
+      "to brag"
     ]
   },
   {
@@ -3909,14 +3909,14 @@
     "category_en": "Relationships",
     "level": "N3",
     "distractors": [
-      "許可",
       "責怪",
-      "承認"
+      "禁止",
+      "報復"
     ],
     "distractors_en": [
-      "permission",
-      "forgiveness",
-      "to acknowledge"
+      "to blame",
+      "to forbid",
+      "to take revenge"
     ]
   },
   {
@@ -3929,14 +3929,14 @@
     "category_en": "Relationships",
     "level": "N3",
     "distractors": [
-      "幫助",
-      "鼓勵",
-      "反對"
+      "反對",
+      "妨礙",
+      "拋棄"
     ],
     "distractors_en": [
-      "to help",
-      "to cheer on",
-      "support"
+      "to oppose",
+      "to hinder",
+      "to abandon"
     ]
   },
   {
@@ -3950,13 +3950,13 @@
     "level": "N3",
     "distractors": [
       "打擊",
-      "安慰",
-      "責備"
+      "責備",
+      "嘲笑"
     ],
     "distractors_en": [
-      "to cheer on",
-      "to cheer up",
-      "to give courage"
+      "to discourage",
+      "to scold",
+      "to mock"
     ]
   },
   {
@@ -3970,13 +3970,13 @@
     "level": "N3",
     "distractors": [
       "自立",
-      "請求",
-      "信任"
+      "拒絕",
+      "背叛"
     ],
     "distractors_en": [
-      "dependence",
-      "to ask/request",
-      "trust"
+      "to be independent",
+      "to refuse",
+      "to betray"
     ]
   },
   {
@@ -3989,14 +3989,14 @@
     "category_en": "Relationships",
     "level": "N3",
     "distractors": [
-      "他人",
-      "夥伴",
-      "對象"
+      "自己",
+      "旁觀者",
+      "主辦人"
     ],
     "distractors_en": [
-      "other person",
-      "partner",
-      "target/subject"
+      "oneself",
+      "bystander",
+      "organizer"
     ]
   },
   {
@@ -4009,14 +4009,14 @@
     "category_en": "Relationships",
     "level": "N3",
     "distractors": [
-      "朋友",
-      "同事",
-      "成員"
+      "敵人",
+      "陌生人",
+      "對手"
     ],
     "distractors_en": [
-      "friend",
-      "co-worker",
-      "member"
+      "enemy",
+      "stranger",
+      "rival"
     ]
   },
   {
@@ -4030,13 +4030,13 @@
     "level": "N3",
     "distractors": [
       "疏遠",
-      "接近",
-      "陌生"
+      "陌生",
+      "冷淡"
     ],
     "distractors_en": [
-      "good friends",
-      "close/near",
-      "on good terms"
+      "distant",
+      "unfamiliar",
+      "cold"
     ]
   },
   {
@@ -4049,14 +4049,14 @@
     "category_en": "Relationships",
     "level": "N3",
     "distractors": [
-      "樣子",
-      "行為",
-      "姿態"
+      "能力",
+      "外表",
+      "收入"
     ],
     "distractors_en": [
-      "state/appearance",
-      "behavior",
-      "posture/attitude"
+      "ability",
+      "looks",
+      "income"
     ]
   },
   {
@@ -4069,14 +4069,14 @@
     "category_en": "Relationships",
     "level": "N3",
     "distractors": [
-      "交流",
-      "關係",
-      "往來"
+      "絕交",
+      "獨處",
+      "競爭"
     ],
     "distractors_en": [
-      "exchange",
-      "relationship",
-      "to go out/associate"
+      "breaking off ties",
+      "being alone",
+      "competition"
     ]
   },
   {
@@ -4089,14 +4089,14 @@
     "category_en": "Relationships",
     "level": "N3",
     "distractors": [
-      "關聯",
-      "連結",
-      "羈絆"
+      "無關",
+      "獨立",
+      "距離"
     ],
     "distractors_en": [
-      "connection/relation",
-      "link/connection",
-      "bond"
+      "irrelevance",
+      "independence",
+      "distance"
     ]
   },
   {
@@ -4109,14 +4109,14 @@
     "category_en": "Culture",
     "level": "N3",
     "distractors": [
-      "文化",
-      "慣例",
-      "風俗"
+      "創新",
+      "流行",
+      "未來"
     ],
     "distractors_en": [
-      "culture",
-      "custom",
-      "custom/practice"
+      "innovation",
+      "fad",
+      "the future"
     ]
   },
   {
@@ -4129,14 +4129,14 @@
     "category_en": "Culture",
     "level": "N3",
     "distractors": [
-      "習慣",
-      "傳統",
-      "慣例"
+      "法律",
+      "發明",
+      "意外"
     ],
     "distractors_en": [
-      "habit",
-      "tradition",
-      "convention"
+      "law",
+      "invention",
+      "accident"
     ]
   },
   {
@@ -4149,14 +4149,14 @@
     "category_en": "Culture",
     "level": "N3",
     "distractors": [
-      "盛會",
-      "表演",
-      "典禮"
+      "日常",
+      "休息",
+      "失誤"
     ],
     "distractors_en": [
-      "event",
-      "event/show",
-      "ceremony"
+      "daily routine",
+      "rest",
+      "mistake"
     ]
   },
   {
@@ -4169,14 +4169,14 @@
     "category_en": "Culture",
     "level": "N3",
     "distractors": [
-      "嗜好",
-      "休閒",
-      "遊玩"
+      "工作",
+      "義務",
+      "勞動"
     ],
     "distractors_en": [
-      "hobby",
-      "leisure",
-      "play/fun"
+      "work",
+      "duty",
+      "labor"
     ]
   },
   {
@@ -4189,14 +4189,14 @@
     "category_en": "Culture",
     "level": "N3",
     "distractors": [
-      "時尚",
-      "風潮",
-      "趨勢"
+      "傳統",
+      "過時",
+      "古典"
     ],
     "distractors_en": [
-      "fashion",
-      "boom/craze",
-      "trend"
+      "tradition",
+      "outdated",
+      "classic"
     ]
   },
   {
@@ -4209,14 +4209,14 @@
     "category_en": "Culture",
     "level": "N3",
     "distractors": [
-      "評價",
-      "好評",
-      "名聲"
+      "天氣",
+      "人口",
+      "冷門"
     ],
     "distractors_en": [
-      "reputation",
-      "favorable reception",
-      "fame"
+      "weather",
+      "population",
+      "unpopularity"
     ]
   },
   {
@@ -4229,14 +4229,14 @@
     "category_en": "Culture",
     "level": "N3",
     "distractors": [
-      "主題",
-      "議題",
-      "內容"
+      "答案",
+      "沉默",
+      "誤會"
     ],
     "distractors_en": [
-      "theme",
-      "agenda item",
-      "content"
+      "answer",
+      "silence",
+      "misunderstanding"
     ]
   },
   {
@@ -4249,14 +4249,14 @@
     "category_en": "Culture",
     "level": "N3",
     "distractors": [
-      "知識",
-      "新聞",
-      "數據"
+      "商品",
+      "設備",
+      "現金"
     ],
     "distractors_en": [
-      "knowledge",
-      "news",
-      "data"
+      "goods",
+      "equipment",
+      "cash"
     ]
   },
   {
@@ -4269,14 +4269,14 @@
     "category_en": "Culture",
     "level": "N3",
     "distractors": [
-      "轉播",
-      "串流",
-      "傳送"
+      "錄音",
+      "剪輯",
+      "印刷"
     ],
     "distractors_en": [
-      "relay broadcast",
-      "streaming",
-      "transmission"
+      "recording",
+      "editing",
+      "printing"
     ]
   },
   {
@@ -4289,14 +4289,14 @@
     "category_en": "Culture",
     "level": "N3",
     "distractors": [
-      "宣傳",
-      "公關",
-      "告知"
+      "秘密",
+      "商品",
+      "合約"
     ],
     "distractors_en": [
-      "publicity/advertising",
-      "public relations",
-      "notice/announcement"
+      "secret",
+      "product",
+      "contract"
     ]
   },
   {
@@ -4309,14 +4309,14 @@
     "category_en": "Culture",
     "level": "N3",
     "distractors": [
-      "論文",
-      "專欄",
-      "新聞報導"
+      "照片",
+      "廣告",
+      "標題"
     ],
     "distractors_en": [
-      "thesis/paper",
-      "column",
-      "news coverage"
+      "photo",
+      "advertisement",
+      "headline"
     ]
   },
   {
@@ -4329,14 +4329,14 @@
     "category_en": "Culture",
     "level": "N3",
     "distractors": [
-      "作家",
-      "筆者",
-      "編輯"
+      "讀者",
+      "書店",
+      "印刷廠"
     ],
     "distractors_en": [
-      "author/creator",
-      "writer",
-      "editor"
+      "reader",
+      "bookstore",
+      "printing house"
     ]
   },
   {
@@ -4349,14 +4349,14 @@
     "category_en": "Culture",
     "level": "N3",
     "distractors": [
-      "發行",
-      "發售",
-      "刊行"
+      "閱讀",
+      "借閱",
+      "退貨"
     ],
     "distractors_en": [
-      "issuance",
-      "release/sale",
-      "publication"
+      "reading",
+      "borrowing",
+      "returns"
     ]
   },
   {
@@ -4369,14 +4369,14 @@
     "category_en": "General",
     "level": "N3",
     "distractors": [
-      "狀態",
-      "場合",
-      "環境"
+      "原因",
+      "意見",
+      "名稱"
     ],
     "distractors_en": [
-      "condition/state",
-      "case",
-      "environment"
+      "cause",
+      "opinion",
+      "name"
     ]
   },
   {
@@ -4389,14 +4389,14 @@
     "category_en": "General",
     "level": "N3",
     "distractors": [
-      "要件",
-      "要求",
-      "標準"
+      "結果",
+      "獎品",
+      "感想"
     ],
     "distractors_en": [
-      "requirement",
-      "demand",
-      "standard/criterion"
+      "result",
+      "prize",
+      "impression"
     ]
   },
   {
@@ -4409,14 +4409,14 @@
     "category_en": "General",
     "level": "N3",
     "distractors": [
-      "等級",
-      "範圍",
-      "限度"
+      "方向",
+      "名稱",
+      "原因"
     ],
     "distractors_en": [
-      "level",
-      "range",
-      "limit"
+      "direction",
+      "name",
+      "cause"
     ]
   },
   {
@@ -4429,14 +4429,14 @@
     "category_en": "General",
     "level": "N3",
     "distractors": [
-      "領域",
-      "程度",
-      "區域"
+      "中心",
+      "原因",
+      "結果"
     ],
     "distractors_en": [
-      "domain/area",
-      "degree",
-      "zone/area"
+      "center",
+      "cause",
+      "result"
     ]
   },
   {
@@ -4449,14 +4449,14 @@
     "category_en": "General",
     "level": "N3",
     "distractors": [
-      "比率",
-      "除法",
-      "百分比"
+      "總數",
+      "單位",
+      "順序"
     ],
     "distractors_en": [
-      "ratio",
-      "division",
-      "percent"
+      "total number",
+      "unit",
+      "order"
     ]
   },
   {
@@ -4469,14 +4469,14 @@
     "category_en": "General",
     "level": "N3",
     "distractors": [
-      "紀念",
-      "歷程",
-      "數據"
+      "預測",
+      "忘記",
+      "謠言"
     ],
     "distractors_en": [
-      "commemoration",
-      "history/log",
-      "data"
+      "prediction",
+      "forgetting",
+      "rumor"
     ]
   },
   {
@@ -4489,14 +4489,14 @@
     "category_en": "General",
     "level": "N3",
     "distractors": [
-      "證據",
-      "認證",
-      "確認"
+      "猜測",
+      "謊言",
+      "否認"
     ],
     "distractors_en": [
-      "evidence",
-      "authentication",
-      "confirmation"
+      "guess",
+      "lie",
+      "denial"
     ]
   },
   {
@@ -4509,14 +4509,14 @@
     "category_en": "General",
     "level": "N3",
     "distractors": [
-      "批准",
-      "認可",
-      "禁止"
+      "禁止",
+      "拒絕",
+      "處罰"
     ],
     "distractors_en": [
-      "approval",
-      "official approval",
-      "prohibition"
+      "prohibition",
+      "refusal",
+      "punishment"
     ]
   },
   {
@@ -4530,13 +4530,13 @@
     "level": "N3",
     "distractors": [
       "允許",
-      "限制",
-      "管制"
+      "鼓勵",
+      "推薦"
     ],
     "distractors_en": [
       "permission",
-      "restriction",
-      "regulation"
+      "encouragement",
+      "recommendation"
     ]
   },
   {
@@ -4549,14 +4549,14 @@
     "category_en": "General",
     "level": "N3",
     "distractors": [
-      "責任",
       "權利",
-      "任務"
+      "興趣",
+      "自由"
     ],
     "distractors_en": [
-      "responsibility",
       "right",
-      "mission/duty"
+      "hobby",
+      "freedom"
     ]
   },
   {
@@ -4570,13 +4570,13 @@
     "level": "N3",
     "distractors": [
       "義務",
-      "資格",
-      "特權"
+      "責任",
+      "罰則"
     ],
     "distractors_en": [
       "obligation",
-      "qualification",
-      "privilege"
+      "responsibility",
+      "penalty"
     ]
   },
   {
@@ -4589,14 +4589,14 @@
     "category_en": "General",
     "level": "N3",
     "distractors": [
-      "體系",
-      "機制",
-      "規則"
+      "個人",
+      "意外",
+      "心情"
     ],
     "distractors_en": [
-      "system",
-      "mechanism",
-      "rule"
+      "individual",
+      "accident",
+      "mood"
     ]
   },
   {
@@ -4609,14 +4609,14 @@
     "category_en": "General",
     "level": "N3",
     "distractors": [
-      "慣例",
-      "規定",
-      "法律"
+      "例外",
+      "自由",
+      "習慣"
     ],
     "distractors_en": [
-      "rule",
-      "regulation",
-      "law"
+      "exception",
+      "freedom",
+      "habit"
     ]
   },
   {
@@ -4629,14 +4629,14 @@
     "category_en": "General",
     "level": "N3",
     "distractors": [
-      "目的",
-      "手段",
-      "意圖"
+      "起點",
+      "障礙",
+      "過去"
     ],
     "distractors_en": [
-      "purpose",
-      "goal",
-      "aim/target"
+      "starting point",
+      "obstacle",
+      "the past"
     ]
   },
   {
@@ -4649,14 +4649,14 @@
     "category_en": "General",
     "level": "N3",
     "distractors": [
-      "結果",
-      "實績",
-      "業績"
+      "失敗",
+      "計畫",
+      "努力"
     ],
     "distractors_en": [
-      "result",
-      "track record",
-      "achievement"
+      "failure",
+      "plan",
+      "effort"
     ]
   },
   {
@@ -4669,14 +4669,14 @@
     "category_en": "General",
     "level": "N3",
     "distractors": [
-      "問題",
-      "主題",
-      "作業"
+      "答案",
+      "獎勵",
+      "休息"
     ],
     "distractors_en": [
-      "problem",
-      "theme",
-      "homework"
+      "answer",
+      "reward",
+      "rest"
     ]
   },
   {
@@ -4689,14 +4689,14 @@
     "category_en": "General",
     "level": "N3",
     "distractors": [
-      "對應",
-      "解決",
-      "手段"
+      "原因",
+      "問題",
+      "損害"
     ],
     "distractors_en": [
-      "response",
-      "resolution",
-      "measure"
+      "cause",
+      "problem",
+      "damage"
     ]
   },
   {
@@ -4709,14 +4709,14 @@
     "category_en": "General",
     "level": "N3",
     "distractors": [
-      "水準",
-      "準則",
-      "依據"
+      "例外",
+      "結果",
+      "感想"
     ],
     "distractors_en": [
-      "level/standard",
-      "standard",
-      "estimate/guideline"
+      "exception",
+      "result",
+      "personal impression"
     ]
   },
   {
@@ -4729,14 +4729,14 @@
     "category_en": "General",
     "level": "N3",
     "distractors": [
-      "方法",
-      "流程",
-      "順序"
+      "結果",
+      "目的",
+      "材料"
     ],
     "distractors_en": [
-      "method",
-      "process",
-      "order/sequence"
+      "result",
+      "purpose",
+      "materials"
     ]
   },
   {
@@ -4749,14 +4749,14 @@
     "category_en": "General",
     "level": "N3",
     "distractors": [
-      "制度",
-      "體系",
-      "構造"
+      "外觀",
+      "價格",
+      "顏色"
     ],
     "distractors_en": [
-      "system",
-      "system",
-      "structure"
+      "appearance",
+      "price",
+      "color"
     ]
   },
   {
@@ -4769,14 +4769,14 @@
     "category_en": "General",
     "level": "N3",
     "distractors": [
-      "職務",
-      "負責",
-      "功能"
+      "薪水",
+      "年資",
+      "興趣"
     ],
     "distractors_en": [
-      "role/duty",
-      "in charge",
-      "function"
+      "salary",
+      "seniority",
+      "hobby"
     ]
   },
   {
@@ -4789,14 +4789,14 @@
     "category_en": "General",
     "level": "N3",
     "distractors": [
-      "警告",
-      "當心",
-      "謹慎"
+      "疏忽",
+      "放心",
+      "忽視"
     ],
     "distractors_en": [
-      "warning",
-      "to be careful",
-      "caution"
+      "carelessness",
+      "peace of mind",
+      "ignoring"
     ]
   }
 ]

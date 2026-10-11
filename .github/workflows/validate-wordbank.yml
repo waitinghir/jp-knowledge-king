@@ -1,0 +1,19 @@
+# The app loads data/*.json straight from main, so merging a PR = going live.
+# This check must pass before a PR can be merged (enforced by branch protection).
+name: Validate word bank
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate word bank (zh + en)
+        run: python3 scripts/validate_wordbank.py

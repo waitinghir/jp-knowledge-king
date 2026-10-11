@@ -1,0 +1,12 @@
+#!/bin/sh
+# Block commits that change the word bank unless it passes validation.
+# The app loads data/*.json straight from GitHub main, so a bad push goes
+# live for every user immediately.
+if git diff --cached --name-only | grep -q '^data/.*\.json$'; then
+  echo "Word bank changed — running scripts/validate_wordbank.py"
+  python3 scripts/validate_wordbank.py || {
+    echo ""
+    echo "Commit blocked: fix the errors above (zh AND en)."
+    exit 1
+  }
+fi
