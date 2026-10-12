@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import {
   Animated,
+  Modal,
   Pressable,
   SafeAreaView,
   ScrollView,
@@ -12,6 +13,7 @@ import { useLocalSearchParams, useRouter } from 'expo-router';
 import { addBattleResult } from '../../utils/storage';
 import { playSound } from '../../utils/sound';
 import { getLang, useStrings } from '../../utils/i18n';
+import { logBattleAnswers, newId, reportQuestion, type ReportReason } from '../../utils/telemetry';
 import type { BattleResult, PlayerData } from '../../types';
 
 function getOutcomeConfig(s: ReturnType<typeof useStrings>) {
@@ -28,6 +30,12 @@ export default function ResultScreen() {
   const lang = getLang();
   const params = useLocalSearchParams<{ result: string }>();
   const [updatedPlayer, setUpdatedPlayer] = useState<PlayerData | null>(null);
+  const battleId = useRef(newId()).current;
+  // L5: "report this question" state, per question index
+  const [reported, setReported] = useState<Record<number, boolean>>({});
+  const [reportIndex, setReportIndex] = useState<number | null>(null);
+  const [reportSending, setReportSending] = useState(false);
+  const [reportError, setReportError] = useState(false);
 
   const result: BattleResult = params.result
     ? (JSON.parse(params.result) as BattleResult)
@@ -43,6 +51,32 @@ export default function ResultScreen() {
 
   const config = getOutcomeConfig(s)[result.outcome];
 
+  const reportReasons: { key: ReportReason; label: string }[] = [
+    { key: 'multiple_correct', label: s.reportMultipleCorrect },
+    { key: 'answer_wrong', label: s.reportAnswerWrong },
+    { key: 'unnatural', label: s.reportUnnatural },
+    { key: 'other', label: s.reportOther },
+  ];
+
+  function openReport(i: number) {
+    if (reported[i]) return;
+    setReportError(false);
+    setReportIndex(i);
+  }
+
+  async function sendReport(reason: ReportReason) {
+    if (reportIndex === null || reportSending) return;
+    setReportSending(true);
+    const ok = await reportQuestion(result, reportIndex, lang, battleId, reason);
+    setReportSending(false);
+    if (ok) {
+      setReported((prev) => ({ ...prev, [reportIndex]: true }));
+      setReportIndex(null);
+    } else {
+      setReportError(true);
+    }
+  }
+
   // Entrance animation
   const headerScale = useRef(new Animated.Value(0.5)).current;
   const headerOpacity = useRef(new Animated.Value(0)).current;
@@ -51,6 +85,9 @@ export default function ResultScreen() {
   useEffect(() => {
     // Save result to AsyncStorage
     addBattleResult(result.playerTotalScore, result.outcome).then(setUpdatedPlayer);
+
+    // L5: anonymous answer log for word bank quality monitoring
+    logBattleAnswers(result, lang, battleId);
 
     // Play outcome sound (slight delay to let animation start)
     const delay = result.outcome === 'win' ? 300 : 200;
@@ -131,6 +168,17 @@ export default function ResultScreen() {
                   <Text style={styles.qNum}>Q{i + 1}</Text>
                   <Text style={styles.qWord}>{q.word.kanji}</Text>
                   <Text style={styles.qAnswer}>→ {lang === 'en' ? q.word.meaning_en : q.word.meaning_zh}</Text>
+                  <Pressable
+                    onPress={() => openReport(i)}
+                    hitSlop={10}
+                    disabled={!!reported[i]}
+                    accessibilityRole="button"
+                    accessibilityLabel={s.reportA11y}
+                  >
+                    <Text style={reported[i] ? styles.reportDone : styles.reportFlag}>
+                      {reported[i] ? '✓' : '🚩'}
+                    </Text>
+                  </Pressable>
                 </View>
 
                 {/* Player vs AI */}
@@ -191,6 +239,39 @@ export default function ResultScreen() {
           </View>
         </Animated.View>
       </ScrollView>
+
+      {/* L5: report reason sheet */}
+      <Modal
+        visible={reportIndex !== null}
+        transparent
+        animationType="slide"
+        onRequestClose={() => setReportIndex(null)}
+      >
+        <Pressable style={styles.sheetBackdrop} onPress={() => setReportIndex(null)}>
+          <Pressable style={styles.sheet} onPress={() => {}}>
+            <Text style={styles.sheetTitle}>{s.reportTitle}</Text>
+            {reportIndex !== null && (
+              <Text style={styles.sheetWord}>
+                {result.questions[reportIndex]?.word.kana}
+              </Text>
+            )}
+            {reportReasons.map((r) => (
+              <Pressable
+                key={r.key}
+                style={({ pressed }) => [styles.sheetOption, pressed && styles.btnPressed]}
+                onPress={() => sendReport(r.key)}
+                disabled={reportSending}
+              >
+                <Text style={styles.sheetOptionText}>{r.label}</Text>
+              </Pressable>
+            ))}
+            {reportError && <Text style={styles.sheetError}>{s.reportFailed}</Text>}
+            <Pressable onPress={() => setReportIndex(null)} hitSlop={8}>
+              <Text style={styles.sheetCancel}>{s.reportCancel}</Text>
+            </Pressable>
+          </Pressable>
+        </Pressable>
+      </Modal>
     </SafeAreaView>
   );
 }
@@ -271,7 +352,9 @@ const styles = StyleSheet.create({
   },
   qNum: { fontSize: 12, color: '#7F8C8D', width: 24 },
   qWord: { fontSize: 18, fontWeight: 'bold', color: '#fff', flex: 1 },
-  qAnswer: { fontSize: 13, color: '#BDC3C7' },
+  qAnswer: { fontSize: 13, color: '#BDC3C7', flexShrink: 1 },
+  reportFlag: { fontSize: 15, opacity: 0.7, marginLeft: 4 },
+  reportDone: { fontSize: 15, color: '#27AE60', fontWeight: 'bold', marginLeft: 4 },
 
   qComparison: { flexDirection: 'row', alignItems: 'flex-start' },
   qSide: { flex: 1, alignItems: 'center', gap: 4 },
@@ -304,4 +387,26 @@ const styles = StyleSheet.create({
   },
   btnSecondaryText: { fontSize: 18, fontWeight: '700', color: '#BDC3C7' },
   btnPressed: { opacity: 0.75 },
+
+  // Report sheet
+  sheetBackdrop: { flex: 1, backgroundColor: 'rgba(0,0,0,0.5)', justifyContent: 'flex-end' },
+  sheet: {
+    backgroundColor: '#1F2D3A',
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+    padding: 20,
+    paddingBottom: 36,
+    gap: 10,
+  },
+  sheetTitle: { fontSize: 17, fontWeight: '700', color: '#fff' },
+  sheetWord: { fontSize: 14, color: '#95A5A6', marginBottom: 4 },
+  sheetOption: {
+    backgroundColor: '#34495E',
+    borderRadius: 12,
+    paddingVertical: 14,
+    paddingHorizontal: 16,
+  },
+  sheetOptionText: { fontSize: 15, color: '#ECF0F1' },
+  sheetError: { fontSize: 13, color: '#E74C3C' },
+  sheetCancel: { fontSize: 15, color: '#95A5A6', textAlign: 'center', marginTop: 6 },
 });
