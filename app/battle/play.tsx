@@ -51,7 +51,15 @@ export default function PlayScreen() {
   // ── State ─────────────────────────────────────────────────────────────────
   const [questions, setQuestions] = useState<Question[]>([]);
   const [qIndex, setQIndex] = useState(0);
-  const [phase, setPhase] = useState<QuestionPhase>('answering');
+  const [phase, setPhaseState] = useState<QuestionPhase>('answering');
+  // The per-question interval callback is created once per question, so it
+  // would see a stale `phase` (still 'feedback' from the previous question) and
+  // skip the time-up. Keep the live value in a ref for callbacks to read.
+  const phaseRef = useRef<QuestionPhase>('answering');
+  const setPhase = (p: QuestionPhase) => {
+    phaseRef.current = p;
+    setPhaseState(p);
+  };
 
   const [playerAnswers, setPlayerAnswers] = useState<Answer[]>([]);
   const [aiAnswers, setAiAnswers] = useState<Answer[]>([]);
@@ -119,7 +127,7 @@ export default function PlayScreen() {
   const currentQuestion: Question | undefined = questions[qIndex];
 
   function handleAnswer(selectedIndex: number) {
-    if (!currentQuestion || phase === 'feedback') return;
+    if (!currentQuestion || phaseRef.current === 'feedback') return;
     if (timerRef.current) clearInterval(timerRef.current);
 
     playSound('tap');
@@ -128,7 +136,7 @@ export default function PlayScreen() {
   }
 
   function handleTimeUp() {
-    if (!currentQuestion || phase === 'feedback') return;
+    if (!currentQuestion || phaseRef.current === 'feedback') return;
     playSound('timeout');
     resolveQuestion(null, QUESTION_DURATION);
   }
