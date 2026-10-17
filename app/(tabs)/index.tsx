@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import { useFocusEffect, useRouter } from 'expo-router';
 import { loadPlayerData } from '../../utils/storage';
+import { onPlayerDataRestored } from '../../utils/cloudSync';
 import { INITIAL_PLAYER_DATA, SCORE_PER_LEVEL } from '../../types';
 import type { PlayerData, WordLevel } from '../../types';
 import { useStrings } from '../../utils/i18n';
@@ -26,6 +27,9 @@ export default function HomeScreen() {
       loadPlayerData().then(setPlayer);
     }, [])
   );
+
+  // P2: if the cloud copy had more progress, show it as soon as it's restored
+  useEffect(() => onPlayerDataRestored(setPlayer), []);
 
   // Score progress within current level (0.0 – 1.0)
   const scoreInLevel = player.totalScore % SCORE_PER_LEVEL;
