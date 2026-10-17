@@ -1,7 +1,14 @@
+import { useEffect } from 'react';
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
+import { syncPlayerData } from '../utils/cloudSync';
 
 export default function RootLayout() {
+  // P2: sign in anonymously and reconcile local/cloud player data (best-effort).
+  useEffect(() => {
+    syncPlayerData();
+  }, []);
+
   return (
     <>
       <Stack

@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { addBattleResult } from '../../utils/storage';
+import { pushPlayerData } from '../../utils/cloudSync';
 import { playSound } from '../../utils/sound';
 import { getLang, useStrings } from '../../utils/i18n';
 import { logBattleAnswers, newId, reportQuestion, type ReportReason } from '../../utils/telemetry';
@@ -84,7 +85,10 @@ export default function ResultScreen() {
 
   useEffect(() => {
     // Save result to AsyncStorage
-    addBattleResult(result.playerTotalScore, result.outcome).then(setUpdatedPlayer);
+    addBattleResult(result.playerTotalScore, result.outcome).then((d) => {
+      setUpdatedPlayer(d);
+      pushPlayerData(d); // P2: cloud backup, best-effort
+    });
 
     // L5: anonymous answer log for word bank quality monitoring
     logBattleAnswers(result, lang, battleId);
