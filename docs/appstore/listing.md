@@ -106,9 +106,17 @@ GREAT FOR
 
 ---
 
-## 截圖（6.5 吋，1242 × 2688）
+## 截圖
 
-檔案在 `docs/appstore/screenshots/{zh,en}/`，依檔名順序上傳。用 `scripts/compose_appstore_screenshots.py` 從模擬器原始截圖合成（粉彩可愛風：每張不同淡色底、平假名泡泡；中文字型 jf open 粉圓，下載方式見腳本開頭）。
+檔案在 `docs/appstore/screenshots/<尺寸>/{zh,en}/`，依檔名順序上傳。**上傳前先看 App Store Connect 那一格寫的支援尺寸**，Apple 會隨新機型調整：
+
+| 資料夾 | 尺寸 | 對應 App Store Connect 欄位 |
+|---|---|---|
+| `6.3in_1179x2556` | 1179 × 2556 | iPhone 6.1／6.3 吋 |
+| `6.9in_1320x2868` | 1320 × 2868 | iPhone 6.9 吋 |
+| `6.5in_1242x2688` | 1242 × 2688 | iPhone 6.5 吋 |
+
+原稿以 1242 × 2688 合成，其他尺寸是等比縮放後裁掉邊緣幾個像素（長寬比差不到 1%）。用 `scripts/compose_appstore_screenshots.py` 從模擬器原始截圖合成（粉彩可愛風：每張不同淡色底、平假名泡泡；中文字型 jf open 粉圓，下載方式見腳本開頭）。
 
 | # | 畫面 | 繁中標題 / 副標 | English headline / subline |
 |---|---|---|---|
