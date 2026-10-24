@@ -30,14 +30,14 @@ CAPTIONS = {
     'zh': [
         ('battle1', ['1 對 1 ', '日文單字對戰'], '和對手限時搶答'),
         ('correct', ['10 秒', '搶答'], '越快答對，分數越高'),
-        ('home', ['N4 到 N2 ', '任你選'], '640 個單字，中英雙語'),
+        ('home', ['N4 到 N2 ', '任你選'], '中英雙語，隨時練習'),
         ('result', ['打贏對手，', '累積升級'], '每一題的答案都看得到'),
         ('rank', ['每週', '排行榜'], '看看你這週排第幾'),
     ],
     'en': [
         ('battle1', ['Japanese ', 'vocab battles'], 'Race an opponent'),
         ('correct', ['10 seconds ', 'per question'], 'Answer faster, score higher'),
-        ('home', ['Pick your level: ', 'N4 to N2'], '640 words, English and Chinese'),
+        ('home', ['Pick your level: ', 'N4 to N2'], 'English and Chinese, practice anytime'),
         ('result', ['Win and ', 'level up'], 'Review every answer'),
         ('rank', ['Weekly ', 'leaderboard'], 'See where you rank this week'),
     ],
