@@ -112,7 +112,7 @@ GREAT FOR
 
 | # | 畫面 | 繁中標題 / 副標 | English headline / subline |
 |---|---|---|---|
-| 1 | 作答中 | 1 對 1 日文單字對戰 / 和 AI 對手限時搶答 | Japanese vocab battles / Race an AI opponent |
+| 1 | 作答中 | 1 對 1 日文單字對戰 / 和對手限時搶答 | Japanese vocab battles / Race an opponent |
 | 2 | 答對瞬間 | 10 秒搶答 / 越快答對，分數越高 | 10 seconds per question / Answer faster, score higher |
 | 3 | 首頁 | N4 到 N2 任你選 / 640 個單字，中英雙語 | Pick your level: N4 to N2 / 640 words, English and Chinese |
 | 4 | 勝利結算 | 打贏對手，累積升級 / 每一題的答案都看得到 | Win and level up / Review every answer |
