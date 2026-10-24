@@ -108,7 +108,7 @@ GREAT FOR
 
 ## 截圖（6.5 吋，1242 × 2688）
 
-檔案在 `docs/appstore/screenshots/{zh,en}/`，依檔名順序上傳。用 `scripts/compose_appstore_screenshots.py` 從模擬器原始截圖合成。
+檔案在 `docs/appstore/screenshots/{zh,en}/`，依檔名順序上傳。用 `scripts/compose_appstore_screenshots.py` 從模擬器原始截圖合成（粉彩可愛風：每張不同淡色底、平假名泡泡；中文字型 jf open 粉圓，下載方式見腳本開頭）。
 
 | # | 畫面 | 繁中標題 / 副標 | English headline / subline |
 |---|---|---|---|
