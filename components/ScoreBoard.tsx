@@ -1,5 +1,6 @@
 import { View, Text, StyleSheet } from 'react-native';
 import { AIOpponent } from '../types';
+import { useStrings } from '../utils/i18n';
 
 // TODO: Implement live scoreboard header
 // Shows: player avatar+name+score (left), question number (center), opponent avatar+name+score (right)
@@ -22,11 +23,12 @@ export default function ScoreBoard({
   currentQuestion,
   totalQuestions,
 }: ScoreBoardProps) {
+  const s = useStrings();
   return (
     <View style={styles.container}>
       <View style={styles.side}>
         <View style={[styles.avatar, { backgroundColor: '#C41E3A' }]}>
-          <Text style={styles.avatarText}>你</Text>
+          <Text style={styles.avatarText}>{s.leaderboardMe.charAt(0)}</Text>
         </View>
         <Text style={styles.name}>Lv.{playerLevel}</Text>
         <Text style={styles.score}>{playerScore}</Text>

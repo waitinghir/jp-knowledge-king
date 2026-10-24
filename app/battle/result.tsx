@@ -12,6 +12,7 @@ import {
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { addBattleResult } from '../../utils/storage';
 import { pushPlayerData } from '../../utils/cloudSync';
+import { maybeAskForReview } from '../../utils/reviewPrompt';
 import { playSound } from '../../utils/sound';
 import { getLang, useStrings } from '../../utils/i18n';
 import { logBattleAnswers, newId, reportQuestion, type ReportReason } from '../../utils/telemetry';
@@ -88,6 +89,7 @@ export default function ResultScreen() {
     addBattleResult(result.playerTotalScore, result.outcome).then((d) => {
       setUpdatedPlayer(d);
       pushPlayerData(d); // P2: cloud backup, best-effort
+      maybeAskForReview(result.outcome, d);
     });
 
     // L5: anonymous answer log for word bank quality monitoring
