@@ -16,7 +16,7 @@ import { maybeAskForReview } from '../../utils/reviewPrompt';
 import { playSound } from '../../utils/sound';
 import { getLang, useStrings } from '../../utils/i18n';
 import { logBattleAnswers, newId, reportQuestion, type ReportReason } from '../../utils/telemetry';
-import type { BattleResult, PlayerData } from '../../types';
+import type { BattleResult, PlayerData, WordLevel } from '../../types';
 
 function getOutcomeConfig(s: ReturnType<typeof useStrings>) {
   return {
@@ -30,7 +30,7 @@ export default function ResultScreen() {
   const router = useRouter();
   const s = useStrings();
   const lang = getLang();
-  const params = useLocalSearchParams<{ result: string }>();
+  const params = useLocalSearchParams<{ result: string; wordLevel?: WordLevel }>();
   const [updatedPlayer, setUpdatedPlayer] = useState<PlayerData | null>(null);
   const battleId = useRef(newId()).current;
   // L5: "report this question" state, per question index
@@ -231,7 +231,12 @@ export default function ResultScreen() {
           <View style={styles.buttonRow}>
             <Pressable
               style={({ pressed }) => [styles.btnPrimary, pressed && styles.btnPressed]}
-              onPress={() => router.replace('/battle/matching')}
+              onPress={() =>
+                router.replace({
+                  pathname: '/battle/matching',
+                  params: { wordLevel: params.wordLevel ?? 'all' },
+                })
+              }
             >
               <Text style={styles.btnPrimaryText}>{s.playAgain}</Text>
             </Pressable>

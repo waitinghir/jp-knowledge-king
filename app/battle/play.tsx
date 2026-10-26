@@ -218,7 +218,7 @@ export default function PlayScreen() {
 
         router.replace({
           pathname: '/battle/result',
-          params: { result: JSON.stringify(result) },
+          params: { result: JSON.stringify(result), wordLevel },
         });
       } else {
         setQIndex(nextIndex);
