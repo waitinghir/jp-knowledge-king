@@ -27,7 +27,7 @@
 
 | 關卡 | 做法 | 何時 |
 | --- | --- | --- |
-| L1 自動檢查 | `npm run validate:words`；本機 pre-commit hook + GitHub Actions | 每次修改 |
+| L1 自動檢查 | `npm run validate:words`；本機 pre-commit hook + GitHub Actions。含「漢字欄位的讀音要能對上假名」，擋下把中文寫進日文欄位 | 每次修改 |
 | L2 同音詞檢查 | 用 JMdict 列出同讀音的單字，和錯誤選項比對 | 每次修改 |
 | L2b 難度檢查 | `python3 scripts/check_jlpt_level.py <ref_dir>`，和 Waller（tanos）JLPT 單字表比對分級；列出比參考更難、更簡單、或表上沒有的字，逐條人工判斷（參考表有已知錯漏，不能直接照改） | 新增單字或調整難度時 |
 | L3 雙評審盲測 | 兩個獨立評審（不同模型）只看假名和四個選項作答，並標記模稜兩可的題目；中英各一次 | 每次修改（只測改到的題目即可） |
