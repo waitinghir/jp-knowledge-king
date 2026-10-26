@@ -421,8 +421,8 @@
   },
   {
     "id": "gemini_222",
-    "kanji": "保健食品",
-    "kana": "ほけんしょくひん",
+    "kanji": "健康食品",
+    "kana": "けんこうしょくひん",
     "meaning_zh": "保健食品",
     "meaning_en": "health supplement",
     "category": "購物/藥妝",
@@ -581,7 +581,7 @@
   },
   {
     "id": "gemini_230",
-    "kanji": "青春痘",
+    "kanji": "ニキビ",
     "kana": "にきび",
     "meaning_zh": "青春痘、痘痘",
     "meaning_en": "acne/pimple",
@@ -601,7 +601,7 @@
   },
   {
     "id": "gemini_231",
-    "kanji": "口罩",
+    "kanji": "マスク",
     "kana": "マスク",
     "meaning_zh": "口罩",
     "meaning_en": "mask",
@@ -621,7 +621,7 @@
   },
   {
     "id": "gemini_232",
-    "kanji": "泡麵",
+    "kanji": "カップ麺",
     "kana": "カップめん",
     "meaning_zh": "泡麵",
     "meaning_en": "cup noodles",
@@ -661,7 +661,7 @@
   },
   {
     "id": "gemini_234",
-    "kanji": "擦桌子",
+    "kanji": "テーブルを拭く",
     "kana": "テーブルをふく",
     "meaning_zh": "擦桌子",
     "meaning_en": "to wipe the table",
@@ -761,7 +761,7 @@
   },
   {
     "id": "gemini_239",
-    "kanji": "破關",
+    "kanji": "クリア",
     "kana": "クリア",
     "meaning_zh": "破關、通關",
     "meaning_en": "to clear (a game)",
@@ -781,7 +781,7 @@
   },
   {
     "id": "gemini_240",
-    "kanji": "帳單",
+    "kanji": "料金",
     "kana": "りょうきん",
     "meaning_zh": "費用、帳單",
     "meaning_en": "bill/charge",

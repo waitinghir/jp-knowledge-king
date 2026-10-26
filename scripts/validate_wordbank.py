@@ -17,6 +17,10 @@ ERRORS (must fix):
   - duplicate distractors
   - zh: Japanese kana or Japanese-only kanji (shinjitai), or Latin letters
   - en: CJK characters or kana
+  - kanji field cannot be read as the kana (e.g. 口罩 / マスク): catches Chinese
+    written into the Japanese field. Uses the jōyō + jinmeiyō readings in
+    scripts/kanji_readings.json (KANJIDIC2, © EDRDG, CC BY-SA 4.0); special
+    readings such as 真面目 / まじめ go in READING_EXCEPTIONS
 
 WARNINGS (review by hand — scripts cannot judge meaning):
   - zh distractor shares a character with the answer
@@ -26,8 +30,10 @@ Passing this script does NOT mean the options are good. Every change must
 still be read entry by entry, in both languages: "would a learner see two
 or more correct options?"
 """
+import functools
 import glob
 import json
+import os
 import re
 import sys
 
@@ -53,6 +59,53 @@ STOPWORDS = {'to', 'be', 'the', 'a', 'an', 'of', 'and', 'or', 'in', 'on', 'at',
              'for', 'with', 'one', 'get', 'have', 'make', 'do', 'something',
              'someone', 'sth', 'sb', 'up', 'out', 'off', 'into', 'about'}
 
+# kanji/kana pairs that are correct but cannot be split per character:
+# whole-word readings (jukujikun) and kanji outside jōyō + jinmeiyō.
+READING_EXCEPTIONS = {('景色', 'けしき'), ('お土産', 'おみやげ'), ('真面目', 'まじめ'),
+                      ('躊躇', 'ちゅうちょ')}
+
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'kanji_readings.json'),
+          encoding='utf-8') as _f:
+    KANJI_READINGS = json.load(_f)
+
+DAKUTEN = dict(zip('かきくけこさしすせそたちつてとはひふへほ', 'がぎぐげござじずぜぞだぢづでどばびぶべぼ'))
+HANDAKUTEN = dict(zip('はひふへほ', 'ぱぴぷぺぽ'))
+
+
+def hira(s):
+    return ''.join(chr(ord(c) - 0x60) if 'ァ' <= c <= 'ヶ' else c for c in s)
+
+
+@functools.lru_cache(None)
+def reading_variants(c):
+    """Readings of one kanji, plus sound changes inside compounds (連濁, 促音便)."""
+    out = set()
+    for r in KANJI_READINGS.get(c, []):
+        out.add(r)
+        if r[0] in DAKUTEN:
+            out.add(DAKUTEN[r[0]] + r[1:])
+        if r[0] in HANDAKUTEN:
+            out.add(HANDAKUTEN[r[0]] + r[1:])
+        if len(r) >= 2 and r[-1] in 'つちくき':
+            out.add(r[:-1] + 'っ')
+    return out
+
+
+def kanji_matches_kana(kanji, kana):
+    kanji, kana = hira(kanji), hira(kana)
+
+    @functools.lru_cache(None)
+    def go(i, j):
+        if i == len(kanji):
+            return j == len(kana)
+        c = kanji[i]
+        if not CJK.search(c) and c != '々':
+            return kana.startswith(c, j) and go(i + 1, j + 1)
+        rs = reading_variants(kanji[i - 1] if c == '々' and i else c)
+        return any(kana.startswith(r, j) and go(i + 1, j + len(r)) for r in rs)
+
+    return go(0, 0)
+
 
 def zh_parts(s):
     return {p.strip() for p in re.split(r'[、/／,，;；]', s) if p.strip()}
@@ -73,6 +126,10 @@ def check_entry(w, errors, warnings):
             errors.append(f'{wid}: missing field "{k}"')
     if errors and errors[-1].startswith(f'{wid}: missing'):
         return
+
+    if (w['kanji'], w['kana']) not in READING_EXCEPTIONS and not kanji_matches_kana(w['kanji'], w['kana']):
+        errors.append(f'{wid}: kanji "{w["kanji"]}" cannot be read as "{w["kana"]}" '
+                      '(Chinese in the Japanese field? special reading -> READING_EXCEPTIONS)')
 
     for lang, ans_key, ds_key in (('zh', 'meaning_zh', 'distractors'),
                                   ('en', 'meaning_en', 'distractors_en')):
