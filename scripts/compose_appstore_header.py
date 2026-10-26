@@ -7,9 +7,12 @@ Usage:
 - zh_font: jf open 粉圓 (see compose_appstore_screenshots.py for the download link)
 - Writes <out_dir>/{zh,en}/header_universal_5244x2950.png and header_3840x1646.png
 
-Safe area: the universal 16:9 asset is cropped to ~2.33:1 for the header (top and
-bottom ~12% cut) and to ~3:2 for search results (left and right ~8% cut), so all
-text and the icon stay inside the central 4400 x 2200 px.
+Safe area: the universal 16:9 asset is cropped to ~2.33:1 for the wide header
+(top and bottom ~12% cut) and ~3:2 for search results (left and right ~8% cut).
+On an iPhone (checked on an iPhone 17, 2026-10) the header shows only the middle
+~55% of the width, from the top down to ~63% of the height, with the back and
+share buttons over the top corners. So the text and icon stay in x 1500-3750,
+y 450-1850; the phones at the sides are decoration.
 """
 import os
 import random
@@ -86,37 +89,44 @@ for lang, (name, head, sub) in TEXT.items():
     bubbles(canvas)
     d = ImageDraw.Draw(canvas)
 
-    # left block: icon, app name, headline, subline (inside the safe area)
-    icon = Image.open(ICON).convert('RGBA').resize((520, 520), Image.LANCZOS)
-    m = Image.new('L', icon.size, 0)
-    rrect(ImageDraw.Draw(m), [0, 0, 519, 519], 115, 255)
-    x0 = 700
-    canvas.paste(icon, (x0, 640), m)
-    nsize = 200
-    while d.textsize(name, font=font(lang, nsize))[0] > 1350:
+    # centre block: icon + name, headline, subline. All of it stays inside
+    # x 1500-3750, y 450-1850, the part every crop shows (iPhone shows only the
+    # middle ~55% of the width, from the top; wide header and search crop more).
+    cx = W // 2
+    nsize = 230
+    while d.textsize(name, font=font(lang, nsize))[0] > 1750:
         nsize -= 5
-    d.text((x0 + 600, 900 - nsize * 0.7), name, font=font(lang, nsize), fill=NAVY, stroke_width=4, stroke_fill=NAVY)
-    # shrink the headline until it ends before the phones (x ~2750)
-    size = 250
+    nf = font(lang, nsize)
+    nw, nh = d.textsize(name, font=nf)
+    isz = 330
+    icon = Image.open(ICON).convert('RGBA').resize((isz, isz), Image.LANCZOS)
+    m = Image.new('L', icon.size, 0)
+    rrect(ImageDraw.Draw(m), [0, 0, isz - 1, isz - 1], 75, 255)
+    gx = cx - (isz + 60 + nw) // 2
+    canvas.paste(icon, (gx, 560), m)
+    d.text((gx + isz + 60, 560 + isz / 2 - nh * 0.62), name, font=nf, fill=NAVY, stroke_width=4, stroke_fill=NAVY)
+
+    size = 240
     while True:
         hf = font(lang, size)
-        if sum(d.textsize(p, font=hf)[0] for p in head) <= 2000 or size <= 120:
+        widths = [d.textsize(p, font=hf)[0] for p in head]
+        if sum(widths) <= 2150 or size <= 120:
             break
         size -= 5
-    x = x0
-    for part, col in zip(head, (NAVY, RED)):
-        d.text((x, 1290), part, font=hf, fill=col, stroke_width=6, stroke_fill=col)
-        x += d.textsize(part, font=hf)[0]
+    x = cx - sum(widths) / 2
+    for part, w_, col in zip(head, widths, (NAVY, RED)):
+        d.text((x, 1060), part, font=hf, fill=col, stroke_width=6, stroke_fill=col)
+        x += w_
     sf = font(lang, 130)
     sw = d.textsize(sub, font=sf)[0]
-    rrect(d, [x0 - 10, 1700, x0 + sw + 150, 1930], 115, (255, 255, 255))
-    d.text((x0 + 70, 1735), sub, font=sf, fill=SUBTXT)
+    rrect(d, [cx - sw / 2 - 80, 1480, cx + sw / 2 + 80, 1710], 115, (255, 255, 255))
+    d.text((cx - sw / 2, 1515), sub, font=sf, fill=SUBTXT)
 
-    # right block: three phones fanned out, kept inside the central height
-    shots = [os.path.join(RAW, lang, f'{n}.png') for n in ('battle1', 'correct', 'result')]
-    for path, cx, cy, ang, wd in [(shots[2], 4280, 1500, -8, 680), (shots[0], 3330, 1500, 8, 680), (shots[1], 3800, 1440, 0, 780)]:
+    # phones on both sides: decoration only, fine if a crop cuts them
+    shots = {n: os.path.join(RAW, lang, f'{n}.png') for n in ('battle1', 'correct', 'result')}
+    for path, px, py, ang, wd in [(shots['correct'], 700, 1550, 8, 760), (shots['result'], 4544, 1550, -8, 760)]:
         t = phone(path, wd, ang)
-        canvas.paste(t, (cx - t.width // 2, cy - t.height // 2), t)
+        canvas.paste(t, (px - t.width // 2, py - t.height // 2), t)
 
     out = os.path.join(OUT, lang)
     os.makedirs(out, exist_ok=True)
