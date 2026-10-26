@@ -640,46 +640,6 @@
     ]
   },
   {
-    "id": "n4_033",
-    "kanji": "発表",
-    "kana": "はっぴょう",
-    "meaning_zh": "發表",
-    "meaning_en": "presentation/announcement",
-    "category": "職場學校",
-    "category_en": "Work & School",
-    "level": "N4",
-    "distractors": [
-      "發現",
-      "發明",
-      "發燒"
-    ],
-    "distractors_en": [
-      "discovery",
-      "invention",
-      "fever"
-    ]
-  },
-  {
-    "id": "n4_034",
-    "kanji": "申し込む",
-    "kana": "もうしこむ",
-    "meaning_zh": "申請、報名",
-    "meaning_en": "to apply/register",
-    "category": "職場學校",
-    "category_en": "Work & School",
-    "level": "N4",
-    "distractors": [
-      "取消",
-      "拒絕",
-      "確認"
-    ],
-    "distractors_en": [
-      "to cancel",
-      "to refuse",
-      "to confirm"
-    ]
-  },
-  {
     "id": "n4_035",
     "kanji": "相談",
     "kana": "そうだん",
@@ -760,26 +720,6 @@
     ]
   },
   {
-    "id": "n4_039",
-    "kanji": "報告",
-    "kana": "ほうこく",
-    "meaning_zh": "報告",
-    "meaning_en": "report",
-    "category": "職場學校",
-    "category_en": "Work & School",
-    "level": "N4",
-    "distractors": [
-      "廣告",
-      "忠告",
-      "預告"
-    ],
-    "distractors_en": [
-      "advertisement",
-      "advice/warning",
-      "advance notice"
-    ]
-  },
-  {
     "id": "n4_040",
     "kanji": "注意",
     "kana": "ちゅうい",
@@ -837,26 +777,6 @@
       "arrival",
       "exit",
       "attendance"
-    ]
-  },
-  {
-    "id": "n4_043",
-    "kanji": "到着",
-    "kana": "とうちゃく",
-    "meaning_zh": "到達",
-    "meaning_en": "arrival",
-    "category": "交通旅行",
-    "category_en": "Transport & Travel",
-    "level": "N4",
-    "distractors": [
-      "出發",
-      "出口",
-      "通過"
-    ],
-    "distractors_en": [
-      "departure",
-      "exit",
-      "passing through"
     ]
   },
   {
@@ -1220,26 +1140,6 @@
     ]
   },
   {
-    "id": "n4_062",
-    "kanji": "割引",
-    "kana": "わりびき",
-    "meaning_zh": "折扣",
-    "meaning_en": "discount",
-    "category": "買物食事",
-    "category_en": "Shopping & Food",
-    "level": "N4",
-    "distractors": [
-      "比例",
-      "漲價",
-      "定價"
-    ],
-    "distractors_en": [
-      "ratio/percentage",
-      "price increase",
-      "regular price"
-    ]
-  },
-  {
     "id": "n4_063",
     "kanji": "注文",
     "kana": "ちゅうもん",
@@ -1297,26 +1197,6 @@
       "tip",
       "tax",
       "receipt"
-    ]
-  },
-  {
-    "id": "n4_066",
-    "kanji": "届く",
-    "kana": "とどく",
-    "meaning_zh": "（貨物）送達",
-    "meaning_en": "to be delivered (goods)",
-    "category": "買物食事",
-    "category_en": "Shopping & Food",
-    "level": "N4",
-    "distractors": [
-      "退貨",
-      "寄出",
-      "購買"
-    ],
-    "distractors_en": [
-      "to return goods",
-      "to ship out",
-      "to purchase"
     ]
   },
   {
@@ -1460,46 +1340,6 @@
     ]
   },
   {
-    "id": "n4_074",
-    "kanji": "煮る",
-    "kana": "にる",
-    "meaning_zh": "煮",
-    "meaning_en": "to boil/simmer",
-    "category": "買物食事",
-    "category_en": "Shopping & Food",
-    "level": "N4",
-    "distractors": [
-      "烤",
-      "炒",
-      "蒸"
-    ],
-    "distractors_en": [
-      "to grill",
-      "to stir-fry",
-      "to steam"
-    ]
-  },
-  {
-    "id": "n4_075",
-    "kanji": "冷める",
-    "kana": "さめる",
-    "meaning_zh": "變涼",
-    "meaning_en": "to cool down",
-    "category": "買物食事",
-    "category_en": "Shopping & Food",
-    "level": "N4",
-    "distractors": [
-      "變熱",
-      "加熱",
-      "沸騰"
-    ],
-    "distractors_en": [
-      "to get hot",
-      "to heat up",
-      "to boil"
-    ]
-  },
-  {
     "id": "n4_076",
     "kanji": "足りる",
     "kana": "たりる",
@@ -1540,26 +1380,6 @@
     ]
   },
   {
-    "id": "n4_078",
-    "kanji": "送料",
-    "kana": "そうりょう",
-    "meaning_zh": "運費",
-    "meaning_en": "shipping fee",
-    "category": "買物食事",
-    "category_en": "Shopping & Food",
-    "level": "N4",
-    "distractors": [
-      "學費",
-      "材料",
-      "原料"
-    ],
-    "distractors_en": [
-      "tuition fee",
-      "material",
-      "raw material"
-    ]
-  },
-  {
     "id": "n4_079",
     "kanji": "湯",
     "kana": "ゆ",
@@ -1577,26 +1397,6 @@
       "ice water",
       "cold water",
       "spring water"
-    ]
-  },
-  {
-    "id": "n4_080",
-    "kanji": "丼",
-    "kana": "どんぶり",
-    "meaning_zh": "蓋飯",
-    "meaning_en": "rice bowl dish",
-    "category": "買物食事",
-    "category_en": "Shopping & Food",
-    "level": "N4",
-    "distractors": [
-      "壽司",
-      "拉麵",
-      "便當"
-    ],
-    "distractors_en": [
-      "sushi",
-      "ramen",
-      "bento box"
     ]
   },
   {
@@ -1740,26 +1540,6 @@
     ]
   },
   {
-    "id": "n4_088",
-    "kanji": "仲直り",
-    "kana": "なかなおり",
-    "meaning_zh": "和好",
-    "meaning_en": "making up/reconciliation",
-    "category": "人間關係",
-    "category_en": "Relationships",
-    "level": "N4",
-    "distractors": [
-      "吵架",
-      "分手",
-      "冷戰"
-    ],
-    "distractors_en": [
-      "fight/argument",
-      "breakup",
-      "cold war"
-    ]
-  },
-  {
     "id": "n4_089",
     "kanji": "別れる",
     "kana": "わかれる",
@@ -1817,26 +1597,6 @@
       "to refuse",
       "to avoid",
       "to dislike"
-    ]
-  },
-  {
-    "id": "n4_092",
-    "kanji": "断る",
-    "kana": "ことわる",
-    "meaning_zh": "拒絕",
-    "meaning_en": "to refuse/decline",
-    "category": "人間關係",
-    "category_en": "Relationships",
-    "level": "N4",
-    "distractors": [
-      "接受",
-      "答應",
-      "邀請"
-    ],
-    "distractors_en": [
-      "to accept",
-      "to agree",
-      "to invite"
     ]
   },
   {
@@ -1977,26 +1737,6 @@
       "rudeness",
       "impoliteness",
       "being generous"
-    ]
-  },
-  {
-    "id": "n4_100",
-    "kanji": "我慢",
-    "kana": "がまん",
-    "meaning_zh": "忍耐",
-    "meaning_en": "patience/endurance",
-    "category": "人間關係",
-    "category_en": "Relationships",
-    "level": "N4",
-    "distractors": [
-      "放棄",
-      "爆發",
-      "撒嬌"
-    ],
-    "distractors_en": [
-      "giving up",
-      "outburst",
-      "being spoiled"
     ]
   },
   {
@@ -2520,26 +2260,6 @@
     ]
   },
   {
-    "id": "n4_127",
-    "kanji": "伝わる",
-    "kana": "つたわる",
-    "meaning_zh": "被傳達",
-    "meaning_en": "to be conveyed/transmitted",
-    "category": "動詞進階",
-    "category_en": "Verbs",
-    "level": "N4",
-    "distractors": [
-      "被破壞",
-      "阻擋",
-      "消失"
-    ],
-    "distractors_en": [
-      "to be broken",
-      "to block",
-      "to disappear"
-    ]
-  },
-  {
     "id": "n4_128",
     "kanji": "変わる",
     "kana": "かわる",
@@ -2640,26 +2360,6 @@
     ]
   },
   {
-    "id": "n4_133",
-    "kanji": "減る",
-    "kana": "へる",
-    "meaning_zh": "減少",
-    "meaning_en": "to decrease",
-    "category": "動詞進階",
-    "category_en": "Verbs",
-    "level": "N4",
-    "distractors": [
-      "增加",
-      "擴大",
-      "成長"
-    ],
-    "distractors_en": [
-      "to increase",
-      "to expand",
-      "to grow"
-    ]
-  },
-  {
     "id": "n4_134",
     "kanji": "集める",
     "kana": "あつめる",
@@ -2717,26 +2417,6 @@
       "to answer",
       "to solve",
       "to give up"
-    ]
-  },
-  {
-    "id": "n4_137",
-    "kanji": "確かめる",
-    "kana": "たしかめる",
-    "meaning_zh": "確認",
-    "meaning_en": "to confirm/verify",
-    "category": "動詞進階",
-    "category_en": "Verbs",
-    "level": "N4",
-    "distractors": [
-      "懷疑",
-      "忽略",
-      "否定"
-    ],
-    "distractors_en": [
-      "to doubt",
-      "to ignore",
-      "to deny"
     ]
   },
   {
@@ -3180,46 +2860,6 @@
     ]
   },
   {
-    "id": "n4_160",
-    "kanji": "結果",
-    "kana": "けっか",
-    "meaning_zh": "結果",
-    "meaning_en": "result/outcome",
-    "category": "抽象概念",
-    "category_en": "Abstract Concepts",
-    "level": "N4",
-    "distractors": [
-      "原因",
-      "過程",
-      "目的"
-    ],
-    "distractors_en": [
-      "cause",
-      "process",
-      "purpose/goal"
-    ]
-  },
-  {
-    "id": "n4_161",
-    "kanji": "目的",
-    "kana": "もくてき",
-    "meaning_zh": "目的",
-    "meaning_en": "purpose/goal",
-    "category": "抽象概念",
-    "category_en": "Abstract Concepts",
-    "level": "N4",
-    "distractors": [
-      "手段",
-      "結果",
-      "原因"
-    ],
-    "distractors_en": [
-      "means/method",
-      "result",
-      "cause"
-    ]
-  },
-  {
     "id": "n4_162",
     "kanji": "関係",
     "kana": "かんけい",
@@ -3257,26 +2897,6 @@
       "meaning",
       "impression",
       "expression"
-    ]
-  },
-  {
-    "id": "n4_164",
-    "kanji": "感想",
-    "kana": "かんそう",
-    "meaning_zh": "感想",
-    "meaning_en": "impressions/thoughts",
-    "category": "抽象概念",
-    "category_en": "Abstract Concepts",
-    "level": "N4",
-    "distractors": [
-      "計畫",
-      "理想",
-      "空想"
-    ],
-    "distractors_en": [
-      "plan",
-      "ideal",
-      "fantasy"
     ]
   },
   {
@@ -3377,26 +2997,6 @@
       "conclusion",
       "result",
       "purpose/goal"
-    ]
-  },
-  {
-    "id": "n4_170",
-    "kanji": "程度",
-    "kana": "ていど",
-    "meaning_zh": "程度",
-    "meaning_en": "degree/extent",
-    "category": "抽象概念",
-    "category_en": "Abstract Concepts",
-    "level": "N4",
-    "distractors": [
-      "態度",
-      "速度",
-      "溫度"
-    ],
-    "distractors_en": [
-      "attitude",
-      "speed",
-      "temperature"
     ]
   },
   {
@@ -3597,26 +3197,6 @@
       "to wither",
       "to scatter",
       "to plant"
-    ]
-  },
-  {
-    "id": "n4_181",
-    "kanji": "枯れる",
-    "kana": "かれる",
-    "meaning_zh": "枯萎",
-    "meaning_en": "to wither/die (plant)",
-    "category": "自然季節",
-    "category_en": "Nature & Seasons",
-    "level": "N4",
-    "distractors": [
-      "開花",
-      "生長",
-      "結果"
-    ],
-    "distractors_en": [
-      "to bloom",
-      "to grow",
-      "to bear fruit"
     ]
   },
   {
@@ -3940,46 +3520,6 @@
     ]
   },
   {
-    "id": "n4_198",
-    "kanji": "選挙",
-    "kana": "せんきょ",
-    "meaning_zh": "選舉",
-    "meaning_en": "election",
-    "category": "其他常用",
-    "category_en": "General",
-    "level": "N4",
-    "distractors": [
-      "選手",
-      "天氣預報",
-      "畢業"
-    ],
-    "distractors_en": [
-      "athlete/player",
-      "graduation",
-      "weather forecast"
-    ]
-  },
-  {
-    "id": "n4_199",
-    "kanji": "情報",
-    "kana": "じょうほう",
-    "meaning_zh": "資訊",
-    "meaning_en": "information",
-    "category": "其他常用",
-    "category_en": "General",
-    "level": "N4",
-    "distractors": [
-      "報酬",
-      "預報",
-      "報告"
-    ],
-    "distractors_en": [
-      "reward/pay",
-      "forecast",
-      "report"
-    ]
-  },
-  {
     "id": "n4_200",
     "kanji": "最近",
     "kana": "さいきん",
@@ -3997,6 +3537,86 @@
       "first time/beginning",
       "last/end",
       "highest/best"
+    ]
+  },
+  {
+    "id": "n2_050",
+    "kanji": "競争",
+    "kana": "きょうそう",
+    "meaning_zh": "競爭",
+    "meaning_en": "competition",
+    "category": "仕事・経済",
+    "category_en": "Business",
+    "level": "N4",
+    "distractors": [
+      "合作",
+      "讓步",
+      "休戰"
+    ],
+    "distractors_en": [
+      "cooperation",
+      "concession",
+      "ceasefire"
+    ]
+  },
+  {
+    "id": "n2_112",
+    "kanji": "文学",
+    "kana": "ぶんがく",
+    "meaning_zh": "文學",
+    "meaning_en": "literature",
+    "category": "文化・芸術",
+    "category_en": "Culture & Arts",
+    "level": "N4",
+    "distractors": [
+      "數學",
+      "物理",
+      "經濟學"
+    ],
+    "distractors_en": [
+      "mathematics",
+      "physics",
+      "economics"
+    ]
+  },
+  {
+    "id": "n2_146",
+    "kanji": "法律",
+    "kana": "ほうりつ",
+    "meaning_zh": "法律",
+    "meaning_en": "law",
+    "category": "制度・法律",
+    "category_en": "Law",
+    "level": "N4",
+    "distractors": [
+      "習俗",
+      "道德",
+      "禮儀"
+    ],
+    "distractors_en": [
+      "custom",
+      "morality",
+      "etiquette"
+    ]
+  },
+  {
+    "id": "n3_090",
+    "kanji": "問題",
+    "kana": "もんだい",
+    "meaning_zh": "問題",
+    "meaning_en": "problem/issue",
+    "category": "社会",
+    "category_en": "Society",
+    "level": "N4",
+    "distractors": [
+      "答案",
+      "解決",
+      "成功"
+    ],
+    "distractors_en": [
+      "answer",
+      "solution",
+      "success"
     ]
   }
 ]
