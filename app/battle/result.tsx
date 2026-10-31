@@ -172,7 +172,15 @@ export default function ResultScreen() {
                 {/* Question header */}
                 <View style={styles.qHeader}>
                   <Text style={styles.qNum}>Q{i + 1}</Text>
-                  <Text style={styles.qWord}>{q.word.kanji}</Text>
+                  {/* Textbook style: kana (furigana) above the kanji; kana-only words just once */}
+                  <View style={styles.qWordBox}>
+                    <View style={styles.qRuby}>
+                      {q.word.kanji !== q.word.kana && (
+                        <Text style={styles.qFurigana}>{q.word.kana}</Text>
+                      )}
+                      <Text style={styles.qWord}>{q.word.kanji}</Text>
+                    </View>
+                  </View>
                   <Text style={styles.qAnswer}>→ {lang === 'en' ? q.word.meaning_en : q.word.meaning_zh}</Text>
                   <Pressable
                     onPress={() => openReport(i)}
@@ -362,7 +370,10 @@ const styles = StyleSheet.create({
     paddingBottom: 8,
   },
   qNum: { fontSize: 12, color: '#7F8C8D', width: 24 },
-  qWord: { fontSize: 18, fontWeight: 'bold', color: '#fff', flex: 1 },
+  qWordBox: { flex: 1, alignItems: 'flex-start' },
+  qRuby: { alignItems: 'center' },
+  qFurigana: { fontSize: 11, color: '#BDC3C7', marginBottom: 1 },
+  qWord: { fontSize: 18, fontWeight: 'bold', color: '#fff' },
   qAnswer: { fontSize: 13, color: '#BDC3C7', flexShrink: 1 },
   reportFlag: { fontSize: 15, opacity: 0.7, marginLeft: 4 },
   reportDone: { fontSize: 15, color: '#27AE60', fontWeight: 'bold', marginLeft: 4 },
