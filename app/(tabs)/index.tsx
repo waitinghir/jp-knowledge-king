@@ -9,7 +9,7 @@ import {
   View,
 } from 'react-native';
 import { useFocusEffect, useRouter } from 'expo-router';
-import { loadPlayerData } from '../../utils/storage';
+import { loadPlayerData, loadWordLevel, saveWordLevel } from '../../utils/storage';
 import { onPlayerDataRestored } from '../../utils/cloudSync';
 import { INITIAL_PLAYER_DATA, SCORE_PER_LEVEL } from '../../types';
 import type { PlayerData, WordLevel } from '../../types';
@@ -25,6 +25,7 @@ export default function HomeScreen() {
   useFocusEffect(
     useCallback(() => {
       loadPlayerData().then(setPlayer);
+      loadWordLevel().then(setWordLevel);
     }, [])
   );
 
@@ -108,7 +109,10 @@ export default function HomeScreen() {
             <Pressable
               key={lv}
               style={[styles.levelBtn, wordLevel === lv && styles.levelBtnActive]}
-              onPress={() => setWordLevel(lv)}
+              onPress={() => {
+                setWordLevel(lv);
+                saveWordLevel(lv);
+              }}
             >
               <Text style={[styles.levelBtnText, wordLevel === lv && styles.levelBtnTextActive]}>
                 {lv === 'N4' ? s.levelN4 : lv === 'N3' ? s.levelN3 : lv === 'N2' ? s.levelN2 : lv === '生活' ? s.levelLife : s.levelAll}
