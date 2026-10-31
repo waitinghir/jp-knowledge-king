@@ -74,20 +74,19 @@ export const ROOKIE_GAMES = 10;
  * Ranges below are at full strength; during the first ROOKIE_GAMES battles they
  * start lower and rise in even steps, so a new player can win early and the
  * AI does not jump in strength from one battle to the next.
- * - 2+ consecutive losses → easy mode (0.50–0.65; 0.35–0.50 in the first battle)
- * - 2+ consecutive wins  → hard mode (0.85–0.95), only after ROOKIE_GAMES
- * - otherwise            → normal (0.70–0.85; 0.45–0.60 in the first battle)
+ * Tuned so a player with ~50% accuracy wins ~35–40% of battles long term.
+ * - lost the last battle  → easy mode (0.45–0.60; 0.35–0.50 in the first battle)
+ * - 3 consecutive wins    → hard mode (0.85–0.95), only after ROOKIE_GAMES
+ * - otherwise             → normal (0.60–0.75; 0.45–0.60 in the first battle)
  */
 export function adaptiveDifficulty(recentOutcomes: BattleOutcome[], gamesPlayed = ROOKIE_GAMES): number {
   const last = recentOutcomes.slice(-3);
-  const consecutiveLosses = [...last].reverse().findIndex((o) => o !== 'lose');
-  const consecutiveWins  = [...last].reverse().findIndex((o) => o !== 'win');
-  const loseStreak = consecutiveLosses === -1 ? last.length : consecutiveLosses;
-  const winStreak  = consecutiveWins  === -1 ? last.length : consecutiveWins;
+  const consecutiveWins = [...last].reverse().findIndex((o) => o !== 'win');
+  const winStreak = consecutiveWins === -1 ? last.length : consecutiveWins;
 
   const ramp = Math.min(1, gamesPlayed / ROOKIE_GAMES); // 0 → 1 over the first battles
 
-  if (loseStreak >= 2) return 0.35 + 0.15 * ramp + Math.random() * 0.15;
-  if (winStreak  >= 2 && ramp === 1) return 0.85 + Math.random() * 0.10;
-  return 0.45 + 0.25 * ramp + Math.random() * 0.15;
+  if (last[last.length - 1] === 'lose') return 0.35 + 0.10 * ramp + Math.random() * 0.15;
+  if (winStreak >= 3 && ramp === 1) return 0.85 + Math.random() * 0.10;
+  return 0.45 + 0.15 * ramp + Math.random() * 0.15;
 }
