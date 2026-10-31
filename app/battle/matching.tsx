@@ -65,7 +65,7 @@ export default function MatchingScreen() {
     async function runMatch() {
       const playerData = await loadPlayerData();
       const opp = generateOpponent(playerData.level);
-      const difficulty = adaptiveDifficulty(playerData.recentOutcomes ?? []);
+      const difficulty = adaptiveDifficulty(playerData.recentOutcomes ?? [], playerData.gamesPlayed);
 
       // Wait 1.2s to simulate "searching"
       await new Promise((r) => setTimeout(r, 1200));

@@ -46,8 +46,9 @@ export function simulateAIAnswer(
 
   let timeUsed: number;
   if (isCorrect) {
-    // Correct: 2–6 seconds (uniformly random, biased faster)
-    timeUsed = 2 + Math.random() * 4;
+    // Correct: 2–6 seconds (uniformly random, biased faster);
+    // easier opponents (< 0.65) also answer a bit slower: 3–7 seconds
+    timeUsed = (difficulty < 0.65 ? 3 : 2) + Math.random() * 4;
   } else {
     // Incorrect: 5–9 seconds (biased slower, simulates hesitation)
     timeUsed = 5 + Math.random() * 4;
@@ -65,20 +66,27 @@ export function randomDifficulty(): number {
   return 0.7 + Math.random() * 0.2;
 }
 
+/** New players face a weaker AI that ramps up to full strength over this many battles. */
+export const ROOKIE_GAMES = 10;
+
 /**
  * Rubber-band difficulty: adjust AI strength based on recent outcomes.
- * - 2+ consecutive losses → easy mode (0.50–0.65)
- * - 2+ consecutive wins  → hard mode (0.85–0.95)
- * - otherwise            → normal (0.70–0.85)
+ * Ranges below are at full strength; during the first ROOKIE_GAMES battles they
+ * start lower and rise in even steps, so a new player can win early and the
+ * AI does not jump in strength from one battle to the next.
+ * Tuned so a player with ~50% accuracy wins ~35–40% of battles long term.
+ * - lost the last battle  → easy mode (0.45–0.60; 0.35–0.50 in the first battle)
+ * - 3 consecutive wins    → hard mode (0.85–0.95), only after ROOKIE_GAMES
+ * - otherwise             → normal (0.60–0.75; 0.45–0.60 in the first battle)
  */
-export function adaptiveDifficulty(recentOutcomes: BattleOutcome[]): number {
+export function adaptiveDifficulty(recentOutcomes: BattleOutcome[], gamesPlayed = ROOKIE_GAMES): number {
   const last = recentOutcomes.slice(-3);
-  const consecutiveLosses = [...last].reverse().findIndex((o) => o !== 'lose');
-  const consecutiveWins  = [...last].reverse().findIndex((o) => o !== 'win');
-  const loseStreak = consecutiveLosses === -1 ? last.length : consecutiveLosses;
-  const winStreak  = consecutiveWins  === -1 ? last.length : consecutiveWins;
+  const consecutiveWins = [...last].reverse().findIndex((o) => o !== 'win');
+  const winStreak = consecutiveWins === -1 ? last.length : consecutiveWins;
 
-  if (loseStreak >= 2) return 0.50 + Math.random() * 0.15; // 0.50–0.65
-  if (winStreak  >= 2) return 0.85 + Math.random() * 0.10; // 0.85–0.95
-  return 0.70 + Math.random() * 0.15;                       // 0.70–0.85
+  const ramp = Math.min(1, gamesPlayed / ROOKIE_GAMES); // 0 → 1 over the first battles
+
+  if (last[last.length - 1] === 'lose') return 0.35 + 0.10 * ramp + Math.random() * 0.15;
+  if (winStreak >= 3 && ramp === 1) return 0.85 + Math.random() * 0.10;
+  return 0.45 + 0.15 * ramp + Math.random() * 0.15;
 }
