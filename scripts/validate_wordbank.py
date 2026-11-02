@@ -66,7 +66,12 @@ STOPWORDS = {'to', 'be', 'the', 'a', 'an', 'of', 'and', 'or', 'in', 'on', 'at',
 # kanji/kana pairs that are correct but cannot be split per character:
 # whole-word readings (jukujikun) and kanji outside jōyō + jinmeiyō.
 READING_EXCEPTIONS = {('景色', 'けしき'), ('お土産', 'おみやげ'), ('真面目', 'まじめ'),
-                      ('躊躇', 'ちゅうちょ')}
+                      ('躊躇', 'ちゅうちょ'), ('お母さん', 'おかあさん'), ('お父さん', 'おとうさん'),
+                      ('お兄さん', 'おにいさん'), ('お姉さん', 'おねえさん'), ('大人', 'おとな'),
+                      ('部屋', 'へや'), ('時計', 'とけい'), ('眼鏡', 'めがね'), ('石鹸', 'せっけん'),
+                      ('切手', 'きって'), ('果物', 'くだもの'), ('不味い', 'まずい'), ('八百屋', 'やおや'),
+                      ('切符', 'きっぷ'), ('下手', 'へた'), ('温い', 'ぬるい'), ('明日', 'あした'),
+                      ('今日', 'きょう'), ('今朝', 'けさ'), ('今年', 'ことし')}
 
 with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'kanji_readings.json'),
           encoding='utf-8') as _f:

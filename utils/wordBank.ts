@@ -1,9 +1,14 @@
 import type { Word } from '../types';
+import localN5 from '../data/n5-words.json';
 import localN4 from '../data/n4-words.json';
 import localN3 from '../data/n3-words.json';
 import localN2 from '../data/n2-words.json';
 
 const SOURCES: Array<{ url: string; local: Word[] }> = [
+  {
+    url: 'https://raw.githubusercontent.com/waitinghir/jp-knowledge-king/main/data/n5-words.json',
+    local: localN5 as Word[],
+  },
   {
     url: 'https://raw.githubusercontent.com/waitinghir/jp-knowledge-king/main/data/n4-words.json',
     local: localN4 as Word[],
