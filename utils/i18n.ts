@@ -38,6 +38,16 @@ export const strings = {
     levelAll: '全部',
     levelHiragana: '平假名',
     levelKatakana: '片假名',
+    levelCaption: {
+      hiragana: '平假名・清音、濁音、拗音',
+      katakana: '片假名・清音、濁音、拗音',
+      N5: 'JLPT N5 單字',
+      N4: 'JLPT N4 單字',
+      N3: 'JLPT N3 單字',
+      N2: 'JLPT N2 單字',
+      生活: '在日本生活的常用詞',
+      all: '所有單字隨機出題',
+    },
     kanaPickReading: '選出讀音',
     kanaPickKana: '選出假名',
 
@@ -122,6 +132,16 @@ export const strings = {
     levelAll: 'All',
     levelHiragana: 'Hiragana',
     levelKatakana: 'Katakana',
+    levelCaption: {
+      hiragana: 'Hiragana · basic, voiced and combined',
+      katakana: 'Katakana · basic, voiced and combined',
+      N5: 'JLPT N5 vocabulary',
+      N4: 'JLPT N4 vocabulary',
+      N3: 'JLPT N3 vocabulary',
+      N2: 'JLPT N2 vocabulary',
+      生活: 'Everyday words for life in Japan',
+      all: 'All vocabulary, mixed',
+    },
     kanaPickReading: 'pick the reading',
     kanaPickKana: 'pick the kana',
 
