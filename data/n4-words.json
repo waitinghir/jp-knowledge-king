@@ -3618,5 +3618,385 @@
       "solution",
       "success"
     ]
+  },
+  {
+    "id": "n4x_001",
+    "kanji": "浅い",
+    "kana": "あさい",
+    "meaning_zh": "淺",
+    "meaning_en": "shallow",
+    "category": "形容詞副詞",
+    "category_en": "Adjectives",
+    "level": "N4",
+    "distractors": [
+      "深",
+      "寬",
+      "遠"
+    ],
+    "distractors_en": [
+      "deep",
+      "wide",
+      "far"
+    ]
+  },
+  {
+    "id": "n4x_002",
+    "kanji": "田舎",
+    "kana": "いなか",
+    "meaning_zh": "鄉下",
+    "meaning_en": "countryside",
+    "category": "自然季節",
+    "category_en": "Nature & Seasons",
+    "level": "N4",
+    "distractors": [
+      "都市",
+      "首都",
+      "市中心"
+    ],
+    "distractors_en": [
+      "city",
+      "capital",
+      "downtown"
+    ]
+  },
+  {
+    "id": "n4x_003",
+    "kanji": "嘘",
+    "kana": "うそ",
+    "meaning_zh": "謊話",
+    "meaning_en": "lie",
+    "category": "人間關係",
+    "category_en": "Relationships",
+    "level": "N4",
+    "distractors": [
+      "事實",
+      "承諾",
+      "道歉"
+    ],
+    "distractors_en": [
+      "fact",
+      "promise",
+      "apology"
+    ]
+  },
+  {
+    "id": "n4x_004",
+    "kanji": "腕",
+    "kana": "うで",
+    "meaning_zh": "手臂",
+    "meaning_en": "arm",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N4",
+    "distractors": [
+      "脖子",
+      "膝蓋",
+      "腳踝"
+    ],
+    "distractors_en": [
+      "neck",
+      "knee",
+      "ankle"
+    ]
+  },
+  {
+    "id": "n4x_005",
+    "kanji": "枝",
+    "kana": "えだ",
+    "meaning_zh": "樹枝",
+    "meaning_en": "branch (of a tree)",
+    "category": "自然季節",
+    "category_en": "Nature & Seasons",
+    "level": "N4",
+    "distractors": [
+      "樹根",
+      "花瓣",
+      "果實"
+    ],
+    "distractors_en": [
+      "root",
+      "petal",
+      "fruit"
+    ]
+  },
+  {
+    "id": "n4x_006",
+    "kanji": "屋上",
+    "kana": "おくじょう",
+    "meaning_zh": "屋頂（平台）",
+    "meaning_en": "rooftop",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N4",
+    "distractors": [
+      "地下室",
+      "走廊",
+      "庭院"
+    ],
+    "distractors_en": [
+      "basement",
+      "corridor",
+      "yard"
+    ]
+  },
+  {
+    "id": "n4x_007",
+    "kanji": "贈り物",
+    "kana": "おくりもの",
+    "meaning_zh": "禮物",
+    "meaning_en": "gift",
+    "category": "人間關係",
+    "category_en": "Relationships",
+    "level": "N4",
+    "distractors": [
+      "帳單",
+      "收據",
+      "借款"
+    ],
+    "distractors_en": [
+      "bill",
+      "receipt",
+      "loan"
+    ]
+  },
+  {
+    "id": "n4x_008",
+    "kanji": "踊る",
+    "kana": "おどる",
+    "meaning_zh": "跳舞",
+    "meaning_en": "to dance",
+    "category": "動詞進階",
+    "category_en": "Verbs",
+    "level": "N4",
+    "distractors": [
+      "唱歌",
+      "游泳",
+      "睡覺"
+    ],
+    "distractors_en": [
+      "to sing",
+      "to swim",
+      "to sleep"
+    ]
+  },
+  {
+    "id": "n4x_009",
+    "kanji": "お祭り",
+    "kana": "おまつり",
+    "meaning_zh": "祭典、廟會",
+    "meaning_en": "festival",
+    "category": "文化・芸術",
+    "category_en": "Culture & Arts",
+    "level": "N4",
+    "distractors": [
+      "葬禮",
+      "會議",
+      "考試"
+    ],
+    "distractors_en": [
+      "funeral",
+      "meeting",
+      "exam"
+    ]
+  },
+  {
+    "id": "n4x_010",
+    "kanji": "鏡",
+    "kana": "かがみ",
+    "meaning_zh": "鏡子",
+    "meaning_en": "mirror",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N4",
+    "distractors": [
+      "梳子",
+      "窗簾",
+      "時鐘"
+    ],
+    "distractors_en": [
+      "comb",
+      "curtain",
+      "clock"
+    ]
+  },
+  {
+    "id": "n4x_011",
+    "kanji": "壁",
+    "kana": "かべ",
+    "meaning_zh": "牆壁",
+    "meaning_en": "wall",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N4",
+    "distractors": [
+      "地板",
+      "屋頂",
+      "樓梯"
+    ],
+    "distractors_en": [
+      "floor",
+      "roof",
+      "stairs"
+    ]
+  },
+  {
+    "id": "n4x_012",
+    "kanji": "絹",
+    "kana": "きぬ",
+    "meaning_zh": "絲綢",
+    "meaning_en": "silk",
+    "category": "買物食事",
+    "category_en": "Shopping & Food",
+    "level": "N4",
+    "distractors": [
+      "棉花",
+      "皮革",
+      "羊毛"
+    ],
+    "distractors_en": [
+      "cotton",
+      "leather",
+      "wool"
+    ]
+  },
+  {
+    "id": "n4x_013",
+    "kanji": "草",
+    "kana": "くさ",
+    "meaning_zh": "草",
+    "meaning_en": "grass",
+    "category": "自然季節",
+    "category_en": "Nature & Seasons",
+    "level": "N4",
+    "distractors": [
+      "石頭",
+      "沙子",
+      "樹木"
+    ],
+    "distractors_en": [
+      "stone",
+      "sand",
+      "tree"
+    ]
+  },
+  {
+    "id": "n4x_014",
+    "kanji": "首",
+    "kana": "くび",
+    "meaning_zh": "脖子",
+    "meaning_en": "neck",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N4",
+    "distractors": [
+      "手臂",
+      "腰",
+      "膝蓋"
+    ],
+    "distractors_en": [
+      "arm",
+      "waist",
+      "knee"
+    ]
+  },
+  {
+    "id": "n4x_015",
+    "kanji": "警察",
+    "kana": "けいさつ",
+    "meaning_zh": "警察",
+    "meaning_en": "police",
+    "category": "社会",
+    "category_en": "Society",
+    "level": "N4",
+    "distractors": [
+      "消防隊",
+      "醫生",
+      "郵差"
+    ],
+    "distractors_en": [
+      "fire brigade",
+      "doctor",
+      "mail carrier"
+    ]
+  },
+  {
+    "id": "n4x_016",
+    "kanji": "消しゴム",
+    "kana": "けしゴム",
+    "meaning_zh": "橡皮擦",
+    "meaning_en": "eraser",
+    "category": "職場學校",
+    "category_en": "Work & School",
+    "level": "N4",
+    "distractors": [
+      "尺",
+      "剪刀",
+      "鉛筆盒"
+    ],
+    "distractors_en": [
+      "ruler",
+      "scissors",
+      "pencil case"
+    ]
+  },
+  {
+    "id": "n4x_017",
+    "kanji": "運転手",
+    "kana": "うんてんしゅ",
+    "meaning_zh": "司機",
+    "meaning_en": "driver",
+    "category": "交通旅行",
+    "category_en": "Transport & Travel",
+    "level": "N4",
+    "distractors": [
+      "乘客",
+      "導遊",
+      "售票員"
+    ],
+    "distractors_en": [
+      "passenger",
+      "tour guide",
+      "ticket seller"
+    ]
+  },
+  {
+    "id": "n4x_018",
+    "kanji": "急ぐ",
+    "kana": "いそぐ",
+    "meaning_zh": "趕快、急忙",
+    "meaning_en": "to hurry",
+    "category": "動詞進階",
+    "category_en": "Verbs",
+    "level": "N4",
+    "distractors": [
+      "慢慢來",
+      "休息",
+      "等待"
+    ],
+    "distractors_en": [
+      "to take one's time",
+      "to rest",
+      "to wait"
+    ]
+  },
+  {
+    "id": "n4x_019",
+    "kanji": "選ぶ",
+    "kana": "えらぶ",
+    "meaning_zh": "選擇",
+    "meaning_en": "to choose",
+    "category": "動詞進階",
+    "category_en": "Verbs",
+    "level": "N4",
+    "distractors": [
+      "拒絕",
+      "丟棄",
+      "借"
+    ],
+    "distractors_en": [
+      "to refuse",
+      "to discard",
+      "to borrow"
+    ]
   }
 ]

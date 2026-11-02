@@ -3898,5 +3898,785 @@
       "seniority",
       "hobby"
     ]
+  },
+  {
+    "id": "n3x_001",
+    "kanji": "汗",
+    "kana": "あせ",
+    "meaning_zh": "汗",
+    "meaning_en": "sweat",
+    "category": "健康",
+    "category_en": "Health",
+    "level": "N3",
+    "distractors": [
+      "眼淚",
+      "血",
+      "口水"
+    ],
+    "distractors_en": [
+      "tears",
+      "blood",
+      "saliva"
+    ]
+  },
+  {
+    "id": "n3x_002",
+    "kanji": "穴",
+    "kana": "あな",
+    "meaning_zh": "洞、孔",
+    "meaning_en": "hole",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N3",
+    "distractors": [
+      "山丘",
+      "牆壁",
+      "蓋子"
+    ],
+    "distractors_en": [
+      "hill",
+      "wall",
+      "lid"
+    ]
+  },
+  {
+    "id": "n3x_003",
+    "kanji": "嵐",
+    "kana": "あらし",
+    "meaning_zh": "暴風雨",
+    "meaning_en": "storm",
+    "category": "自然",
+    "category_en": "Nature",
+    "level": "N3",
+    "distractors": [
+      "晴天",
+      "彩虹",
+      "微風"
+    ],
+    "distractors_en": [
+      "clear sky",
+      "rainbow",
+      "breeze"
+    ]
+  },
+  {
+    "id": "n3x_004",
+    "kanji": "アイロン",
+    "kana": "アイロン",
+    "meaning_zh": "熨斗",
+    "meaning_en": "iron (for clothes)",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "吸塵器",
+      "吹風機",
+      "洗衣機"
+    ],
+    "distractors_en": [
+      "vacuum cleaner",
+      "hair dryer",
+      "washing machine"
+    ]
+  },
+  {
+    "id": "n3x_005",
+    "kanji": "握手",
+    "kana": "あくしゅ",
+    "meaning_zh": "握手",
+    "meaning_en": "handshake",
+    "category": "人間関係",
+    "category_en": "Relationships",
+    "level": "N3",
+    "distractors": [
+      "鞠躬",
+      "擁抱",
+      "揮手"
+    ],
+    "distractors_en": [
+      "bow",
+      "hug",
+      "wave"
+    ]
+  },
+  {
+    "id": "n3x_006",
+    "kanji": "岩",
+    "kana": "いわ",
+    "meaning_zh": "岩石",
+    "meaning_en": "rock",
+    "category": "自然",
+    "category_en": "Nature",
+    "level": "N3",
+    "distractors": [
+      "沙子",
+      "泥土",
+      "樹葉"
+    ],
+    "distractors_en": [
+      "sand",
+      "mud",
+      "leaf"
+    ]
+  },
+  {
+    "id": "n3x_007",
+    "kanji": "命",
+    "kana": "いのち",
+    "meaning_zh": "生命",
+    "meaning_en": "life",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N3",
+    "distractors": [
+      "死亡",
+      "夢想",
+      "財產"
+    ],
+    "distractors_en": [
+      "death",
+      "dream",
+      "property"
+    ]
+  },
+  {
+    "id": "n3x_008",
+    "kanji": "兎",
+    "kana": "うさぎ",
+    "meaning_zh": "兔子",
+    "meaning_en": "rabbit",
+    "category": "自然",
+    "category_en": "Nature",
+    "level": "N3",
+    "distractors": [
+      "烏龜",
+      "狐狸",
+      "松鼠"
+    ],
+    "distractors_en": [
+      "turtle",
+      "fox",
+      "squirrel"
+    ]
+  },
+  {
+    "id": "n3x_009",
+    "kanji": "牛",
+    "kana": "うし",
+    "meaning_zh": "牛",
+    "meaning_en": "cow, cattle",
+    "category": "自然",
+    "category_en": "Nature",
+    "level": "N3",
+    "distractors": [
+      "羊",
+      "豬",
+      "雞"
+    ],
+    "distractors_en": [
+      "sheep",
+      "pig",
+      "chicken"
+    ]
+  },
+  {
+    "id": "n3x_010",
+    "kanji": "馬",
+    "kana": "うま",
+    "meaning_zh": "馬",
+    "meaning_en": "horse",
+    "category": "自然",
+    "category_en": "Nature",
+    "level": "N3",
+    "distractors": [
+      "驢子",
+      "駱駝",
+      "鹿"
+    ],
+    "distractors_en": [
+      "donkey",
+      "camel",
+      "deer"
+    ]
+  },
+  {
+    "id": "n3x_011",
+    "kanji": "噂",
+    "kana": "うわさ",
+    "meaning_zh": "傳聞、謠言",
+    "meaning_en": "rumor",
+    "category": "人間関係",
+    "category_en": "Relationships",
+    "level": "N3",
+    "distractors": [
+      "事實",
+      "證據",
+      "公告"
+    ],
+    "distractors_en": [
+      "fact",
+      "evidence",
+      "official notice"
+    ]
+  },
+  {
+    "id": "n3x_012",
+    "kanji": "笑顔",
+    "kana": "えがお",
+    "meaning_zh": "笑臉",
+    "meaning_en": "smiling face",
+    "category": "感情",
+    "category_en": "Emotions",
+    "level": "N3",
+    "distractors": [
+      "哭臉",
+      "怒容",
+      "睡臉"
+    ],
+    "distractors_en": [
+      "crying face",
+      "angry look",
+      "sleeping face"
+    ]
+  },
+  {
+    "id": "n3x_013",
+    "kanji": "王様",
+    "kana": "おうさま",
+    "meaning_zh": "國王",
+    "meaning_en": "king",
+    "category": "社会",
+    "category_en": "Society",
+    "level": "N3",
+    "distractors": [
+      "平民",
+      "士兵",
+      "奴隸"
+    ],
+    "distractors_en": [
+      "commoner",
+      "soldier",
+      "slave"
+    ]
+  },
+  {
+    "id": "n3x_014",
+    "kanji": "丘",
+    "kana": "おか",
+    "meaning_zh": "山丘",
+    "meaning_en": "hill",
+    "category": "自然",
+    "category_en": "Nature",
+    "level": "N3",
+    "distractors": [
+      "山谷",
+      "湖泊",
+      "洞穴"
+    ],
+    "distractors_en": [
+      "valley",
+      "lake",
+      "cave"
+    ]
+  },
+  {
+    "id": "n3x_015",
+    "kanji": "鬼",
+    "kana": "おに",
+    "meaning_zh": "鬼、惡鬼",
+    "meaning_en": "ogre, demon",
+    "category": "文化",
+    "category_en": "Culture",
+    "level": "N3",
+    "distractors": [
+      "天使",
+      "神明",
+      "仙女"
+    ],
+    "distractors_en": [
+      "angel",
+      "god",
+      "fairy"
+    ]
+  },
+  {
+    "id": "n3x_016",
+    "kanji": "輝く",
+    "kana": "かがやく",
+    "meaning_zh": "閃耀",
+    "meaning_en": "to shine, to sparkle",
+    "category": "自然",
+    "category_en": "Nature",
+    "level": "N3",
+    "distractors": [
+      "變暗",
+      "熄滅",
+      "生鏽"
+    ],
+    "distractors_en": [
+      "to grow dark",
+      "to go out (light)",
+      "to rust"
+    ]
+  },
+  {
+    "id": "n3x_017",
+    "kanji": "隠す",
+    "kana": "かくす",
+    "meaning_zh": "隱藏",
+    "meaning_en": "to hide (something)",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N3",
+    "distractors": [
+      "展示",
+      "公開",
+      "交出"
+    ],
+    "distractors_en": [
+      "to display",
+      "to make public",
+      "to hand over"
+    ]
+  },
+  {
+    "id": "n3x_018",
+    "kanji": "歌手",
+    "kana": "かしゅ",
+    "meaning_zh": "歌手",
+    "meaning_en": "singer",
+    "category": "文化",
+    "category_en": "Culture",
+    "level": "N3",
+    "distractors": [
+      "畫家",
+      "作家",
+      "演員"
+    ],
+    "distractors_en": [
+      "painter",
+      "writer",
+      "actor"
+    ]
+  },
+  {
+    "id": "n3x_019",
+    "kanji": "数える",
+    "kana": "かぞえる",
+    "meaning_zh": "數、計算數量",
+    "meaning_en": "to count",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N3",
+    "distractors": [
+      "猜測",
+      "忘記",
+      "分享"
+    ],
+    "distractors_en": [
+      "to guess",
+      "to forget",
+      "to share"
+    ]
+  },
+  {
+    "id": "n3x_020",
+    "kanji": "雷",
+    "kana": "かみなり",
+    "meaning_zh": "雷",
+    "meaning_en": "thunder",
+    "category": "自然",
+    "category_en": "Nature",
+    "level": "N3",
+    "distractors": [
+      "彩虹",
+      "霧",
+      "霜"
+    ],
+    "distractors_en": [
+      "rainbow",
+      "fog",
+      "frost"
+    ]
+  },
+  {
+    "id": "n3x_021",
+    "kanji": "患者",
+    "kana": "かんじゃ",
+    "meaning_zh": "病人、患者",
+    "meaning_en": "patient",
+    "category": "健康",
+    "category_en": "Health",
+    "level": "N3",
+    "distractors": [
+      "醫生",
+      "護理師",
+      "藥劑師"
+    ],
+    "distractors_en": [
+      "doctor",
+      "nurse",
+      "pharmacist"
+    ]
+  },
+  {
+    "id": "n3x_022",
+    "kanji": "気温",
+    "kana": "きおん",
+    "meaning_zh": "氣溫",
+    "meaning_en": "air temperature",
+    "category": "自然",
+    "category_en": "Nature",
+    "level": "N3",
+    "distractors": [
+      "濕度",
+      "風向",
+      "降雨量"
+    ],
+    "distractors_en": [
+      "humidity",
+      "wind direction",
+      "rainfall"
+    ]
+  },
+  {
+    "id": "n3x_023",
+    "kanji": "傷",
+    "kana": "きず",
+    "meaning_zh": "傷口",
+    "meaning_en": "wound",
+    "category": "健康",
+    "category_en": "Health",
+    "level": "N3",
+    "distractors": [
+      "發燒",
+      "咳嗽",
+      "頭痛"
+    ],
+    "distractors_en": [
+      "fever",
+      "cough",
+      "headache"
+    ]
+  },
+  {
+    "id": "n3x_024",
+    "kanji": "休憩",
+    "kana": "きゅうけい",
+    "meaning_zh": "休息",
+    "meaning_en": "break, rest",
+    "category": "仕事",
+    "category_en": "Work",
+    "level": "N3",
+    "distractors": [
+      "加班",
+      "開會",
+      "出差"
+    ],
+    "distractors_en": [
+      "overtime",
+      "meeting",
+      "business trip"
+    ]
+  },
+  {
+    "id": "n3x_025",
+    "kanji": "教科書",
+    "kana": "きょうかしょ",
+    "meaning_zh": "課本",
+    "meaning_en": "textbook",
+    "category": "教育",
+    "category_en": "Education",
+    "level": "N3",
+    "distractors": [
+      "黑板",
+      "考卷",
+      "成績單"
+    ],
+    "distractors_en": [
+      "blackboard",
+      "exam paper",
+      "report card"
+    ]
+  },
+  {
+    "id": "n3x_026",
+    "kanji": "筋肉",
+    "kana": "きんにく",
+    "meaning_zh": "肌肉",
+    "meaning_en": "muscle",
+    "category": "健康",
+    "category_en": "Health",
+    "level": "N3",
+    "distractors": [
+      "骨頭",
+      "皮膚",
+      "頭髮"
+    ],
+    "distractors_en": [
+      "bone",
+      "skin",
+      "hair"
+    ]
+  },
+  {
+    "id": "n3x_027",
+    "kanji": "腐る",
+    "kana": "くさる",
+    "meaning_zh": "腐爛",
+    "meaning_en": "to rot, to go bad",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "成熟",
+      "冷凍",
+      "烤熟"
+    ],
+    "distractors_en": [
+      "to ripen",
+      "to freeze",
+      "to be roasted"
+    ]
+  },
+  {
+    "id": "n3x_028",
+    "kanji": "癖",
+    "kana": "くせ",
+    "meaning_zh": "習慣、癖好",
+    "meaning_en": "habit",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N3",
+    "distractors": [
+      "規則",
+      "意外",
+      "計畫"
+    ],
+    "distractors_en": [
+      "rule",
+      "accident",
+      "plan"
+    ]
+  },
+  {
+    "id": "n3x_029",
+    "kanji": "煙",
+    "kana": "けむり",
+    "meaning_zh": "煙",
+    "meaning_en": "smoke",
+    "category": "自然",
+    "category_en": "Nature",
+    "level": "N3",
+    "distractors": [
+      "水滴",
+      "灰塵",
+      "火花"
+    ],
+    "distractors_en": [
+      "water drop",
+      "dust",
+      "spark"
+    ]
+  },
+  {
+    "id": "n3x_030",
+    "kanji": "氷",
+    "kana": "こおり",
+    "meaning_zh": "冰",
+    "meaning_en": "ice",
+    "category": "自然",
+    "category_en": "Nature",
+    "level": "N3",
+    "distractors": [
+      "蒸氣",
+      "火焰",
+      "沙子"
+    ],
+    "distractors_en": [
+      "steam",
+      "flame",
+      "sand"
+    ]
+  },
+  {
+    "id": "n3x_031",
+    "kanji": "腰",
+    "kana": "こし",
+    "meaning_zh": "腰",
+    "meaning_en": "lower back, waist",
+    "category": "健康",
+    "category_en": "Health",
+    "level": "N3",
+    "distractors": [
+      "肩膀",
+      "脖子",
+      "膝蓋"
+    ],
+    "distractors_en": [
+      "shoulder",
+      "neck",
+      "knee"
+    ]
+  },
+  {
+    "id": "n3x_032",
+    "kanji": "小包",
+    "kana": "こづつみ",
+    "meaning_zh": "包裹",
+    "meaning_en": "parcel",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "明信片",
+      "郵票",
+      "信封"
+    ],
+    "distractors_en": [
+      "postcard",
+      "stamp",
+      "envelope"
+    ]
+  },
+  {
+    "id": "n3x_033",
+    "kanji": "粉",
+    "kana": "こな",
+    "meaning_zh": "粉、粉末",
+    "meaning_en": "powder, flour",
+    "category": "日常生活",
+    "category_en": "Daily Life",
+    "level": "N3",
+    "distractors": [
+      "液體",
+      "塊狀物",
+      "方糖"
+    ],
+    "distractors_en": [
+      "liquid",
+      "lump",
+      "sugar cube"
+    ]
+  },
+  {
+    "id": "n3x_034",
+    "kanji": "小麦",
+    "kana": "こむぎ",
+    "meaning_zh": "小麥",
+    "meaning_en": "wheat",
+    "category": "自然",
+    "category_en": "Nature",
+    "level": "N3",
+    "distractors": [
+      "稻米",
+      "玉米",
+      "大豆"
+    ],
+    "distractors_en": [
+      "rice plant",
+      "corn",
+      "soybean"
+    ]
+  },
+  {
+    "id": "n3x_035",
+    "kanji": "転ぶ",
+    "kana": "ころぶ",
+    "meaning_zh": "跌倒",
+    "meaning_en": "to fall over",
+    "category": "その他",
+    "category_en": "General",
+    "level": "N3",
+    "distractors": [
+      "站起來",
+      "跳起來",
+      "坐下"
+    ],
+    "distractors_en": [
+      "to stand up",
+      "to jump up",
+      "to sit down"
+    ]
+  },
+  {
+    "id": "n3x_036",
+    "kanji": "桜",
+    "kana": "さくら",
+    "meaning_zh": "櫻花",
+    "meaning_en": "cherry blossom",
+    "category": "自然",
+    "category_en": "Nature",
+    "level": "N3",
+    "distractors": [
+      "梅花",
+      "菊花",
+      "向日葵"
+    ],
+    "distractors_en": [
+      "plum blossom",
+      "chrysanthemum",
+      "sunflower"
+    ]
+  },
+  {
+    "id": "n3x_037",
+    "kanji": "叫ぶ",
+    "kana": "さけぶ",
+    "meaning_zh": "大叫、喊",
+    "meaning_en": "to shout",
+    "category": "感情",
+    "category_en": "Emotions",
+    "level": "N3",
+    "distractors": [
+      "低語",
+      "沉默",
+      "哼歌"
+    ],
+    "distractors_en": [
+      "to whisper",
+      "to stay silent",
+      "to hum"
+    ]
+  },
+  {
+    "id": "n3x_038",
+    "kanji": "骨折",
+    "kana": "こっせつ",
+    "meaning_zh": "骨折",
+    "meaning_en": "bone fracture",
+    "category": "健康",
+    "category_en": "Health",
+    "level": "N3",
+    "distractors": [
+      "扭傷",
+      "燙傷",
+      "蛀牙"
+    ],
+    "distractors_en": [
+      "sprain",
+      "burn",
+      "tooth decay"
+    ]
+  },
+  {
+    "id": "n3x_039",
+    "kanji": "幸せ",
+    "kana": "しあわせ",
+    "meaning_zh": "幸福",
+    "meaning_en": "happiness",
+    "category": "感情",
+    "category_en": "Emotions",
+    "level": "N3",
+    "distractors": [
+      "不幸",
+      "憤怒",
+      "孤獨"
+    ],
+    "distractors_en": [
+      "misfortune",
+      "anger",
+      "loneliness"
+    ]
   }
 ]

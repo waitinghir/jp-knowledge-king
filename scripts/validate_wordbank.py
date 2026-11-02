@@ -71,6 +71,9 @@ with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'kanji_readin
 DAKUTEN = dict(zip('かきくけこさしすせそたちつてとはひふへほ', 'がぎぐげござじずぜぞだぢづでどばびぶべぼ'))
 HANDAKUTEN = dict(zip('はひふへほ', 'ぱぴぷぺぽ'))
 
+# N4 / N3 backfill (2026-11): whole-word readings and 連濁 the splitter misses
+READING_EXCEPTIONS |= {('小包', 'こづつみ'), ('田舎', 'いなか'), ('嘘', 'うそ')}
+
 
 def hira(s):
     return ''.join(chr(ord(c) - 0x60) if 'ァ' <= c <= 'ヶ' else c for c in s)
