@@ -1,0 +1,2426 @@
+[
+  {
+    "id": "h_a",
+    "kana": "あ",
+    "romaji": "a",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "お",
+      "め",
+      "ぬ"
+    ]
+  },
+  {
+    "id": "h_i",
+    "kana": "い",
+    "romaji": "i",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "り",
+      "こ",
+      "た"
+    ]
+  },
+  {
+    "id": "h_u",
+    "kana": "う",
+    "romaji": "u",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "つ",
+      "ら",
+      "ろ"
+    ]
+  },
+  {
+    "id": "h_e",
+    "kana": "え",
+    "romaji": "e",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "ん",
+      "そ",
+      "あ"
+    ]
+  },
+  {
+    "id": "h_o",
+    "kana": "お",
+    "romaji": "o",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "あ",
+      "め",
+      "ぬ"
+    ]
+  },
+  {
+    "id": "h_ka",
+    "kana": "か",
+    "romaji": "ka",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "や",
+      "が",
+      "き"
+    ]
+  },
+  {
+    "id": "h_ki",
+    "kana": "き",
+    "romaji": "ki",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "さ",
+      "ち",
+      "ま"
+    ]
+  },
+  {
+    "id": "h_ku",
+    "kana": "く",
+    "romaji": "ku",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "へ",
+      "し",
+      "ぐ"
+    ]
+  },
+  {
+    "id": "h_ke",
+    "kana": "け",
+    "romaji": "ke",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "は",
+      "ほ",
+      "に"
+    ]
+  },
+  {
+    "id": "h_ko",
+    "kana": "こ",
+    "romaji": "ko",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "た",
+      "に",
+      "い"
+    ]
+  },
+  {
+    "id": "h_sa",
+    "kana": "さ",
+    "romaji": "sa",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "き",
+      "ち",
+      "ま"
+    ]
+  },
+  {
+    "id": "h_shi",
+    "kana": "し",
+    "romaji": "shi",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "も",
+      "つ",
+      "く"
+    ]
+  },
+  {
+    "id": "h_su",
+    "kana": "す",
+    "romaji": "su",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "む",
+      "お",
+      "あ"
+    ]
+  },
+  {
+    "id": "h_se",
+    "kana": "せ",
+    "romaji": "se",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "や",
+      "も",
+      "ぜ"
+    ]
+  },
+  {
+    "id": "h_so",
+    "kana": "そ",
+    "romaji": "so",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "え",
+      "ん",
+      "て"
+    ]
+  },
+  {
+    "id": "h_ta",
+    "kana": "た",
+    "romaji": "ta",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "な",
+      "に",
+      "け"
+    ]
+  },
+  {
+    "id": "h_chi",
+    "kana": "ち",
+    "romaji": "chi",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "さ",
+      "ら",
+      "る"
+    ]
+  },
+  {
+    "id": "h_tsu",
+    "kana": "つ",
+    "romaji": "tsu",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "う",
+      "ら",
+      "し"
+    ]
+  },
+  {
+    "id": "h_te",
+    "kana": "て",
+    "romaji": "te",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "そ",
+      "で",
+      "た"
+    ]
+  },
+  {
+    "id": "h_to",
+    "kana": "と",
+    "romaji": "to",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "ど",
+      "こ",
+      "た"
+    ]
+  },
+  {
+    "id": "h_na",
+    "kana": "な",
+    "romaji": "na",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "た",
+      "に",
+      "け"
+    ]
+  },
+  {
+    "id": "h_ni",
+    "kana": "に",
+    "romaji": "ni",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "け",
+      "は",
+      "ほ"
+    ]
+  },
+  {
+    "id": "h_nu",
+    "kana": "ぬ",
+    "romaji": "nu",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "あ",
+      "お",
+      "め"
+    ]
+  },
+  {
+    "id": "h_ne",
+    "kana": "ね",
+    "romaji": "ne",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "れ",
+      "わ",
+      "ぬ"
+    ]
+  },
+  {
+    "id": "h_no",
+    "kana": "の",
+    "romaji": "no",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "あ",
+      "お",
+      "め"
+    ]
+  },
+  {
+    "id": "h_ha",
+    "kana": "は",
+    "romaji": "ha",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "ほ",
+      "よ",
+      "け"
+    ]
+  },
+  {
+    "id": "h_hi",
+    "kana": "ひ",
+    "romaji": "hi",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "び",
+      "ぴ",
+      "は"
+    ]
+  },
+  {
+    "id": "h_fu",
+    "kana": "ふ",
+    "romaji": "fu",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "ぶ",
+      "ぷ",
+      "う"
+    ]
+  },
+  {
+    "id": "h_he",
+    "kana": "へ",
+    "romaji": "he",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "く",
+      "し",
+      "べ"
+    ]
+  },
+  {
+    "id": "h_ho",
+    "kana": "ほ",
+    "romaji": "ho",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "け",
+      "は",
+      "に"
+    ]
+  },
+  {
+    "id": "h_ma",
+    "kana": "ま",
+    "romaji": "ma",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "も",
+      "ほ",
+      "よ"
+    ]
+  },
+  {
+    "id": "h_mi",
+    "kana": "み",
+    "romaji": "mi",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "あ",
+      "む",
+      "ま"
+    ]
+  },
+  {
+    "id": "h_mu",
+    "kana": "む",
+    "romaji": "mu",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "す",
+      "お",
+      "あ"
+    ]
+  },
+  {
+    "id": "h_me",
+    "kana": "め",
+    "romaji": "me",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "ぬ",
+      "あ",
+      "ね"
+    ]
+  },
+  {
+    "id": "h_mo",
+    "kana": "も",
+    "romaji": "mo",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "せ",
+      "や",
+      "ま"
+    ]
+  },
+  {
+    "id": "h_ya",
+    "kana": "や",
+    "romaji": "ya",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "か",
+      "せ",
+      "も"
+    ]
+  },
+  {
+    "id": "h_yu",
+    "kana": "ゆ",
+    "romaji": "yu",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "よ",
+      "る",
+      "や"
+    ]
+  },
+  {
+    "id": "h_yo",
+    "kana": "よ",
+    "romaji": "yo",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "ま",
+      "ほ",
+      "は"
+    ]
+  },
+  {
+    "id": "h_ra",
+    "kana": "ら",
+    "romaji": "ra",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "う",
+      "ろ",
+      "る"
+    ]
+  },
+  {
+    "id": "h_ri",
+    "kana": "り",
+    "romaji": "ri",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "い",
+      "こ",
+      "ら"
+    ]
+  },
+  {
+    "id": "h_ru",
+    "kana": "る",
+    "romaji": "ru",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "ろ",
+      "ら",
+      "ち"
+    ]
+  },
+  {
+    "id": "h_re",
+    "kana": "れ",
+    "romaji": "re",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "ね",
+      "わ",
+      "ぬ"
+    ]
+  },
+  {
+    "id": "h_ro",
+    "kana": "ろ",
+    "romaji": "ro",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "る",
+      "ら",
+      "ち"
+    ]
+  },
+  {
+    "id": "h_wa",
+    "kana": "わ",
+    "romaji": "wa",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "れ",
+      "ね",
+      "ぬ"
+    ]
+  },
+  {
+    "id": "h_n",
+    "kana": "ん",
+    "romaji": "n",
+    "script": "hiragana",
+    "group": "seion",
+    "distractors": [
+      "え",
+      "そ",
+      "な"
+    ]
+  },
+  {
+    "id": "h_ga",
+    "kana": "が",
+    "romaji": "ga",
+    "script": "hiragana",
+    "group": "dakuon",
+    "distractors": [
+      "か",
+      "ぎ",
+      "ぐ"
+    ]
+  },
+  {
+    "id": "h_gi",
+    "kana": "ぎ",
+    "romaji": "gi",
+    "script": "hiragana",
+    "group": "dakuon",
+    "distractors": [
+      "き",
+      "が",
+      "ぐ"
+    ]
+  },
+  {
+    "id": "h_gu",
+    "kana": "ぐ",
+    "romaji": "gu",
+    "script": "hiragana",
+    "group": "dakuon",
+    "distractors": [
+      "く",
+      "が",
+      "ぎ"
+    ]
+  },
+  {
+    "id": "h_ge",
+    "kana": "げ",
+    "romaji": "ge",
+    "script": "hiragana",
+    "group": "dakuon",
+    "distractors": [
+      "け",
+      "が",
+      "ぎ"
+    ]
+  },
+  {
+    "id": "h_go",
+    "kana": "ご",
+    "romaji": "go",
+    "script": "hiragana",
+    "group": "dakuon",
+    "distractors": [
+      "こ",
+      "が",
+      "ぎ"
+    ]
+  },
+  {
+    "id": "h_za",
+    "kana": "ざ",
+    "romaji": "za",
+    "script": "hiragana",
+    "group": "dakuon",
+    "distractors": [
+      "さ",
+      "ず",
+      "ぜ"
+    ]
+  },
+  {
+    "id": "h_ji",
+    "kana": "じ",
+    "romaji": "ji",
+    "script": "hiragana",
+    "group": "dakuon",
+    "distractors": [
+      "し",
+      "ぎ",
+      "び"
+    ]
+  },
+  {
+    "id": "h_zu",
+    "kana": "ず",
+    "romaji": "zu",
+    "script": "hiragana",
+    "group": "dakuon",
+    "distractors": [
+      "す",
+      "ざ",
+      "ぜ"
+    ]
+  },
+  {
+    "id": "h_ze",
+    "kana": "ぜ",
+    "romaji": "ze",
+    "script": "hiragana",
+    "group": "dakuon",
+    "distractors": [
+      "せ",
+      "ざ",
+      "ず"
+    ]
+  },
+  {
+    "id": "h_zo",
+    "kana": "ぞ",
+    "romaji": "zo",
+    "script": "hiragana",
+    "group": "dakuon",
+    "distractors": [
+      "そ",
+      "ざ",
+      "ず"
+    ]
+  },
+  {
+    "id": "h_da",
+    "kana": "だ",
+    "romaji": "da",
+    "script": "hiragana",
+    "group": "dakuon",
+    "distractors": [
+      "た",
+      "で",
+      "ど"
+    ]
+  },
+  {
+    "id": "h_de",
+    "kana": "で",
+    "romaji": "de",
+    "script": "hiragana",
+    "group": "dakuon",
+    "distractors": [
+      "て",
+      "だ",
+      "ど"
+    ]
+  },
+  {
+    "id": "h_do",
+    "kana": "ど",
+    "romaji": "do",
+    "script": "hiragana",
+    "group": "dakuon",
+    "distractors": [
+      "と",
+      "こ",
+      "だ"
+    ]
+  },
+  {
+    "id": "h_ba",
+    "kana": "ば",
+    "romaji": "ba",
+    "script": "hiragana",
+    "group": "dakuon",
+    "distractors": [
+      "ぱ",
+      "び",
+      "ぶ"
+    ]
+  },
+  {
+    "id": "h_bi",
+    "kana": "び",
+    "romaji": "bi",
+    "script": "hiragana",
+    "group": "dakuon",
+    "distractors": [
+      "ひ",
+      "ぴ",
+      "ば"
+    ]
+  },
+  {
+    "id": "h_bu",
+    "kana": "ぶ",
+    "romaji": "bu",
+    "script": "hiragana",
+    "group": "dakuon",
+    "distractors": [
+      "ふ",
+      "ぷ",
+      "ば"
+    ]
+  },
+  {
+    "id": "h_be",
+    "kana": "べ",
+    "romaji": "be",
+    "script": "hiragana",
+    "group": "dakuon",
+    "distractors": [
+      "ぺ",
+      "ば",
+      "び"
+    ]
+  },
+  {
+    "id": "h_bo",
+    "kana": "ぼ",
+    "romaji": "bo",
+    "script": "hiragana",
+    "group": "dakuon",
+    "distractors": [
+      "ぽ",
+      "ば",
+      "び"
+    ]
+  },
+  {
+    "id": "h_pa",
+    "kana": "ぱ",
+    "romaji": "pa",
+    "script": "hiragana",
+    "group": "dakuon",
+    "distractors": [
+      "ば",
+      "ぴ",
+      "ぷ"
+    ]
+  },
+  {
+    "id": "h_pi",
+    "kana": "ぴ",
+    "romaji": "pi",
+    "script": "hiragana",
+    "group": "dakuon",
+    "distractors": [
+      "ひ",
+      "び",
+      "ぱ"
+    ]
+  },
+  {
+    "id": "h_pu",
+    "kana": "ぷ",
+    "romaji": "pu",
+    "script": "hiragana",
+    "group": "dakuon",
+    "distractors": [
+      "ふ",
+      "ぶ",
+      "ぱ"
+    ]
+  },
+  {
+    "id": "h_pe",
+    "kana": "ぺ",
+    "romaji": "pe",
+    "script": "hiragana",
+    "group": "dakuon",
+    "distractors": [
+      "べ",
+      "ぱ",
+      "ぴ"
+    ]
+  },
+  {
+    "id": "h_po",
+    "kana": "ぽ",
+    "romaji": "po",
+    "script": "hiragana",
+    "group": "dakuon",
+    "distractors": [
+      "ぼ",
+      "ぱ",
+      "ぴ"
+    ]
+  },
+  {
+    "id": "h_kya",
+    "kana": "きゃ",
+    "romaji": "kya",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "きゅ",
+      "きょ",
+      "ちゃ"
+    ]
+  },
+  {
+    "id": "h_kyu",
+    "kana": "きゅ",
+    "romaji": "kyu",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "きゃ",
+      "きょ",
+      "ちゅ"
+    ]
+  },
+  {
+    "id": "h_kyo",
+    "kana": "きょ",
+    "romaji": "kyo",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "きゃ",
+      "きゅ",
+      "ちょ"
+    ]
+  },
+  {
+    "id": "h_sha",
+    "kana": "しゃ",
+    "romaji": "sha",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "しゅ",
+      "しょ",
+      "じゃ"
+    ]
+  },
+  {
+    "id": "h_shu",
+    "kana": "しゅ",
+    "romaji": "shu",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "しゃ",
+      "しょ",
+      "じゅ"
+    ]
+  },
+  {
+    "id": "h_sho",
+    "kana": "しょ",
+    "romaji": "sho",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "しゃ",
+      "しゅ",
+      "じょ"
+    ]
+  },
+  {
+    "id": "h_cha",
+    "kana": "ちゃ",
+    "romaji": "cha",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "ちゅ",
+      "ちょ",
+      "きゃ"
+    ]
+  },
+  {
+    "id": "h_chu",
+    "kana": "ちゅ",
+    "romaji": "chu",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "ちゃ",
+      "ちょ",
+      "きゅ"
+    ]
+  },
+  {
+    "id": "h_cho",
+    "kana": "ちょ",
+    "romaji": "cho",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "ちゃ",
+      "ちゅ",
+      "きょ"
+    ]
+  },
+  {
+    "id": "h_nya",
+    "kana": "にゃ",
+    "romaji": "nya",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "にゅ",
+      "にょ",
+      "みゃ"
+    ]
+  },
+  {
+    "id": "h_nyu",
+    "kana": "にゅ",
+    "romaji": "nyu",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "にゃ",
+      "にょ",
+      "みゅ"
+    ]
+  },
+  {
+    "id": "h_nyo",
+    "kana": "にょ",
+    "romaji": "nyo",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "にゃ",
+      "にゅ",
+      "みょ"
+    ]
+  },
+  {
+    "id": "h_hya",
+    "kana": "ひゃ",
+    "romaji": "hya",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "ひゅ",
+      "ひょ",
+      "びゃ"
+    ]
+  },
+  {
+    "id": "h_hyu",
+    "kana": "ひゅ",
+    "romaji": "hyu",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "ひゃ",
+      "ひょ",
+      "びゅ"
+    ]
+  },
+  {
+    "id": "h_hyo",
+    "kana": "ひょ",
+    "romaji": "hyo",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "ひゃ",
+      "ひゅ",
+      "びょ"
+    ]
+  },
+  {
+    "id": "h_mya",
+    "kana": "みゃ",
+    "romaji": "mya",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "みゅ",
+      "みょ",
+      "にゃ"
+    ]
+  },
+  {
+    "id": "h_myu",
+    "kana": "みゅ",
+    "romaji": "myu",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "みゃ",
+      "みょ",
+      "にゅ"
+    ]
+  },
+  {
+    "id": "h_myo",
+    "kana": "みょ",
+    "romaji": "myo",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "みゃ",
+      "みゅ",
+      "にょ"
+    ]
+  },
+  {
+    "id": "h_rya",
+    "kana": "りゃ",
+    "romaji": "rya",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "りゅ",
+      "りょ",
+      "にゃ"
+    ]
+  },
+  {
+    "id": "h_ryu",
+    "kana": "りゅ",
+    "romaji": "ryu",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "りゃ",
+      "りょ",
+      "にゅ"
+    ]
+  },
+  {
+    "id": "h_ryo",
+    "kana": "りょ",
+    "romaji": "ryo",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "りゃ",
+      "りゅ",
+      "にょ"
+    ]
+  },
+  {
+    "id": "h_gya",
+    "kana": "ぎゃ",
+    "romaji": "gya",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "ぎゅ",
+      "ぎょ",
+      "きゃ"
+    ]
+  },
+  {
+    "id": "h_gyu",
+    "kana": "ぎゅ",
+    "romaji": "gyu",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "ぎゃ",
+      "ぎょ",
+      "きゅ"
+    ]
+  },
+  {
+    "id": "h_gyo",
+    "kana": "ぎょ",
+    "romaji": "gyo",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "ぎゃ",
+      "ぎゅ",
+      "きょ"
+    ]
+  },
+  {
+    "id": "h_ja",
+    "kana": "じゃ",
+    "romaji": "ja",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "じゅ",
+      "じょ",
+      "しゃ"
+    ]
+  },
+  {
+    "id": "h_ju",
+    "kana": "じゅ",
+    "romaji": "ju",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "じゃ",
+      "じょ",
+      "しゅ"
+    ]
+  },
+  {
+    "id": "h_jo",
+    "kana": "じょ",
+    "romaji": "jo",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "じゃ",
+      "じゅ",
+      "しょ"
+    ]
+  },
+  {
+    "id": "h_bya",
+    "kana": "びゃ",
+    "romaji": "bya",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "びゅ",
+      "びょ",
+      "ひゃ"
+    ]
+  },
+  {
+    "id": "h_byu",
+    "kana": "びゅ",
+    "romaji": "byu",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "びゃ",
+      "びょ",
+      "ひゅ"
+    ]
+  },
+  {
+    "id": "h_byo",
+    "kana": "びょ",
+    "romaji": "byo",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "びゃ",
+      "びゅ",
+      "ひょ"
+    ]
+  },
+  {
+    "id": "h_pya",
+    "kana": "ぴゃ",
+    "romaji": "pya",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "ぴゅ",
+      "ぴょ",
+      "ひゃ"
+    ]
+  },
+  {
+    "id": "h_pyu",
+    "kana": "ぴゅ",
+    "romaji": "pyu",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "ぴゃ",
+      "ぴょ",
+      "ひゅ"
+    ]
+  },
+  {
+    "id": "h_pyo",
+    "kana": "ぴょ",
+    "romaji": "pyo",
+    "script": "hiragana",
+    "group": "yoon",
+    "distractors": [
+      "ぴゃ",
+      "ぴゅ",
+      "ひょ"
+    ]
+  },
+  {
+    "id": "k_a",
+    "kana": "ア",
+    "romaji": "a",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "マ",
+      "ヤ",
+      "ム"
+    ]
+  },
+  {
+    "id": "k_i",
+    "kana": "イ",
+    "romaji": "i",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "ト",
+      "ア",
+      "ウ"
+    ]
+  },
+  {
+    "id": "k_u",
+    "kana": "ウ",
+    "romaji": "u",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "ワ",
+      "ク",
+      "ケ"
+    ]
+  },
+  {
+    "id": "k_e",
+    "kana": "エ",
+    "romaji": "e",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "ニ",
+      "ユ",
+      "ア"
+    ]
+  },
+  {
+    "id": "k_o",
+    "kana": "オ",
+    "romaji": "o",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "ホ",
+      "ア",
+      "イ"
+    ]
+  },
+  {
+    "id": "k_ka",
+    "kana": "カ",
+    "romaji": "ka",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "ヤ",
+      "ガ",
+      "キ"
+    ]
+  },
+  {
+    "id": "k_ki",
+    "kana": "キ",
+    "romaji": "ki",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "モ",
+      "ギ",
+      "カ"
+    ]
+  },
+  {
+    "id": "k_ku",
+    "kana": "ク",
+    "romaji": "ku",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "ケ",
+      "タ",
+      "ワ"
+    ]
+  },
+  {
+    "id": "k_ke",
+    "kana": "ケ",
+    "romaji": "ke",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "ク",
+      "タ",
+      "ワ"
+    ]
+  },
+  {
+    "id": "k_ko",
+    "kana": "コ",
+    "romaji": "ko",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "ユ",
+      "ヨ",
+      "ロ"
+    ]
+  },
+  {
+    "id": "k_sa",
+    "kana": "サ",
+    "romaji": "sa",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "セ",
+      "ザ",
+      "ス"
+    ]
+  },
+  {
+    "id": "k_shi",
+    "kana": "シ",
+    "romaji": "shi",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "ツ",
+      "ミ",
+      "ン"
+    ]
+  },
+  {
+    "id": "k_su",
+    "kana": "ス",
+    "romaji": "su",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "ヌ",
+      "フ",
+      "メ"
+    ]
+  },
+  {
+    "id": "k_se",
+    "kana": "セ",
+    "romaji": "se",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "ヤ",
+      "サ",
+      "ゼ"
+    ]
+  },
+  {
+    "id": "k_so",
+    "kana": "ソ",
+    "romaji": "so",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "ン",
+      "リ",
+      "ノ"
+    ]
+  },
+  {
+    "id": "k_ta",
+    "kana": "タ",
+    "romaji": "ta",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "ク",
+      "ケ",
+      "ワ"
+    ]
+  },
+  {
+    "id": "k_chi",
+    "kana": "チ",
+    "romaji": "chi",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "テ",
+      "ナ",
+      "メ"
+    ]
+  },
+  {
+    "id": "k_tsu",
+    "kana": "ツ",
+    "romaji": "tsu",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "シ",
+      "ソ",
+      "ミ"
+    ]
+  },
+  {
+    "id": "k_te",
+    "kana": "テ",
+    "romaji": "te",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "チ",
+      "ナ",
+      "デ"
+    ]
+  },
+  {
+    "id": "k_to",
+    "kana": "ト",
+    "romaji": "to",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "イ",
+      "ド",
+      "タ"
+    ]
+  },
+  {
+    "id": "k_na",
+    "kana": "ナ",
+    "romaji": "na",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "メ",
+      "チ",
+      "ヌ"
+    ]
+  },
+  {
+    "id": "k_ni",
+    "kana": "ニ",
+    "romaji": "ni",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "エ",
+      "ユ",
+      "ナ"
+    ]
+  },
+  {
+    "id": "k_nu",
+    "kana": "ヌ",
+    "romaji": "nu",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "ス",
+      "フ",
+      "メ"
+    ]
+  },
+  {
+    "id": "k_ne",
+    "kana": "ネ",
+    "romaji": "ne",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "ホ",
+      "ナ",
+      "ニ"
+    ]
+  },
+  {
+    "id": "k_no",
+    "kana": "ノ",
+    "romaji": "no",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "メ",
+      "ソ",
+      "ン"
+    ]
+  },
+  {
+    "id": "k_ha",
+    "kana": "ハ",
+    "romaji": "ha",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "ヘ",
+      "バ",
+      "ヒ"
+    ]
+  },
+  {
+    "id": "k_hi",
+    "kana": "ヒ",
+    "romaji": "hi",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "ビ",
+      "ピ",
+      "ハ"
+    ]
+  },
+  {
+    "id": "k_fu",
+    "kana": "フ",
+    "romaji": "fu",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "ワ",
+      "ヌ",
+      "ラ"
+    ]
+  },
+  {
+    "id": "k_he",
+    "kana": "ヘ",
+    "romaji": "he",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "ハ",
+      "ベ",
+      "ヒ"
+    ]
+  },
+  {
+    "id": "k_ho",
+    "kana": "ホ",
+    "romaji": "ho",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "オ",
+      "ネ",
+      "ボ"
+    ]
+  },
+  {
+    "id": "k_ma",
+    "kana": "マ",
+    "romaji": "ma",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "ム",
+      "ア",
+      "ヤ"
+    ]
+  },
+  {
+    "id": "k_mi",
+    "kana": "ミ",
+    "romaji": "mi",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "シ",
+      "ツ",
+      "ン"
+    ]
+  },
+  {
+    "id": "k_mu",
+    "kana": "ム",
+    "romaji": "mu",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "マ",
+      "ア",
+      "ミ"
+    ]
+  },
+  {
+    "id": "k_me",
+    "kana": "メ",
+    "romaji": "me",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "ナ",
+      "ヌ",
+      "ス"
+    ]
+  },
+  {
+    "id": "k_mo",
+    "kana": "モ",
+    "romaji": "mo",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "キ",
+      "マ",
+      "ミ"
+    ]
+  },
+  {
+    "id": "k_ya",
+    "kana": "ヤ",
+    "romaji": "ya",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "セ",
+      "ア",
+      "マ"
+    ]
+  },
+  {
+    "id": "k_yu",
+    "kana": "ユ",
+    "romaji": "yu",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "コ",
+      "ヨ",
+      "ロ"
+    ]
+  },
+  {
+    "id": "k_yo",
+    "kana": "ヨ",
+    "romaji": "yo",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "ユ",
+      "コ",
+      "ロ"
+    ]
+  },
+  {
+    "id": "k_ra",
+    "kana": "ラ",
+    "romaji": "ra",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "フ",
+      "ワ",
+      "ヌ"
+    ]
+  },
+  {
+    "id": "k_ri",
+    "kana": "リ",
+    "romaji": "ri",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "ソ",
+      "ン",
+      "ノ"
+    ]
+  },
+  {
+    "id": "k_ru",
+    "kana": "ル",
+    "romaji": "ru",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "レ",
+      "ラ",
+      "リ"
+    ]
+  },
+  {
+    "id": "k_re",
+    "kana": "レ",
+    "romaji": "re",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "ル",
+      "ラ",
+      "リ"
+    ]
+  },
+  {
+    "id": "k_ro",
+    "kana": "ロ",
+    "romaji": "ro",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "コ",
+      "ユ",
+      "ヨ"
+    ]
+  },
+  {
+    "id": "k_wa",
+    "kana": "ワ",
+    "romaji": "wa",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "ウ",
+      "ク",
+      "フ"
+    ]
+  },
+  {
+    "id": "k_n",
+    "kana": "ン",
+    "romaji": "n",
+    "script": "katakana",
+    "group": "seion",
+    "distractors": [
+      "ソ",
+      "シ",
+      "ツ"
+    ]
+  },
+  {
+    "id": "k_ga",
+    "kana": "ガ",
+    "romaji": "ga",
+    "script": "katakana",
+    "group": "dakuon",
+    "distractors": [
+      "カ",
+      "ギ",
+      "グ"
+    ]
+  },
+  {
+    "id": "k_gi",
+    "kana": "ギ",
+    "romaji": "gi",
+    "script": "katakana",
+    "group": "dakuon",
+    "distractors": [
+      "キ",
+      "ガ",
+      "グ"
+    ]
+  },
+  {
+    "id": "k_gu",
+    "kana": "グ",
+    "romaji": "gu",
+    "script": "katakana",
+    "group": "dakuon",
+    "distractors": [
+      "ク",
+      "ガ",
+      "ギ"
+    ]
+  },
+  {
+    "id": "k_ge",
+    "kana": "ゲ",
+    "romaji": "ge",
+    "script": "katakana",
+    "group": "dakuon",
+    "distractors": [
+      "ケ",
+      "ガ",
+      "ギ"
+    ]
+  },
+  {
+    "id": "k_go",
+    "kana": "ゴ",
+    "romaji": "go",
+    "script": "katakana",
+    "group": "dakuon",
+    "distractors": [
+      "コ",
+      "ガ",
+      "ギ"
+    ]
+  },
+  {
+    "id": "k_za",
+    "kana": "ザ",
+    "romaji": "za",
+    "script": "katakana",
+    "group": "dakuon",
+    "distractors": [
+      "サ",
+      "ズ",
+      "ゼ"
+    ]
+  },
+  {
+    "id": "k_ji",
+    "kana": "ジ",
+    "romaji": "ji",
+    "script": "katakana",
+    "group": "dakuon",
+    "distractors": [
+      "シ",
+      "ギ",
+      "ビ"
+    ]
+  },
+  {
+    "id": "k_zu",
+    "kana": "ズ",
+    "romaji": "zu",
+    "script": "katakana",
+    "group": "dakuon",
+    "distractors": [
+      "ス",
+      "ザ",
+      "ゼ"
+    ]
+  },
+  {
+    "id": "k_ze",
+    "kana": "ゼ",
+    "romaji": "ze",
+    "script": "katakana",
+    "group": "dakuon",
+    "distractors": [
+      "セ",
+      "ザ",
+      "ズ"
+    ]
+  },
+  {
+    "id": "k_zo",
+    "kana": "ゾ",
+    "romaji": "zo",
+    "script": "katakana",
+    "group": "dakuon",
+    "distractors": [
+      "ソ",
+      "ザ",
+      "ズ"
+    ]
+  },
+  {
+    "id": "k_da",
+    "kana": "ダ",
+    "romaji": "da",
+    "script": "katakana",
+    "group": "dakuon",
+    "distractors": [
+      "タ",
+      "デ",
+      "ド"
+    ]
+  },
+  {
+    "id": "k_de",
+    "kana": "デ",
+    "romaji": "de",
+    "script": "katakana",
+    "group": "dakuon",
+    "distractors": [
+      "テ",
+      "ダ",
+      "ド"
+    ]
+  },
+  {
+    "id": "k_do",
+    "kana": "ド",
+    "romaji": "do",
+    "script": "katakana",
+    "group": "dakuon",
+    "distractors": [
+      "ト",
+      "ダ",
+      "デ"
+    ]
+  },
+  {
+    "id": "k_ba",
+    "kana": "バ",
+    "romaji": "ba",
+    "script": "katakana",
+    "group": "dakuon",
+    "distractors": [
+      "パ",
+      "ビ",
+      "ブ"
+    ]
+  },
+  {
+    "id": "k_bi",
+    "kana": "ビ",
+    "romaji": "bi",
+    "script": "katakana",
+    "group": "dakuon",
+    "distractors": [
+      "ヒ",
+      "ピ",
+      "バ"
+    ]
+  },
+  {
+    "id": "k_bu",
+    "kana": "ブ",
+    "romaji": "bu",
+    "script": "katakana",
+    "group": "dakuon",
+    "distractors": [
+      "プ",
+      "バ",
+      "ビ"
+    ]
+  },
+  {
+    "id": "k_be",
+    "kana": "ベ",
+    "romaji": "be",
+    "script": "katakana",
+    "group": "dakuon",
+    "distractors": [
+      "ペ",
+      "バ",
+      "ビ"
+    ]
+  },
+  {
+    "id": "k_bo",
+    "kana": "ボ",
+    "romaji": "bo",
+    "script": "katakana",
+    "group": "dakuon",
+    "distractors": [
+      "ポ",
+      "バ",
+      "ビ"
+    ]
+  },
+  {
+    "id": "k_pa",
+    "kana": "パ",
+    "romaji": "pa",
+    "script": "katakana",
+    "group": "dakuon",
+    "distractors": [
+      "バ",
+      "ピ",
+      "プ"
+    ]
+  },
+  {
+    "id": "k_pi",
+    "kana": "ピ",
+    "romaji": "pi",
+    "script": "katakana",
+    "group": "dakuon",
+    "distractors": [
+      "ヒ",
+      "ビ",
+      "パ"
+    ]
+  },
+  {
+    "id": "k_pu",
+    "kana": "プ",
+    "romaji": "pu",
+    "script": "katakana",
+    "group": "dakuon",
+    "distractors": [
+      "ブ",
+      "パ",
+      "ピ"
+    ]
+  },
+  {
+    "id": "k_pe",
+    "kana": "ペ",
+    "romaji": "pe",
+    "script": "katakana",
+    "group": "dakuon",
+    "distractors": [
+      "ベ",
+      "パ",
+      "ピ"
+    ]
+  },
+  {
+    "id": "k_po",
+    "kana": "ポ",
+    "romaji": "po",
+    "script": "katakana",
+    "group": "dakuon",
+    "distractors": [
+      "ボ",
+      "パ",
+      "ピ"
+    ]
+  },
+  {
+    "id": "k_kya",
+    "kana": "キャ",
+    "romaji": "kya",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "キュ",
+      "キョ",
+      "ギャ"
+    ]
+  },
+  {
+    "id": "k_kyu",
+    "kana": "キュ",
+    "romaji": "kyu",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "キャ",
+      "キョ",
+      "ギュ"
+    ]
+  },
+  {
+    "id": "k_kyo",
+    "kana": "キョ",
+    "romaji": "kyo",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "キャ",
+      "キュ",
+      "ギョ"
+    ]
+  },
+  {
+    "id": "k_sha",
+    "kana": "シャ",
+    "romaji": "sha",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "シュ",
+      "ショ",
+      "ミャ"
+    ]
+  },
+  {
+    "id": "k_shu",
+    "kana": "シュ",
+    "romaji": "shu",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "シャ",
+      "ショ",
+      "ミュ"
+    ]
+  },
+  {
+    "id": "k_sho",
+    "kana": "ショ",
+    "romaji": "sho",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "シャ",
+      "シュ",
+      "ミョ"
+    ]
+  },
+  {
+    "id": "k_cha",
+    "kana": "チャ",
+    "romaji": "cha",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "チュ",
+      "チョ",
+      "ジャ"
+    ]
+  },
+  {
+    "id": "k_chu",
+    "kana": "チュ",
+    "romaji": "chu",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "チャ",
+      "チョ",
+      "ジュ"
+    ]
+  },
+  {
+    "id": "k_cho",
+    "kana": "チョ",
+    "romaji": "cho",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "チャ",
+      "チュ",
+      "ジョ"
+    ]
+  },
+  {
+    "id": "k_nya",
+    "kana": "ニャ",
+    "romaji": "nya",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "ニュ",
+      "ニョ",
+      "ミャ"
+    ]
+  },
+  {
+    "id": "k_nyu",
+    "kana": "ニュ",
+    "romaji": "nyu",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "ニャ",
+      "ニョ",
+      "ミュ"
+    ]
+  },
+  {
+    "id": "k_nyo",
+    "kana": "ニョ",
+    "romaji": "nyo",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "ニャ",
+      "ニュ",
+      "ミョ"
+    ]
+  },
+  {
+    "id": "k_hya",
+    "kana": "ヒャ",
+    "romaji": "hya",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "ヒュ",
+      "ヒョ",
+      "ビャ"
+    ]
+  },
+  {
+    "id": "k_hyu",
+    "kana": "ヒュ",
+    "romaji": "hyu",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "ヒャ",
+      "ヒョ",
+      "ビュ"
+    ]
+  },
+  {
+    "id": "k_hyo",
+    "kana": "ヒョ",
+    "romaji": "hyo",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "ヒャ",
+      "ヒュ",
+      "ビョ"
+    ]
+  },
+  {
+    "id": "k_mya",
+    "kana": "ミャ",
+    "romaji": "mya",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "ミュ",
+      "ミョ",
+      "シャ"
+    ]
+  },
+  {
+    "id": "k_myu",
+    "kana": "ミュ",
+    "romaji": "myu",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "ミャ",
+      "ミョ",
+      "シュ"
+    ]
+  },
+  {
+    "id": "k_myo",
+    "kana": "ミョ",
+    "romaji": "myo",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "ミャ",
+      "ミュ",
+      "ショ"
+    ]
+  },
+  {
+    "id": "k_rya",
+    "kana": "リャ",
+    "romaji": "rya",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "リュ",
+      "リョ",
+      "ニャ"
+    ]
+  },
+  {
+    "id": "k_ryu",
+    "kana": "リュ",
+    "romaji": "ryu",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "リャ",
+      "リョ",
+      "ニュ"
+    ]
+  },
+  {
+    "id": "k_ryo",
+    "kana": "リョ",
+    "romaji": "ryo",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "リャ",
+      "リュ",
+      "ニョ"
+    ]
+  },
+  {
+    "id": "k_gya",
+    "kana": "ギャ",
+    "romaji": "gya",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "ギュ",
+      "ギョ",
+      "キャ"
+    ]
+  },
+  {
+    "id": "k_gyu",
+    "kana": "ギュ",
+    "romaji": "gyu",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "ギャ",
+      "ギョ",
+      "キュ"
+    ]
+  },
+  {
+    "id": "k_gyo",
+    "kana": "ギョ",
+    "romaji": "gyo",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "ギャ",
+      "ギュ",
+      "キョ"
+    ]
+  },
+  {
+    "id": "k_ja",
+    "kana": "ジャ",
+    "romaji": "ja",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "ジュ",
+      "ジョ",
+      "シャ"
+    ]
+  },
+  {
+    "id": "k_ju",
+    "kana": "ジュ",
+    "romaji": "ju",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "ジャ",
+      "ジョ",
+      "シュ"
+    ]
+  },
+  {
+    "id": "k_jo",
+    "kana": "ジョ",
+    "romaji": "jo",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "ジャ",
+      "ジュ",
+      "ショ"
+    ]
+  },
+  {
+    "id": "k_bya",
+    "kana": "ビャ",
+    "romaji": "bya",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "ビュ",
+      "ビョ",
+      "ヒャ"
+    ]
+  },
+  {
+    "id": "k_byu",
+    "kana": "ビュ",
+    "romaji": "byu",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "ビャ",
+      "ビョ",
+      "ヒュ"
+    ]
+  },
+  {
+    "id": "k_byo",
+    "kana": "ビョ",
+    "romaji": "byo",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "ビャ",
+      "ビュ",
+      "ヒョ"
+    ]
+  },
+  {
+    "id": "k_pya",
+    "kana": "ピャ",
+    "romaji": "pya",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "ピュ",
+      "ピョ",
+      "ヒャ"
+    ]
+  },
+  {
+    "id": "k_pyu",
+    "kana": "ピュ",
+    "romaji": "pyu",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "ピャ",
+      "ピョ",
+      "ヒュ"
+    ]
+  },
+  {
+    "id": "k_pyo",
+    "kana": "ピョ",
+    "romaji": "pyo",
+    "script": "katakana",
+    "group": "yoon",
+    "distractors": [
+      "ピャ",
+      "ピュ",
+      "ヒョ"
+    ]
+  }
+]

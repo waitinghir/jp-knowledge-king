@@ -56,7 +56,7 @@ export async function addBattleResult(
 // Last level picked on the home screen. Kept on the device only (not synced),
 // so returning from a battle — or reopening the app — keeps the choice.
 const WORD_LEVEL_KEY = 'jp_king_word_level';
-const WORD_LEVELS: WordLevel[] = ['N4', 'N3', 'N2', '生活', 'all'];
+const WORD_LEVELS: WordLevel[] = ['N5', 'N4', 'N3', 'N2', '生活', 'all', 'hiragana', 'katakana'];
 
 export async function loadWordLevel(): Promise<WordLevel> {
   try {

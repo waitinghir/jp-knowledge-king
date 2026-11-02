@@ -13,7 +13,23 @@ import { loadPlayerData, loadWordLevel, saveWordLevel } from '../../utils/storag
 import { onPlayerDataRestored } from '../../utils/cloudSync';
 import { INITIAL_PLAYER_DATA, SCORE_PER_LEVEL } from '../../types';
 import type { PlayerData, WordLevel } from '../../types';
-import { useStrings } from '../../utils/i18n';
+import { useStrings, type Strings } from '../../utils/i18n';
+
+const LEVEL_ROWS: WordLevel[][] = [
+  ['N5', 'N4', 'N3', 'N2', '生活', 'all'],
+  ['hiragana', 'katakana'],
+];
+
+const LEVEL_LABEL = {
+  N5: 'levelN5',
+  N4: 'levelN4',
+  N3: 'levelN3',
+  N2: 'levelN2',
+  生活: 'levelLife',
+  all: 'levelAll',
+  hiragana: 'levelHiragana',
+  katakana: 'levelKatakana',
+} as const satisfies Record<WordLevel, keyof Strings>;
 
 export default function HomeScreen() {
   const router = useRouter();
@@ -103,21 +119,25 @@ export default function HomeScreen() {
           </Text>
         </View>
 
-        {/* Word level selector */}
-        <View style={styles.levelSelector}>
-          {(['N4', 'N3', 'N2', '生活', 'all'] as WordLevel[]).map((lv) => (
-            <Pressable
-              key={lv}
-              style={[styles.levelBtn, wordLevel === lv && styles.levelBtnActive]}
-              onPress={() => {
-                setWordLevel(lv);
-                saveWordLevel(lv);
-              }}
-            >
-              <Text style={[styles.levelBtnText, wordLevel === lv && styles.levelBtnTextActive]}>
-                {lv === 'N4' ? s.levelN4 : lv === 'N3' ? s.levelN3 : lv === 'N2' ? s.levelN2 : lv === '生活' ? s.levelLife : s.levelAll}
-              </Text>
-            </Pressable>
+        {/* Word level selector: vocab on the first row, kana on the second */}
+        <View style={styles.levelRows}>
+          {LEVEL_ROWS.map((row, r) => (
+            <View key={r} style={styles.levelSelector}>
+              {row.map((lv) => (
+                <Pressable
+                  key={lv}
+                  style={[styles.levelBtn, wordLevel === lv && styles.levelBtnActive]}
+                  onPress={() => {
+                    setWordLevel(lv);
+                    saveWordLevel(lv);
+                  }}
+                >
+                  <Text style={[styles.levelBtnText, wordLevel === lv && styles.levelBtnTextActive]}>
+                    {s[LEVEL_LABEL[lv]]}
+                  </Text>
+                </Pressable>
+              ))}
+            </View>
           ))}
         </View>
 
@@ -211,6 +231,10 @@ const styles = StyleSheet.create({
   progressLabel: { fontSize: 11, color: '#7F8C8D', textAlign: 'center' },
 
   // Level selector
+  levelRows: {
+    alignSelf: 'stretch',
+    gap: 8,
+  },
   levelSelector: {
     flexDirection: 'row',
     backgroundColor: '#34495E',
