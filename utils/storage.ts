@@ -56,14 +56,16 @@ export async function addBattleResult(
 // Last level picked on the home screen. Kept on the device only (not synced),
 // so returning from a battle — or reopening the app — keeps the choice.
 const WORD_LEVEL_KEY = 'jp_king_word_level';
-const WORD_LEVELS: WordLevel[] = ['N4', 'N3', 'N2', '生活', 'all'];
+const WORD_LEVELS: WordLevel[] = ['N5', 'N4', 'N3', 'N2', '生活', 'all', 'hiragana', 'katakana'];
+// First launch starts in the middle of the ladder, so there is room to swipe both ways.
+export const DEFAULT_WORD_LEVEL: WordLevel = 'N3';
 
 export async function loadWordLevel(): Promise<WordLevel> {
   try {
     const raw = await AsyncStorage.getItem(WORD_LEVEL_KEY);
-    return WORD_LEVELS.includes(raw as WordLevel) ? (raw as WordLevel) : 'all';
+    return WORD_LEVELS.includes(raw as WordLevel) ? (raw as WordLevel) : DEFAULT_WORD_LEVEL;
   } catch {
-    return 'all';
+    return DEFAULT_WORD_LEVEL;
   }
 }
 
@@ -71,6 +73,25 @@ export async function saveWordLevel(level: WordLevel): Promise<void> {
   try {
     await AsyncStorage.setItem(WORD_LEVEL_KEY, level);
   } catch {
-    // not critical: the picker just falls back to 'all' next time
+    // not critical: the picker just falls back to the default next time
+  }
+}
+
+// The level picker nudges once on first launch to show it can be swiped.
+const LEVEL_HINT_KEY = 'jp_king_level_hint_seen';
+
+export async function shouldShowLevelHint(): Promise<boolean> {
+  try {
+    return (await AsyncStorage.getItem(LEVEL_HINT_KEY)) === null;
+  } catch {
+    return false;
+  }
+}
+
+export async function markLevelHintSeen(): Promise<void> {
+  try {
+    await AsyncStorage.setItem(LEVEL_HINT_KEY, '1');
+  } catch {
+    // not critical: worst case the hint plays again
   }
 }

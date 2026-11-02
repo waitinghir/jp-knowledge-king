@@ -120,4 +120,16 @@ export const SCORE_PER_LEVEL = 500;
 // ────────────────────────────────────────────────
 // 難度選擇
 // ────────────────────────────────────────────────
-export type WordLevel = 'N4' | 'N3' | 'N2' | '生活' | 'all';
+export type WordLevel = 'N5' | 'N4' | 'N3' | 'N2' | '生活' | 'all' | 'hiragana' | 'katakana';
+
+// ────────────────────────────────────────────────
+// 五十音題庫（data/kana.json，由 scripts/build_kana.py 產生）
+// ────────────────────────────────────────────────
+export interface KanaEntry {
+  id: string;
+  kana: string;
+  romaji: string;
+  script: 'hiragana' | 'katakana';
+  group: 'seion' | 'dakuon' | 'yoon';
+  distractors: string[]; // 3 kana of the same script
+}

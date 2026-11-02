@@ -19,6 +19,7 @@ import { loadPlayerData } from '../../utils/storage';
 import { initSounds, playSound } from '../../utils/sound';
 import { getLang, useStrings } from '../../utils/i18n';
 import { loadWords } from '../../utils/wordBank';
+import { generateKanaQuestions, loadKana } from '../../utils/kana';
 
 import type { Word, Question, Answer, AIOpponent, BattleResult, WordLevel } from '../../types';
 import type { OptionState } from '../../components/OptionButton';
@@ -84,10 +85,14 @@ export default function PlayScreen() {
   // ── Init ──────────────────────────────────────────────────────────────────
   useEffect(() => {
     loadPlayerData().then((d) => setPlayerLevel(d.level));
-    loadWords().then((words) => {
-      const filtered = wordLevel === 'all' ? words : words.filter((w) => w.level === wordLevel);
-      setQuestions(generateQuestions(filtered, TOTAL_QUESTIONS, getLang()));
-    });
+    if (wordLevel === 'hiragana' || wordLevel === 'katakana') {
+      loadKana().then((kana) => setQuestions(generateKanaQuestions(kana, wordLevel, TOTAL_QUESTIONS)));
+    } else {
+      loadWords().then((words) => {
+        const filtered = wordLevel === 'all' ? words : words.filter((w) => w.level === wordLevel);
+        setQuestions(generateQuestions(filtered, TOTAL_QUESTIONS, getLang()));
+      });
+    }
     initSounds();
   }, []);
 

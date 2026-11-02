@@ -17,11 +17,11 @@ export function getLang(): Lang {
 // ─────────────────────────────────────────────────────────────
 // All UI strings (zh / en)
 // ─────────────────────────────────────────────────────────────
-const strings = {
+export const strings = {
   zh: {
     // Home screen
     appName: '日文知識王',
-    appTagline: '對戰學日文 · JLPT N4–N2',
+    appTagline: '對戰學日文 · JLPT N5–N2',
     level: '等級',
     score: '總分',
     wins: '勝場',
@@ -30,11 +30,26 @@ const strings = {
     battleStats: (games: number, rate: number) => `已對戰 ${games} 場 · 勝率 ${rate}%`,
 
     // Word level selector
+    levelN5: 'N5',
     levelN4: 'N4',
     levelN3: 'N3',
     levelN2: 'N2',
     levelLife: '生活',
     levelAll: '全部',
+    levelHiragana: '平假名',
+    levelKatakana: '片假名',
+    levelCaption: {
+      hiragana: '平假名・清音、濁音、拗音',
+      katakana: '片假名・清音、濁音、拗音',
+      N5: 'JLPT N5 單字',
+      N4: 'JLPT N4 單字',
+      N3: 'JLPT N3 單字',
+      N2: 'JLPT N2 單字',
+      生活: '在日本生活的常用詞',
+      all: '所有單字隨機出題',
+    },
+    kanaPickReading: '選出讀音',
+    kanaPickKana: '選出假名',
 
     // Leaderboard
     leaderboardTab: '排行榜',
@@ -100,7 +115,7 @@ const strings = {
   en: {
     // Home screen
     appName: 'Nihongo\nQuiz King',
-    appTagline: 'Battle & Learn Japanese · JLPT N4–N2',
+    appTagline: 'Battle & Learn Japanese · JLPT N5–N2',
     level: 'Level',
     score: 'Score',
     wins: 'Wins',
@@ -109,11 +124,26 @@ const strings = {
     battleStats: (games: number, rate: number) => `${games} battles · Win rate ${rate}%`,
 
     // Word level selector
+    levelN5: 'N5',
     levelN4: 'N4',
     levelN3: 'N3',
     levelN2: 'N2',
     levelLife: 'Life',
     levelAll: 'All',
+    levelHiragana: 'Hiragana',
+    levelKatakana: 'Katakana',
+    levelCaption: {
+      hiragana: 'Hiragana · basic, voiced and combined',
+      katakana: 'Katakana · basic, voiced and combined',
+      N5: 'JLPT N5 vocabulary',
+      N4: 'JLPT N4 vocabulary',
+      N3: 'JLPT N3 vocabulary',
+      N2: 'JLPT N2 vocabulary',
+      生活: 'Everyday words for life in Japan',
+      all: 'All vocabulary, mixed',
+    },
+    kanaPickReading: 'pick the reading',
+    kanaPickKana: 'pick the kana',
 
     // Leaderboard
     leaderboardTab: 'Ranking',

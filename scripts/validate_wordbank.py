@@ -26,6 +26,10 @@ WARNINGS (review by hand — scripts cannot judge meaning):
   - zh distractor shares a character with the answer
   - en distractor shares a content word with the answer
 
+Also checks data/kana.json (hiragana / katakana modes, built by
+scripts/build_kana.py): 3 distractors per kana, each one a kana of the same
+script in the bank, and no two options with the same romaji.
+
 Passing this script does NOT mean the options are good. Every change must
 still be read entry by entry, in both languages: "would a learner see two
 or more correct options?"
@@ -62,7 +66,12 @@ STOPWORDS = {'to', 'be', 'the', 'a', 'an', 'of', 'and', 'or', 'in', 'on', 'at',
 # kanji/kana pairs that are correct but cannot be split per character:
 # whole-word readings (jukujikun) and kanji outside jōyō + jinmeiyō.
 READING_EXCEPTIONS = {('景色', 'けしき'), ('お土産', 'おみやげ'), ('真面目', 'まじめ'),
-                      ('躊躇', 'ちゅうちょ')}
+                      ('躊躇', 'ちゅうちょ'), ('お母さん', 'おかあさん'), ('お父さん', 'おとうさん'),
+                      ('お兄さん', 'おにいさん'), ('お姉さん', 'おねえさん'), ('大人', 'おとな'),
+                      ('部屋', 'へや'), ('時計', 'とけい'), ('眼鏡', 'めがね'), ('石鹸', 'せっけん'),
+                      ('切手', 'きって'), ('果物', 'くだもの'), ('不味い', 'まずい'), ('八百屋', 'やおや'),
+                      ('切符', 'きっぷ'), ('下手', 'へた'), ('温い', 'ぬるい'), ('明日', 'あした'),
+                      ('今日', 'きょう'), ('今朝', 'けさ'), ('今年', 'ことし')}
 
 with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'kanji_readings.json'),
           encoding='utf-8') as _f:
@@ -181,6 +190,38 @@ def check_entry(w, errors, warnings):
             errors.append(f'{wid} [en]: answer "{ans}" contains CJK/kana')
 
 
+def check_kana(path, errors):
+    try:
+        data = json.load(open(path, encoding='utf-8'))
+    except Exception as e:  # noqa: BLE001
+        errors.append(f'{path}: invalid JSON ({e})')
+        return
+    ids = set()
+    romaji = {(e.get('script'), e.get('kana')): e.get('romaji') for e in data}
+    for e in data:
+        eid = e.get('id', '?')
+        for k in ('id', 'kana', 'romaji', 'script', 'group', 'distractors'):
+            if not e.get(k):
+                errors.append(f'{eid}: missing field "{k}"')
+        if eid in ids:
+            errors.append(f'{eid}: duplicate id')
+        ids.add(eid)
+        if e.get('script') not in ('hiragana', 'katakana'):
+            errors.append(f'{eid}: script must be hiragana or katakana')
+        ds = e.get('distractors') or []
+        if len(ds) != 3 or len(set(ds)) != 3:
+            errors.append(f'{eid}: needs 3 different distractors, got {ds}')
+        options = [e.get('romaji')]
+        for d in ds:
+            r = romaji.get((e.get('script'), d))
+            if r is None:
+                errors.append(f'{eid}: distractor "{d}" is not a {e.get("script")} kana in the bank')
+            options.append(r)
+        if len(set(options)) != len(options):
+            errors.append(f'{eid}: two options share a romaji {options}')
+    print(f'checked {path}: {len(data)} entries')
+
+
 def main(argv):
     verbose = '-v' in argv
     files = [a for a in argv if not a.startswith('-')] or sorted(glob.glob('data/*-words.json'))
@@ -201,6 +242,10 @@ def main(argv):
             seen[wid] = f
             check_entry(w, errors, warnings)
         print(f'checked {f}: {len(data)} entries')
+
+    kana_path = 'data/kana.json'
+    if not [a for a in argv if not a.startswith('-')] and os.path.exists(kana_path):
+        check_kana(kana_path, errors)
 
     for e in errors:
         print('ERROR  ', e)
