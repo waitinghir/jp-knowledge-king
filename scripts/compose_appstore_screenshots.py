@@ -4,7 +4,9 @@ Usage:
   python3 scripts/compose_appstore_screenshots.py <raw_dir> <out_dir> pastel <zh_font.ttf>
 
 - raw_dir has en/ and zh/ with 1170x2532 simulator shots named
-  battle1 / correct / home / result / rank .png
+  battle1 / correct / kana / home / result / rank .png
+  A screen with no raw shot is skipped and its existing file in out_dir is
+  kept, so only the screens whose UI changed need re-shooting.
 - zh_font: jf open 粉圓 (SIL OFL, free for commercial use), not stored in the repo:
   https://github.com/justfont/open-huninn-font/releases/download/v2.1/jf-openhuninn-2.1.ttf
 - English uses the macOS system SF Rounded font.
@@ -23,22 +25,24 @@ W, H = 1242, 2688
 NAVY = (44, 62, 80)
 RED = (226, 71, 95)        # softer than the app's #C41E3A
 
-PASTELS = [(255, 228, 234), (223, 245, 236), (255, 243, 204), (236, 230, 255), (224, 240, 255)]
+PASTELS = [(255, 228, 234), (223, 245, 236), (255, 243, 204), (236, 230, 255), (255, 232, 214), (224, 240, 255)]
 CREAM = (255, 246, 238)
 
 CAPTIONS = {
     'zh': [
         ('battle1', ['1 對 1 ', '日文單字對戰'], '和對手限時搶答'),
         ('correct', ['10 秒', '搶答'], '越快答對，分數越高'),
-        ('home', ['N4 到 N2 ', '任你選'], '中英雙語，隨時練習'),
-        ('result', ['打贏對手，', '累積升級'], '每一題的答案都看得到'),
+        ('kana', ['從五十音', '開始'], '平假名、片假名也能對戰'),
+        ('home', ['N5 到 N2 ', '任你選'], '左右滑動，挑你的難度'),
+        ('result', ['打贏對手，', '累積升級'], '每題都附讀音與答案'),
         ('rank', ['每週', '排行榜'], '看看你這週排第幾'),
     ],
     'en': [
         ('battle1', ['Japanese ', 'vocab battles'], 'Race an opponent'),
         ('correct', ['10 seconds ', 'per question'], 'Answer faster, score higher'),
-        ('home', ['Pick your level: ', 'N4 to N2'], 'English and Chinese, practice anytime'),
-        ('result', ['Win and ', 'level up'], 'Review every answer'),
+        ('kana', ['Start with ', 'kana'], 'Hiragana and katakana battles'),
+        ('home', ['Pick your level: ', 'N5 to N2'], 'Swipe to choose your level'),
+        ('result', ['Win and ', 'level up'], 'Every answer, with its reading'),
         ('rank', ['Weekly ', 'leaderboard'], 'See where you rank this week'),
     ],
 }
@@ -123,19 +127,22 @@ def phone(canvas, shot, top):
 for lang, items in CAPTIONS.items():
     os.makedirs(os.path.join(OUT, lang), exist_ok=True)
     for n, (name, parts, subtext) in enumerate(items, 1):
+        raw = os.path.join(RAW, lang, f'{name}.png')
+        if not os.path.exists(raw):
+            continue
         bg = PASTELS[n - 1] if STYLE == 'pastel' else CREAM
         canvas = Image.new('RGB', (W, H), bg)
         decorate(canvas, bg if STYLE == 'pastel' else (255, 214, 222), n)
         d = ImageDraw.Draw(canvas)
         headline(d, 140, parts, lang)
         sub(d, 300, subtext, lang)
-        phone(canvas, Image.open(os.path.join(RAW, lang, f'{name}.png')).convert('RGB'), 470)
+        phone(canvas, Image.open(raw).convert('RGB'), 470)
         canvas.save(os.path.join(OUT, lang, f'{n}_{name}.png'))
 
 for lang in ('zh', 'en'):
     files = sorted(f for f in os.listdir(os.path.join(OUT, lang)) if f.endswith('.png'))
     ims = [Image.open(os.path.join(OUT, lang, f)).resize((248, 538)) for f in files]
-    sheet = Image.new('RGB', (258 * 5 - 10, 538), (40, 40, 40))
+    sheet = Image.new('RGB', (258 * len(ims) - 10, 538), (40, 40, 40))
     for i, im in enumerate(ims):
         sheet.paste(im, (i * 258, 0))
     sheet.save(os.path.join(OUT, f'preview_{lang}.png'))
