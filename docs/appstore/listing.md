@@ -125,8 +125,9 @@ GREAT FOR
 |---|---|---|---|
 | 1 | 作答中 | 1 對 1 日文單字對戰 / 和對手限時搶答 | Japanese vocab battles / Race an opponent |
 | 2 | 答對瞬間 | 10 秒搶答 / 越快答對，分數越高 | 10 seconds per question / Answer faster, score higher |
-| 3 | 首頁 | N4 到 N2 任你選 / 中英雙語，隨時練習 | Pick your level: N4 to N2 / English and Chinese, practice anytime |
-| 4 | 勝利結算 | 打贏對手，累積升級 / 每一題的答案都看得到 | Win and level up / Review every answer |
-| 5 | 排行榜 | 每週排行榜 / 看看你這週排第幾 | Weekly leaderboard / See where you rank this week |
+| 3 | 五十音（1.7.0 新增） | 從五十音開始 / 平假名、片假名也能對戰 | Start with kana / Hiragana and katakana battles |
+| 4 | 首頁 | N5 到 N2 任你選 / 左右滑動，挑你的難度 | Pick your level: N5 to N2 / Swipe to choose your level |
+| 5 | 勝利結算 | 打贏對手，累積升級 / 每題都附讀音與答案 | Win and level up / Every answer, with its reading |
+| 6 | 排行榜 | 每週排行榜 / 看看你這週排第幾 | Weekly leaderboard / See where you rank this week |
 
 截圖技巧：作答畫面要選對答案再截，可暫時把 `app/battle/play.tsx` 的 `elapsedRef.current += 0.1` 改成 `0.02`（倒數放慢 5 倍），截完務必還原、不要 commit。狀態列用 `xcrun simctl status_bar booted override --time "9:41" ...` 統一。
