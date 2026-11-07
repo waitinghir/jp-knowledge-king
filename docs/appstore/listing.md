@@ -9,7 +9,7 @@ App Store Connect 上的文字都以這份為準。改版時先改這裡，再�
 - 名稱和副標題已出現的字，不要再放進關鍵字（Apple 會一起比對，重複等於浪費字數）。
 - 級數要用空格分開寫（N2 N3 N4），「N4–N2」可能被當成一個詞，搜「N4單字」找不到。
 - 不放沒人搜的詞（1.6.4 拿掉「搶答」：App Store 上搜尋結果是 0）。選詞前可用 iTunes Search API（itunes.apple.com/search?term=…&country=tw&entity=software&limit=200）查排名與競爭；順序跟手機上的搜尋不完全相同，只當參考。
-- 還沒做的功能不能寫進關鍵字（審查指南 2.3.7）。N5、五十音等 1.7.0 上線後再加。
+- 還沒做的功能不能寫進關鍵字（審查指南 2.3.7）。
 
 ---
 
@@ -22,7 +22,7 @@ App Store Connect 上的文字都以這份為準。改版時先改這裡，再�
 
 **副標題**（上限 30 字）
 ```
-日檢單字對戰．JLPT N2 N3 N4
+日檢單字對戰．JLPT N5 N4 N3 N2
 ```
 
 **宣傳文字**（上限 170 字，可隨時修改）
@@ -32,7 +32,7 @@ App Store Connect 上的文字都以這份為準。改版時先改這裡，再�
 
 **關鍵字**（上限 100 字元，逗號分隔、不加空格）
 ```
-日文,日語,學日文,日文檢定,背單字,挑戰,測驗,快問快答,日本語,語言學習,益智,學習遊戲,記憶,日文學習,考試,練習,問答,詞彙,單字卡,自學,學習,能力試驗,外語,題庫,知識
+日文,日語,學日文,日文檢定,背單字,挑戰,測驗,快問快答,日本語,語言學習,益智,學習遊戲,記憶,五十音,平假名,片假名,考試,練習,問答,詞彙,單字卡,自學,學習,能力試驗,外語,題庫,知識
 ```
 
 **描述**
@@ -80,7 +80,7 @@ Race an AI opponent to answer Japanese vocab! Be fast, be right, and remember JL
 
 **Keywords** (max 100 characters, comma-separated, no spaces)
 ```
-n4,n3,n2,words,word,learn,study,exam,test,language,trivia,game,practice,nihongo,japan
+n5,n4,n3,n2,hiragana,katakana,words,learn,study,exam,language,trivia,game,practice,nihongo,japan
 ```
 
 **Description**
