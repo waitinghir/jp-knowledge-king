@@ -35,18 +35,23 @@ App Store Connect 上的文字都以這份為準。改版時先改這裡，再�
 日文,日語,學日文,日文檢定,背單字,挑戰,測驗,快問快答,日本語,語言學習,益智,學習遊戲,記憶,五十音,平假名,片假名,考試,練習,問答,詞彙,單字卡,自學,學習,能力試驗,外語,題庫,知識
 ```
 
-**描述**
+**描述**（下一版送審時貼上；1.7.0 線上仍是舊描述）
 ```
-挑戰你的日文單字實力！
+挑戰你的日文實力！
 
-【日文知識王】把背單字變成限時對戰：每場 5 題、每題 10 秒，和 AI 對手比誰答得又快又準。
+【日文知識王】把背單字變成限時對戰：每場 5 題、每題 10 秒，和 AI 對手比誰答得又快又準。從五十音到 N2，選一個適合你的難度就能開始。
 
 — 怎麼玩 —
-題目只顯示假名，從四個選項中選出正確的意思。答對得越快，分數越高；超過 10 秒就算超時。
+左右滑動選難度，按下開始對戰。
+・單字：題目只顯示假名，從四個選項中選出正確的意思
+・五十音：看假名選讀音，或看讀音選假名
+答對得越快，分數越高；超過 10 秒就算超時。
 
 — 核心特色 —
-・N4、N3、N2 共 600 字，加上 40 個生活常用單字，可依程度選擇
-・AI 對手會依你最近的表現調整強弱：連輸會變簡單，連勝會變難
+・五十音練習：平假名、片假名各一個難度，包含濁音、半濁音和拗音
+・JLPT N5 到 N2 單字，加上在日本生活的常用詞，可依程度選擇
+・結算頁把讀音標在漢字上方，答完馬上複習
+・AI 對手會依你最近的表現調整強弱：輸了會變簡單，連勝才會變難
 ・每週排行榜，每週一重置，和 AI 玩家比拚本週分數
 ・累積分數升級，看得見自己的進步
 ・中文、英文介面，依手機語言自動切換
@@ -54,6 +59,7 @@ App Store Connect 上的文字都以這份為準。改版時先改這裡，再�
 ・覺得題目有問題，可以在結算頁直接回報，題庫會持續修正
 
 — 適合誰 —
+・剛開始學日文、想把五十音記熟的初學者
 ・準備日本語能力試驗（JLPT）的考生
 ・想用輕鬆的方式複習單字的日文學習者
 ・喜歡快節奏答題遊戲的人
@@ -83,18 +89,23 @@ Race an AI opponent to answer Japanese vocab! Be fast, be right, and remember JL
 n5,n4,n3,n2,hiragana,katakana,words,learn,study,exam,language,trivia,game,practice,nihongo,japan
 ```
 
-**Description**
+**Description** (paste with the next version; 1.7.0 still has the old text)
 ```
-Put your Japanese vocabulary to the test!
+Put your Japanese to the test!
 
-Nihongo Quiz King turns vocab review into a timed battle: 5 questions per match, 10 seconds each, against an AI opponent. Who's faster and more accurate?
+Nihongo Quiz King turns study into a timed battle: 5 questions per match, 10 seconds each, against an AI opponent. Who's faster and more accurate? Start anywhere from kana to JLPT N2.
 
 HOW TO PLAY
-Each question shows a word in kana only. Pick its meaning from four choices. The faster you answer correctly, the more points you score. Take longer than 10 seconds and it's a timeout.
+Swipe to pick your level, then start a battle.
+- Vocabulary: each question shows a word in kana only. Pick its meaning from four choices.
+- Kana: see a kana and pick its reading, or see a reading and pick the kana.
+The faster you answer correctly, the more points you score. Take longer than 10 seconds and it's a timeout.
 
 FEATURES
-- 600 words across JLPT N4, N3 and N2, plus 40 everyday words. Pick your level.
-- The AI opponent adapts to you: lose a few in a row and it eases up, win a streak and it gets tougher.
+- Kana practice: separate hiragana and katakana levels, including voiced sounds and combinations.
+- JLPT N5 to N2 vocabulary, plus everyday words for life in Japan.
+- The results screen shows each word's reading above the kanji, so you can review right away.
+- The AI opponent adapts to you: it eases up after you lose and only gets tougher on a win streak.
 - Weekly leaderboard against AI players, resets every Monday.
 - Earn points and level up to see your progress.
 - English and Traditional Chinese interface, matched to your phone's language.
@@ -102,6 +113,7 @@ FEATURES
 - Spot a question that looks wrong? Report it from the results screen and we'll fix it.
 
 GREAT FOR
+- Beginners learning hiragana and katakana
 - JLPT test takers
 - Japanese learners who want a fun way to review vocabulary
 - Anyone who loves fast-paced quiz games
