@@ -15,12 +15,16 @@ import { INITIAL_PLAYER_DATA, SCORE_PER_LEVEL } from '../../types';
 import type { PlayerData, WordLevel } from '../../types';
 import { useStrings } from '../../utils/i18n';
 import LevelPicker from '../../components/LevelPicker';
+import ReminderAsk from '../../components/ReminderAsk';
+import { MOCK_DAILY } from '../../utils/mockDaily';
 
 export default function HomeScreen() {
   const router = useRouter();
   const s = useStrings();
   const [player, setPlayer] = useState<PlayerData>(INITIAL_PLAYER_DATA);
   const [wordLevel, setWordLevel] = useState<WordLevel>(DEFAULT_WORD_LEVEL);
+  // 1.8.0 mock: show the reminder ask once per launch so it can be reviewed
+  const [askReminder, setAskReminder] = useState(true);
 
   // Reload player data every time the screen comes into focus (e.g. after battle)
   useFocusEffect(
@@ -102,6 +106,22 @@ export default function HomeScreen() {
           <Text style={styles.progressLabel}>
             {s.toNextLevel(SCORE_PER_LEVEL - scoreInLevel)}
           </Text>
+
+          {/* Daily loop (1.8.0 mock data) */}
+          <View style={styles.cardDivider} />
+          <View style={styles.dailyRow}>
+            <Text style={styles.dailyText}>
+              🔥 {s.daysPracticed(MOCK_DAILY.daysPracticed)}
+              <Text style={styles.dailyQuiet}> · {s.streakDays(MOCK_DAILY.streak)}</Text>
+            </Text>
+            <Text style={styles.dailyText}>{s.wordsMastered(MOCK_DAILY.wordsMastered)}</Text>
+          </View>
+          <Pressable style={styles.dailyMission} onPress={() => router.push('/daily')}>
+            <Text style={styles.dailyMissionText}>{s.todayTheme(s.themes[MOCK_DAILY.theme])}</Text>
+            <Text style={styles.dailyMissionCount}>
+              {s.missionsProgress(MOCK_DAILY.missions.filter((m) => m.done).length, MOCK_DAILY.missions.length)} ›
+            </Text>
+          </Pressable>
         </View>
 
         {/* Level picker: swipe along あ → ア → N5 … N2 → 生活 → 全部 */}
@@ -137,11 +157,14 @@ export default function HomeScreen() {
           </Text>
         )}
 
-        {/* Feedback entry */}
-        <Pressable onPress={() => router.push('/feedback')} hitSlop={8}>
-          <Text style={styles.feedbackLink}>{s.feedbackLink}</Text>
-        </Pressable>
       </View>
+
+      {/* Settings (feedback moved in there) */}
+      <Pressable style={styles.gear} onPress={() => router.push('/settings')} hitSlop={12}>
+        <Text style={styles.gearText}>⚙︎</Text>
+      </Pressable>
+
+      <ReminderAsk visible={askReminder} onChoose={() => setAskReminder(false)} s={s} />
     </SafeAreaView>
   );
 }
@@ -227,10 +250,24 @@ const styles = StyleSheet.create({
   // Footer
   footer: { fontSize: 13, color: '#7F8C8D' },
 
-  // Feedback link
-  feedbackLink: {
-    fontSize: 12,
-    color: '#7F8C8D',
-    textDecorationLine: 'underline',
+  // Daily loop
+  cardDivider: { height: 1, backgroundColor: '#4A6278' },
+  dailyRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
+  dailyText: { fontSize: 13, color: '#fff', fontWeight: '600' },
+  dailyQuiet: { color: '#95A5A6', fontWeight: '400' },
+  dailyMission: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    backgroundColor: '#2C3E50',
+    borderRadius: 10,
+    paddingHorizontal: 12,
+    paddingVertical: 10,
   },
+  dailyMissionText: { fontSize: 13, color: '#F1C40F', fontWeight: '600' },
+  dailyMissionCount: { fontSize: 13, color: '#95A5A6' },
+
+  // Settings
+  gear: { position: 'absolute', top: 60, right: 24 },
+  gearText: { fontSize: 26, color: '#95A5A6' },
 });

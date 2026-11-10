@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { addBattleResult } from '../../utils/storage';
+import { MOCK_DAILY } from '../../utils/mockDaily';
 import { pushPlayerData } from '../../utils/cloudSync';
 import { maybeAskForReview } from '../../utils/reviewPrompt';
 import { playSound } from '../../utils/sound';
@@ -129,6 +130,16 @@ export default function ResultScreen() {
         </Animated.View>
 
         <Animated.View style={[styles.body, { opacity: bodyOpacity }]}>
+
+          {/* Daily loop (1.8.0 mock data) */}
+          <View style={styles.dailyCard}>
+            <Text style={styles.dailyLine}>
+              {s.newlyMastered(MOCK_DAILY.newlyMastered)} · {s.fixedMistakes(MOCK_DAILY.fixedMistakes)}
+            </Text>
+            <Text style={styles.dailyMissions}>
+              {s.missionsProgress(MOCK_DAILY.missions.filter((m) => m.done).length + 1, MOCK_DAILY.missions.length)}
+            </Text>
+          </View>
 
           {/* Score comparison */}
           <View style={styles.scoreRow}>
@@ -431,4 +442,15 @@ const styles = StyleSheet.create({
   sheetOptionText: { fontSize: 15, color: '#ECF0F1' },
   sheetError: { fontSize: 13, color: '#E74C3C' },
   sheetCancel: { fontSize: 15, color: '#95A5A6', textAlign: 'center', marginTop: 6 },
+  dailyCard: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    backgroundColor: '#34495E',
+    borderRadius: 12,
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+  },
+  dailyLine: { fontSize: 14, color: '#2ECC71', fontWeight: '600' },
+  dailyMissions: { fontSize: 13, color: '#F1C40F', fontWeight: '600' },
 });

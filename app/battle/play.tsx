@@ -266,11 +266,15 @@ export default function PlayScreen() {
           style={[styles.wordCard, { opacity: wordFade, transform: [{ translateY: wordSlide }] }]}
         >
           <Text style={styles.kana}>{currentQuestion.word.kana}</Text>
-          <Text style={styles.category}>
-            {getLang() === 'en'
-              ? currentQuestion.word.category_en
-              : currentQuestion.word.category}
-          </Text>
+          <View style={styles.tagRow}>
+            {/* 1.8.0 mock: the 2nd question pretends to be a word missed last time */}
+            {qIndex === 1 && <Text style={styles.missedTag}>{s.lastMissed}</Text>}
+            <Text style={styles.category}>
+              {getLang() === 'en'
+                ? currentQuestion.word.category_en
+                : currentQuestion.word.category}
+            </Text>
+          </View>
         </Animated.View>
 
         {/* Timer */}
@@ -393,5 +397,15 @@ const styles = StyleSheet.create({
     color: '#95A5A6',
     textAlign: 'center',
     marginTop: -8,
+  },
+  tagRow: { flexDirection: 'row', alignItems: 'center', gap: 8 },
+  missedTag: {
+    fontSize: 12,
+    color: '#fff',
+    backgroundColor: '#C0392B',
+    borderRadius: 8,
+    overflow: 'hidden',
+    paddingHorizontal: 8,
+    paddingVertical: 3,
   },
 });
