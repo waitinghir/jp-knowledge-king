@@ -58,7 +58,6 @@ export default function SettingsScreen() {
                     );
                   })}
                 </View>
-                <Text style={styles.note}>{s.settingsReminderNote}</Text>
               </View>
             )}
           </View>

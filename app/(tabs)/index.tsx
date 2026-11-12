@@ -16,6 +16,7 @@ import type { PlayerData, WordLevel } from '../../types';
 import { useStrings } from '../../utils/i18n';
 import LevelPicker from '../../components/LevelPicker';
 import ReminderAsk from '../../components/ReminderAsk';
+import FlameIcon from '../../components/FlameIcon';
 import { MOCK_DAILY } from '../../utils/mockDaily';
 
 export default function HomeScreen() {
@@ -85,27 +86,23 @@ export default function HomeScreen() {
 
         {/* Today card: days, today's theme and missions (1.8.0 mock data) */}
           <Pressable style={styles.todayCard} onPress={() => router.push('/today')}>
-          <View style={styles.todayRow}>
             <View style={styles.todayLeft}>
-              {/* 🌱 never practised · faded flame = not yet today · lit flame = done today */}
-              <Text style={[styles.todayFlame, MOCK_DAILY.daysPracticed > 0 && !MOCK_DAILY.playedToday && styles.flameUnlit]}>
-                {MOCK_DAILY.daysPracticed === 0 ? '🌱' : '🔥'}
-              </Text>
+              {/* 🌱 never practised · outline flame = not yet today · filled flame = done today */}
+              {MOCK_DAILY.daysPracticed === 0
+                ? <Text style={styles.todayFlame}>🌱</Text>
+                : <FlameIcon lit={MOCK_DAILY.playedToday} />}
               <Text style={styles.todayDays}>{MOCK_DAILY.daysPracticed}</Text>
               <Text style={styles.todayDaysLabel}>{s.statDays}</Text>
             </View>
             <View style={styles.todayRight}>
-              <Pressable style={styles.themeButton} onPress={() => router.push('/today')}>
-                <Text style={styles.themeButtonText}>{s.themeBattle(s.themes[MOCK_DAILY.theme])} ›</Text>
+              <Pressable onPress={() => router.push('/today')} hitSlop={8}>
+                <Text style={styles.todayTheme}>{s.themeBattle(s.themes[MOCK_DAILY.theme])} ›</Text>
               </Pressable>
               {missionDots}
+              <Text style={styles.todayMeta}>
+                Lv.{player.level} · {s.wordsMastered(MOCK_DAILY.wordsMastered)}
+              </Text>
             </View>
-          </View>
-          {/* Growth: level and words mastered, under a divider */}
-          <View style={styles.todayDivider} />
-          <Text style={styles.growth}>
-            Lv.{player.level} · {s.wordsMastered(MOCK_DAILY.wordsMastered)}
-          </Text>
           </Pressable>
 
 
@@ -231,29 +228,20 @@ const styles = StyleSheet.create({
   dotsLabel: { fontSize: 12, color: '#95A5A6', marginLeft: 6 },
   todayCard: {
     width: '100%',
+    flexDirection: 'row',
     backgroundColor: '#34495E',
     borderRadius: 16,
     padding: 20,
-    gap: 14,
+    gap: 20,
+    alignItems: 'center',
   },
   todayLeft: { alignItems: 'center', width: 72 },
   todayFlame: { fontSize: 28 },
-  flameUnlit: { opacity: 0.3 },
   todayDays: { fontSize: 30, fontWeight: '900', color: '#fff' },
   todayDaysLabel: { fontSize: 11, color: '#95A5A6' },
   todayRight: { flex: 1, gap: 10 },
-  themeButton: {
-    alignSelf: 'flex-start',
-    borderWidth: 1.5,
-    borderColor: '#F1C40F',
-    borderRadius: 20,
-    paddingHorizontal: 12,
-    paddingVertical: 6,
-  },
-  themeButtonText: { fontSize: 14, fontWeight: '700', color: '#F1C40F' },
-  growth: { fontSize: 13, color: '#95A5A6', textAlign: 'center' },
-  todayRow: { flexDirection: 'row', alignItems: 'center', gap: 20 },
-  todayDivider: { height: 1, backgroundColor: '#4A6278' },
+  todayTheme: { fontSize: 15, fontWeight: '700', color: '#F1C40F' },
+  todayMeta: { fontSize: 12, color: '#95A5A6' },
 
   // Settings
   gear: { position: 'absolute', top: 60, right: 24 },

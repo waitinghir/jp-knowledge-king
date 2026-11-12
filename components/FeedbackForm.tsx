@@ -55,6 +55,7 @@ export default function FeedbackForm({ s }: { s: Strings }) {
         maxLength={2000}
         textAlignVertical="top"
       />
+      <Text style={styles.contactLabel}>{s.feedbackContactLabel}</Text>
       <TextInput
         style={styles.contactInput}
         value={contact}
@@ -88,6 +89,7 @@ const styles = StyleSheet.create({
     fontSize: 15,
     lineHeight: 21,
   },
+  contactLabel: { fontSize: 12, color: '#7F8C8D', marginTop: 4 },
   contactInput: {
     backgroundColor: '#2C3E50',
     borderRadius: 12,
