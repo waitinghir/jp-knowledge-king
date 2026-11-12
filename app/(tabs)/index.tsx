@@ -84,13 +84,13 @@ export default function HomeScreen() {
             </View>
             <View style={styles.statDivider} />
             <View style={styles.stat}>
-              <Text style={styles.statLabel}>{s.score}</Text>
-              <Text style={styles.statValue}>{player.totalScore}</Text>
+              <Text style={styles.statLabel}>{s.statDays}</Text>
+              <Text style={styles.statValue}>{MOCK_DAILY.daysPracticed}</Text>
             </View>
             <View style={styles.statDivider} />
             <View style={styles.stat}>
-              <Text style={styles.statLabel}>{s.wins}</Text>
-              <Text style={styles.statValue}>{player.wins}</Text>
+              <Text style={styles.statLabel}>{s.statMastered}</Text>
+              <Text style={styles.statValue}>{MOCK_DAILY.wordsMastered}</Text>
             </View>
           </View>
 
@@ -106,22 +106,6 @@ export default function HomeScreen() {
           <Text style={styles.progressLabel}>
             {s.toNextLevel(SCORE_PER_LEVEL - scoreInLevel)}
           </Text>
-
-          {/* Daily loop (1.8.0 mock data) */}
-          <View style={styles.cardDivider} />
-          <View style={styles.dailyRow}>
-            <Text style={styles.dailyText}>
-              🔥 {s.daysPracticed(MOCK_DAILY.daysPracticed)}
-              <Text style={styles.dailyQuiet}> · {s.streakDays(MOCK_DAILY.streak)}</Text>
-            </Text>
-            <Text style={styles.dailyText}>{s.wordsMastered(MOCK_DAILY.wordsMastered)}</Text>
-          </View>
-          <Pressable style={styles.dailyMission} onPress={() => router.push('/daily')}>
-            <Text style={styles.dailyMissionText}>{s.todayTheme(s.themes[MOCK_DAILY.theme])}</Text>
-            <Text style={styles.dailyMissionCount}>
-              {s.missionsProgress(MOCK_DAILY.missions.filter((m) => m.done).length, MOCK_DAILY.missions.length)} ›
-            </Text>
-          </Pressable>
         </View>
 
         {/* Level picker: swipe along あ → ア → N5 … N2 → 生活 → 全部 */}
@@ -158,6 +142,16 @@ export default function HomeScreen() {
         )}
 
       </View>
+
+      {/* Today's missions: badge = missions left today */}
+      <Pressable style={styles.daily} onPress={() => router.push('/daily')} hitSlop={12}>
+        <Text style={styles.dailyIcon}>☑︎</Text>
+        {MOCK_DAILY.missions.filter((m) => !m.done).length > 0 && (
+          <View style={styles.badge}>
+            <Text style={styles.badgeText}>{MOCK_DAILY.missions.filter((m) => !m.done).length}</Text>
+          </View>
+        )}
+      </Pressable>
 
       {/* Settings (feedback moved in there) */}
       <Pressable style={styles.gear} onPress={() => router.push('/settings')} hitSlop={12}>
@@ -250,22 +244,22 @@ const styles = StyleSheet.create({
   // Footer
   footer: { fontSize: 13, color: '#7F8C8D' },
 
-  // Daily loop
-  cardDivider: { height: 1, backgroundColor: '#4A6278' },
-  dailyRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
-  dailyText: { fontSize: 13, color: '#fff', fontWeight: '600' },
-  dailyQuiet: { color: '#95A5A6', fontWeight: '400' },
-  dailyMission: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+  // Today's missions
+  daily: { position: 'absolute', top: 60, left: 24 },
+  dailyIcon: { fontSize: 26, color: '#95A5A6' },
+  badge: {
+    position: 'absolute',
+    top: -6,
+    right: -10,
+    minWidth: 18,
+    height: 18,
+    borderRadius: 9,
+    backgroundColor: '#C41E3A',
     alignItems: 'center',
-    backgroundColor: '#2C3E50',
-    borderRadius: 10,
-    paddingHorizontal: 12,
-    paddingVertical: 10,
+    justifyContent: 'center',
+    paddingHorizontal: 4,
   },
-  dailyMissionText: { fontSize: 13, color: '#F1C40F', fontWeight: '600' },
-  dailyMissionCount: { fontSize: 13, color: '#95A5A6' },
+  badgeText: { color: '#fff', fontSize: 11, fontWeight: '800' },
 
   // Settings
   gear: { position: 'absolute', top: 60, right: 24 },

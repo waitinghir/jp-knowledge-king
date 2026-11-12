@@ -30,6 +30,9 @@ export default function DailyScreen() {
           </Pressable>
         </View>
         <Text style={styles.theme}>{s.todayTheme(s.themes[d.theme])}</Text>
+        <Text style={styles.streak}>
+          🔥 {s.daysPracticed(d.daysPracticed)} · {s.streakDays(d.streak)}
+        </Text>
 
         <View style={styles.card}>
           {d.missions.map((m) => (
@@ -83,6 +86,7 @@ const styles = StyleSheet.create({
   title: { fontSize: 24, fontWeight: '900', color: '#fff' },
   close: { fontSize: 15, color: '#95A5A6' },
   theme: { fontSize: 15, color: '#F1C40F', fontWeight: '600' },
+  streak: { fontSize: 14, color: '#95A5A6', marginTop: -10 },
   card: { backgroundColor: '#34495E', borderRadius: 16, padding: 18, gap: 14 },
   missionRow: { flexDirection: 'row', alignItems: 'center', gap: 12 },
   check: {

@@ -64,6 +64,8 @@ export const strings = {
     feedbackLink: '💬 意見回饋',
 
     // Daily loop (1.8.0)
+    statDays: '練習天數',
+    statMastered: '已掌握',
     daysPracticed: (n: number) => `練習 ${n} 天`,
     streakDays: (n: number) => `連續 ${n} 天`,
     wordsMastered: (n: number) => `已掌握 ${n} 個字`,
@@ -196,6 +198,8 @@ export const strings = {
     feedbackLink: '💬 Feedback',
 
     // Daily loop (1.8.0)
+    statDays: 'Days',
+    statMastered: 'Mastered',
     daysPracticed: (n: number) => `${n} days practiced`,
     streakDays: (n: number) => `${n}-day streak`,
     wordsMastered: (n: number) => `${n} words mastered`,
