@@ -2,6 +2,7 @@ import { Tabs } from 'expo-router';
 import { Text } from 'react-native';
 import { useStrings } from '../../utils/i18n';
 import { MOCK_DAILY } from '../../utils/mockDaily';
+import FlameIcon from '../../components/FlameIcon';
 
 export default function TabLayout() {
   const s = useStrings();
@@ -31,7 +32,7 @@ export default function TabLayout() {
         name="today"
         options={{
           title: s.todayTab,
-          tabBarIcon: ({ color }) => <Text style={{ fontSize: 20, color }}>🔥</Text>,
+          tabBarIcon: () => <FlameIcon lit size={24} />,
           // 1.8.0 mock: missions left today
           tabBarBadge: MOCK_DAILY.missions.filter((m) => !m.done).length || undefined,
           tabBarBadgeStyle: { backgroundColor: '#C41E3A', fontSize: 11 },

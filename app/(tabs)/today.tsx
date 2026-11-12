@@ -5,6 +5,7 @@ import { useFocusEffect } from 'expo-router';
 import { INITIAL_PLAYER_DATA, type PlayerData } from '../../types';
 import { loadPlayerData } from '../../utils/storage';
 import { useStrings } from '../../utils/i18n';
+import FlameIcon from '../../components/FlameIcon';
 import { MOCK_DAILY } from '../../utils/mockDaily';
 
 const WEEKDAYS = ['日', '一', '二', '三', '四', '五', '六'];
@@ -29,9 +30,10 @@ export default function TodayScreen() {
       <ScrollView contentContainerStyle={styles.container}>
         <Text style={styles.title}>{s.dailyTitle}</Text>
         <Text style={styles.theme}>{s.todayTheme(s.themes[d.theme])}</Text>
-        <Text style={styles.streak}>
-          🔥 {s.daysPracticed(d.daysPracticed)} · {s.streakDays(d.streak)}
-        </Text>
+        <View style={styles.streakRow}>
+          <FlameIcon lit={d.playedToday} size={18} />
+          <Text style={styles.streak}>{s.daysPracticed(d.daysPracticed)} · {s.streakDays(d.streak)}</Text>
+        </View>
 
         <View style={styles.card}>
           {d.missions.map((m) => (
@@ -92,7 +94,8 @@ const styles = StyleSheet.create({
   container: { padding: 24, paddingTop: 40, gap: 20 },
   title: { fontSize: 24, fontWeight: '900', color: '#fff' },
   theme: { fontSize: 15, color: '#F1C40F', fontWeight: '600' },
-  streak: { fontSize: 14, color: '#95A5A6', marginTop: -10 },
+  streakRow: { flexDirection: 'row', alignItems: 'center', gap: 4, marginTop: -10 },
+  streak: { fontSize: 14, color: '#95A5A6' },
   card: { backgroundColor: '#34495E', borderRadius: 16, padding: 18, gap: 14 },
   missionRow: { flexDirection: 'row', alignItems: 'center', gap: 12 },
   check: {
