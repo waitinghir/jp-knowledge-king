@@ -1,4 +1,9 @@
+import { useCallback, useState } from 'react';
 import { Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { useFocusEffect } from 'expo-router';
+
+import { INITIAL_PLAYER_DATA, type PlayerData } from '../../types';
+import { loadPlayerData } from '../../utils/storage';
 import { useStrings } from '../../utils/i18n';
 import { MOCK_DAILY } from '../../utils/mockDaily';
 
@@ -6,6 +11,8 @@ const WEEKDAYS = ['日', '一', '二', '三', '四', '五', '六'];
 
 export default function TodayScreen() {
   const s = useStrings();
+  const [player, setPlayer] = useState<PlayerData>(INITIAL_PLAYER_DATA);
+  useFocusEffect(useCallback(() => { loadPlayerData().then(setPlayer); }, []));
   const d = MOCK_DAILY;
 
   const missionLabel = (key: string) =>
@@ -66,6 +73,15 @@ export default function TodayScreen() {
             })}
           </View>
         </View>
+        {/* Battle record: moved here from the home screen */}
+        {player.gamesPlayed > 0 && (
+          <View style={styles.card}>
+            <Text style={styles.monthTitle}>{s.battleRecord}</Text>
+            <Text style={styles.record}>
+              {s.battleStats(player.gamesPlayed, Math.round((player.wins / player.gamesPlayed) * 100))}
+            </Text>
+          </View>
+        )}
       </ScrollView>
     </SafeAreaView>
   );
@@ -92,6 +108,7 @@ const styles = StyleSheet.create({
   startButton: { backgroundColor: '#C41E3A', borderRadius: 50, paddingVertical: 16, alignItems: 'center' },
   startText: { color: '#fff', fontSize: 18, fontWeight: '900' },
   monthTitle: { fontSize: 15, fontWeight: '600', color: '#fff' },
+  record: { fontSize: 14, color: '#95A5A6' },
   grid: { flexDirection: 'row', flexWrap: 'wrap' },
   weekday: { width: '14.28%', textAlign: 'center', fontSize: 11, color: '#7F8C8D', marginBottom: 6 },
   cell: { width: '14.28%', alignItems: 'center', marginVertical: 3 },

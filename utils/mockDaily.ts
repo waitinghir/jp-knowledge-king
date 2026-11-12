@@ -6,6 +6,7 @@ export type ThemeKey = keyof Strings['themes'];
 
 export const MOCK_DAILY = {
   daysPracticed: 12,
+  playedToday: false,
   streak: 5,
   wordsMastered: 87,
   theme: 'food' as ThemeKey,

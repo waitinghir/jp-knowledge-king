@@ -1,67 +1,74 @@
 import { useState } from 'react';
-import { Pressable, SafeAreaView, StyleSheet, Switch, Text, View } from 'react-native';
+import {
+  KeyboardAvoidingView,
+  Platform,
+  Pressable,
+  SafeAreaView,
+  ScrollView,
+  StyleSheet,
+  Switch,
+  Text,
+  View,
+} from 'react-native';
 import { useRouter } from 'expo-router';
 
+import FeedbackForm from '../components/FeedbackForm';
 import { useStrings } from '../utils/i18n';
 
-// 1.8.0 UI mock: switches hold local state only; nothing is saved or scheduled yet.
+type ReminderTime = 'noon' | 'night';
+
+// 1.8.0 UI mock: reminder switches hold local state only; nothing is saved or scheduled yet.
 export default function SettingsScreen() {
   const router = useRouter();
   const s = useStrings();
   const [reminder, setReminder] = useState(true);
-  const [time, setTime] = useState<'noon' | 'night'>('night');
-  const [sound, setSound] = useState(true);
+  const [times, setTimes] = useState<ReminderTime[]>(['night']);
+
+  const toggleTime = (t: ReminderTime) =>
+    setTimes((cur) => (cur.includes(t) ? cur.filter((x) => x !== t) : [...cur, t]));
 
   return (
     <SafeAreaView style={styles.safe}>
-      <View style={styles.container}>
-        <View style={styles.headerRow}>
-          <Text style={styles.title}>{s.settingsTitle}</Text>
-          <Pressable onPress={() => router.back()} hitSlop={12}>
-            <Text style={styles.close}>{s.close}</Text>
-          </Pressable>
-        </View>
-
-        <View style={styles.card}>
-          <View style={styles.row}>
-            <Text style={styles.label}>{s.settingsReminder}</Text>
-            <Switch value={reminder} onValueChange={setReminder} trackColor={{ true: '#C41E3A' }} />
+      <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
+        <ScrollView contentContainerStyle={styles.container} keyboardShouldPersistTaps="handled">
+          <View style={styles.headerRow}>
+            <Text style={styles.title}>{s.settingsTitle}</Text>
+            <Pressable onPress={() => router.back()} hitSlop={12}>
+              <Text style={styles.close}>{s.close}</Text>
+            </Pressable>
           </View>
-          {reminder && (
-            <View style={styles.rowColumn}>
-              <Text style={styles.subLabel}>{s.settingsReminderTime}</Text>
-              <View style={styles.segment}>
-                {(['noon', 'night'] as const).map((t) => (
-                  <Pressable
-                    key={t}
-                    style={[styles.segmentBtn, time === t && styles.segmentActive]}
-                    onPress={() => setTime(t)}
-                  >
-                    <Text style={[styles.segmentText, time === t && styles.segmentTextActive]}>
-                      {t === 'noon' ? s.reminderNoon : s.reminderNight}
-                    </Text>
-                  </Pressable>
-                ))}
-              </View>
+
+          <View style={styles.card}>
+            <View style={styles.row}>
+              <Text style={styles.label}>{s.settingsReminder}</Text>
+              <Switch value={reminder} onValueChange={setReminder} trackColor={{ true: '#C41E3A' }} />
             </View>
-          )}
-        </View>
-
-        <View style={styles.card}>
-          <View style={styles.row}>
-            <Text style={styles.label}>{s.settingsSound}</Text>
-            <Switch value={sound} onValueChange={setSound} trackColor={{ true: '#C41E3A' }} />
+            {reminder && (
+              <View style={styles.rowColumn}>
+                <Text style={styles.subLabel}>{s.settingsReminderTime}</Text>
+                <View style={styles.chips}>
+                  {(['noon', 'night'] as const).map((t) => {
+                    const on = times.includes(t);
+                    return (
+                      <Pressable key={t} style={[styles.chip, on && styles.chipOn]} onPress={() => toggleTime(t)}>
+                        <Text style={[styles.chipText, on && styles.chipTextOn]}>
+                          {on ? '✓ ' : ''}{t === 'noon' ? s.reminderNoon : s.reminderNight}
+                        </Text>
+                      </Pressable>
+                    );
+                  })}
+                </View>
+                <Text style={styles.note}>{s.settingsReminderNote}</Text>
+              </View>
+            )}
           </View>
-          <Text style={styles.note}>{s.settingsSoundNote}</Text>
-        </View>
 
-        <Pressable style={styles.card} onPress={() => router.push('/feedback')}>
-          <View style={styles.row}>
+          <View style={styles.card}>
             <Text style={styles.label}>{s.settingsFeedback}</Text>
-            <Text style={styles.chevron}>›</Text>
+            <FeedbackForm s={s} />
           </View>
-        </Pressable>
-      </View>
+        </ScrollView>
+      </KeyboardAvoidingView>
     </SafeAreaView>
   );
 }
@@ -78,10 +85,16 @@ const styles = StyleSheet.create({
   label: { fontSize: 16, color: '#fff' },
   subLabel: { fontSize: 13, color: '#95A5A6' },
   note: { fontSize: 12, color: '#7F8C8D' },
-  chevron: { fontSize: 22, color: '#7F8C8D' },
-  segment: { flexDirection: 'row', backgroundColor: '#2C3E50', borderRadius: 10, padding: 3, gap: 3 },
-  segmentBtn: { flex: 1, paddingVertical: 9, borderRadius: 8, alignItems: 'center' },
-  segmentActive: { backgroundColor: '#C41E3A' },
-  segmentText: { fontSize: 14, color: '#95A5A6', fontWeight: '600' },
-  segmentTextActive: { color: '#fff' },
+  chips: { flexDirection: 'row', gap: 10 },
+  chip: {
+    flex: 1,
+    paddingVertical: 10,
+    borderRadius: 10,
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#4A6278',
+  },
+  chipOn: { backgroundColor: '#C41E3A', borderColor: '#C41E3A' },
+  chipText: { fontSize: 14, color: '#95A5A6', fontWeight: '600' },
+  chipTextOn: { color: '#fff' },
 });

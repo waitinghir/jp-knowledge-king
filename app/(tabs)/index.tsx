@@ -85,18 +85,27 @@ export default function HomeScreen() {
 
         {/* Today card: days, today's theme and missions (1.8.0 mock data) */}
           <Pressable style={styles.todayCard} onPress={() => router.push('/today')}>
+          <View style={styles.todayRow}>
             <View style={styles.todayLeft}>
-              <Text style={styles.todayFlame}>🔥</Text>
+              {/* 🌱 never practised · faded flame = not yet today · lit flame = done today */}
+              <Text style={[styles.todayFlame, MOCK_DAILY.daysPracticed > 0 && !MOCK_DAILY.playedToday && styles.flameUnlit]}>
+                {MOCK_DAILY.daysPracticed === 0 ? '🌱' : '🔥'}
+              </Text>
               <Text style={styles.todayDays}>{MOCK_DAILY.daysPracticed}</Text>
               <Text style={styles.todayDaysLabel}>{s.statDays}</Text>
             </View>
             <View style={styles.todayRight}>
-              <Text style={styles.todayTheme}>{s.todayTheme(s.themes[MOCK_DAILY.theme])}</Text>
+              <Pressable style={styles.themeButton} onPress={() => router.push('/today')}>
+                <Text style={styles.themeButtonText}>{s.themeBattle(s.themes[MOCK_DAILY.theme])} ›</Text>
+              </Pressable>
               {missionDots}
-              <Text style={styles.todayMeta}>
-                Lv.{player.level} · {s.wordsMastered(MOCK_DAILY.wordsMastered)}
-              </Text>
             </View>
+          </View>
+          {/* Growth: level and words mastered, under a divider */}
+          <View style={styles.todayDivider} />
+          <Text style={styles.growth}>
+            Lv.{player.level} · {s.wordsMastered(MOCK_DAILY.wordsMastered)}
+          </Text>
           </Pressable>
 
 
@@ -122,18 +131,6 @@ export default function HomeScreen() {
             <Text style={styles.startButtonText}>{s.startBattle}</Text>
           </Pressable>
         </Animated.View>
-
-
-        {/* Stats footer */}
-        {player.gamesPlayed > 0 && (
-          <Text style={styles.footer}>
-            {s.battleStats(
-              player.gamesPlayed,
-              Math.round((player.wins / player.gamesPlayed) * 100)
-            )}
-          </Text>
-        )}
-
       </View>
 
       {/* Settings (feedback moved in there) */}
@@ -234,20 +231,29 @@ const styles = StyleSheet.create({
   dotsLabel: { fontSize: 12, color: '#95A5A6', marginLeft: 6 },
   todayCard: {
     width: '100%',
-    flexDirection: 'row',
     backgroundColor: '#34495E',
     borderRadius: 16,
     padding: 20,
-    gap: 20,
-    alignItems: 'center',
+    gap: 14,
   },
   todayLeft: { alignItems: 'center', width: 72 },
   todayFlame: { fontSize: 28 },
+  flameUnlit: { opacity: 0.3 },
   todayDays: { fontSize: 30, fontWeight: '900', color: '#fff' },
   todayDaysLabel: { fontSize: 11, color: '#95A5A6' },
   todayRight: { flex: 1, gap: 10 },
-  todayTheme: { fontSize: 15, fontWeight: '700', color: '#F1C40F' },
-  todayMeta: { fontSize: 12, color: '#95A5A6' },
+  themeButton: {
+    alignSelf: 'flex-start',
+    borderWidth: 1.5,
+    borderColor: '#F1C40F',
+    borderRadius: 20,
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+  },
+  themeButtonText: { fontSize: 14, fontWeight: '700', color: '#F1C40F' },
+  growth: { fontSize: 13, color: '#95A5A6', textAlign: 'center' },
+  todayRow: { flexDirection: 'row', alignItems: 'center', gap: 20 },
+  todayDivider: { height: 1, backgroundColor: '#4A6278' },
 
   // Settings
   gear: { position: 'absolute', top: 60, right: 24 },
