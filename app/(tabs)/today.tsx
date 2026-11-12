@@ -1,13 +1,10 @@
 import { Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
-import { useRouter } from 'expo-router';
-
-import { useStrings } from '../utils/i18n';
-import { MOCK_DAILY } from '../utils/mockDaily';
+import { useStrings } from '../../utils/i18n';
+import { MOCK_DAILY } from '../../utils/mockDaily';
 
 const WEEKDAYS = ['日', '一', '二', '三', '四', '五', '六'];
 
-export default function DailyScreen() {
-  const router = useRouter();
+export default function TodayScreen() {
   const s = useStrings();
   const d = MOCK_DAILY;
 
@@ -23,12 +20,7 @@ export default function DailyScreen() {
   return (
     <SafeAreaView style={styles.safe}>
       <ScrollView contentContainerStyle={styles.container}>
-        <View style={styles.headerRow}>
-          <Text style={styles.title}>{s.dailyTitle}</Text>
-          <Pressable onPress={() => router.back()} hitSlop={12}>
-            <Text style={styles.close}>{s.close}</Text>
-          </Pressable>
-        </View>
+        <Text style={styles.title}>{s.dailyTitle}</Text>
         <Text style={styles.theme}>{s.todayTheme(s.themes[d.theme])}</Text>
         <Text style={styles.streak}>
           🔥 {s.daysPracticed(d.daysPracticed)} · {s.streakDays(d.streak)}
@@ -81,10 +73,8 @@ export default function DailyScreen() {
 
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: '#2C3E50' },
-  container: { padding: 24, gap: 20 },
-  headerRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
+  container: { padding: 24, paddingTop: 40, gap: 20 },
   title: { fontSize: 24, fontWeight: '900', color: '#fff' },
-  close: { fontSize: 15, color: '#95A5A6' },
   theme: { fontSize: 15, color: '#F1C40F', fontWeight: '600' },
   streak: { fontSize: 14, color: '#95A5A6', marginTop: -10 },
   card: { backgroundColor: '#34495E', borderRadius: 16, padding: 18, gap: 14 },
