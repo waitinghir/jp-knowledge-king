@@ -1,5 +1,5 @@
 import { Tabs } from 'expo-router';
-import { MaterialIcons } from '@expo/vector-icons';
+import { Text } from 'react-native';
 import { useStrings } from '../../utils/i18n';
 import { MOCK_DAILY } from '../../utils/mockDaily';
 
@@ -24,14 +24,14 @@ export default function TabLayout() {
         name="index"
         options={{
           title: s.homeTab,
-          tabBarIcon: ({ color }) => <MaterialIcons name="home" size={26} color={color} />,
+          tabBarIcon: ({ color }) => <Text style={{ fontSize: 20, color }}>🏠</Text>,
         }}
       />
       <Tabs.Screen
         name="today"
         options={{
           title: s.todayTab,
-          tabBarIcon: ({ color }) => <MaterialIcons name="local-fire-department" size={26} color={color} />,
+          tabBarIcon: ({ color }) => <Text style={{ fontSize: 20, color }}>🔥</Text>,
           // 1.8.0 mock: missions left today
           tabBarBadge: MOCK_DAILY.missions.filter((m) => !m.done).length || undefined,
           tabBarBadgeStyle: { backgroundColor: '#C41E3A', fontSize: 11 },
@@ -41,7 +41,7 @@ export default function TabLayout() {
         name="leaderboard"
         options={{
           title: s.leaderboardTab,
-          tabBarIcon: ({ color }) => <MaterialIcons name="emoji-events" size={26} color={color} />,
+          tabBarIcon: ({ color }) => <Text style={{ fontSize: 20, color }}>🏆</Text>,
         }}
       />
     </Tabs>
