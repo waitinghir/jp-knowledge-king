@@ -116,13 +116,14 @@ export type AppEvent =
 export async function logEvent(name: AppEvent, props?: Record<string, string | number | boolean>) {
   try {
     const deviceId = await getDeviceId();
-    await supabase.from('app_events').insert({
+    const { error } = await supabase.from('app_events').insert({
       device_id: deviceId,
       app_version: APP_VERSION,
       lang: getLang(),
       name,
       props: props ?? null,
     });
+    if (__DEV__) console.log('[event]', name, error ? `FAILED ${error.message}` : 'ok');
   } catch {
     // ignore
   }
