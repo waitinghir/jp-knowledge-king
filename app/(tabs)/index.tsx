@@ -11,16 +11,44 @@ import {
 import { useFocusEffect, useRouter } from 'expo-router';
 import { DEFAULT_WORD_LEVEL, loadPlayerData, loadWordLevel, saveWordLevel } from '../../utils/storage';
 import { onPlayerDataRestored } from '../../utils/cloudSync';
-import { INITIAL_PLAYER_DATA, SCORE_PER_LEVEL } from '../../types';
+import { INITIAL_PLAYER_DATA } from '../../types';
 import type { PlayerData, WordLevel } from '../../types';
-import { useStrings } from '../../utils/i18n';
+import { getLang, useStrings } from '../../utils/i18n';
+import { themeName } from '../../utils/remoteData';
 import LevelPicker from '../../components/LevelPicker';
+import ReminderAsk from '../../components/ReminderAsk';
+import { answerReminderAsk, loadReminderSettings } from '../../utils/reminders';
+import { logEvent } from '../../utils/telemetry';
+import FlameIcon from '../../components/FlameIcon';
+import { useDaily } from '../../utils/useDaily';
 
 export default function HomeScreen() {
   const router = useRouter();
   const s = useStrings();
   const [player, setPlayer] = useState<PlayerData>(INITIAL_PLAYER_DATA);
   const [wordLevel, setWordLevel] = useState<WordLevel>(DEFAULT_WORD_LEVEL);
+  // First launch: our own reminder card (the iOS dialog follows only if a time is picked)
+  const [askReminder, setAskReminder] = useState(false);
+  useEffect(() => {
+    logEvent('home_view');
+    loadReminderSettings().then((r) => {
+      const ask = r.ask === 'never';
+      setAskReminder(ask);
+      if (ask) logEvent('reminder_ask_shown', { where: 'first_open' });
+    });
+  }, []);
+
+  const daily = useDaily();
+
+  // Three segments = today's three missions; label reads "任務 1/3 ›"
+  const missionDots = daily && (
+    <View style={styles.dotsRow}>
+      {daily.missions.map((m, i) => (
+        <View key={i} style={[styles.segment, m.done && styles.segmentDone]} />
+      ))}
+      <Text style={styles.dotsLabel}>{s.missionsProgress(daily.missionsDone, daily.missions.length)} ›</Text>
+    </View>
+  );
 
   // Reload player data every time the screen comes into focus (e.g. after battle)
   useFocusEffect(
@@ -33,9 +61,6 @@ export default function HomeScreen() {
   // P2: if the cloud copy had more progress, show it as soon as it's restored
   useEffect(() => onPlayerDataRestored(setPlayer), []);
 
-  // Score progress within current level (0.0 – 1.0)
-  const scoreInLevel = player.totalScore % SCORE_PER_LEVEL;
-  const levelProgress = scoreInLevel / SCORE_PER_LEVEL;
 
   // Pulsing animation for the start button
   const pulse = useRef(new Animated.Value(1)).current;
@@ -71,38 +96,27 @@ export default function HomeScreen() {
           <Text style={styles.tagline}>{s.appTagline}</Text>
         </View>
 
-        {/* Player stats card */}
-        <View style={styles.card}>
-          <View style={styles.statRow}>
-            <View style={styles.stat}>
-              <Text style={styles.statLabel}>{s.level}</Text>
-              <Text style={styles.statValue}>Lv.{player.level}</Text>
+        {/* Today card: days, today's theme and missions (1.8.0 mock data) */}
+        {daily && (
+          <Pressable style={styles.todayCard} onPress={() => router.push('/today')}>
+            <View style={styles.todayLeft}>
+              {/* 🌱 never practised · grey flame = not yet today · orange flame = done today */}
+              {daily.daysPracticed === 0
+                ? <Text style={styles.todayFlame}>🌱</Text>
+                : <FlameIcon lit={daily.playedToday} />}
+              <Text style={styles.todayDays}>{daily.daysPracticed}</Text>
+              <Text style={styles.todayDaysLabel}>{s.statDays}</Text>
             </View>
-            <View style={styles.statDivider} />
-            <View style={styles.stat}>
-              <Text style={styles.statLabel}>{s.score}</Text>
-              <Text style={styles.statValue}>{player.totalScore}</Text>
+            <View style={styles.todayRight}>
+              <Text style={styles.todayTheme}>{s.themeBattle(themeName(daily.theme, getLang()))} ›</Text>
+              {missionDots}
+              <Text style={styles.todayMeta}>
+                Lv.{player.level} · {s.wordsMastered(daily.wordsMastered)}
+              </Text>
             </View>
-            <View style={styles.statDivider} />
-            <View style={styles.stat}>
-              <Text style={styles.statLabel}>{s.wins}</Text>
-              <Text style={styles.statValue}>{player.wins}</Text>
-            </View>
-          </View>
+          </Pressable>
+        )}
 
-          {/* Level progress bar */}
-          <View style={styles.progressBg}>
-            <View
-              style={[
-                styles.progressFill,
-                { width: `${Math.round(levelProgress * 100)}%` },
-              ]}
-            />
-          </View>
-          <Text style={styles.progressLabel}>
-            {s.toNextLevel(SCORE_PER_LEVEL - scoreInLevel)}
-          </Text>
-        </View>
 
         {/* Level picker: swipe along あ → ア → N5 … N2 → 生活 → 全部 */}
         <LevelPicker
@@ -110,6 +124,7 @@ export default function HomeScreen() {
           onChange={(lv) => {
             setWordLevel(lv);
             saveWordLevel(lv);
+            logEvent('level_change', { level: lv });
           }}
           s={s}
         />
@@ -121,27 +136,31 @@ export default function HomeScreen() {
               styles.startButton,
               pressed && styles.startButtonPressed,
             ]}
-            onPress={() => router.push({ pathname: '/battle/matching', params: { wordLevel } })}
+            onPress={() => {
+              logEvent('battle_start', { level: wordLevel, games: player.gamesPlayed });
+              router.push({ pathname: '/battle/matching', params: { wordLevel } });
+            }}
           >
             <Text style={styles.startButtonText}>{s.startBattle}</Text>
           </Pressable>
         </Animated.View>
-
-        {/* Stats footer */}
-        {player.gamesPlayed > 0 && (
-          <Text style={styles.footer}>
-            {s.battleStats(
-              player.gamesPlayed,
-              Math.round((player.wins / player.gamesPlayed) * 100)
-            )}
-          </Text>
-        )}
-
-        {/* Feedback entry */}
-        <Pressable onPress={() => router.push('/feedback')} hitSlop={8}>
-          <Text style={styles.feedbackLink}>{s.feedbackLink}</Text>
-        </Pressable>
       </View>
+
+      {/* Settings (feedback moved in there) */}
+      <Pressable style={styles.gear} onPress={() => router.push('/settings')} hitSlop={12}>
+        <Text style={styles.gearText}>⚙︎</Text>
+      </Pressable>
+
+      <ReminderAsk
+        visible={askReminder}
+        onChoose={(choice) => {
+          setAskReminder(false);
+          // let the card fade out before the iOS dialog appears
+          logEvent('reminder_answer', { choice, where: 'first_open' });
+          setTimeout(() => answerReminderAsk(choice, player.gamesPlayed), 350);
+        }}
+        s={s}
+      />
     </SafeAreaView>
   );
 }
@@ -227,10 +246,29 @@ const styles = StyleSheet.create({
   // Footer
   footer: { fontSize: 13, color: '#7F8C8D' },
 
-  // Feedback link
-  feedbackLink: {
-    fontSize: 12,
-    color: '#7F8C8D',
-    textDecorationLine: 'underline',
+  // Today's progress (mock variants)
+  dotsRow: { flexDirection: 'row', alignItems: 'center', gap: 6 },
+  segment: { width: 28, height: 6, borderRadius: 3, backgroundColor: '#4A6278' },
+  segmentDone: { backgroundColor: '#F1C40F' },
+  dotsLabel: { fontSize: 12, color: '#95A5A6', marginLeft: 6 },
+  todayCard: {
+    width: '100%',
+    flexDirection: 'row',
+    backgroundColor: '#34495E',
+    borderRadius: 16,
+    padding: 20,
+    gap: 20,
+    alignItems: 'center',
   },
+  todayLeft: { alignItems: 'center', width: 72 },
+  todayFlame: { fontSize: 28 },
+  todayDays: { fontSize: 30, fontWeight: '900', color: '#fff' },
+  todayDaysLabel: { fontSize: 11, color: '#95A5A6' },
+  todayRight: { flex: 1, gap: 10 },
+  todayTheme: { fontSize: 15, fontWeight: '700', color: '#F1C40F' },
+  todayMeta: { fontSize: 12, color: '#95A5A6' },
+
+  // Settings
+  gear: { position: 'absolute', top: 60, right: 24 },
+  gearText: { fontSize: 26, color: '#95A5A6' },
 });

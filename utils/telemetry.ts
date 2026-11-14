@@ -1,7 +1,7 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Constants from 'expo-constants';
 import { supabase } from './supabase';
-import type { Lang } from './i18n';
+import { getLang, type Lang } from './i18n';
 import type { BattleResult } from '../types';
 
 // L5 online monitoring: anonymous answer logs + "report this question".
@@ -93,5 +93,53 @@ export async function reportQuestion(
     return !error;
   } catch {
     return false;
+  }
+}
+
+// ── 1.8.0 app events (funnel + daily loop) ─────────────────────────────────
+
+export type AppEvent =
+  | 'first_open'
+  | 'home_view'
+  | 'level_change'
+  | 'battle_start'
+  | 'battle_finish'
+  | 'theme_battle_start'
+  | 'reminder_ask_shown'
+  | 'reminder_answer'
+  | 'reminder_permission'
+  | 'open_from_push'
+  | 'push_delivered'
+  | 'missions_completed';
+
+/** Fire-and-forget event log; never throws, never blocks. */
+export async function logEvent(name: AppEvent, props?: Record<string, string | number | boolean>) {
+  try {
+    const deviceId = await getDeviceId();
+    const { error } = await supabase.from('app_events').insert({
+      device_id: deviceId,
+      app_version: APP_VERSION,
+      lang: getLang(),
+      name,
+      props: props ?? null,
+    });
+    if (__DEV__) console.log('[event]', name, error ? `FAILED ${error.message}` : 'ok');
+  } catch {
+    // ignore
+  }
+}
+
+const FIRST_OPEN_KEY = 'jp_king_first_open_logged';
+
+/** Logged once per install (installs from before 1.8.0 log it on their first 1.8.0 launch). */
+export async function logFirstOpen() {
+  try {
+    if (await AsyncStorage.getItem(FIRST_OPEN_KEY)) return;
+    await AsyncStorage.setItem(FIRST_OPEN_KEY, '1');
+    const raw = await AsyncStorage.getItem('jp_king_player');
+    const gamesPlayed = raw ? (JSON.parse(raw).gamesPlayed ?? 0) : 0;
+    logEvent('first_open', { returning: gamesPlayed > 0 });
+  } catch {
+    // ignore
   }
 }

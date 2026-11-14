@@ -11,6 +11,7 @@
     "setup:hooks": "git config core.hooksPath .githooks"
   },
   "dependencies": {
+    "@expo/vector-icons": "^15.0.3",
     "@react-native-async-storage/async-storage": "2.2.0",
     "@react-navigation/native": "^7.1.8",
     "@supabase/supabase-js": "^2.109.0",
@@ -20,6 +21,7 @@
     "expo-constants": "^18.0.13",
     "expo-linking": "~8.0.12",
     "expo-localization": "~17.0.9",
+    "expo-notifications": "~0.32.17",
     "expo-router": "~6.0.24",
     "expo-status-bar": "~3.0.9",
     "expo-store-review": "~9.0.9",

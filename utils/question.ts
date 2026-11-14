@@ -43,6 +43,11 @@ export function generateQuestions(words: Word[], count = 5, lang: Lang = 'zh'): 
   return selected.map((w) => buildQuestion(w, lang));
 }
 
+/** Questions for words already picked (and ordered) by the caller. */
+export function questionsFor(words: Word[], lang: Lang = 'zh'): Question[] {
+  return words.map((w) => buildQuestion(w, lang));
+}
+
 /**
  * Generate questions filtered by category.
  */

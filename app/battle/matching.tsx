@@ -21,7 +21,7 @@ const DOTS = ['', '.', '..', '...'];
 export default function MatchingScreen() {
   const router = useRouter();
   const s = useStrings();
-  const { wordLevel = 'all' } = useLocalSearchParams<{ wordLevel: WordLevel }>();
+  const { wordLevel = 'all', theme = '' } = useLocalSearchParams<{ wordLevel: WordLevel; theme?: string }>();
   const [phase, setPhase] = useState<Phase>('searching');
   const [opponent, setOpponent] = useState<AIOpponent | null>(null);
   const [dotIdx, setDotIdx] = useState(0);
@@ -92,6 +92,7 @@ export default function MatchingScreen() {
           opponentColor: opp.avatarColor,
           difficulty: String(difficulty),
           wordLevel,
+          theme,
         },
       });
     }

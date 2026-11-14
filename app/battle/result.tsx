@@ -11,11 +11,14 @@ import {
 } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { addBattleResult } from '../../utils/storage';
+import { recordBattle, type BattleSummary } from '../../utils/progress';
 import { pushPlayerData } from '../../utils/cloudSync';
 import { maybeAskForReview } from '../../utils/reviewPrompt';
+import { answerReminderAsk, shouldAskAgain } from '../../utils/reminders';
+import ReminderAsk from '../../components/ReminderAsk';
 import { playSound } from '../../utils/sound';
 import { getLang, useStrings } from '../../utils/i18n';
-import { logBattleAnswers, newId, reportQuestion, type ReportReason } from '../../utils/telemetry';
+import { logBattleAnswers, logEvent, newId, reportQuestion, type ReportReason } from '../../utils/telemetry';
 import type { BattleResult, PlayerData, WordLevel } from '../../types';
 
 function getOutcomeConfig(s: ReturnType<typeof useStrings>) {
@@ -30,7 +33,9 @@ export default function ResultScreen() {
   const router = useRouter();
   const s = useStrings();
   const lang = getLang();
-  const params = useLocalSearchParams<{ result: string; wordLevel?: WordLevel }>();
+  const params = useLocalSearchParams<{ result: string; wordLevel?: WordLevel; theme?: string }>();
+  const [daily, setDaily] = useState<BattleSummary | null>(null);
+  const [askReminder, setAskReminder] = useState(false);
   const [updatedPlayer, setUpdatedPlayer] = useState<PlayerData | null>(null);
   const battleId = useRef(newId()).current;
   // L5: "report this question" state, per question index
@@ -85,11 +90,36 @@ export default function ResultScreen() {
   const bodyOpacity = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
-    // Save result to AsyncStorage
-    addBattleResult(result.playerTotalScore, result.outcome).then((d) => {
+    // Save result to AsyncStorage; 1.8.0: per-word stats, missions, practised days
+    Promise.all([
+      addBattleResult(result.playerTotalScore, result.outcome),
+      recordBattle({
+        answers: result.questions.map((q, i) => ({
+          wordId: q.word.id,
+          correct: !!result.playerAnswers[i]?.isCorrect,
+        })),
+        level: params.wordLevel ?? 'all',
+        isThemeBattle: params.theme === '1',
+      }),
+    ]).then(([d, summary]) => {
       setUpdatedPlayer(d);
+      setDaily(summary);
+      logEvent('battle_finish', {
+        level: params.wordLevel ?? 'all',
+        theme: params.theme === '1',
+        outcome: result.outcome,
+        games: d.gamesPlayed,
+      });
+      if (summary.completedToday) logEvent('missions_completed', { days: summary.daysPracticed });
       pushPlayerData(d); // P2: cloud backup, best-effort
-      maybeAskForReview(result.outcome, d);
+      // "先不要" on first launch → ask once more two battles later; never together with the rating ask
+      shouldAskAgain(d.gamesPlayed).then((again) => {
+        if (again) {
+          setAskReminder(true);
+          logEvent('reminder_ask_shown', { where: 'result' });
+        }
+        maybeAskForReview(result.outcome, d, summary.daysPracticed, again);
+      });
     });
 
     // L5: anonymous answer log for word bank quality monitoring
@@ -129,6 +159,25 @@ export default function ResultScreen() {
         </Animated.View>
 
         <Animated.View style={[styles.body, { opacity: bodyOpacity }]}>
+
+          {/* Daily loop: what this battle did for today's missions and mastery */}
+          {daily && (
+            <View style={styles.dailyCard}>
+              {(daily.newlyMastered > 0 || daily.fixed > 0) && (
+                <Text style={styles.dailyLine}>
+                  {[
+                    daily.newlyMastered > 0 ? s.newlyMastered(daily.newlyMastered) : null,
+                    daily.fixed > 0 ? s.fixedMistakes(daily.fixed) : null,
+                  ].filter(Boolean).join(' · ')}
+                </Text>
+              )}
+              <Text style={styles.dailyMissions}>
+                {daily.completedToday
+                  ? `✓ ${s.todayDone}`
+                  : s.missionsProgress(daily.missionsAfter, daily.missionsTotal)}
+              </Text>
+            </View>
+          )}
 
           {/* Score comparison */}
           <View style={styles.scoreRow}>
@@ -242,7 +291,7 @@ export default function ResultScreen() {
               onPress={() =>
                 router.replace({
                   pathname: '/battle/matching',
-                  params: { wordLevel: params.wordLevel ?? 'all' },
+                  params: { wordLevel: params.wordLevel ?? 'all', theme: params.theme ?? '' },
                 })
               }
             >
@@ -291,6 +340,16 @@ export default function ResultScreen() {
           </Pressable>
         </Pressable>
       </Modal>
+      <ReminderAsk
+        visible={askReminder}
+        onChoose={(choice) => {
+          setAskReminder(false);
+          // let the card fade out before the iOS dialog appears
+          logEvent('reminder_answer', { choice, where: 'result' });
+          setTimeout(() => answerReminderAsk(choice, updatedPlayer?.gamesPlayed ?? 0), 350);
+        }}
+        s={s}
+      />
     </SafeAreaView>
   );
 }
@@ -431,4 +490,15 @@ const styles = StyleSheet.create({
   sheetOptionText: { fontSize: 15, color: '#ECF0F1' },
   sheetError: { fontSize: 13, color: '#E74C3C' },
   sheetCancel: { fontSize: 15, color: '#95A5A6', textAlign: 'center', marginTop: 6 },
+  dailyCard: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    backgroundColor: '#34495E',
+    borderRadius: 12,
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+  },
+  dailyLine: { fontSize: 14, color: '#2ECC71', fontWeight: '600' },
+  dailyMissions: { fontSize: 13, color: '#F1C40F', fontWeight: '600' },
 });

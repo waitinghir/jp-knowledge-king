@@ -12,14 +12,16 @@ import { useLocalSearchParams, useRouter } from 'expo-router';
 import Timer from '../../components/Timer';
 import OptionButton from '../../components/OptionButton';
 import ScoreBoard from '../../components/ScoreBoard';
-import { generateQuestions } from '../../utils/question';
+import { questionsFor } from '../../utils/question';
+import { composeBattle, loadComposeInput, loadThemeFor, themePool } from '../../utils/progress';
+import { themeName, type Theme } from '../../utils/remoteData';
 import { simulateAIAnswer } from '../../utils/ai-opponent';
 import { calculateScore, determineBattleOutcome } from '../../utils/scoring';
 import { loadPlayerData } from '../../utils/storage';
 import { initSounds, playSound } from '../../utils/sound';
 import { getLang, useStrings } from '../../utils/i18n';
 import { loadWords } from '../../utils/wordBank';
-import { generateKanaQuestions, loadKana } from '../../utils/kana';
+import { kanaQuestionsFor, loadKana } from '../../utils/kana';
 
 import type { Word, Question, Answer, AIOpponent, BattleResult, WordLevel } from '../../types';
 import type { OptionState } from '../../components/OptionButton';
@@ -39,6 +41,7 @@ export default function PlayScreen() {
     opponentColor: string;
     difficulty: string;
     wordLevel: WordLevel;
+    theme?: string; // '1' = today's theme battle
   }>();
 
   const opponent: AIOpponent = {
@@ -48,6 +51,8 @@ export default function PlayScreen() {
   };
   const difficulty = parseFloat(params.difficulty ?? '0.8');
   const wordLevel: WordLevel = params.wordLevel ?? 'all';
+  const isThemeBattle = params.theme === '1';
+  const [theme, setTheme] = useState<Theme | null>(null);
 
   // ── State ─────────────────────────────────────────────────────────────────
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -85,14 +90,25 @@ export default function PlayScreen() {
   // ── Init ──────────────────────────────────────────────────────────────────
   useEffect(() => {
     loadPlayerData().then((d) => setPlayerLevel(d.level));
-    if (wordLevel === 'hiragana' || wordLevel === 'katakana') {
-      loadKana().then((kana) => setQuestions(generateKanaQuestions(kana, wordLevel, TOTAL_QUESTIONS)));
-    } else {
-      loadWords().then((words) => {
-        const filtered = wordLevel === 'all' ? words : words.filter((w) => w.level === wordLevel);
-        setQuestions(generateQuestions(filtered, TOTAL_QUESTIONS, getLang()));
-      });
-    }
+    // 1.8.0: mix review / new / seen words by recent accuracy
+    loadComposeInput(wordLevel).then(async ({ words: stats, recent }) => {
+      if (!isThemeBattle && (wordLevel === 'hiragana' || wordLevel === 'katakana')) {
+        const kana = await loadKana();
+        const pool = kana.filter((e) => e.script === wordLevel);
+        const picked = composeBattle(pool, (e) => e.id, stats, recent, TOTAL_QUESTIONS);
+        const qs = kanaQuestionsFor(picked.map((p) => p.item), pool);
+        setQuestions(qs.map((q, i) => ({ ...q, missed: picked[i].missed })));
+        return;
+      }
+      const [words, todayTheme] = await Promise.all([loadWords(), loadThemeFor()]);
+      setTheme(todayTheme);
+      const pool = isThemeBattle
+        ? themePool(words, todayTheme, wordLevel)
+        : wordLevel === 'all' ? words : words.filter((w) => w.level === wordLevel);
+      const picked = composeBattle(pool, (w) => w.id, stats, recent, TOTAL_QUESTIONS);
+      const qs = questionsFor(picked.map((p) => p.item), getLang());
+      setQuestions(qs.map((q, i) => ({ ...q, missed: picked[i].missed })));
+    });
     initSounds();
   }, []);
 
@@ -223,7 +239,7 @@ export default function PlayScreen() {
 
         router.replace({
           pathname: '/battle/result',
-          params: { result: JSON.stringify(result), wordLevel },
+          params: { result: JSON.stringify(result), wordLevel, theme: isThemeBattle ? '1' : '' },
         });
       } else {
         setQIndex(nextIndex);
@@ -266,11 +282,16 @@ export default function PlayScreen() {
           style={[styles.wordCard, { opacity: wordFade, transform: [{ translateY: wordSlide }] }]}
         >
           <Text style={styles.kana}>{currentQuestion.word.kana}</Text>
-          <Text style={styles.category}>
-            {getLang() === 'en'
-              ? currentQuestion.word.category_en
-              : currentQuestion.word.category}
-          </Text>
+          <View style={styles.tagRow}>
+            {currentQuestion.missed && <Text style={styles.missedTag}>{s.lastMissed}</Text>}
+            <Text style={styles.category}>
+              {isThemeBattle && theme
+                ? s.themeBattle(themeName(theme, getLang()))
+                : getLang() === 'en'
+                  ? currentQuestion.word.category_en
+                  : currentQuestion.word.category}
+            </Text>
+          </View>
         </Animated.View>
 
         {/* Timer */}
@@ -393,5 +414,15 @@ const styles = StyleSheet.create({
     color: '#95A5A6',
     textAlign: 'center',
     marginTop: -8,
+  },
+  tagRow: { flexDirection: 'row', alignItems: 'center', gap: 8 },
+  missedTag: {
+    fontSize: 12,
+    color: '#fff',
+    backgroundColor: '#C0392B',
+    borderRadius: 8,
+    overflow: 'hidden',
+    paddingHorizontal: 8,
+    paddingVertical: 3,
   },
 });
