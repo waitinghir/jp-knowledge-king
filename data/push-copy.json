@@ -4,7 +4,7 @@
     { "id": "streak_v1", "zh": "連續 {streak} 天，今天還差一場", "en": "{streak}-day streak. One round keeps it going" }
   ],
   "review": [
-    { "id": "review_v1", "zh": "今天有 {n} 個字等你複習", "en": "{n} words are waiting for review" }
+    { "id": "review_v1", "zh": "今天有 {n} 個字等你複習", "en": "Words waiting for review today: {n}" }
   ],
   "theme": [
     { "id": "theme_v1", "zh": "今日主題是{theme}，來一場？", "en": "Today's theme is {theme}. One round?" }
@@ -13,6 +13,6 @@
     { "id": "fix_v1", "zh": "花 1 分鐘，把昨天錯的字收服", "en": "One minute to fix yesterday's missed words" }
   ],
   "days": [
-    { "id": "days_v1", "zh": "已經練習 {days} 天了，今天也來一場", "en": "{days} days practiced so far. One round today?" }
+    { "id": "days_v1", "zh": "已經練習 {days} 天了，今天也來一場", "en": "Practice days so far: {days}. One round today?" }
   ]
 }
