@@ -35,7 +35,7 @@ App Store Connect 上的文字都以這份為準。改版時先改這裡，再�
 日文,日語,學日文,日文檢定,背單字,挑戰,測驗,快問快答,日本語,語言學習,益智,學習遊戲,記憶,五十音,平假名,片假名,考試,練習,問答,詞彙,單字卡,自學,學習,能力試驗,外語,題庫,知識
 ```
 
-**描述**（下一版送審時貼上；1.7.0 線上仍是舊描述）
+**描述**（1.8.0 送審時貼上；1.7.0 線上仍是舊描述）
 ```
 挑戰你的日文實力！
 
@@ -48,6 +48,10 @@ App Store Connect 上的文字都以這份為準。改版時先改這裡，再�
 答對得越快，分數越高；超過 10 秒就算超時。
 
 — 核心特色 —
+・每日任務：每天 3 個小目標和一個今日主題戰，完成就在月曆上蓋章
+・答錯的字會在之後的對戰再出現，答對了才算收服；在不同的兩天都答對，就算「已掌握」
+・首頁看得到練習天數和已掌握的字數
+・可以設定每日練習提醒，中午或睡前
 ・五十音練習：平假名、片假名各一個難度，包含濁音、半濁音和拗音
 ・JLPT N5 到 N2 單字，加上在日本生活的常用詞，可依程度選擇
 ・結算頁把讀音標在漢字上方，答完馬上複習
@@ -89,7 +93,7 @@ Race an AI opponent to answer Japanese vocab! Be fast, be right, and remember JL
 n5,n4,n3,n2,hiragana,katakana,words,learn,study,exam,language,trivia,game,practice,nihongo,japan
 ```
 
-**Description** (paste with the next version; 1.7.0 still has the old text)
+**Description** (paste with 1.8.0; 1.7.0 still has the old text)
 ```
 Put your Japanese to the test!
 
@@ -102,6 +106,10 @@ Swipe to pick your level, then start a battle.
 The faster you answer correctly, the more points you score. Take longer than 10 seconds and it's a timeout.
 
 FEATURES
+- Daily missions: three small goals and a daily theme battle each day. Finish them to stamp your calendar.
+- Words you miss come back in later battles until you get them right. Get a word right on two different days and it counts as mastered.
+- See your practice days and mastered words on the home screen.
+- Optional daily practice reminder, at noon or before bed.
 - Kana practice: separate hiragana and katakana levels, including voiced sounds and combinations.
 - JLPT N5 to N2 vocabulary, plus everyday words for life in Japan.
 - The results screen shows each word's reading above the kanji, so you can review right away.
@@ -117,6 +125,28 @@ GREAT FOR
 - JLPT test takers
 - Japanese learners who want a fun way to review vocabulary
 - Anyone who loves fast-paced quiz games
+```
+
+---
+
+## 1.8.0 版本更新說明
+
+**繁體中文**
+```
+・新增「今日」分頁：每天 3 個任務、今日主題戰，完成就在月曆上蓋章
+・答錯的字會在之後的對戰再出現，答對了才算收服；兩天都答對就算掌握
+・首頁顯示練習天數和已掌握的字數
+・可以設定每日練習提醒，中午或睡前
+・設定和意見回饋移到首頁右上角
+```
+
+**English**
+```
+- New Today tab: three daily missions and a daily theme battle. Finish them to stamp your calendar.
+- Words you miss come back in later battles until you get them right. Get a word right on two different days to master it.
+- The home screen now shows your practice days and mastered words.
+- Optional daily practice reminder, at noon or before bed.
+- Settings and feedback moved to the top-right corner of the home screen.
 ```
 
 ---
