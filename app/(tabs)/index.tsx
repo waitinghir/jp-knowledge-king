@@ -17,7 +17,7 @@ import { useStrings } from '../../utils/i18n';
 import LevelPicker from '../../components/LevelPicker';
 import ReminderAsk from '../../components/ReminderAsk';
 import FlameIcon from '../../components/FlameIcon';
-import { MOCK_DAILY } from '../../utils/mockDaily';
+import { useDaily } from '../../utils/useDaily';
 
 export default function HomeScreen() {
   const router = useRouter();
@@ -27,14 +27,15 @@ export default function HomeScreen() {
   // 1.8.0 mock: show the reminder ask once per launch so it can be reviewed
   const [askReminder, setAskReminder] = useState(false);
 
-  // Three segments = today's three missions; label reads "今日 1/3 ›"
-  const done = MOCK_DAILY.missions.filter((m) => m.done).length;
-  const missionDots = (
+  const daily = useDaily();
+
+  // Three segments = today's three missions; label reads "任務 1/3 ›"
+  const missionDots = daily && (
     <View style={styles.dotsRow}>
-      {MOCK_DAILY.missions.map((m, i) => (
+      {daily.missions.map((m, i) => (
         <View key={i} style={[styles.segment, m.done && styles.segmentDone]} />
       ))}
-      <Text style={styles.dotsLabel}>{s.missionsProgress(done, MOCK_DAILY.missions.length)} ›</Text>
+      <Text style={styles.dotsLabel}>{s.missionsProgress(daily.missionsDone, daily.missions.length)} ›</Text>
     </View>
   );
 
@@ -85,25 +86,25 @@ export default function HomeScreen() {
         </View>
 
         {/* Today card: days, today's theme and missions (1.8.0 mock data) */}
+        {daily && (
           <Pressable style={styles.todayCard} onPress={() => router.push('/today')}>
             <View style={styles.todayLeft}>
-              {/* 🌱 never practised · outline flame = not yet today · filled flame = done today */}
-              {MOCK_DAILY.daysPracticed === 0
+              {/* 🌱 never practised · grey flame = not yet today · orange flame = done today */}
+              {daily.daysPracticed === 0
                 ? <Text style={styles.todayFlame}>🌱</Text>
-                : <FlameIcon lit={MOCK_DAILY.playedToday} />}
-              <Text style={styles.todayDays}>{MOCK_DAILY.daysPracticed}</Text>
+                : <FlameIcon lit={daily.playedToday} />}
+              <Text style={styles.todayDays}>{daily.daysPracticed}</Text>
               <Text style={styles.todayDaysLabel}>{s.statDays}</Text>
             </View>
             <View style={styles.todayRight}>
-              <Pressable onPress={() => router.push('/today')} hitSlop={8}>
-                <Text style={styles.todayTheme}>{s.themeBattle(s.themes[MOCK_DAILY.theme])} ›</Text>
-              </Pressable>
+              <Text style={styles.todayTheme}>{s.themeBattle(s.themes[daily.theme])} ›</Text>
               {missionDots}
               <Text style={styles.todayMeta}>
-                Lv.{player.level} · {s.wordsMastered(MOCK_DAILY.wordsMastered)}
+                Lv.{player.level} · {s.wordsMastered(daily.wordsMastered)}
               </Text>
             </View>
           </Pressable>
+        )}
 
 
         {/* Level picker: swipe along あ → ア → N5 … N2 → 生活 → 全部 */}

@@ -1,23 +1,37 @@
 import { useCallback, useState } from 'react';
 import { Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
-import { useFocusEffect } from 'expo-router';
+import { useFocusEffect, useRouter } from 'expo-router';
 
 import { INITIAL_PLAYER_DATA, type PlayerData } from '../../types';
-import { loadPlayerData } from '../../utils/storage';
+import { loadPlayerData, loadWordLevel } from '../../utils/storage';
 import { useStrings } from '../../utils/i18n';
 import FlameIcon from '../../components/FlameIcon';
-import { MOCK_DAILY } from '../../utils/mockDaily';
-
-const WEEKDAYS = ['日', '一', '二', '三', '四', '五', '六'];
+import { useDaily } from '../../utils/useDaily';
+import type { MissionKey } from '../../utils/progress';
 
 export default function TodayScreen() {
   const s = useStrings();
+  const router = useRouter();
   const [player, setPlayer] = useState<PlayerData>(INITIAL_PLAYER_DATA);
   useFocusEffect(useCallback(() => { loadPlayerData().then(setPlayer); }, []));
-  const d = MOCK_DAILY;
+  const d = useDaily();
 
-  const missionLabel = (key: string) =>
-    key === 'theme' ? s.missionThemeBattle : key === 'correct' ? s.missionCorrect(10) : s.missionFixMistake;
+  const missionLabel = (key: MissionKey, target: number) => {
+    switch (key) {
+      case 'theme': return s.missionThemeBattle;
+      case 'kana': return s.missionKanaBattles(target);
+      case 'correct': return s.missionCorrect(target);
+      case 'fix': return s.missionFixMistake;
+      case 'newWords': return s.missionNewWords(target);
+    }
+  };
+
+  const startThemeBattle = async () => {
+    const wordLevel = await loadWordLevel();
+    router.push({ pathname: '/battle/matching', params: { wordLevel, theme: '1' } });
+  };
+
+  if (!d) return <SafeAreaView style={styles.safe} />;
 
   // Current month calendar: leading blanks, then 1..days
   const now = new Date();
@@ -41,8 +55,8 @@ export default function TodayScreen() {
               <View style={[styles.check, m.done && styles.checkDone]}>
                 {m.done && <Text style={styles.checkMark}>✓</Text>}
               </View>
-              <Text style={[styles.missionText, m.done && styles.missionDone]}>{missionLabel(m.key)}</Text>
-              {'progress' in m && !m.done && (
+              <Text style={[styles.missionText, m.done && styles.missionDone]}>{missionLabel(m.key, m.target)}</Text>
+              {m.target > 1 && !m.done && (
                 <Text style={styles.missionProgress}>{m.progress}/{m.target}</Text>
               )}
             </View>
@@ -50,18 +64,21 @@ export default function TodayScreen() {
           <Text style={styles.note}>{s.dailyNote}</Text>
         </View>
 
-        <Pressable style={({ pressed }) => [styles.startButton, pressed && { opacity: 0.85 }]}>
+        <Pressable
+          style={({ pressed }) => [styles.startButton, pressed && { opacity: 0.85 }]}
+          onPress={startThemeBattle}
+        >
           <Text style={styles.startText}>{s.startThemeBattle}</Text>
         </Pressable>
 
         <View style={styles.card}>
-          <Text style={styles.monthTitle}>{s.monthStamps(d.stampedDays.length)}</Text>
+          <Text style={styles.monthTitle}>{s.monthStamps(d.stampedDaysThisMonth.length)}</Text>
           <View style={styles.grid}>
-            {WEEKDAYS.map((w) => (
-              <Text key={w} style={styles.weekday}>{w}</Text>
+            {s.weekdays.map((w, i) => (
+              <Text key={i} style={styles.weekday}>{w}</Text>
             ))}
             {cells.map((day, i) => {
-              const stamped = day !== null && d.stampedDays.includes(day);
+              const stamped = day !== null && d.stampedDaysThisMonth.includes(day);
               const today = day === now.getDate();
               return (
                 <View key={i} style={styles.cell}>

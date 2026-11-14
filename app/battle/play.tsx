@@ -12,14 +12,15 @@ import { useLocalSearchParams, useRouter } from 'expo-router';
 import Timer from '../../components/Timer';
 import OptionButton from '../../components/OptionButton';
 import ScoreBoard from '../../components/ScoreBoard';
-import { generateQuestions } from '../../utils/question';
+import { questionsFor } from '../../utils/question';
+import { composeBattle, loadComposeInput, localDate, themeFor, themePool } from '../../utils/progress';
 import { simulateAIAnswer } from '../../utils/ai-opponent';
 import { calculateScore, determineBattleOutcome } from '../../utils/scoring';
 import { loadPlayerData } from '../../utils/storage';
 import { initSounds, playSound } from '../../utils/sound';
 import { getLang, useStrings } from '../../utils/i18n';
 import { loadWords } from '../../utils/wordBank';
-import { generateKanaQuestions, loadKana } from '../../utils/kana';
+import { kanaQuestionsFor, loadKana } from '../../utils/kana';
 
 import type { Word, Question, Answer, AIOpponent, BattleResult, WordLevel } from '../../types';
 import type { OptionState } from '../../components/OptionButton';
@@ -39,6 +40,7 @@ export default function PlayScreen() {
     opponentColor: string;
     difficulty: string;
     wordLevel: WordLevel;
+    theme?: string; // '1' = today's theme battle
   }>();
 
   const opponent: AIOpponent = {
@@ -48,6 +50,8 @@ export default function PlayScreen() {
   };
   const difficulty = parseFloat(params.difficulty ?? '0.8');
   const wordLevel: WordLevel = params.wordLevel ?? 'all';
+  const isThemeBattle = params.theme === '1';
+  const theme = themeFor(localDate());
 
   // ── State ─────────────────────────────────────────────────────────────────
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -85,14 +89,24 @@ export default function PlayScreen() {
   // ── Init ──────────────────────────────────────────────────────────────────
   useEffect(() => {
     loadPlayerData().then((d) => setPlayerLevel(d.level));
-    if (wordLevel === 'hiragana' || wordLevel === 'katakana') {
-      loadKana().then((kana) => setQuestions(generateKanaQuestions(kana, wordLevel, TOTAL_QUESTIONS)));
-    } else {
-      loadWords().then((words) => {
-        const filtered = wordLevel === 'all' ? words : words.filter((w) => w.level === wordLevel);
-        setQuestions(generateQuestions(filtered, TOTAL_QUESTIONS, getLang()));
-      });
-    }
+    // 1.8.0: mix review / new / seen words by recent accuracy
+    loadComposeInput(wordLevel).then(async ({ words: stats, recent }) => {
+      if (!isThemeBattle && (wordLevel === 'hiragana' || wordLevel === 'katakana')) {
+        const kana = await loadKana();
+        const pool = kana.filter((e) => e.script === wordLevel);
+        const picked = composeBattle(pool, (e) => e.id, stats, recent, TOTAL_QUESTIONS);
+        const qs = kanaQuestionsFor(picked.map((p) => p.item), pool);
+        setQuestions(qs.map((q, i) => ({ ...q, missed: picked[i].missed })));
+        return;
+      }
+      const words = await loadWords();
+      const pool = isThemeBattle
+        ? themePool(words, theme, wordLevel)
+        : wordLevel === 'all' ? words : words.filter((w) => w.level === wordLevel);
+      const picked = composeBattle(pool, (w) => w.id, stats, recent, TOTAL_QUESTIONS);
+      const qs = questionsFor(picked.map((p) => p.item), getLang());
+      setQuestions(qs.map((q, i) => ({ ...q, missed: picked[i].missed })));
+    });
     initSounds();
   }, []);
 
@@ -223,7 +237,7 @@ export default function PlayScreen() {
 
         router.replace({
           pathname: '/battle/result',
-          params: { result: JSON.stringify(result), wordLevel },
+          params: { result: JSON.stringify(result), wordLevel, theme: isThemeBattle ? '1' : '' },
         });
       } else {
         setQIndex(nextIndex);
@@ -267,12 +281,13 @@ export default function PlayScreen() {
         >
           <Text style={styles.kana}>{currentQuestion.word.kana}</Text>
           <View style={styles.tagRow}>
-            {/* 1.8.0 mock: the 2nd question pretends to be a word missed last time */}
-            {qIndex === 1 && <Text style={styles.missedTag}>{s.lastMissed}</Text>}
+            {currentQuestion.missed && <Text style={styles.missedTag}>{s.lastMissed}</Text>}
             <Text style={styles.category}>
-              {getLang() === 'en'
-                ? currentQuestion.word.category_en
-                : currentQuestion.word.category}
+              {isThemeBattle
+                ? s.themeBattle(s.themes[theme])
+                : getLang() === 'en'
+                  ? currentQuestion.word.category_en
+                  : currentQuestion.word.category}
             </Text>
           </View>
         </Animated.View>

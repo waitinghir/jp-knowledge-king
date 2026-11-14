@@ -21,6 +21,7 @@ export interface Question {
   word: Word;
   options: string[];      // 4 shuffled choices (Chinese meanings)
   correctIndex: number;   // index of the correct answer in options[]
+  missed?: boolean;       // 1.8.0: word waiting for review (shows "上次答錯")
 }
 
 // ────────────────────────────────────────────────

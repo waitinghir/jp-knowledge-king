@@ -1,10 +1,11 @@
 import { Tabs } from 'expo-router';
 import { Text } from 'react-native';
 import { useStrings } from '../../utils/i18n';
-import { MOCK_DAILY } from '../../utils/mockDaily';
+import { useDaily } from '../../utils/useDaily';
 
 export default function TabLayout() {
   const s = useStrings();
+  const daily = useDaily();
   return (
     <Tabs
       screenOptions={{
@@ -32,8 +33,8 @@ export default function TabLayout() {
         options={{
           title: s.todayTab,
           tabBarIcon: ({ color }) => <Text style={{ fontSize: 20, color }}>🔥</Text>,
-          // 1.8.0 mock: missions left today
-          tabBarBadge: MOCK_DAILY.missions.filter((m) => !m.done).length || undefined,
+          // missions left today
+          tabBarBadge: daily ? daily.missions.length - daily.missionsDone || undefined : undefined,
           tabBarBadgeStyle: { backgroundColor: '#C41E3A', fontSize: 11 },
         }}
       />

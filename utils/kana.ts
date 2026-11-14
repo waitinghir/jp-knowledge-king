@@ -57,6 +57,12 @@ function buildKanaQuestion(e: KanaEntry, romajiOf: Map<string, string>): Questio
   return { word, options, correctIndex: options.indexOf(answer) };
 }
 
+/** Questions for kana already picked by the caller; `pool` is the whole script (for romaji lookup). */
+export function kanaQuestionsFor(selected: KanaEntry[], pool: KanaEntry[]): Question[] {
+  const romajiOf = new Map(pool.map((e) => [e.kana, e.romaji]));
+  return selected.map((e) => buildKanaQuestion(e, romajiOf));
+}
+
 export function generateKanaQuestions(
   entries: KanaEntry[],
   script: KanaEntry['script'],

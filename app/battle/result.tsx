@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { addBattleResult } from '../../utils/storage';
-import { MOCK_DAILY } from '../../utils/mockDaily';
+import { recordBattle, type BattleSummary } from '../../utils/progress';
 import { pushPlayerData } from '../../utils/cloudSync';
 import { maybeAskForReview } from '../../utils/reviewPrompt';
 import { playSound } from '../../utils/sound';
@@ -31,7 +31,8 @@ export default function ResultScreen() {
   const router = useRouter();
   const s = useStrings();
   const lang = getLang();
-  const params = useLocalSearchParams<{ result: string; wordLevel?: WordLevel }>();
+  const params = useLocalSearchParams<{ result: string; wordLevel?: WordLevel; theme?: string }>();
+  const [daily, setDaily] = useState<BattleSummary | null>(null);
   const [updatedPlayer, setUpdatedPlayer] = useState<PlayerData | null>(null);
   const battleId = useRef(newId()).current;
   // L5: "report this question" state, per question index
@@ -86,11 +87,22 @@ export default function ResultScreen() {
   const bodyOpacity = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
-    // Save result to AsyncStorage
-    addBattleResult(result.playerTotalScore, result.outcome).then((d) => {
+    // Save result to AsyncStorage; 1.8.0: per-word stats, missions, practised days
+    Promise.all([
+      addBattleResult(result.playerTotalScore, result.outcome),
+      recordBattle({
+        answers: result.questions.map((q, i) => ({
+          wordId: q.word.id,
+          correct: !!result.playerAnswers[i]?.isCorrect,
+        })),
+        level: params.wordLevel ?? 'all',
+        isThemeBattle: params.theme === '1',
+      }),
+    ]).then(([d, summary]) => {
       setUpdatedPlayer(d);
+      setDaily(summary);
       pushPlayerData(d); // P2: cloud backup, best-effort
-      maybeAskForReview(result.outcome, d);
+      maybeAskForReview(result.outcome, d, summary.daysPracticed);
     });
 
     // L5: anonymous answer log for word bank quality monitoring
@@ -131,15 +143,24 @@ export default function ResultScreen() {
 
         <Animated.View style={[styles.body, { opacity: bodyOpacity }]}>
 
-          {/* Daily loop (1.8.0 mock data) */}
-          <View style={styles.dailyCard}>
-            <Text style={styles.dailyLine}>
-              {s.newlyMastered(MOCK_DAILY.newlyMastered)} · {s.fixedMistakes(MOCK_DAILY.fixedMistakes)}
-            </Text>
-            <Text style={styles.dailyMissions}>
-              {s.missionsProgress(MOCK_DAILY.missions.filter((m) => m.done).length + 1, MOCK_DAILY.missions.length)}
-            </Text>
-          </View>
+          {/* Daily loop: what this battle did for today's missions and mastery */}
+          {daily && (
+            <View style={styles.dailyCard}>
+              {(daily.newlyMastered > 0 || daily.fixed > 0) && (
+                <Text style={styles.dailyLine}>
+                  {[
+                    daily.newlyMastered > 0 ? s.newlyMastered(daily.newlyMastered) : null,
+                    daily.fixed > 0 ? s.fixedMistakes(daily.fixed) : null,
+                  ].filter(Boolean).join(' · ')}
+                </Text>
+              )}
+              <Text style={styles.dailyMissions}>
+                {daily.completedToday
+                  ? `✓ ${s.todayDone}`
+                  : s.missionsProgress(daily.missionsAfter, daily.missionsTotal)}
+              </Text>
+            </View>
+          )}
 
           {/* Score comparison */}
           <View style={styles.scoreRow}>
@@ -253,7 +274,7 @@ export default function ResultScreen() {
               onPress={() =>
                 router.replace({
                   pathname: '/battle/matching',
-                  params: { wordLevel: params.wordLevel ?? 'all' },
+                  params: { wordLevel: params.wordLevel ?? 'all', theme: params.theme ?? '' },
                 })
               }
             >
