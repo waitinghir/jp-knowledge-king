@@ -9,7 +9,7 @@
 -- Events:
 --   first_open, home_view, level_change, battle_start, battle_finish,
 --   theme_battle_start, reminder_ask_shown, reminder_answer, reminder_permission,
---   open_from_push,
+--   open_from_push {copy}, push_delivered {copy} (reported at the next app open),
 --   missions_completed
 
 create table if not exists public.app_events (

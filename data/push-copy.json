@@ -1,0 +1,18 @@
+{
+  "_doc": "每日提醒推播文案。id 會記在點擊紀錄裡，改了句子就換一個新 id（例如 _v2），數據才不會混在一起。可用的代入：{n} 待複習字數（最多 5）、{theme} 今日主題、{days} 練習天數、{streak} 連續天數。streak 只在連續 3 天以上、今天還沒玩時用；其餘每天輪替，review／fix 只在有待複習的字時出現，days 只在練過至少 1 天時出現。不用驚嘆號、不催促。",
+  "streak": [
+    { "id": "streak_v1", "zh": "連續 {streak} 天，今天還差一場", "en": "{streak}-day streak. One round keeps it going" }
+  ],
+  "review": [
+    { "id": "review_v1", "zh": "今天有 {n} 個字等你複習", "en": "{n} words are waiting for review" }
+  ],
+  "theme": [
+    { "id": "theme_v1", "zh": "今日主題是{theme}，來一場？", "en": "Today's theme is {theme}. One round?" }
+  ],
+  "fix": [
+    { "id": "fix_v1", "zh": "花 1 分鐘，把昨天錯的字收服", "en": "One minute to fix yesterday's missed words" }
+  ],
+  "days": [
+    { "id": "days_v1", "zh": "已經練習 {days} 天了，今天也來一場", "en": "{days} days practiced so far. One round today?" }
+  ]
+}

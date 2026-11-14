@@ -1,5 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import type { Word, WordLevel } from '../types';
+import { loadThemes, type Theme } from './remoteData';
 
 // 1.8.0 daily review loop: per-word answer stats, question composition,
 // daily missions, practised days and the monthly stamp calendar.
@@ -7,20 +8,9 @@ import type { Word, WordLevel } from '../types';
 
 // ── Types ───────────────────────────────────────────────────────────────────
 
-export type ThemeKey = 'food' | 'travel' | 'people' | 'work' | 'nature' | 'daily';
-export const THEME_KEYS: ThemeKey[] = ['food', 'travel', 'people', 'work', 'nature', 'daily'];
-
-// Word bank categories are spelled differently per level, so they are
-// normalised into six themes. Words outside these (verbs, adjectives,
-// abstract ideas…) only appear in normal battles.
-const THEME_CATEGORIES: Record<ThemeKey, string[]> = {
-  food: ['買物食事', '餐廳/點餐', '購物/藥妝'],
-  travel: ['交通旅行', '交通'],
-  people: ['人間關係', '人間関係', '社交', '感情', '感情・心理'],
-  work: ['職場學校', '仕事', '仕事・経済', '教育', '職場', '経営'],
-  nature: ['自然季節', '自然', '環境'],
-  daily: ['日常生活', '健康', '時間', '医療'],
-};
+// Daily themes come from data/themes.json (GitHub, editable without an
+// app update): each theme groups word bank categories. Words outside every
+// theme only appear in normal battles.
 
 export interface WordStat {
   seen: number;
@@ -68,7 +58,7 @@ export interface Mission {
 }
 
 export interface DailySummary {
-  theme: ThemeKey;
+  theme: Theme;
   missions: Mission[];
   missionsDone: number;
   daysPracticed: number;
@@ -117,10 +107,15 @@ function weekOf(s: string): string {
 }
 
 /** Everyone shares the same theme on the same date; it rotates daily. */
-export function themeFor(date: string): ThemeKey {
+export function themeFor(date: string, themes: Theme[]): Theme {
   const [y, m, d] = date.split('-').map(Number);
   const dayNo = Math.floor(Date.UTC(y, m - 1, d) / 86400000);
-  return THEME_KEYS[dayNo % THEME_KEYS.length];
+  return themes[dayNo % themes.length];
+}
+
+/** Today's theme (or any date's), using the latest theme list. */
+export async function loadThemeFor(date = localDate()): Promise<Theme> {
+  return themeFor(date, await loadThemes());
 }
 
 // ── Storage ─────────────────────────────────────────────────────────────────
@@ -245,7 +240,7 @@ export async function loadDaily(level: WordLevel): Promise<DailySummary> {
   const monthPrefix = today.slice(0, 8);
   const words = Object.values(state.words);
   return {
-    theme: themeFor(today),
+    theme: themeFor(today, await loadThemes()),
     missions,
     missionsDone: countDone(missions),
     daysPracticed: state.days.length,
@@ -349,8 +344,8 @@ const LEVELS_UP_TO: Record<WordLevel, string[] | null> = {
  * Today's theme words at the player's level and easier levels: some themes
  * are thin within a single level (e.g. N3 has no food words).
  */
-export function themePool(words: Word[], theme: ThemeKey, level: WordLevel, min = 5): Word[] {
-  const cats = new Set(THEME_CATEGORIES[theme]);
+export function themePool(words: Word[], theme: Theme, level: WordLevel, min = 5): Word[] {
+  const cats = new Set(theme.categories);
   const inTheme = words.filter((w) => cats.has(w.category));
   const levels = LEVELS_UP_TO[level];
   const pool = levels ? inTheme.filter((w) => levels.includes(w.level)) : inTheme;

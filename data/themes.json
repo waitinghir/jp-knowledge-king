@@ -1,0 +1,11 @@
+{
+  "_doc": "今日主題：依日期輪替（第幾天 % 主題數）。categories = 字庫的 category 欄位；主題戰抽「今日主題、玩家難度及更簡單」的字。改這裡推上 main 就生效，改主題數會讓所有人的輪替順序一起變。",
+  "themes": [
+    { "key": "food",   "name_zh": "食物與購物", "name_en": "Food & shopping",   "categories": ["買物食事", "餐廳/點餐", "購物/藥妝"] },
+    { "key": "travel", "name_zh": "交通與旅行", "name_en": "Getting around",    "categories": ["交通旅行", "交通"] },
+    { "key": "people", "name_zh": "人與感情",   "name_en": "People & feelings", "categories": ["人間關係", "人間関係", "社交", "感情", "感情・心理"] },
+    { "key": "work",   "name_zh": "工作與學校", "name_en": "Work & school",     "categories": ["職場學校", "仕事", "仕事・経済", "教育", "職場", "経営"] },
+    { "key": "nature", "name_zh": "自然與季節", "name_en": "Nature & seasons",  "categories": ["自然季節", "自然", "環境"] },
+    { "key": "daily",  "name_zh": "日常生活",   "name_en": "Daily life",        "categories": ["日常生活", "健康", "時間", "医療"] }
+  ]
+}

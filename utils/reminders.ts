@@ -1,8 +1,17 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Notifications from 'expo-notifications';
 
-import { getLang, strings } from './i18n';
+import { getLang, strings, type Lang } from './i18n';
 import { loadDaily, localDate, themeFor } from './progress';
+import {
+  loadPushCopy,
+  loadThemes,
+  themeName,
+  type PushCopy,
+  type PushKind,
+  type PushLine,
+  type Theme,
+} from './remoteData';
 import { loadWordLevel } from './storage';
 import { logEvent } from './telemetry';
 
@@ -85,33 +94,83 @@ export async function shouldAskAgain(gamesPlayed: number): Promise<boolean> {
   return cur.ask === 'declined' && gamesPlayed >= (cur.declinedAtGames ?? 0) + 2;
 }
 
-// ── Copy ────────────────────────────────────────────────────────────────────
+// ── Copy (data/push-copy.json, editable without an app update) ────────────
 
-function pickBody(dayOffset: number, slot: number, d: Awaited<ReturnType<typeof loadDaily>>): string {
-  const s = strings[getLang()];
-  // Streak at risk today: "連續 5 天，今天還差一場" replaces today's reminder.
-  if (dayOffset === 0 && d.streak >= 3 && !d.playedToday) return s.pushStreak(d.streak);
-  const options = [
-    d.reviewWaiting > 0 ? s.pushReview(Math.min(d.reviewWaiting, 5)) : null,
-    s.pushTheme(s.themes[d.theme]),
-    d.reviewWaiting > 0 ? s.pushFixYesterday : null,
-    d.daysPracticed > 0 ? s.pushDays(d.daysPracticed) : null,
-  ].filter((x): x is string => !!x);
-  // Rotate by date so the same line doesn't repeat day after day.
-  const dayNo = Math.floor(Date.now() / 86400000) + dayOffset + slot;
-  return options[dayNo % options.length];
+type Daily = Awaited<ReturnType<typeof loadDaily>>;
+
+function fill(text: string, d: Daily, theme: Theme, lang: Lang): string {
+  return text
+    .replace(/\{n\}/g, String(Math.min(d.reviewWaiting, 5)))
+    .replace(/\{theme\}/g, themeName(theme, lang))
+    .replace(/\{days\}/g, String(d.daysPracticed))
+    .replace(/\{streak\}/g, String(d.streak));
 }
 
-export async function rescheduleReminders(): Promise<void> {
+function pickLine(copy: PushCopy, dayOffset: number, slot: number, d: Daily): PushLine {
+  // Rotate by date (and time slot) so the same line doesn't repeat day after day.
+  const dayNo = Math.floor(Date.now() / 86400000) + dayOffset + slot;
+  const from = (lines: PushLine[]) => lines[dayNo % lines.length];
+  // Streak at risk today: "連續 5 天，今天還差一場" replaces today's reminder.
+  if (dayOffset === 0 && d.streak >= 3 && !d.playedToday) return from(copy.streak);
+  const kinds: PushKind[] = [
+    ...(d.reviewWaiting > 0 ? (['review'] as const) : []),
+    'theme',
+    ...(d.reviewWaiting > 0 ? (['fix'] as const) : []),
+    ...(d.daysPracticed > 0 ? (['days'] as const) : []),
+  ];
+  return from(copy[kinds[dayNo % kinds.length]]);
+}
+
+// ── Delivery tracking ──────────────────────────────────────────────────────
+// Local notifications don't report delivery. Each plan is kept on the phone;
+// at the next re-plan, planned reminders whose time has passed have fired
+// (they were not cancelled in time), so they are reported then. Players who
+// never open the app again never report, so open rates read a bit high.
+
+const PLAN_KEY = 'jp_king_reminder_plan';
+type Planned = { at: number; copy: string };
+
+async function reportDelivered(granted: boolean) {
   try {
+    const raw = await AsyncStorage.getItem(PLAN_KEY);
+    const plan: Planned[] = raw ? JSON.parse(raw) : [];
+    const now = Date.now();
+    if (granted) {
+      plan.filter((p) => p.at <= now).forEach((p) => logEvent('push_delivered', { copy: p.copy }));
+    }
+    await AsyncStorage.setItem(PLAN_KEY, JSON.stringify([]));
+  } catch {
+    // ignore
+  }
+}
+
+// ── Scheduling ──────────────────────────────────────────────────────────────
+
+let running: Promise<void> | null = null;
+
+/** Re-plan the next 7 days of reminders (serialised: launch, foreground and battle can overlap). */
+export function rescheduleReminders(): Promise<void> {
+  const next = (running ?? Promise.resolve()).then(planReminders);
+  running = next;
+  return next;
+}
+
+async function planReminders(): Promise<void> {
+  try {
+    const granted = (await Notifications.getPermissionsAsync()).granted;
+    await reportDelivered(granted);
     await Notifications.cancelAllScheduledNotificationsAsync();
     const settings = await loadReminderSettings();
-    if (!settings.enabled || settings.times.length === 0) return;
-    if (!(await Notifications.getPermissionsAsync()).granted) return;
+    if (!settings.enabled || settings.times.length === 0 || !granted) return;
 
-    const daily = await loadDaily(await loadWordLevel());
-    const s = strings[getLang()];
+    const lang = getLang();
+    const [daily, copy, themes] = await Promise.all([
+      loadWordLevel().then(loadDaily),
+      loadPushCopy(),
+      loadThemes(),
+    ]);
     const now = new Date();
+    const plan: Planned[] = [];
     const jobs: Promise<unknown>[] = [];
     for (let offset = 0; offset < DAYS_AHEAD; offset++) {
       // Already practised today: skip the rest of today's reminders.
@@ -120,19 +179,26 @@ export async function rescheduleReminders(): Promise<void> {
         const at = new Date(now.getFullYear(), now.getMonth(), now.getDate() + offset, TIMES[t].hour, TIMES[t].minute);
         if (at <= now) return;
         // A future day's reminder names that day's theme.
-        const day = { ...daily, theme: themeFor(localDate(at)) };
+        const theme = themeFor(localDate(at), themes);
+        const line = pickLine(copy, offset, slot, daily);
+        plan.push({ at: at.getTime(), copy: line.id });
         jobs.push(
           Notifications.scheduleNotificationAsync({
-            content: { title: s.appName, body: pickBody(offset, slot, day) },
+            content: {
+              title: strings[lang].appName,
+              body: fill(line[lang], daily, theme, lang),
+              data: { copy: line.id },
+            },
             trigger: { type: Notifications.SchedulableTriggerInputTypes.DATE, date: at },
           }).catch(() => {}),
         );
       });
     }
     await Promise.all(jobs);
+    await AsyncStorage.setItem(PLAN_KEY, JSON.stringify(plan));
     if (__DEV__) {
       const all = await Notifications.getAllScheduledNotificationsAsync();
-      console.log('[reminders]', all.map((n) => `${JSON.stringify((n.trigger as { date?: unknown }).date ?? n.trigger)} ${n.content.body}`).join('\n'));
+      console.log('[reminders]\n' + all.map((n) => `${n.content.data?.copy} | ${n.content.body}`).join('\n'));
     }
   } catch {
     // reminders are best-effort

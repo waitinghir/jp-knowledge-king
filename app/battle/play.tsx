@@ -13,7 +13,8 @@ import Timer from '../../components/Timer';
 import OptionButton from '../../components/OptionButton';
 import ScoreBoard from '../../components/ScoreBoard';
 import { questionsFor } from '../../utils/question';
-import { composeBattle, loadComposeInput, localDate, themeFor, themePool } from '../../utils/progress';
+import { composeBattle, loadComposeInput, loadThemeFor, themePool } from '../../utils/progress';
+import { themeName, type Theme } from '../../utils/remoteData';
 import { simulateAIAnswer } from '../../utils/ai-opponent';
 import { calculateScore, determineBattleOutcome } from '../../utils/scoring';
 import { loadPlayerData } from '../../utils/storage';
@@ -51,7 +52,7 @@ export default function PlayScreen() {
   const difficulty = parseFloat(params.difficulty ?? '0.8');
   const wordLevel: WordLevel = params.wordLevel ?? 'all';
   const isThemeBattle = params.theme === '1';
-  const theme = themeFor(localDate());
+  const [theme, setTheme] = useState<Theme | null>(null);
 
   // ── State ─────────────────────────────────────────────────────────────────
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -99,9 +100,10 @@ export default function PlayScreen() {
         setQuestions(qs.map((q, i) => ({ ...q, missed: picked[i].missed })));
         return;
       }
-      const words = await loadWords();
+      const [words, todayTheme] = await Promise.all([loadWords(), loadThemeFor()]);
+      setTheme(todayTheme);
       const pool = isThemeBattle
-        ? themePool(words, theme, wordLevel)
+        ? themePool(words, todayTheme, wordLevel)
         : wordLevel === 'all' ? words : words.filter((w) => w.level === wordLevel);
       const picked = composeBattle(pool, (w) => w.id, stats, recent, TOTAL_QUESTIONS);
       const qs = questionsFor(picked.map((p) => p.item), getLang());
@@ -283,8 +285,8 @@ export default function PlayScreen() {
           <View style={styles.tagRow}>
             {currentQuestion.missed && <Text style={styles.missedTag}>{s.lastMissed}</Text>}
             <Text style={styles.category}>
-              {isThemeBattle
-                ? s.themeBattle(s.themes[theme])
+              {isThemeBattle && theme
+                ? s.themeBattle(themeName(theme, getLang()))
                 : getLang() === 'en'
                   ? currentQuestion.word.category_en
                   : currentQuestion.word.category}

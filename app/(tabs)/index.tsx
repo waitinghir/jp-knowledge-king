@@ -13,7 +13,8 @@ import { DEFAULT_WORD_LEVEL, loadPlayerData, loadWordLevel, saveWordLevel } from
 import { onPlayerDataRestored } from '../../utils/cloudSync';
 import { INITIAL_PLAYER_DATA } from '../../types';
 import type { PlayerData, WordLevel } from '../../types';
-import { useStrings } from '../../utils/i18n';
+import { getLang, useStrings } from '../../utils/i18n';
+import { themeName } from '../../utils/remoteData';
 import LevelPicker from '../../components/LevelPicker';
 import ReminderAsk from '../../components/ReminderAsk';
 import { answerReminderAsk, loadReminderSettings } from '../../utils/reminders';
@@ -107,7 +108,7 @@ export default function HomeScreen() {
               <Text style={styles.todayDaysLabel}>{s.statDays}</Text>
             </View>
             <View style={styles.todayRight}>
-              <Text style={styles.todayTheme}>{s.themeBattle(s.themes[daily.theme])} ›</Text>
+              <Text style={styles.todayTheme}>{s.themeBattle(themeName(daily.theme, getLang()))} ›</Text>
               {missionDots}
               <Text style={styles.todayMeta}>
                 Lv.{player.level} · {s.wordsMastered(daily.wordsMastered)}

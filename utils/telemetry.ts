@@ -109,6 +109,7 @@ export type AppEvent =
   | 'reminder_answer'
   | 'reminder_permission'
   | 'open_from_push'
+  | 'push_delivered'
   | 'missions_completed';
 
 /** Fire-and-forget event log; never throws, never blocks. */

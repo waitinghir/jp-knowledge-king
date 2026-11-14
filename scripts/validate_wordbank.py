@@ -222,10 +222,77 @@ def check_kana(path, errors):
     print(f'checked {path}: {len(data)} entries')
 
 
+def check_themes(path, words, errors, warnings):
+    """data/themes.json: daily themes built from word bank categories."""
+    try:
+        themes = json.load(open(path, encoding='utf-8'))['themes']
+    except Exception as e:  # noqa: BLE001
+        errors.append(f'{path}: invalid ({e})')
+        return
+    cats = {w.get('category') for w in words}
+    keys = set()
+    for t in themes:
+        k = t.get('key', '?')
+        for f in ('key', 'name_zh', 'name_en', 'categories'):
+            if not t.get(f):
+                errors.append(f'theme {k}: missing "{f}"')
+        if k in keys:
+            errors.append(f'theme {k}: duplicate key')
+        keys.add(k)
+        tc = set(t.get('categories') or [])
+        for c in tc - cats:
+            warnings.append(f'theme {k}: category "{c}" has no words in the bank')
+        pool = [w for w in words if w.get('category') in tc]
+        easy = [w for w in pool if w.get('level') in ('N5', 'N4')]
+        if len(pool) < 5:
+            errors.append(f'theme {k}: only {len(pool)} words, a battle needs 5')
+        elif len(easy) < 15:
+            warnings.append(f'theme {k}: only {len(easy)} N5/N4 words, beginners will see repeats')
+    print(f'checked {path}: {len(themes)} themes')
+
+
+PUSH_KINDS = ('streak', 'review', 'theme', 'fix', 'days')
+PUSH_VARS = {'{n}', '{theme}', '{days}', '{streak}'}
+
+
+def check_push_copy(path, errors):
+    """data/push-copy.json: daily reminder lines."""
+    try:
+        copy = json.load(open(path, encoding='utf-8'))
+    except Exception as e:  # noqa: BLE001
+        errors.append(f'{path}: invalid JSON ({e})')
+        return
+    ids = set()
+    n = 0
+    for kind in PUSH_KINDS:
+        lines = copy.get(kind)
+        if not isinstance(lines, list) or not lines:
+            errors.append(f'push {kind}: needs at least one line')
+            continue
+        for ln in lines:
+            n += 1
+            lid = ln.get('id', '?')
+            if lid in ids:
+                errors.append(f'push {lid}: duplicate id')
+            ids.add(lid)
+            zh, en = ln.get('zh') or '', ln.get('en') or ''
+            if not zh or not en:
+                errors.append(f'push {lid}: needs both zh and en')
+            vz, ve = set(re.findall(r'\{\w+\}', zh)), set(re.findall(r'\{\w+\}', en))
+            for v in (vz | ve) - PUSH_VARS:
+                errors.append(f'push {lid}: unknown placeholder {v}')
+            if vz != ve:
+                errors.append(f'push {lid}: zh and en use different placeholders {sorted(vz)} vs {sorted(ve)}')
+            if '!' in zh + en or '！' in zh:
+                errors.append(f'push {lid}: no exclamation marks in reminders')
+    print(f'checked {path}: {n} lines')
+
+
 def main(argv):
     verbose = '-v' in argv
     files = [a for a in argv if not a.startswith('-')] or sorted(glob.glob('data/*-words.json'))
     errors, warnings, seen = [], [], {}
+    all_words = []
     for f in files:
         try:
             data = json.load(open(f, encoding='utf-8'))
@@ -241,11 +308,17 @@ def main(argv):
                 errors.append(f'{wid}: duplicate id (in {seen[wid]} and {f})')
             seen[wid] = f
             check_entry(w, errors, warnings)
+            all_words.append(w)
         print(f'checked {f}: {len(data)} entries')
 
     kana_path = 'data/kana.json'
     if not [a for a in argv if not a.startswith('-')] and os.path.exists(kana_path):
         check_kana(kana_path, errors)
+    if not [a for a in argv if not a.startswith('-')]:
+        if os.path.exists('data/themes.json'):
+            check_themes('data/themes.json', all_words, errors, warnings)
+        if os.path.exists('data/push-copy.json'):
+            check_push_copy('data/push-copy.json', errors)
 
     for e in errors:
         print('ERROR  ', e)

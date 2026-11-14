@@ -4,7 +4,8 @@ import { useFocusEffect, useRouter } from 'expo-router';
 
 import { INITIAL_PLAYER_DATA, type PlayerData } from '../../types';
 import { loadPlayerData, loadWordLevel } from '../../utils/storage';
-import { useStrings } from '../../utils/i18n';
+import { getLang, useStrings } from '../../utils/i18n';
+import { themeName } from '../../utils/remoteData';
 import FlameIcon from '../../components/FlameIcon';
 import { useDaily } from '../../utils/useDaily';
 import type { MissionKey } from '../../utils/progress';
@@ -29,7 +30,7 @@ export default function TodayScreen() {
 
   const startThemeBattle = async () => {
     const wordLevel = await loadWordLevel();
-    logEvent('theme_battle_start', { level: wordLevel, theme: d?.theme ?? '' });
+    logEvent('theme_battle_start', { level: wordLevel, theme: d?.theme.key ?? '' });
     router.push({ pathname: '/battle/matching', params: { wordLevel, theme: '1' } });
   };
 
@@ -45,7 +46,7 @@ export default function TodayScreen() {
     <SafeAreaView style={styles.safe}>
       <ScrollView contentContainerStyle={styles.container}>
         <Text style={styles.title}>{s.dailyTitle}</Text>
-        <Text style={styles.theme}>{s.todayTheme(s.themes[d.theme])}</Text>
+        <Text style={styles.theme}>{s.todayTheme(themeName(d.theme, getLang()))}</Text>
         <View style={styles.streakRow}>
           <FlameIcon lit={d.playedToday} size={18} />
           <Text style={styles.streak}>{s.daysPracticed(d.daysPracticed)} · {s.streakDays(d.streak)}</Text>
