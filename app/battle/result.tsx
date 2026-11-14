@@ -14,6 +14,8 @@ import { addBattleResult } from '../../utils/storage';
 import { recordBattle, type BattleSummary } from '../../utils/progress';
 import { pushPlayerData } from '../../utils/cloudSync';
 import { maybeAskForReview } from '../../utils/reviewPrompt';
+import { answerReminderAsk, shouldAskAgain } from '../../utils/reminders';
+import ReminderAsk from '../../components/ReminderAsk';
 import { playSound } from '../../utils/sound';
 import { getLang, useStrings } from '../../utils/i18n';
 import { logBattleAnswers, newId, reportQuestion, type ReportReason } from '../../utils/telemetry';
@@ -33,6 +35,7 @@ export default function ResultScreen() {
   const lang = getLang();
   const params = useLocalSearchParams<{ result: string; wordLevel?: WordLevel; theme?: string }>();
   const [daily, setDaily] = useState<BattleSummary | null>(null);
+  const [askReminder, setAskReminder] = useState(false);
   const [updatedPlayer, setUpdatedPlayer] = useState<PlayerData | null>(null);
   const battleId = useRef(newId()).current;
   // L5: "report this question" state, per question index
@@ -102,7 +105,11 @@ export default function ResultScreen() {
       setUpdatedPlayer(d);
       setDaily(summary);
       pushPlayerData(d); // P2: cloud backup, best-effort
-      maybeAskForReview(result.outcome, d, summary.daysPracticed);
+      // "先不要" on first launch → ask once more two battles later; never together with the rating ask
+      shouldAskAgain(d.gamesPlayed).then((again) => {
+        if (again) setAskReminder(true);
+        maybeAskForReview(result.outcome, d, summary.daysPracticed, again);
+      });
     });
 
     // L5: anonymous answer log for word bank quality monitoring
@@ -323,6 +330,15 @@ export default function ResultScreen() {
           </Pressable>
         </Pressable>
       </Modal>
+      <ReminderAsk
+        visible={askReminder}
+        onChoose={(choice) => {
+          setAskReminder(false);
+          // let the card fade out before the iOS dialog appears
+          setTimeout(() => answerReminderAsk(choice, updatedPlayer?.gamesPlayed ?? 0), 350);
+        }}
+        s={s}
+      />
     </SafeAreaView>
   );
 }

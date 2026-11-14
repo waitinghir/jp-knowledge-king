@@ -1,6 +1,8 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
+  Alert,
   KeyboardAvoidingView,
+  Linking,
   Platform,
   Pressable,
   SafeAreaView,
@@ -14,18 +16,49 @@ import { useRouter } from 'expo-router';
 
 import FeedbackForm from '../components/FeedbackForm';
 import { useStrings } from '../utils/i18n';
+import {
+  loadReminderSettings,
+  requestReminderPermission,
+  saveReminderSettings,
+  type ReminderSettings,
+  type ReminderTime,
+} from '../utils/reminders';
 
-type ReminderTime = 'noon' | 'night';
-
-// 1.8.0 UI mock: reminder switches hold local state only; nothing is saved or scheduled yet.
 export default function SettingsScreen() {
   const router = useRouter();
   const s = useStrings();
-  const [reminder, setReminder] = useState(true);
-  const [times, setTimes] = useState<ReminderTime[]>(['night']);
+  const [settings, setSettings] = useState<ReminderSettings | null>(null);
+  useEffect(() => { loadReminderSettings().then(setSettings); }, []);
 
-  const toggleTime = (t: ReminderTime) =>
-    setTimes((cur) => (cur.includes(t) ? cur.filter((x) => x !== t) : [...cur, t]));
+  const update = (next: ReminderSettings) => {
+    setSettings(next);
+    saveReminderSettings(next);
+  };
+
+  const setReminder = async (on: boolean) => {
+    if (!settings) return;
+    if (!on) return update({ ...settings, enabled: false });
+    // Turning it on: the iOS dialog appears here if it was never shown.
+    const granted = await requestReminderPermission();
+    if (!granted) {
+      Alert.alert(s.reminderDeniedTitle, s.reminderDeniedBody, [
+        { text: s.close, style: 'cancel' },
+        { text: s.openSettings, onPress: () => Linking.openSettings() },
+      ]);
+      return;
+    }
+    update({ ...settings, enabled: true, ask: 'answered', times: settings.times.length ? settings.times : ['night'] });
+  };
+
+  const toggleTime = (t: ReminderTime) => {
+    if (!settings) return;
+    const times = settings.times.includes(t) ? settings.times.filter((x) => x !== t) : [...settings.times, t];
+    // Unticking both times turns reminders off.
+    update({ ...settings, times, enabled: times.length > 0 });
+  };
+
+  const reminder = !!settings?.enabled;
+  const times = settings?.times ?? [];
 
   return (
     <SafeAreaView style={styles.safe}>

@@ -16,6 +16,7 @@ import type { PlayerData, WordLevel } from '../../types';
 import { useStrings } from '../../utils/i18n';
 import LevelPicker from '../../components/LevelPicker';
 import ReminderAsk from '../../components/ReminderAsk';
+import { answerReminderAsk, loadReminderSettings } from '../../utils/reminders';
 import FlameIcon from '../../components/FlameIcon';
 import { useDaily } from '../../utils/useDaily';
 
@@ -24,8 +25,11 @@ export default function HomeScreen() {
   const s = useStrings();
   const [player, setPlayer] = useState<PlayerData>(INITIAL_PLAYER_DATA);
   const [wordLevel, setWordLevel] = useState<WordLevel>(DEFAULT_WORD_LEVEL);
-  // 1.8.0 mock: show the reminder ask once per launch so it can be reviewed
+  // First launch: our own reminder card (the iOS dialog follows only if a time is picked)
   const [askReminder, setAskReminder] = useState(false);
+  useEffect(() => {
+    loadReminderSettings().then((r) => setAskReminder(r.ask === 'never'));
+  }, []);
 
   const daily = useDaily();
 
@@ -136,7 +140,15 @@ export default function HomeScreen() {
         <Text style={styles.gearText}>⚙︎</Text>
       </Pressable>
 
-      <ReminderAsk visible={askReminder} onChoose={() => setAskReminder(false)} s={s} />
+      <ReminderAsk
+        visible={askReminder}
+        onChoose={(choice) => {
+          setAskReminder(false);
+          // let the card fade out before the iOS dialog appears
+          setTimeout(() => answerReminderAsk(choice, player.gamesPlayed), 350);
+        }}
+        s={s}
+      />
     </SafeAreaView>
   );
 }
