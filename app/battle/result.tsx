@@ -499,6 +499,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     paddingVertical: 12,
   },
-  dailyLine: { fontSize: 14, color: '#2ECC71', fontWeight: '600' },
+  // flex: long English lines wrap instead of pushing the mission status off screen
+  dailyLine: { flex: 1, marginRight: 12, fontSize: 14, color: '#2ECC71', fontWeight: '600' },
   dailyMissions: { fontSize: 13, color: '#F1C40F', fontWeight: '600' },
 });
