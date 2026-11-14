@@ -4,6 +4,7 @@ import * as Notifications from 'expo-notifications';
 import { getLang, strings } from './i18n';
 import { loadDaily, localDate, themeFor } from './progress';
 import { loadWordLevel } from './storage';
+import { logEvent } from './telemetry';
 
 // Daily practice reminders, scheduled on the phone only (no server).
 // The next 7 days are scheduled one by one so each notification can carry
@@ -74,6 +75,7 @@ export async function answerReminderAsk(choice: ReminderTime | 'later', gamesPla
     return;
   }
   const granted = await requestReminderPermission();
+  logEvent('reminder_permission', { granted });
   await saveReminderSettings({ enabled: granted, times: [choice], ask: 'answered' });
 }
 

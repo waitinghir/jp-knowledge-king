@@ -4,12 +4,24 @@ import { StatusBar } from 'expo-status-bar';
 import { AppState } from 'react-native';
 import { syncPlayerData } from '../utils/cloudSync';
 import { onProgressChange } from '../utils/progress';
+import * as Notifications from 'expo-notifications';
 import { rescheduleReminders } from '../utils/reminders';
+import { logEvent, logFirstOpen } from '../utils/telemetry';
 
 export default function RootLayout() {
   // P2: sign in anonymously and reconcile local/cloud player data (best-effort).
   useEffect(() => {
     syncPlayerData();
+    logFirstOpen();
+  }, []);
+
+  // Opened by tapping a reminder (also when it launched the app).
+  useEffect(() => {
+    Notifications.getLastNotificationResponseAsync()
+      .then((r) => { if (r) logEvent('open_from_push'); })
+      .catch(() => {});
+    const sub = Notifications.addNotificationResponseReceivedListener(() => logEvent('open_from_push'));
+    return () => sub.remove();
   }, []);
 
   // Daily reminders: re-plan on launch, on returning to the app and after each battle.

@@ -18,7 +18,7 @@ import { answerReminderAsk, shouldAskAgain } from '../../utils/reminders';
 import ReminderAsk from '../../components/ReminderAsk';
 import { playSound } from '../../utils/sound';
 import { getLang, useStrings } from '../../utils/i18n';
-import { logBattleAnswers, newId, reportQuestion, type ReportReason } from '../../utils/telemetry';
+import { logBattleAnswers, logEvent, newId, reportQuestion, type ReportReason } from '../../utils/telemetry';
 import type { BattleResult, PlayerData, WordLevel } from '../../types';
 
 function getOutcomeConfig(s: ReturnType<typeof useStrings>) {
@@ -104,10 +104,20 @@ export default function ResultScreen() {
     ]).then(([d, summary]) => {
       setUpdatedPlayer(d);
       setDaily(summary);
+      logEvent('battle_finish', {
+        level: params.wordLevel ?? 'all',
+        theme: params.theme === '1',
+        outcome: result.outcome,
+        games: d.gamesPlayed,
+      });
+      if (summary.completedToday) logEvent('missions_completed', { days: summary.daysPracticed });
       pushPlayerData(d); // P2: cloud backup, best-effort
       // "先不要" on first launch → ask once more two battles later; never together with the rating ask
       shouldAskAgain(d.gamesPlayed).then((again) => {
-        if (again) setAskReminder(true);
+        if (again) {
+          setAskReminder(true);
+          logEvent('reminder_ask_shown', { where: 'result' });
+        }
         maybeAskForReview(result.outcome, d, summary.daysPracticed, again);
       });
     });
@@ -335,6 +345,7 @@ export default function ResultScreen() {
         onChoose={(choice) => {
           setAskReminder(false);
           // let the card fade out before the iOS dialog appears
+          logEvent('reminder_answer', { choice, where: 'result' });
           setTimeout(() => answerReminderAsk(choice, updatedPlayer?.gamesPlayed ?? 0), 350);
         }}
         s={s}

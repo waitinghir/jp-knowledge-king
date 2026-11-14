@@ -8,6 +8,7 @@ import { useStrings } from '../../utils/i18n';
 import FlameIcon from '../../components/FlameIcon';
 import { useDaily } from '../../utils/useDaily';
 import type { MissionKey } from '../../utils/progress';
+import { logEvent } from '../../utils/telemetry';
 
 export default function TodayScreen() {
   const s = useStrings();
@@ -28,6 +29,7 @@ export default function TodayScreen() {
 
   const startThemeBattle = async () => {
     const wordLevel = await loadWordLevel();
+    logEvent('theme_battle_start', { level: wordLevel, theme: d?.theme ?? '' });
     router.push({ pathname: '/battle/matching', params: { wordLevel, theme: '1' } });
   };
 

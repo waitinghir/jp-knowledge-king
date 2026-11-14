@@ -17,6 +17,7 @@ import { useStrings } from '../../utils/i18n';
 import LevelPicker from '../../components/LevelPicker';
 import ReminderAsk from '../../components/ReminderAsk';
 import { answerReminderAsk, loadReminderSettings } from '../../utils/reminders';
+import { logEvent } from '../../utils/telemetry';
 import FlameIcon from '../../components/FlameIcon';
 import { useDaily } from '../../utils/useDaily';
 
@@ -28,7 +29,12 @@ export default function HomeScreen() {
   // First launch: our own reminder card (the iOS dialog follows only if a time is picked)
   const [askReminder, setAskReminder] = useState(false);
   useEffect(() => {
-    loadReminderSettings().then((r) => setAskReminder(r.ask === 'never'));
+    logEvent('home_view');
+    loadReminderSettings().then((r) => {
+      const ask = r.ask === 'never';
+      setAskReminder(ask);
+      if (ask) logEvent('reminder_ask_shown', { where: 'first_open' });
+    });
   }, []);
 
   const daily = useDaily();
@@ -117,6 +123,7 @@ export default function HomeScreen() {
           onChange={(lv) => {
             setWordLevel(lv);
             saveWordLevel(lv);
+            logEvent('level_change', { level: lv });
           }}
           s={s}
         />
@@ -128,7 +135,10 @@ export default function HomeScreen() {
               styles.startButton,
               pressed && styles.startButtonPressed,
             ]}
-            onPress={() => router.push({ pathname: '/battle/matching', params: { wordLevel } })}
+            onPress={() => {
+              logEvent('battle_start', { level: wordLevel, games: player.gamesPlayed });
+              router.push({ pathname: '/battle/matching', params: { wordLevel } });
+            }}
           >
             <Text style={styles.startButtonText}>{s.startBattle}</Text>
           </Pressable>
@@ -145,6 +155,7 @@ export default function HomeScreen() {
         onChoose={(choice) => {
           setAskReminder(false);
           // let the card fade out before the iOS dialog appears
+          logEvent('reminder_answer', { choice, where: 'first_open' });
           setTimeout(() => answerReminderAsk(choice, player.gamesPlayed), 350);
         }}
         s={s}
