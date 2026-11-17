@@ -27,7 +27,7 @@ App Store Connect 上的文字都以這份為準。改版時先改這裡，再�
 
 **宣傳文字**（上限 170 字，可隨時修改）
 ```
-跟 AI 對手限時搶答日文單字！搶快也搶正確，用最直覺的方式記住 JLPT 單字
+跟對手限時搶答日文單字！搶快也搶正確，用最直覺的方式記住 JLPT 單字
 ```
 
 **關鍵字**（上限 100 字元，逗號分隔、不加空格）
@@ -82,7 +82,7 @@ Japanese Vocab Battle · JLPT
 
 **Promotional text** (max 170 characters, editable anytime)
 ```
-Race an AI opponent to answer Japanese vocab! Be fast, be right, and remember JLPT words the most intuitive way.
+Race an opponent to answer Japanese vocab! Be fast, be right, and remember JLPT words the most intuitive way.
 ```
 
 **Keywords** (max 100 characters, comma-separated, no spaces)
@@ -109,7 +109,7 @@ FEATURES
 - Optional daily practice reminder, at noon or before bed.
 - Kana practice: separate hiragana and katakana levels, including voiced sounds and combinations.
 - JLPT N5 to N2 vocabulary, plus everyday words for life in Japan. Pick the level that suits you.
-- Weekly leaderboard: compete with other players for this week's score. Resets every Monday.
+- Weekly leaderboard: see where your score ranks this week. Resets every Monday.
 - Earn points and level up to see your progress.
 - Your progress is backed up to the cloud automatically.
 - Spot a question that looks wrong? Report it from the results screen. The word bank keeps getting fixed.
