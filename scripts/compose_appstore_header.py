@@ -20,7 +20,7 @@ and can be cropped on any device.
   search 3:2       3840 x 2560  2168 x 1030 at  836, 765
   universal 16:9   5244 x 2950  1402 x 962  at 1921, 660   (PNG only)
 
-No alpha, no prices, no URLs, no unverifiable claims ("必選", "No.1"...).
+No alpha, no prices, no URLs, no awards or Apple badges.
 """
 import os
 import random
@@ -38,8 +38,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ICON = os.path.join(HERE, '..', 'assets', 'icon.png')
 
 TEXT = {
-    'zh': ('日文知識王', ['1 對 1 ', '單字對戰'], '五十音到 N2・每日任務'),
-    'en': ('Nihongo Quiz King', ['Japanese ', 'vocab battles'], 'Kana to N2 · Daily missions'),
+    'zh': ('日文知識王', ['1 對 1 ', '單字對戰'], 'JLPT 考試必選 APP'),
+    'en': ('Nihongo Quiz King', ['Japanese ', 'vocab battles'], 'The must-have JLPT app'),
 }
 
 # name, size, safe box (x, y, w, h), phones [(shot, centre x, centre y, width, angle)]

@@ -39,7 +39,7 @@ App Store Connect 上的文字都以這份為準。改版時先改這裡，再�
 ```
 挑戰你的日文實力！
 
-【日文知識王】把背單字變成限時對戰：每場 5 題、每題 10 秒，和 AI 對手比誰答得又快又準。從五十音到 N2，選一個適合你的難度就能開始。
+【日文知識王】把背單字變成限時對戰：每場 5 題，和對手比誰答得又快又準。從五十音到 N2，選一個適合你的難度就能開始。
 
 — 怎麼玩 —
 左右滑動選難度，按下開始對戰。
@@ -49,16 +49,13 @@ App Store Connect 上的文字都以這份為準。改版時先改這裡，再�
 
 — 核心特色 —
 ・每日任務：每天 3 個小目標和一個今日主題戰，完成就在月曆上蓋章
-・答錯的字會在之後的對戰再出現，答對了才算收服；在不同的兩天都答對，就算「已掌握」
+・答錯的字會在之後的對戰再出現，答對了才算「已掌握」
 ・首頁看得到練習天數和已掌握的字數
 ・可以設定每日練習提醒，中午或睡前
 ・五十音練習：平假名、片假名各一個難度，包含濁音、半濁音和拗音
 ・JLPT N5 到 N2 單字，加上在日本生活的常用詞，可依程度選擇
-・結算頁把讀音標在漢字上方，答完馬上複習
-・AI 對手會依你最近的表現調整強弱：輸了會變簡單，連勝才會變難
-・每週排行榜，每週一重置，和 AI 玩家比拚本週分數
+・每週排行榜，每週一重置，和玩家比拚本週分數
 ・累積分數升級，看得見自己的進步
-・中文、英文介面，依手機語言自動切換
 ・遊戲紀錄自動備份到雲端
 ・覺得題目有問題，可以在結算頁直接回報，題庫會持續修正
 
@@ -97,7 +94,7 @@ n5,n4,n3,n2,hiragana,katakana,words,learn,study,exam,language,trivia,game,practi
 ```
 Put your Japanese to the test!
 
-Nihongo Quiz King turns study into a timed battle: 5 questions per match, 10 seconds each, against an AI opponent. Who's faster and more accurate? Start anywhere from kana to JLPT N2.
+Nihongo Quiz King turns studying vocabulary into a timed battle: 5 questions per match against an opponent. Who's faster and more accurate? Start anywhere from kana to JLPT N2.
 
 HOW TO PLAY
 Swipe to pick your level, then start a battle.
@@ -107,23 +104,20 @@ The faster you answer correctly, the more points you score. Take longer than 10 
 
 FEATURES
 - Daily missions: three small goals and a daily theme battle each day. Finish them to stamp your calendar.
-- Words you miss come back in later battles until you get them right. Get a word right on two different days and it counts as mastered.
+- Words you miss come back in later battles, and only count as mastered once you get them right.
 - See your practice days and mastered words on the home screen.
 - Optional daily practice reminder, at noon or before bed.
 - Kana practice: separate hiragana and katakana levels, including voiced sounds and combinations.
-- JLPT N5 to N2 vocabulary, plus everyday words for life in Japan.
-- The results screen shows each word's reading above the kanji, so you can review right away.
-- The AI opponent adapts to you: it eases up after you lose and only gets tougher on a win streak.
-- Weekly leaderboard against AI players, resets every Monday.
+- JLPT N5 to N2 vocabulary, plus everyday words for life in Japan. Pick the level that suits you.
+- Weekly leaderboard: compete with other players for this week's score. Resets every Monday.
 - Earn points and level up to see your progress.
-- English and Traditional Chinese interface, matched to your phone's language.
 - Your progress is backed up to the cloud automatically.
-- Spot a question that looks wrong? Report it from the results screen and we'll fix it.
+- Spot a question that looks wrong? Report it from the results screen. The word bank keeps getting fixed.
 
 GREAT FOR
-- Beginners learning hiragana and katakana
+- Beginners who want to master hiragana and katakana
 - JLPT test takers
-- Japanese learners who want a fun way to review vocabulary
+- Japanese learners who want an easy, fun way to review vocabulary
 - Anyone who loves fast-paced quiz games
 ```
 
