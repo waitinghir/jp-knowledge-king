@@ -4,7 +4,7 @@ Usage:
   python3 scripts/compose_appstore_screenshots.py <raw_dir> <out_dir> pastel <zh_font.ttf>
 
 - raw_dir has en/ and zh/ with 1170x2532 simulator shots named
-  battle1 / correct / kana / home / result / rank .png
+  battle1 / correct / kana / home / today / result / rank .png
   A screen with no raw shot is skipped and its existing file in out_dir is
   kept, so only the screens whose UI changed need re-shooting.
 - zh_font: jf open 粉圓 (SIL OFL, free for commercial use), not stored in the repo:
@@ -25,7 +25,10 @@ W, H = 1242, 2688
 NAVY = (44, 62, 80)
 RED = (226, 71, 95)        # softer than the app's #C41E3A
 
-PASTELS = [(255, 228, 234), (223, 245, 236), (255, 243, 204), (236, 230, 255), (255, 232, 214), (224, 240, 255)]
+PASTELS = [(255, 228, 234), (223, 245, 236), (255, 243, 204), (236, 230, 255), (255, 232, 214), (224, 240, 255),
+           (232, 246, 220)]
+# Background per screen (not per position), so inserting a screen keeps the others' colours.
+COLOR_OF = {'battle1': 0, 'correct': 1, 'kana': 2, 'home': 3, 'result': 4, 'rank': 5, 'today': 6}
 CREAM = (255, 246, 238)
 
 CAPTIONS = {
@@ -34,6 +37,7 @@ CAPTIONS = {
         ('correct', ['10 秒', '搶答'], '越快答對，分數越高'),
         ('kana', ['從五十音', '開始'], '平假名、片假名也能對戰'),
         ('home', ['N5 到 N2 ', '任你選'], '左右滑動，挑你的難度'),
+        ('today', ['每天 3 個', '任務'], '完成就在月曆蓋章'),
         ('result', ['打贏對手，', '累積升級'], '每題都附讀音與答案'),
         ('rank', ['每週', '排行榜'], '看看你這週排第幾'),
     ],
@@ -42,6 +46,7 @@ CAPTIONS = {
         ('correct', ['10 seconds ', 'per question'], 'Answer faster, score higher'),
         ('kana', ['Start with ', 'kana'], 'Hiragana and katakana battles'),
         ('home', ['Pick your level: ', 'N5 to N2'], 'Swipe to choose your level'),
+        ('today', ['3 daily ', 'missions'], 'Stamp your calendar'),
         ('result', ['Win and ', 'level up'], 'Every answer, with its reading'),
         ('rank', ['Weekly ', 'leaderboard'], 'See where you rank this week'),
     ],
@@ -130,7 +135,7 @@ for lang, items in CAPTIONS.items():
         raw = os.path.join(RAW, lang, f'{name}.png')
         if not os.path.exists(raw):
             continue
-        bg = PASTELS[n - 1] if STYLE == 'pastel' else CREAM
+        bg = PASTELS[COLOR_OF[name]] if STYLE == 'pastel' else CREAM
         canvas = Image.new('RGB', (W, H), bg)
         decorate(canvas, bg if STYLE == 'pastel' else (255, 214, 222), n)
         d = ImageDraw.Draw(canvas)
