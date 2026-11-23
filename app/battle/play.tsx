@@ -40,6 +40,7 @@ export default function PlayScreen() {
     opponentLevel: string;
     opponentColor: string;
     difficulty: string;
+    games?: string; // battles played before this one (rookie AI pacing)
     wordLevel: WordLevel;
     theme?: string; // '1' = today's theme battle
   }>();
@@ -50,6 +51,7 @@ export default function PlayScreen() {
     avatarColor: params.opponentColor ?? '#3498DB',
   };
   const difficulty = parseFloat(params.difficulty ?? '0.8');
+  const gamesPlayed = parseInt(params.games ?? '', 10);
   const wordLevel: WordLevel = params.wordLevel ?? 'all';
   const isThemeBattle = params.theme === '1';
   const [theme, setTheme] = useState<Theme | null>(null);
@@ -174,7 +176,11 @@ export default function PlayScreen() {
     }
 
     // AI answer
-    const ai = simulateAIAnswer(currentQuestion, difficulty);
+    const ai = simulateAIAnswer(
+      currentQuestion,
+      difficulty,
+      Number.isFinite(gamesPlayed) ? { playerTime: timeUsed, gamesPlayed } : undefined,
+    );
     const aiOptionIndex = ai.isCorrect
       ? currentQuestion.correctIndex
       : getRandomWrongIndex(currentQuestion.correctIndex, currentQuestion.options.length);

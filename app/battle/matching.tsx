@@ -91,6 +91,7 @@ export default function MatchingScreen() {
           opponentLevel: String(opp.level),
           opponentColor: opp.avatarColor,
           difficulty: String(difficulty),
+          games: String(playerData.gamesPlayed),
           wordLevel,
           theme,
         },

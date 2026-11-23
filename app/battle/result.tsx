@@ -10,7 +10,8 @@ import {
   View,
 } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
-import { addBattleResult } from '../../utils/storage';
+import { addBattleResult, saveWordLevel } from '../../utils/storage';
+import { shouldShowKanaHint } from '../../utils/kanaHint';
 import { recordBattle, type BattleSummary } from '../../utils/progress';
 import { pushPlayerData } from '../../utils/cloudSync';
 import { maybeAskForReview } from '../../utils/reviewPrompt';
@@ -36,6 +37,7 @@ export default function ResultScreen() {
   const params = useLocalSearchParams<{ result: string; wordLevel?: WordLevel; theme?: string }>();
   const [daily, setDaily] = useState<BattleSummary | null>(null);
   const [askReminder, setAskReminder] = useState(false);
+  const [kanaHint, setKanaHint] = useState(false);
   const [updatedPlayer, setUpdatedPlayer] = useState<PlayerData | null>(null);
   const battleId = useRef(newId()).current;
   // L5: "report this question" state, per question index
@@ -112,6 +114,14 @@ export default function ResultScreen() {
       });
       if (summary.completedToday) logEvent('missions_completed', { days: summary.daysPracticed });
       pushPlayerData(d); // P2: cloud backup, best-effort
+      // Two losses in a row with < 40% right → suggest hiragana once
+      const right = result.playerAnswers.filter((a) => a.isCorrect).length;
+      shouldShowKanaHint(params.wordLevel ?? 'all', d.recentOutcomes ?? [], right, result.questions.length).then((show) => {
+        if (show) {
+          setKanaHint(true);
+          logEvent('kana_hint_shown', { level: params.wordLevel ?? 'all', games: d.gamesPlayed });
+        }
+      });
       // "先不要" on first launch → ask once more two battles later; never together with the rating ask
       shouldAskAgain(d.gamesPlayed).then((again) => {
         if (again) {
@@ -201,6 +211,30 @@ export default function ResultScreen() {
               <Text style={styles.cumulativeTotal}>
                 {s.cumulative(updatedPlayer.totalScore, updatedPlayer.level)}
               </Text>
+            </View>
+          )}
+
+          {/* Losing while mostly guessing: a gentle invite to hiragana (shown once) */}
+          {kanaHint && (
+            <View style={styles.hintCard}>
+              <View style={styles.hintBadge}>
+                <Text style={styles.hintBadgeText}>あ</Text>
+              </View>
+              <View style={styles.hintTextBox}>
+                <Text style={styles.hintTitle}>{s.kanaHintTitle}</Text>
+                <Text style={styles.hintBody}>{s.kanaHintBody}</Text>
+                <Pressable
+                  hitSlop={8}
+                  style={({ pressed }) => pressed && styles.btnPressed}
+                  onPress={async () => {
+                    logEvent('kana_hint_accept', { level: params.wordLevel ?? 'all' });
+                    await saveWordLevel('hiragana');
+                    router.replace({ pathname: '/battle/matching', params: { wordLevel: 'hiragana', theme: '' } });
+                  }}
+                >
+                  <Text style={styles.hintLink}>{s.kanaHintButton}</Text>
+                </Pressable>
+              </View>
             </View>
           )}
 
@@ -502,4 +536,25 @@ const styles = StyleSheet.create({
   // flex: long English lines wrap instead of pushing the mission status off screen
   dailyLine: { flex: 1, marginRight: 12, fontSize: 14, color: '#2ECC71', fontWeight: '600' },
   dailyMissions: { fontSize: 13, color: '#F1C40F', fontWeight: '600' },
+  hintCard: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    gap: 12,
+    backgroundColor: '#34495E',
+    borderRadius: 12,
+    padding: 14,
+  },
+  hintBadge: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: '#2C3E50',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  hintBadgeText: { fontSize: 20, fontWeight: '700', color: '#ECF0F1' },
+  hintTextBox: { flex: 1, gap: 4 },
+  hintTitle: { fontSize: 15, fontWeight: '700', color: '#ECF0F1' },
+  hintBody: { fontSize: 13, lineHeight: 19, color: '#BDC3C7' },
+  hintLink: { marginTop: 4, fontSize: 14, fontWeight: '700', color: '#5DADE2' },
 });
