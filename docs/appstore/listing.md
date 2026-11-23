@@ -123,6 +123,22 @@ GREAT FOR
 
 ---
 
+## 1.8.1 版本更新說明
+
+**繁體中文**
+```
+・調整新手前幾場的對戰節奏，更容易上手
+・新增平假名練習的建議
+```
+
+**English**
+```
+- Smoother first battles for new players
+- Suggests hiragana practice when you're just starting out
+```
+
+---
+
 ## 1.8.0 版本更新說明
 
 **繁體中文**
