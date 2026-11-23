@@ -189,24 +189,6 @@ export default function ResultScreen() {
             </View>
           )}
 
-          {/* Losing while mostly guessing: suggest hiragana (shown once) */}
-          {kanaHint && (
-            <View style={styles.hintCard}>
-              <Text style={styles.hintTitle}>{s.kanaHintTitle}</Text>
-              <Text style={styles.hintBody}>{s.kanaHintBody}</Text>
-              <Pressable
-                style={({ pressed }) => [styles.hintBtn, pressed && styles.btnPressed]}
-                onPress={async () => {
-                  logEvent('kana_hint_accept', { level: params.wordLevel ?? 'all' });
-                  await saveWordLevel('hiragana');
-                  router.replace({ pathname: '/battle/matching', params: { wordLevel: 'hiragana', theme: '' } });
-                }}
-              >
-                <Text style={styles.hintBtnText}>{s.kanaHintButton}</Text>
-              </Pressable>
-            </View>
-          )}
-
           {/* Score comparison */}
           <View style={styles.scoreRow}>
             <View style={styles.scoreBlock}>
@@ -229,6 +211,30 @@ export default function ResultScreen() {
               <Text style={styles.cumulativeTotal}>
                 {s.cumulative(updatedPlayer.totalScore, updatedPlayer.level)}
               </Text>
+            </View>
+          )}
+
+          {/* Losing while mostly guessing: a gentle invite to hiragana (shown once) */}
+          {kanaHint && (
+            <View style={styles.hintCard}>
+              <View style={styles.hintBadge}>
+                <Text style={styles.hintBadgeText}>あ</Text>
+              </View>
+              <View style={styles.hintTextBox}>
+                <Text style={styles.hintTitle}>{s.kanaHintTitle}</Text>
+                <Text style={styles.hintBody}>{s.kanaHintBody}</Text>
+                <Pressable
+                  hitSlop={8}
+                  style={({ pressed }) => pressed && styles.btnPressed}
+                  onPress={async () => {
+                    logEvent('kana_hint_accept', { level: params.wordLevel ?? 'all' });
+                    await saveWordLevel('hiragana');
+                    router.replace({ pathname: '/battle/matching', params: { wordLevel: 'hiragana', theme: '' } });
+                  }}
+                >
+                  <Text style={styles.hintLink}>{s.kanaHintButton}</Text>
+                </Pressable>
+              </View>
             </View>
           )}
 
@@ -531,21 +537,24 @@ const styles = StyleSheet.create({
   dailyLine: { flex: 1, marginRight: 12, fontSize: 14, color: '#2ECC71', fontWeight: '600' },
   dailyMissions: { fontSize: 13, color: '#F1C40F', fontWeight: '600' },
   hintCard: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    gap: 12,
     backgroundColor: '#34495E',
     borderRadius: 12,
-    borderWidth: 1,
-    borderColor: '#F1C40F',
-    padding: 16,
-    gap: 8,
+    padding: 14,
   },
-  hintTitle: { fontSize: 17, fontWeight: '800', color: '#F1C40F' },
-  hintBody: { fontSize: 14, lineHeight: 20, color: '#ECF0F1' },
-  hintBtn: {
-    marginTop: 4,
-    backgroundColor: '#F1C40F',
-    paddingVertical: 12,
-    borderRadius: 50,
+  hintBadge: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: '#2C3E50',
     alignItems: 'center',
+    justifyContent: 'center',
   },
-  hintBtnText: { fontSize: 16, fontWeight: '800', color: '#2C3E50' },
+  hintBadgeText: { fontSize: 20, fontWeight: '700', color: '#ECF0F1' },
+  hintTextBox: { flex: 1, gap: 4 },
+  hintTitle: { fontSize: 15, fontWeight: '700', color: '#ECF0F1' },
+  hintBody: { fontSize: 13, lineHeight: 19, color: '#BDC3C7' },
+  hintLink: { marginTop: 4, fontSize: 14, fontWeight: '700', color: '#5DADE2' },
 });

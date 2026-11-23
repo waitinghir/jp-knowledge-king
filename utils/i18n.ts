@@ -151,9 +151,9 @@ export const strings = {
     cumulative: (total: number, lv: number) => `累計 ${total} 分 · Lv.${lv}`,
     playAgain: '⚔️ 再戰一場',
     goHome: '🏠 回首頁',
-    kanaHintTitle: '先從平假名開始？',
-    kanaHintBody: '單字題要先看得懂假名。平假名一場只要一分鐘，練熟了再回來挑戰單字。',
-    kanaHintButton: 'あ 改玩平假名',
+    kanaHintTitle: '想先練練平假名嗎？',
+    kanaHintBody: '題目都是用假名寫的，先把平假名練熟，單字會更好上手。',
+    kanaHintButton: '來一場平假名 ›',
   },
 
   en: {
@@ -289,9 +289,9 @@ export const strings = {
     cumulative: (total: number, lv: number) => `Total ${total} pts · Lv.${lv}`,
     playAgain: '⚔️ Play Again',
     goHome: '🏠 Home',
-    kanaHintTitle: 'Start with hiragana?',
-    kanaHintBody: 'Vocab questions are written in kana. A hiragana battle takes a minute. Learn the kana first, then come back for the words.',
-    kanaHintButton: 'あ Play hiragana',
+    kanaHintTitle: 'Warm up with hiragana?',
+    kanaHintBody: 'Questions are written in kana. Getting comfortable with hiragana makes the words easier.',
+    kanaHintButton: 'Play a hiragana round ›',
   },
 };
 
