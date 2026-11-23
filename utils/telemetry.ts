@@ -112,7 +112,9 @@ export type AppEvent =
   | 'push_delivered'
   | 'missions_completed'
   | 'kana_hint_shown'
-  | 'kana_hint_accept';
+  | 'kana_hint_accept'
+  | 'battle_background'
+  | 'battle_quit';
 
 /** Fire-and-forget event log; never throws, never blocks. */
 export async function logEvent(name: AppEvent, props?: Record<string, string | number | boolean>) {
