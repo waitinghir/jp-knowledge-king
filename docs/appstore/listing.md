@@ -123,6 +123,20 @@ GREAT FOR
 
 ---
 
+## 1.8.2 版本更新說明
+
+**繁體中文**
+```
+・錯誤修正與穩定性改善
+```
+
+**English**
+```
+- Bug fixes and stability improvements
+```
+
+---
+
 ## 1.8.1 版本更新說明
 
 **繁體中文**

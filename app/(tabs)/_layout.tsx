@@ -2,12 +2,19 @@ import { Tabs } from 'expo-router';
 import { Text } from 'react-native';
 import { useStrings } from '../../utils/i18n';
 import { useDaily } from '../../utils/useDaily';
+import { logEvent } from '../../utils/telemetry';
 
 export default function TabLayout() {
   const s = useStrings();
   const daily = useDaily();
   return (
     <Tabs
+      // 1.8.2: every time a tab comes into view (tap, or a button that leads
+      // there), so we can see how often each tab - the leaderboard above all -
+      // is actually opened before deciding its future.
+      screenListeners={({ route }) => ({
+        focus: () => logEvent('tab_view', { tab: route.name }),
+      })}
       screenOptions={{
         headerShown: false,
         tabBarStyle: {

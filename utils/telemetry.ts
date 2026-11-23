@@ -114,7 +114,8 @@ export type AppEvent =
   | 'kana_hint_shown'
   | 'kana_hint_accept'
   | 'battle_background'
-  | 'battle_quit';
+  | 'battle_quit'
+  | 'tab_view';
 
 /** Fire-and-forget event log; never throws, never blocks. */
 export async function logEvent(name: AppEvent, props?: Record<string, string | number | boolean>) {
