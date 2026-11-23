@@ -129,12 +129,14 @@ GREAT FOR
 ```
 ・調整新手前幾場的對戰節奏，更容易上手
 ・新增平假名練習的建議
+・主題戰打完可以直接回到今日任務
 ```
 
 **English**
 ```
 - Smoother first battles for new players
 - Suggests hiragana practice when you're just starting out
+- After a theme battle, go straight back to Today
 ```
 
 ---

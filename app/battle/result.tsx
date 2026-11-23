@@ -318,26 +318,47 @@ export default function ResultScreen() {
             );
           })}
 
-          {/* Action buttons */}
+          {/* Action buttons. A theme battle is a daily mission, so it leads back
+              to Today; a normal battle offers another round. */}
           <View style={styles.buttonRow}>
-            <Pressable
-              style={({ pressed }) => [styles.btnPrimary, pressed && styles.btnPressed]}
-              onPress={() =>
-                router.replace({
-                  pathname: '/battle/matching',
-                  params: { wordLevel: params.wordLevel ?? 'all', theme: params.theme ?? '' },
-                })
-              }
-            >
-              <Text style={styles.btnPrimaryText}>{s.playAgain}</Text>
-            </Pressable>
-
-            <Pressable
-              style={({ pressed }) => [styles.btnSecondary, pressed && styles.btnPressed]}
-              onPress={() => router.replace('/')}
-            >
-              <Text style={styles.btnSecondaryText}>{s.goHome}</Text>
-            </Pressable>
+            {params.theme === '1' ? (
+              <>
+                <Pressable
+                  style={({ pressed }) => [styles.btnPrimary, pressed && styles.btnPressed]}
+                  onPress={() => router.replace('/today')}
+                >
+                  <Text style={styles.btnPrimaryText}>{s.backToToday}</Text>
+                </Pressable>
+                <Pressable
+                  style={({ pressed }) => [styles.btnSecondary, pressed && styles.btnPressed]}
+                  onPress={() =>
+                    router.replace({ pathname: '/battle/matching', params: { wordLevel: params.wordLevel ?? 'all', theme: '1' } })
+                  }
+                >
+                  <Text style={styles.btnSecondaryText}>{s.playAgain}</Text>
+                </Pressable>
+              </>
+            ) : (
+              <>
+                <Pressable
+                  style={({ pressed }) => [styles.btnPrimary, pressed && styles.btnPressed]}
+                  onPress={() =>
+                    router.replace({
+                      pathname: '/battle/matching',
+                      params: { wordLevel: params.wordLevel ?? 'all', theme: '' },
+                    })
+                  }
+                >
+                  <Text style={styles.btnPrimaryText}>{s.playAgain}</Text>
+                </Pressable>
+                <Pressable
+                  style={({ pressed }) => [styles.btnSecondary, pressed && styles.btnPressed]}
+                  onPress={() => router.replace('/')}
+                >
+                  <Text style={styles.btnSecondaryText}>{s.goHome}</Text>
+                </Pressable>
+              </>
+            )}
           </View>
         </Animated.View>
       </ScrollView>

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import {
   Animated,
+  AppState,
   SafeAreaView,
   ScrollView,
   StyleSheet,
@@ -22,6 +23,7 @@ import { initSounds, playSound } from '../../utils/sound';
 import { getLang, useStrings } from '../../utils/i18n';
 import { loadWords } from '../../utils/wordBank';
 import { kanaQuestionsFor, loadKana } from '../../utils/kana';
+import { logEvent } from '../../utils/telemetry';
 
 import type { Word, Question, Answer, AIOpponent, BattleResult, WordLevel } from '../../types';
 import type { OptionState } from '../../components/OptionButton';
@@ -112,6 +114,33 @@ export default function PlayScreen() {
       setQuestions(qs.map((q, i) => ({ ...q, missed: picked[i].missed })));
     });
     initSounds();
+  }, []);
+
+  // ── 1.8.1: where do players leave a battle they don't finish? ────────────
+  // Answers are only uploaded from the result screen, so a battle left half
+  // way leaves no trace. Log the question number when the app goes to the
+  // background (once) and when the screen closes without reaching the result.
+  const qIndexRef = useRef(0);
+  qIndexRef.current = qIndex;
+  const finishedRef = useRef(false);
+  useEffect(() => {
+    const props = () => ({
+      q: qIndexRef.current + 1,
+      level: wordLevel,
+      theme: isThemeBattle,
+      games: Number.isFinite(gamesPlayed) ? gamesPlayed : -1,
+    });
+    let backgrounded = false;
+    const sub = AppState.addEventListener('change', (st) => {
+      if (st === 'background' && !backgrounded && !finishedRef.current) {
+        backgrounded = true;
+        logEvent('battle_background', props());
+      }
+    });
+    return () => {
+      sub.remove();
+      if (!finishedRef.current) logEvent('battle_quit', props());
+    };
   }, []);
 
   // ── Start timer when question changes ────────────────────────────────────
@@ -243,6 +272,7 @@ export default function PlayScreen() {
           opponent,
         };
 
+        finishedRef.current = true;
         router.replace({
           pathname: '/battle/result',
           params: { result: JSON.stringify(result), wordLevel, theme: isThemeBattle ? '1' : '' },
