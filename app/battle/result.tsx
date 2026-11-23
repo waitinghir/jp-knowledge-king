@@ -10,7 +10,8 @@ import {
   View,
 } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
-import { addBattleResult } from '../../utils/storage';
+import { addBattleResult, saveWordLevel } from '../../utils/storage';
+import { shouldShowKanaHint } from '../../utils/kanaHint';
 import { recordBattle, type BattleSummary } from '../../utils/progress';
 import { pushPlayerData } from '../../utils/cloudSync';
 import { maybeAskForReview } from '../../utils/reviewPrompt';
@@ -36,6 +37,7 @@ export default function ResultScreen() {
   const params = useLocalSearchParams<{ result: string; wordLevel?: WordLevel; theme?: string }>();
   const [daily, setDaily] = useState<BattleSummary | null>(null);
   const [askReminder, setAskReminder] = useState(false);
+  const [kanaHint, setKanaHint] = useState(false);
   const [updatedPlayer, setUpdatedPlayer] = useState<PlayerData | null>(null);
   const battleId = useRef(newId()).current;
   // L5: "report this question" state, per question index
@@ -112,6 +114,14 @@ export default function ResultScreen() {
       });
       if (summary.completedToday) logEvent('missions_completed', { days: summary.daysPracticed });
       pushPlayerData(d); // P2: cloud backup, best-effort
+      // Two losses in a row with < 40% right → suggest hiragana once
+      const right = result.playerAnswers.filter((a) => a.isCorrect).length;
+      shouldShowKanaHint(params.wordLevel ?? 'all', d.recentOutcomes ?? [], right, result.questions.length).then((show) => {
+        if (show) {
+          setKanaHint(true);
+          logEvent('kana_hint_shown', { level: params.wordLevel ?? 'all', games: d.gamesPlayed });
+        }
+      });
       // "先不要" on first launch → ask once more two battles later; never together with the rating ask
       shouldAskAgain(d.gamesPlayed).then((again) => {
         if (again) {
@@ -176,6 +186,24 @@ export default function ResultScreen() {
                   ? `✓ ${s.todayDone}`
                   : s.missionsProgress(daily.missionsAfter, daily.missionsTotal)}
               </Text>
+            </View>
+          )}
+
+          {/* Losing while mostly guessing: suggest hiragana (shown once) */}
+          {kanaHint && (
+            <View style={styles.hintCard}>
+              <Text style={styles.hintTitle}>{s.kanaHintTitle}</Text>
+              <Text style={styles.hintBody}>{s.kanaHintBody}</Text>
+              <Pressable
+                style={({ pressed }) => [styles.hintBtn, pressed && styles.btnPressed]}
+                onPress={async () => {
+                  logEvent('kana_hint_accept', { level: params.wordLevel ?? 'all' });
+                  await saveWordLevel('hiragana');
+                  router.replace({ pathname: '/battle/matching', params: { wordLevel: 'hiragana', theme: '' } });
+                }}
+              >
+                <Text style={styles.hintBtnText}>{s.kanaHintButton}</Text>
+              </Pressable>
             </View>
           )}
 
@@ -502,4 +530,22 @@ const styles = StyleSheet.create({
   // flex: long English lines wrap instead of pushing the mission status off screen
   dailyLine: { flex: 1, marginRight: 12, fontSize: 14, color: '#2ECC71', fontWeight: '600' },
   dailyMissions: { fontSize: 13, color: '#F1C40F', fontWeight: '600' },
+  hintCard: {
+    backgroundColor: '#34495E',
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: '#F1C40F',
+    padding: 16,
+    gap: 8,
+  },
+  hintTitle: { fontSize: 17, fontWeight: '800', color: '#F1C40F' },
+  hintBody: { fontSize: 14, lineHeight: 20, color: '#ECF0F1' },
+  hintBtn: {
+    marginTop: 4,
+    backgroundColor: '#F1C40F',
+    paddingVertical: 12,
+    borderRadius: 50,
+    alignItems: 'center',
+  },
+  hintBtnText: { fontSize: 16, fontWeight: '800', color: '#2C3E50' },
 });

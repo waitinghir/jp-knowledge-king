@@ -110,7 +110,9 @@ export type AppEvent =
   | 'reminder_permission'
   | 'open_from_push'
   | 'push_delivered'
-  | 'missions_completed';
+  | 'missions_completed'
+  | 'kana_hint_shown'
+  | 'kana_hint_accept';
 
 /** Fire-and-forget event log; never throws, never blocks. */
 export async function logEvent(name: AppEvent, props?: Record<string, string | number | boolean>) {

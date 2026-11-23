@@ -35,25 +35,36 @@ export function generateOpponent(playerLevel: number): AIOpponent {
 
 /**
  * Simulate the AI answering a question.
- * - Correct rate: 70–90% (random per opponent instance)
- * - Time: 2–7 seconds (correct answers lean faster, wrong lean slower)
+ * - Correct rate: `difficulty`
+ * - Time: correct 2–6 s (3–7 s for easier opponents < 0.65), wrong 5–9 s
+ * - Rookie pacing (1.9.x): during the first ROOKIE_GAMES battles a correct AI
+ *   answer is never quicker than the player on that question — it lands
+ *   0–2.5 s after the player's time, fading back to the normal times by battle
+ *   10. Speed then decides less of a new player's first battles; how many
+ *   answers are right decides more. A player with 50% accuracy who needs ~7 s
+ *   per question wins ~62% of battles 1–3 (was ~31%); fast players are almost
+ *   unaffected. See scripts/simulate_ai_difficulty.py (strategy d2).
  */
 export function simulateAIAnswer(
   _question: Question,
-  difficulty: number = 0.8 // 0.7 – 0.9 correct rate
+  difficulty: number = 0.8,
+  rookie?: { playerTime: number; gamesPlayed: number },
 ): { isCorrect: boolean; timeUsed: number } {
   const isCorrect = Math.random() < difficulty;
 
   let timeUsed: number;
   if (isCorrect) {
-    // Correct: 2–6 seconds (uniformly random, biased faster);
-    // easier opponents (< 0.65) also answer a bit slower: 3–7 seconds
     timeUsed = (difficulty < 0.65 ? 3 : 2) + Math.random() * 4;
+    if (rookie) {
+      const ramp = Math.min(1, Math.max(0, rookie.gamesPlayed) / ROOKIE_GAMES);
+      if (ramp < 1) {
+        const mirror = Math.min(9.5, Math.max(1, rookie.playerTime + Math.random() * 2.5));
+        timeUsed = Math.max(timeUsed, (1 - ramp) * mirror + ramp * timeUsed);
+      }
+    }
   } else {
     // Incorrect: 5–9 seconds (biased slower, simulates hesitation)
-    timeUsed = 5 + Math.random() * 4;
-    // Clamp to 10 (timeout)
-    if (timeUsed > 10) timeUsed = 10;
+    timeUsed = Math.min(10, 5 + Math.random() * 4);
   }
 
   return { isCorrect, timeUsed: parseFloat(timeUsed.toFixed(1)) };
