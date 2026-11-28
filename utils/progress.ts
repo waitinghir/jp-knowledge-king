@@ -47,6 +47,8 @@ interface ProgressState {
   /** local dates on which every mission was done */
   stamps: string[];
   today: DayState | null;
+  /** levels of the last 10 finished battles, oldest first (1.8.2) */
+  levelLog?: WordLevel[];
 }
 
 export type MissionKey = 'theme' | 'kana' | 'correct' | 'fix' | 'newWords';
@@ -160,6 +162,57 @@ export function statId(questionWordId: string): string {
 }
 
 const isKanaLevel = (level: WordLevel) => level === 'hiragana' || level === 'katakana';
+const isKanaId = (id: string) => id.startsWith('h_') || id.startsWith('k_');
+const LOG_SIZE = 10;
+
+/**
+ * Is this a kana learner? Judged by the battles actually played, not by where
+ * the home level picker happens to rest: swiping through the picker saves
+ * each level, and a player who browsed to ア one evening got kana missions
+ * all the next day (1.8.1 bug). Half or more of the last 10 battles in kana
+ * → kana missions. No log yet (players from before 1.8.2): anyone who has
+ * ever answered a vocabulary word is a word player.
+ */
+function isKanaPlayer(state: ProgressState, level: WordLevel): boolean {
+  const log = state.levelLog ?? [];
+  if (log.length > 0) return log.filter(isKanaLevel).length * 2 >= log.length;
+  if (Object.keys(state.words).some((id) => !isKanaId(id))) return false;
+  return isKanaLevel(level);
+}
+
+/**
+ * The vocabulary level a theme battle should use. A theme battle is always
+ * words; when the picker rests on kana (or the player only browsed there),
+ * use the vocabulary level played most in the last 10 battles (latest wins a
+ * tie). No vocabulary battle in the log (players from before 1.8.2): the
+ * vocabulary level with the most answers kept. Nothing at all: N5.
+ */
+export async function themeBattleLevel(level: WordLevel): Promise<WordLevel> {
+  if (!isKanaLevel(level)) return level;
+  const state = await load();
+  const counts = new Map<WordLevel, number>();
+  (state.levelLog ?? []).forEach((l) => {
+    if (!isKanaLevel(l)) counts.set(l, (counts.get(l) ?? 0) + 1);
+  });
+  let best: WordLevel | null = null;
+  let bestN = 0;
+  counts.forEach((n, l) => {
+    if (n >= bestN) { best = l; bestN = n; }
+  });
+  if (best) return best;
+
+  // No vocabulary battle in the log: the vocabulary level with the most recent
+  // answers kept (each level keeps its last 20), e.g. N3 for an N3 regular.
+  let fallback: WordLevel = 'N5';
+  let most = 0;
+  for (const [l, answers] of Object.entries(state.recent)) {
+    if (!isKanaLevel(l as WordLevel) && answers.length > most) {
+      fallback = l as WordLevel;
+      most = answers.length;
+    }
+  }
+  return fallback;
+}
 
 // ── Today's missions ───────────────────────────────────────────────────────
 
@@ -169,7 +222,7 @@ function rollDay(state: ProgressState, level: WordLevel): DayState {
   const hasReview = Object.values(state.words).some((w) => w.review > 0);
   state.today = {
     date: today,
-    kanaPlayer: isKanaLevel(level),
+    kanaPlayer: isKanaPlayer(state, level),
     fixVariant: hasReview ? 'fix' : 'newWords',
     themeBattles: 0,
     kanaBattles: 0,
@@ -267,11 +320,16 @@ function shuffle<T>(arr: T[]): T[] {
 
 /**
  * Pick `count` items for one battle, mixing words waiting for review, new
- * words and words already seen according to recent accuracy (spec table):
+ * words and words already seen according to recent accuracy:
  *   fewer than 10 answers → review ≤1, new 4
  *   ≥85%                  → review ≤1, new 3
- *   60–85%                → review ≤2, new 2, learning words first
- *   <60%                  → review ≤2, new 1, learning words first
+ *   60–85%                → review ≤1, new 2, learning words first
+ *   <60%                  → review ≤2, new 2, learning words first
+ * A word already answered correctly today is held back until tomorrow
+ * (unless it is waiting for review): "mastered" needs right answers on two
+ * different days, so asking it again today only repeats it (1.8.2; before,
+ * players saw ~1 new word a battle and the same few seen ones).
+ * Seen words come oldest first when learning words go first.
  * Shortfalls in one group are filled from the others.
  */
 export function composeBattle<T>(
@@ -280,6 +338,7 @@ export function composeBattle<T>(
   words: Record<string, WordStat>,
   recent: number[],
   count: number,
+  today: string = localDate(),
 ): { item: T; missed: boolean }[] {
   const acc = recent.length > 0 ? recent.reduce((a, b) => a + b, 0) / recent.length : 0;
   let maxReview = 1;
@@ -287,23 +346,26 @@ export function composeBattle<T>(
   let learningFirst = false;
   if (recent.length >= 10) {
     if (acc >= 0.85) newTarget = 3;
-    else if (acc >= 0.6) { maxReview = 2; newTarget = 2; learningFirst = true; }
-    else { maxReview = 2; newTarget = 1; learningFirst = true; }
+    else if (acc >= 0.6) { newTarget = 2; learningFirst = true; }
+    else { maxReview = 2; newTarget = 2; learningFirst = true; }
   }
 
   const review: T[] = [];
   const fresh: T[] = [];
   const learning: T[] = [];
   const mastered: T[] = [];
+  const doneToday: T[] = [];
   for (const item of shuffle(pool)) {
     const st = words[idOf(item)];
     if (!st || st.seen === 0) fresh.push(item);
     else if (st.review > 0) review.push(item);
+    else if (st.lastCorrectDay === today) doneToday.push(item);
     else if (st.mastered) mastered.push(item);
     else learning.push(item);
   }
   // Words one correct answer away from being cleared come first.
   review.sort((a, b) => words[idOf(a)].review - words[idOf(b)].review);
+  if (learningFirst) learning.sort((a, b) => words[idOf(a)].lastAt - words[idOf(b)].lastAt);
 
   const picked: { item: T; missed: boolean }[] = [];
   const take = (from: T[], n: number, missed = false) => {
@@ -315,9 +377,10 @@ export function composeBattle<T>(
   take(fresh, newTarget);
   const seen = learningFirst ? [...learning, ...mastered] : shuffle([...learning, ...mastered]);
   take(seen, count);
-  // Not enough of something: fill with new words, then more review, then anything.
+  // Not enough of something: fill with new words, more review, then today's words.
   take(fresh, count);
   take(review, count, true);
+  take(doneToday, count);
   return shuffle(picked);
 }
 
@@ -341,12 +404,16 @@ const LEVELS_UP_TO: Record<WordLevel, string[] | null> = {
 };
 
 /**
- * Today's theme words at the player's level and easier levels: some themes
- * are thin within a single level (e.g. N3 has no food words).
+ * Today's theme words. The player's own level first when it has at least
+ * `ownMin` theme words (1.8.2: an N3 player's theme battles used to be mostly
+ * N5/N4 words they already knew); otherwise their level and easier ones, as
+ * some themes are thin within a single level (e.g. N3 has no food words).
  */
-export function themePool(words: Word[], theme: Theme, level: WordLevel, min = 5): Word[] {
+export function themePool(words: Word[], theme: Theme, level: WordLevel, min = 5, ownMin = 10): Word[] {
   const cats = new Set(theme.categories);
   const inTheme = words.filter((w) => cats.has(w.category));
+  const own = inTheme.filter((w) => w.level === level);
+  if (own.length >= ownMin) return own;
   const levels = LEVELS_UP_TO[level];
   const pool = levels ? inTheme.filter((w) => levels.includes(w.level)) : inTheme;
   if (pool.length >= min) return pool;
@@ -404,6 +471,7 @@ export async function recordBattle(input: {
   const recent = [...(state.recent[input.level] ?? []), ...input.answers.map((a) => (a.correct ? 1 : 0))];
   state.recent[input.level] = recent.slice(-20);
 
+  state.levelLog = [...(state.levelLog ?? []), input.level].slice(-LOG_SIZE);
   if (input.isThemeBattle) day.themeBattles++;
   if (isKanaLevel(input.level)) day.kanaBattles++;
   if (!state.days.includes(today)) state.days.push(today);

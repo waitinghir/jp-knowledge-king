@@ -127,12 +127,16 @@ GREAT FOR
 
 **繁體中文**
 ```
-・錯誤修正與穩定性改善
+・同一天不再重複出現剛答對的單字，每場都有新字
+・主題戰優先出你目前難度的單字
+・修正每日任務有時會變成五十音的問題
 ```
 
 **English**
 ```
-- Bug fixes and stability improvements
+- Words you just got right no longer repeat the same day, so every battle brings new ones
+- Theme battles now use words from your own level first
+- Fixed daily missions sometimes switching to kana
 ```
 
 ---
