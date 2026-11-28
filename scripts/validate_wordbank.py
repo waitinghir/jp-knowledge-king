@@ -82,6 +82,10 @@ HANDAKUTEN = dict(zip('はひふへほ', 'ぱぴぷぺぽ'))
 
 # N4 / N3 backfill (2026-11): whole-word readings and 連濁 the splitter misses
 READING_EXCEPTIONS |= {('小包', 'こづつみ'), ('田舎', 'いなか'), ('嘘', 'うそ')}
+# 2026-11 N3/N4 additions: special readings (土産, 迷子, 微笑む, 息子) and kanji
+# missing from kanji_readings.json (噛, 髭)
+READING_EXCEPTIONS |= {('土産', 'みやげ'), ('迷子', 'まいご'), ('微笑む', 'ほほえむ'), ('息子', 'むすこ'),
+                       ('噛む', 'かむ'), ('髭', 'ひげ')}
 
 
 def hira(s):
