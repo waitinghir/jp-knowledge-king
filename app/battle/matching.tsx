@@ -10,6 +10,7 @@ import {
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { generateOpponent, adaptiveDifficulty } from '../../utils/ai-opponent';
 import { loadPlayerData } from '../../utils/storage';
+import { themeBattleLevel } from '../../utils/progress';
 import { useStrings } from '../../utils/i18n';
 import type { AIOpponent, WordLevel } from '../../types';
 
@@ -64,6 +65,9 @@ export default function MatchingScreen() {
 
     async function runMatch() {
       const playerData = await loadPlayerData();
+      // A theme battle is always vocabulary: when the picker rests on kana, use the
+      // level actually played most (1.8.2). Play, result and stats all get this level.
+      const level = theme === '1' ? await themeBattleLevel(wordLevel) : wordLevel;
       const opp = generateOpponent(playerData.level);
       const difficulty = adaptiveDifficulty(playerData.recentOutcomes ?? [], playerData.gamesPlayed);
 
@@ -92,7 +96,7 @@ export default function MatchingScreen() {
           opponentColor: opp.avatarColor,
           difficulty: String(difficulty),
           games: String(playerData.gamesPlayed),
-          wordLevel,
+          wordLevel: level,
           theme,
         },
       });
