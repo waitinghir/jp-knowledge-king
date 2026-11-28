@@ -2,7 +2,7 @@
   "expo": {
     "name": "日文知識王",
     "slug": "jp-knowledge-king",
-    "version": "1.8.2",
+    "version": "1.8.3",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -41,7 +41,8 @@
           "microphonePermission": false
         }
       ],
-      "./plugins/withoutPushEntitlement"
+      "./plugins/withoutPushEntitlement",
+      "@react-native-community/datetimepicker"
     ],
     "extra": {
       "router": {},

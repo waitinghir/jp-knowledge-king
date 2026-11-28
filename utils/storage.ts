@@ -57,8 +57,9 @@ export async function addBattleResult(
 // so returning from a battle — or reopening the app — keeps the choice.
 const WORD_LEVEL_KEY = 'jp_king_word_level';
 const WORD_LEVELS: WordLevel[] = ['N5', 'N4', 'N3', 'N2', '生活', 'all', 'hiragana', 'katakana'];
-// First launch starts in the middle of the ladder, so there is room to swipe both ways.
-export const DEFAULT_WORD_LEVEL: WordLevel = 'N3';
+// New players start at N5 (1.8.3): from N3 they lost or swiped down looking for an easier level.
+// Kana sits to its left and harder levels to its right, so the peek hint still works both ways.
+export const DEFAULT_WORD_LEVEL: WordLevel = 'N5'; // N3 until 1.8.2: new players started too hard
 
 export async function loadWordLevel(): Promise<WordLevel> {
   try {

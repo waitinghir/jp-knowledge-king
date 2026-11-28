@@ -20,11 +20,27 @@ import { logEvent } from './telemetry';
 // its own copy and today's can be skipped once the player has practised.
 // Re-planned on every app open and after every battle.
 
-export type ReminderTime = 'noon' | 'night';
-const TIMES: Record<ReminderTime, { hour: number; minute: number }> = {
+/** 'noon' / 'night' presets, or a time the player picked, as "HH:MM" (1.8.3). */
+export type PresetTime = 'noon' | 'night';
+export type ReminderTime = PresetTime | string;
+const PRESETS: Record<PresetTime, { hour: number; minute: number }> = {
   noon: { hour: 12, minute: 30 },
-  night: { hour: 22, minute: 0 },
+  night: { hour: 22, minute: 30 }, // 22:00 until 1.8.2
 };
+export const isPreset = (t: ReminderTime): t is PresetTime => t === 'noon' || t === 'night';
+
+/** Hour and minute of a reminder time; null for anything unreadable. */
+export function timeOf(t: ReminderTime): { hour: number; minute: number } | null {
+  if (isPreset(t)) return PRESETS[t];
+  const m = /^(\d{1,2}):(\d{2})$/.exec(t);
+  if (!m) return null;
+  const hour = Number(m[1]);
+  const minute = Number(m[2]);
+  return hour < 24 && minute < 60 ? { hour, minute } : null;
+}
+
+export const formatTime = (hour: number, minute: number) =>
+  `${String(hour).padStart(2, '0')}:${String(minute).padStart(2, '0')}`;
 
 export interface ReminderSettings {
   enabled: boolean;
@@ -72,6 +88,11 @@ export async function requestReminderPermission(): Promise<boolean> {
   }
 }
 
+/** Event props for an ask-card answer: a picked time is logged as 'custom' + the time. */
+export function answerProps(choice: ReminderTime | 'later'): Record<string, string> {
+  return choice === 'later' || isPreset(choice) ? { choice } : { choice: 'custom', time: choice };
+}
+
 /** The answer to the ask card (first launch, or again at the 2nd battle). */
 export async function answerReminderAsk(choice: ReminderTime | 'later', gamesPlayed: number): Promise<void> {
   const cur = await loadReminderSettings();
@@ -84,7 +105,7 @@ export async function answerReminderAsk(choice: ReminderTime | 'later', gamesPla
     return;
   }
   const granted = await requestReminderPermission();
-  logEvent('reminder_permission', { granted });
+  logEvent('reminder_permission', { granted, custom: !isPreset(choice) });
   await saveReminderSettings({ enabled: granted, times: [choice], ask: 'answered' });
 }
 
@@ -176,7 +197,9 @@ async function planReminders(): Promise<void> {
       // Already practised today: skip the rest of today's reminders.
       if (offset === 0 && daily.playedToday) continue;
       settings.times.forEach((t, slot) => {
-        const at = new Date(now.getFullYear(), now.getMonth(), now.getDate() + offset, TIMES[t].hour, TIMES[t].minute);
+        const hm = timeOf(t);
+        if (!hm) return;
+        const at = new Date(now.getFullYear(), now.getMonth(), now.getDate() + offset, hm.hour, hm.minute);
         if (at <= now) return;
         // A future day's reminder names that day's theme.
         const theme = themeFor(localDate(at), themes);
@@ -198,7 +221,7 @@ async function planReminders(): Promise<void> {
     await AsyncStorage.setItem(PLAN_KEY, JSON.stringify(plan));
     if (__DEV__) {
       const all = await Notifications.getAllScheduledNotificationsAsync();
-      console.log('[reminders]\n' + all.map((n) => `${n.content.data?.copy} | ${n.content.body}`).join('\n'));
+      console.log('[reminders] ' + plan.map((p) => new Date(p.at).toLocaleString()).join(', ') + '\n' + all.map((n) => `${n.content.data?.copy} | ${n.content.body}`).join('\n'));
     }
   } catch {
     // reminders are best-effort
