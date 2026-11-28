@@ -15,7 +15,7 @@ import { shouldShowKanaHint } from '../../utils/kanaHint';
 import { recordBattle, type BattleSummary } from '../../utils/progress';
 import { pushPlayerData } from '../../utils/cloudSync';
 import { maybeAskForReview } from '../../utils/reviewPrompt';
-import { answerReminderAsk, shouldAskAgain } from '../../utils/reminders';
+import { answerProps, answerReminderAsk, shouldAskAgain } from '../../utils/reminders';
 import ReminderAsk from '../../components/ReminderAsk';
 import { playSound } from '../../utils/sound';
 import { getLang, useStrings } from '../../utils/i18n';
@@ -400,7 +400,7 @@ export default function ResultScreen() {
         onChoose={(choice) => {
           setAskReminder(false);
           // let the card fade out before the iOS dialog appears
-          logEvent('reminder_answer', { choice, where: 'result' });
+          logEvent('reminder_answer', { ...answerProps(choice), where: 'result' });
           setTimeout(() => answerReminderAsk(choice, updatedPlayer?.gamesPlayed ?? 0), 350);
         }}
         s={s}

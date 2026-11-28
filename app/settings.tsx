@@ -20,9 +20,13 @@ import {
   loadReminderSettings,
   requestReminderPermission,
   saveReminderSettings,
+  formatTime,
+  isPreset,
+  timeOf,
   type ReminderSettings,
   type ReminderTime,
 } from '../utils/reminders';
+import DateTimePicker from '@react-native-community/datetimepicker';
 
 export default function SettingsScreen() {
   const router = useRouter();
@@ -57,6 +61,22 @@ export default function SettingsScreen() {
     update({ ...settings, times, enabled: times.length > 0 });
   };
 
+  // 1.8.3: one custom time ("HH:MM") besides the two presets
+  const [picking, setPicking] = useState(false);
+  const [pickTime, setPickTime] = useState(() => new Date(2000, 0, 1, 20, 0));
+  const custom = settings?.times.find((t) => !isPreset(t));
+  const openPicker = () => {
+    const hm = custom ? timeOf(custom) : null;
+    setPickTime(new Date(2000, 0, 1, hm?.hour ?? 20, hm?.minute ?? 0));
+    setPicking(true);
+  };
+  const setCustom = (t: ReminderTime | null) => {
+    if (!settings) return;
+    const times = [...settings.times.filter(isPreset), ...(t ? [t] : [])];
+    update({ ...settings, times, enabled: times.length > 0 });
+    setPicking(false);
+  };
+
   const reminder = !!settings?.enabled;
   const times = settings?.times ?? [];
 
@@ -84,13 +104,45 @@ export default function SettingsScreen() {
                     const on = times.includes(t);
                     return (
                       <Pressable key={t} style={[styles.chip, on && styles.chipOn]} onPress={() => toggleTime(t)}>
-                        <Text style={[styles.chipText, on && styles.chipTextOn]}>
-                          {on ? '✓ ' : ''}{t === 'noon' ? s.reminderNoon : s.reminderNight}
+                        <Text style={[styles.chipText, on && styles.chipTextOn]} numberOfLines={1} adjustsFontSizeToFit>
+                          {on ? '✓ ' : ''}{t === 'noon' ? s.reminderNoonShort : s.reminderNightShort}
                         </Text>
                       </Pressable>
                     );
                   })}
+                  <Pressable style={[styles.chip, !!custom && styles.chipOn]} onPress={openPicker}>
+                    <Text style={[styles.chipText, !!custom && styles.chipTextOn]} numberOfLines={1} adjustsFontSizeToFit>
+                      {custom ? `✓ ${custom}` : s.reminderCustom}
+                    </Text>
+                  </Pressable>
                 </View>
+                {picking && (
+                  <View style={styles.pickerBox}>
+                    <DateTimePicker
+                      value={pickTime}
+                      mode="time"
+                      display="spinner"
+                      minuteInterval={5}
+                      themeVariant="dark"
+                      onChange={(_, d) => d && setPickTime(d)}
+                    />
+                    <View style={styles.chips}>
+                      {custom && (
+                        <Pressable style={styles.chip} onPress={() => setCustom(null)}>
+                          <Text style={styles.chipText}>{s.reminderRemove}</Text>
+                        </Pressable>
+                      )}
+                      <Pressable
+                        style={[styles.chip, styles.chipOn]}
+                        onPress={() => setCustom(formatTime(pickTime.getHours(), pickTime.getMinutes()))}
+                      >
+                        <Text style={[styles.chipText, styles.chipTextOn]}>
+                          {s.reminderUseTime} {formatTime(pickTime.getHours(), pickTime.getMinutes())}
+                        </Text>
+                      </Pressable>
+                    </View>
+                  </View>
+                )}
               </View>
             )}
           </View>
@@ -121,12 +173,15 @@ const styles = StyleSheet.create({
   chip: {
     flex: 1,
     paddingVertical: 10,
+    paddingHorizontal: 6,
     borderRadius: 10,
     alignItems: 'center',
+    justifyContent: 'center',
     borderWidth: 1,
     borderColor: '#4A6278',
   },
   chipOn: { backgroundColor: '#C41E3A', borderColor: '#C41E3A' },
-  chipText: { fontSize: 14, color: '#95A5A6', fontWeight: '600' },
+  chipText: { fontSize: 14, color: '#95A5A6', fontWeight: '600', textAlign: 'center' },
   chipTextOn: { color: '#fff' },
+  pickerBox: { gap: 8 },
 });

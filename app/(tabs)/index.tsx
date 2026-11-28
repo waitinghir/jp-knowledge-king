@@ -17,7 +17,7 @@ import { getLang, useStrings } from '../../utils/i18n';
 import { themeName } from '../../utils/remoteData';
 import LevelPicker from '../../components/LevelPicker';
 import ReminderAsk from '../../components/ReminderAsk';
-import { answerReminderAsk, loadReminderSettings } from '../../utils/reminders';
+import { answerProps, answerReminderAsk, loadReminderSettings } from '../../utils/reminders';
 import { logEvent } from '../../utils/telemetry';
 import FlameIcon from '../../components/FlameIcon';
 import { useDaily } from '../../utils/useDaily';
@@ -156,7 +156,7 @@ export default function HomeScreen() {
         onChoose={(choice) => {
           setAskReminder(false);
           // let the card fade out before the iOS dialog appears
-          logEvent('reminder_answer', { choice, where: 'first_open' });
+          logEvent('reminder_answer', { ...answerProps(choice), where: 'first_open' });
           setTimeout(() => answerReminderAsk(choice, player.gamesPlayed), 350);
         }}
         s={s}
